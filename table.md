@@ -29,7 +29,7 @@ The following are the Guidelines and schema specification for the Winnifred Eato
 ## Schema wea: Elements
  
  
-### abstract<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="abstract"/>
+### abstract<span id="abstract"/>
  
  
 **abstract**contains a summary or formal abstract prefixed to an existing source document by the encoder. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-abstract.html) ] 
@@ -94,7 +94,7 @@ This element is intended only for cases where no abstract is available in the or
  
  
  
-### att<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att"/>
+### att<span id="att"/>
  
  
 **att**(attribute) contains the name of an attribute appearing within running text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.html) ] 
@@ -163,7 +163,7 @@ As an alternative to using the scheme attribute a namespace prefix may be used. 
  
  
  
-### author<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="author"/>
+### author<span id="author"/>
  
  
 **author**in a bibliographic reference, contains the name(s) of an author, personal or corporate, of a work; for example in the same form as that provided by a recognized bibliographic name authority. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-author.html) ] 
@@ -238,7 +238,7 @@ Particularly where cataloguing is likely to be based on the content of the heade
  
  
  
-### authority<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="authority"/>
+### authority<span id="authority"/>
  
  
 **authority**(release authority) supplies the name of a person or other agency responsible for making a work available, other than a publisher or distributor. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-authority.html) ] 
@@ -300,7 +300,7 @@ character data
  
  
  
-### availability<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="availability"/>
+### availability<span id="availability"/>
  
  
 **availability**supplies information about the availability of a text, for example any restrictions on its use or distribution, its copyright status, any licence applying to it, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-availability.html) ] 
@@ -390,7 +390,7 @@ A consistent format should be adopted
  
  
  
-### back<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="back"/>
+### back<span id="back"/>
  
  
 **back**(back matter) contains any appendixes, etc. following the main part of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-back.html) ] 
@@ -467,7 +467,7 @@ Because cultural conventions differ as to which elements are grouped as back mat
  
  
  
-### bibl<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="bibl"/>
+### bibl<span id="bibl"/>
  
  
 **bibl**(bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-bibl.html) ] 
@@ -577,7 +577,7 @@ Contains phrase-level elements, together with any combination of elements from t
  
  
  
-### biblFull<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="biblFull"/>
+### biblFull<span id="biblFull"/>
  
  
 **biblFull**(fully-structured bibliographic citation) contains a fully-structured bibliographic citation, in which all components of the TEI file description are present. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-biblFull.html) ] 
@@ -637,7 +637,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### body<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="body"/>
+### body<span id="body"/>
  
  
 **body**(text body) contains the whole body of a single unitary text, excluding any front or back matter. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-body.html) ] 
@@ -697,7 +697,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### byline<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="byline"/>
+### byline<span id="byline"/>
  
  
 **byline**contains the primary statement of responsibility given for a work on its title page or at the head or end of the work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-byline.html) ] 
@@ -815,7 +815,7 @@ The byline on a title page may include either the name or a description for the 
  
  
  
-### category<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="category"/>
+### category<span id="category"/>
  
  
 **category**contains an individual descriptive category, possibly nested within a superordinate category, within a user-defined taxonomy. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-category.html) ] 
@@ -915,7 +915,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### catRef<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="catRef"/>
+### catRef<span id="catRef"/>
  
  
 **catRef**(category reference) specifies one or more defined categories within some taxonomy or text typology. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-catRef.html) ] 
@@ -983,7 +983,7 @@ The scheme attribute needs to be supplied only if more than one taxonomy has bee
  
  
  
-### change<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="change"/>
+### change<span id="change"/>
  
  
 **change**documents a change or set of changes made during the production of a source document, or during the revision of an electronic file. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-change.html) ] 
@@ -1083,7 +1083,7 @@ The who attribute may be used to point to any other element, but will typically 
  
  
  
-### choice<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="choice"/>
+### choice<span id="choice"/>
  
  
 **choice**groups a number of alternative encodings for the same point in a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html) ] 
@@ -1153,7 +1153,7 @@ An American encoding of Gulliver's Travels which retains the British spelling bu
  
  
  
-### closer<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="closer"/>
+### closer<span id="closer"/>
  
  
 **closer**groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html) ] 
@@ -1238,7 +1238,7 @@ character data
  
  
  
-### code<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="code"/>
+### code<span id="code"/>
  
  
 **code**contains literal code from some formal language such as a programming language. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-code.html) ] 
@@ -1299,7 +1299,7 @@ Character data only
  
  
  
-### corr<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="corr"/>
+### corr<span id="corr"/>
  
  
 **corr**(correction) contains the correct form of a passage apparently erroneous in the copy text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-corr.html) ] 
@@ -1385,7 +1385,7 @@ I don't know, Juan. It's so far in the past now — how <choice> <sic>we can</s
  
  
  
-### creation<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="creation"/>
+### creation<span id="creation"/>
  
  
 **creation**contains information about the creation of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-creation.html) ] 
@@ -1470,7 +1470,7 @@ The  [creation](#creation)  element may be used to record details of a text's cr
  
  
  
-### date<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="date"/>
+### date<span id="date"/>
  
  
 **date**contains a date in any format. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html) ] 
@@ -1570,7 +1570,7 @@ Given on the <date when="1977-06-12">
  
  
  
-### dateline<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="dateline"/>
+### dateline<span id="dateline"/>
  
  
 **dateline**contains a brief description of the place, date, time, etc. of production of a letter, newspaper story, or other work, prefixed or suffixed to it as a kind of heading or trailer. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-dateline.html) ] 
@@ -1654,7 +1654,7 @@ character data
  
  
  
-### distributor<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="distributor"/>
+### distributor<span id="distributor"/>
  
  
 **distributor**supplies the name of a person or other agency responsible for the distribution of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-distributor.html) ] 
@@ -1720,7 +1720,7 @@ character data
  
  
  
-### div<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="div"/>
+### div<span id="div"/>
  
  
 **div**(text division) contains a subdivision of the front, body, or back of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-div.html) ] 
@@ -1784,7 +1784,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### docAuthor<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="docAuthor"/>
+### docAuthor<span id="docAuthor"/>
  
  
 **docAuthor**(document author) contains the name of the author of the document, as given on the title page (often but not always contained in a byline). [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docAuthor.html) ] 
@@ -1858,7 +1858,7 @@ The document author's name often occurs within a byline, but the  [docAuthor](#d
  
  
  
-### docDate<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="docDate"/>
+### docDate<span id="docDate"/>
  
  
 **docDate**(document date) contains the date of a document, as given on a title page or in a dateline. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docDate.html) ] 
@@ -1936,7 +1936,7 @@ Cf. the general  [date](#date)  element in the core tag set. This specialized el
  
  
  
-### docTitle<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="docTitle"/>
+### docTitle<span id="docTitle"/>
  
  
 **docTitle**(document title) contains the title of a document, including all its constituents, as given on a title page. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docTitle.html) ] 
@@ -1996,7 +1996,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### edition<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="edition"/>
+### edition<span id="edition"/>
  
  
 **edition**describes the particularities of one edition of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-edition.html) ] 
@@ -2063,7 +2063,7 @@ character data
  
  
  
-### editionStmt<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="editionStmt"/>
+### editionStmt<span id="editionStmt"/>
  
  
 **editionStmt**(edition statement) groups information relating to one edition of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editionStmt.html) ] 
@@ -2136,7 +2136,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### editor<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="editor"/>
+### editor<span id="editor"/>
  
  
 **editor**contains a secondary statement of responsibility for a bibliographic item, for example the name of an individual, institution or organization, (or of several such) acting as editor, compiler, translator, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editor.html) ] 
@@ -2213,7 +2213,7 @@ A consistent format should be adopted.Particularly where cataloguing is likely t
  
  
  
-### editorialDecl<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="editorialDecl"/>
+### editorialDecl<span id="editorialDecl"/>
  
  
 **editorialDecl**(editorial practice declaration) provides details of editorial principles and practices applied during the encoding of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editorialDecl.html) ] 
@@ -2272,7 +2272,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### emph<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="emph"/>
+### emph<span id="emph"/>
  
  
 **emph**(emphasized) marks words or phrases which are stressed or emphasized for linguistic or rhetorical effect. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-emph.html) ] 
@@ -2355,7 +2355,7 @@ You took the car and did <emph>what</emph>?!!
  
  
  
-### encodingDesc<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="encodingDesc"/>
+### encodingDesc<span id="encodingDesc"/>
  
  
 **encodingDesc**(encoding description) documents the relationship between an electronic text and the source or sources from which it was derived. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-encodingDesc.html) ] 
@@ -2413,7 +2413,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### epigraph<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="epigraph"/>
+### epigraph<span id="epigraph"/>
  
  
 **epigraph**contains a quotation, anonymous or attributed, appearing at the start or end of a section or on a title page. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-epigraph.html) ] 
@@ -2475,7 +2475,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### fileDesc<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="fileDesc"/>
+### fileDesc<span id="fileDesc"/>
  
  
 **fileDesc**(file description) contains a full bibliographic description of an electronic file. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html) ] 
@@ -2539,7 +2539,7 @@ The major source of information for those seeking to create a catalogue entry or
  
  
  
-### foreign<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="foreign"/>
+### foreign<span id="foreign"/>
  
  
 **foreign**identifies a word or phrase as belonging to some language other than that of the surrounding text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-foreign.html) ] 
@@ -2617,7 +2617,7 @@ This is heathen Greek to you still? Your <foreign xml:lang="la">
  
  
  
-### front<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="front"/>
+### front<span id="front"/>
  
  
 **front**(front matter) contains any prefatory matter (headers, abstracts, title page, prefaces, dedications, etc.) found at the start of a document, before the main body. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-front.html) ] 
@@ -2718,7 +2718,7 @@ Because cultural conventions differ as to which elements are grouped as front ma
  
  
  
-### gap<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="gap"/>
+### gap<span id="gap"/>
  
  
 **gap**indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-gap.html) ] 
@@ -2830,7 +2830,7 @@ The  [gap](#gap) , unclear, and del core tag elements may be closely allied in u
  
  
  
-### gi<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="gi"/>
+### gi<span id="gi"/>
  
  
 **gi**(element name) contains the name (generic identifier) of an element. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-gi.html) ] 
@@ -2891,7 +2891,7 @@ This example shows the use of both a namespace prefix and the scheme attribute a
  
  
  
-### head<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="head"/>
+### head<span id="head"/>
  
  
 **head**(heading) contains any type of heading, for example the title of a section, or the heading of a list, glossary, manuscript description, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-head.html) ] 
@@ -2999,7 +2999,7 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
  
  
  
-### hi<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="hi"/>
+### hi<span id="hi"/>
  
  
 **hi**(highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hi.html) ] 
@@ -3070,7 +3070,7 @@ character data
  
  
  
-### hyphenation<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="hyphenation"/>
+### hyphenation<span id="hyphenation"/>
  
  
 **hyphenation**summarizes the way in which hyphenation in a source text has been treated in an encoded version of it. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hyphenation.html) ] 
@@ -3131,7 +3131,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### idno<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="idno"/>
+### idno<span id="idno"/>
  
  
 **idno**(identifier) supplies any form of identifier used to identify some object, such as a bibliographic item, a person, a title, an organization, etc. in a standardized way. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-idno.html) ] 
@@ -3213,7 +3213,7 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
-### item<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="item"/>
+### item<span id="item"/>
  
  
 **item**contains one component of a list. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-item.html) ] 
@@ -3292,7 +3292,7 @@ May contain simple prose or a sequence of chunks.Whatever string of characters i
  
  
  
-### keywords<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="keywords"/>
+### keywords<span id="keywords"/>
  
  
 **keywords**contains a list of keywords or phrases identifying the topic or nature of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-keywords.html) ] 
@@ -3375,7 +3375,7 @@ Each individual keyword (including compound subject headings) should be supplied
  
  
  
-### l<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="l"/>
+### l<span id="l"/>
  
  
 **l**(verse line) contains a single, possibly incomplete, line of verse. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-l.html) ] 
@@ -3444,7 +3444,7 @@ character data
  
  
  
-### language<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="language"/>
+### language<span id="language"/>
  
  
 **language**characterizes a single language or sublanguage used within a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-language.html) ] 
@@ -3523,7 +3523,7 @@ Particularly for sublanguages, an informal prose characterization should be supp
  
  
  
-### langUsage<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="langUsage"/>
+### langUsage<span id="langUsage"/>
  
  
 **langUsage**(language usage) describes the languages, sublanguages, registers, dialects, etc. represented within a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-langUsage.html) ] 
@@ -3584,7 +3584,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### lb<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="lb"/>
+### lb<span id="lb"/>
  
  
 **lb**(line beginning) marks the beginning of a new (typographic) line in some edition or version of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html) ] 
@@ -3662,7 +3662,7 @@ This example encodes typographical line breaks as a means of preserving the visu
  
  
  
-### lg<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="lg"/>
+### lg<span id="lg"/>
  
  
 **lg**(line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lg.html) ] 
@@ -3735,7 +3735,7 @@ contains verse lines or nested line groups only, possibly prefixed by a heading.
  
  
  
-### licence<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="licence"/>
+### licence<span id="licence"/>
  
  
 **licence**contains information about a licence or other legal agreement applicable to the text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-licence.html) ] 
@@ -3823,7 +3823,7 @@ A  [licence](#licence)  element should be supplied for each licence agreement ap
  
  
  
-### list<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="list"/>
+### list<span id="list"/>
  
  
 **list**contains any sequence of items organized as a list. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-list.html) ] 
@@ -3991,7 +3991,7 @@ Note that nested lists have been used so the tagging mirrors the structure indic
  
  
  
-### listBibl<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="listBibl"/>
+### listBibl<span id="listBibl"/>
  
  
 **listBibl**(citation list) contains a list of bibliographic citations of any kind. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listBibl.html) ] 
@@ -4053,7 +4053,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### listChange<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="listChange"/>
+### listChange<span id="listChange"/>
  
  
 **listChange**groups a number of change descriptions associated with either the creation of a source text or the revision of an encoded text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listChange.html) ] 
@@ -4142,7 +4142,7 @@ When this element appears within the  [creation](#creation)  element it document
  
  
  
-### listPrefixDef<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="listPrefixDef"/>
+### listPrefixDef<span id="listPrefixDef"/>
  
  
 **listPrefixDef**(list of prefix definitions) contains a list of definitions of prefixing schemes used in data.pointer values, showing how abbreviated URIs using each scheme may be expanded into full URIs. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listPrefixDef.html) ] 
@@ -4200,7 +4200,7 @@ In this example, two private URI scheme prefixes are defined and patterns are pr
  
  
  
-### milestone<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="milestone"/>
+### milestone<span id="milestone"/>
  
  
 **milestone**marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-milestone.html) ] 
@@ -4265,7 +4265,7 @@ For this element, the global n attribute indicates the new number or other value
  
  
  
-### name<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="name"/>
+### name<span id="name"/>
  
  
 **name**(name, proper noun) contains a proper noun or noun phrase. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-name.html) ] 
@@ -4345,7 +4345,7 @@ Proper nouns referring to people, places, and organizations may be tagged instea
  
  
  
-### note<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="note"/>
+### note<span id="note"/>
  
  
 **note**contains a note or annotation. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-note.html) ] 
@@ -4439,7 +4439,7 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
-### notesStmt<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="notesStmt"/>
+### notesStmt<span id="notesStmt"/>
  
  
 **notesStmt**(notes statement) collects together any notes providing information about a text additional to that recorded in other parts of the bibliographic description. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-notesStmt.html) ] 
@@ -4503,7 +4503,7 @@ Information of different kinds should not be grouped together into the same note
  
  
  
-### num<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="num"/>
+### num<span id="num"/>
  
  
 **num**(number) contains a number, written in any form. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-num.html) ] 
@@ -4589,7 +4589,7 @@ Detailed analyses of quantities and units of measure in historical documents may
  
  
  
-### orig<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="orig"/>
+### orig<span id="orig"/>
  
  
 **orig**(original form) contains a reading which is marked as following the original, rather than being normalized or corrected. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html) ] 
@@ -4673,7 +4673,7 @@ More usually, an  [orig](#orig)  will be combined with a regularized form within
  
  
  
-### p<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="p"/>
+### p<span id="p"/>
  
  
 **p**(paragraph) marks paragraphs in prose. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html) ] 
@@ -4741,7 +4741,7 @@ character data
  
  
  
-### pb<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="pb"/>
+### pb<span id="pb"/>
  
  
 **pb**(page beginning) marks the beginning of a new page in a paginated document. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html) ] 
@@ -4820,7 +4820,7 @@ A page break may be associated with a facsimile image of the page it introduces 
  
  
  
-### pc<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="pc"/>
+### pc<span id="pc"/>
  
  
 **pc**(punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pc.html) ] 
@@ -4911,7 +4911,7 @@ Example encoding of the German sentence Wir fahren in den Urlaub., encoded with 
  
  
  
-### prefixDef<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="prefixDef"/>
+### prefixDef<span id="prefixDef"/>
  
  
 **prefixDef**(prefix definition) defines a prefixing scheme used in data.pointer values, showing how abbreviated URIs using the scheme may be expanded into full URIs. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-prefixDef.html) ] 
@@ -4980,7 +4980,7 @@ The abbreviated pointer may be dereferenced to produce either an absolute or a r
  
  
  
-### profileDesc<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="profileDesc"/>
+### profileDesc<span id="profileDesc"/>
  
  
 **profileDesc**(text-profile description) provides a detailed description of non-bibliographic aspects of a text, specifically the languages and sublanguages used, the situation in which it was produced, the participants and their setting. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-profileDesc.html) ] 
@@ -5047,7 +5047,7 @@ Although the content model permits it, it is rarely meaningful to supply multipl
  
  
  
-### projectDesc<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="projectDesc"/>
+### projectDesc<span id="projectDesc"/>
  
  
 **projectDesc**(project description) describes in detail the aim or purpose for which an electronic file was encoded, together with any other relevant information concerning the process by which it was assembled or collected. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-projectDesc.html) ] 
@@ -5103,7 +5103,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### publicationStmt<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="publicationStmt"/>
+### publicationStmt<span id="publicationStmt"/>
  
  
 **publicationStmt**(publication statement) groups information concerning the publication or distribution of an electronic or other text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html) ] 
@@ -5199,7 +5199,7 @@ Where a publication statement contains several members of the model.publicationS
  
  
  
-### publisher<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="publisher"/>
+### publisher<span id="publisher"/>
  
  
 **publisher**provides the name of the organization responsible for the publication or distribution of a bibliographic item. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publisher.html) ] 
@@ -5273,7 +5273,7 @@ Use the full form of the name by which a company is usually referred to, rather 
  
  
  
-### pubPlace<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="pubPlace"/>
+### pubPlace<span id="pubPlace"/>
  
  
 **pubPlace**(publication place) contains the name of the place where a bibliographic item was published. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pubPlace.html) ] 
@@ -5339,7 +5339,7 @@ character data
  
  
  
-### q<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="q"/>
+### q<span id="q"/>
  
  
 **q**(quoted) contains material which is distinguished from the surrounding text using quotation marks or a similar method, for any one of a variety of reasons including, but not limited to: direct speech or thought, technical terms or jargon, authorial distance, quotations from elsewhere, and passages that are mentioned but not used. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-q.html) ] 
@@ -5419,7 +5419,7 @@ It is spelled <q>Tübingen</q> — to enter the letter <q>u</q> with an umlaut h
  
  
  
-### quote<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="quote"/>
+### quote<span id="quote"/>
  
  
 **quote**(quotation) contains a phrase or passage attributed by the narrator or author to some agency external to the text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-quote.html) ] 
@@ -5495,7 +5495,7 @@ Lexicography has shown little sign of being affected by the work of followers of
  
  
  
-### ref<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="ref"/>
+### ref<span id="ref"/>
  
  
 **ref**(reference) defines a reference to another location, possibly modified by additional text or comment. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-ref.html) ] 
@@ -5588,7 +5588,7 @@ See also <ref target="#locution">
  
  
  
-### reg<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="reg"/>
+### reg<span id="reg"/>
  
  
 **reg**(regularization) contains a reading which has been regularized or normalized in some sense. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html) ] 
@@ -5673,7 +5673,7 @@ It is also possible to identify the individual responsible for the regularizatio
  
  
  
-### relatedItem<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="relatedItem"/>
+### relatedItem<span id="relatedItem"/>
  
  
 **relatedItem**contains or references some other bibliographic item which is related to the present one in some specified manner, for example as a constituent or alternative version of it. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-relatedItem.html) ] 
@@ -5749,7 +5749,7 @@ If the target attribute is used to reference the related bibliographic item, the
  
  
  
-### rendition<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="rendition"/>
+### rendition<span id="rendition"/>
  
  
 **rendition**supplies information about the rendition or appearance of one or more elements in the source text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ] 
@@ -5831,7 +5831,7 @@ character data
  
  
  
-### resp<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="resp"/>
+### resp<span id="resp"/>
  
  
 **resp**(responsibility) contains a phrase describing the nature of a person's intellectual responsibility, or an organization's role in the production or distribution of a work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-resp.html) ] 
@@ -5902,7 +5902,7 @@ The attribute ref, inherited from the class  [att.canonical](#att.canonical)  ma
  
  
  
-### respStmt<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="respStmt"/>
+### respStmt<span id="respStmt"/>
  
  
 **respStmt**(statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or series, where the specialized elements for authors, editors, etc. do not suffice or do not apply. May also be used to encode information about individuals or organizations which have played a role in the production or distribution of a bibliographic work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-respStmt.html) ] 
@@ -5974,7 +5974,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### revisionDesc<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="revisionDesc"/>
+### revisionDesc<span id="revisionDesc"/>
  
  
 **revisionDesc**(revision description) summarizes the revision history for a file. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-revisionDesc.html) ] 
@@ -6042,7 +6042,7 @@ If present on this element, the status attribute should indicate the current sta
  
  
  
-### seriesStmt<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="seriesStmt"/>
+### seriesStmt<span id="seriesStmt"/>
  
  
 **seriesStmt**(series statement) groups information about the series, if any, to which a publication belongs. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html) ] 
@@ -6102,7 +6102,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### sic<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="sic"/>
+### sic<span id="sic"/>
  
  
 **sic**(Latin for thus or so) contains text reproduced although apparently incorrect or inaccurate. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sic.html) ] 
@@ -6218,7 +6218,7 @@ for his nose was as sharp as a pen, and <choice> <sic>a Table</sic> <corr>a' b
  
  
  
-### sourceDesc<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="sourceDesc"/>
+### sourceDesc<span id="sourceDesc"/>
  
  
 **sourceDesc**(source description) describes the source from which an electronic text was derived or generated, typically a bibliographic description in the case of a digitized text, or a phrase such as "born digital" for a text which has no previous existence. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html) ] 
@@ -6291,7 +6291,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### TEI<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="TEI"/>
+### TEI<span id="TEI"/>
  
  
 **TEI**(TEI document) contains a single TEI-conformant document, combining a single TEI header with one or more members of the model.resourceLike class. Multiple  [TEI](#TEI)  elements may be combined to form a teiCorpus element. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-TEI.html) ] 
@@ -6371,7 +6371,7 @@ This element is required. It is customary to specify the TEI namespace http://ww
  
  
  
-### teiHeader<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="teiHeader"/>
+### teiHeader<span id="teiHeader"/>
  
  
 **teiHeader**(TEI header) supplies descriptive and declarative metadata associated with a digital resource or set of resources. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html) ] 
@@ -6442,7 +6442,7 @@ One of the few elements unconditionally required in any TEI document.
  
  
  
-### term<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="term"/>
+### term<span id="term"/>
  
  
 **term**contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-term.html) ] 
@@ -6569,7 +6569,7 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
  
  
-### text<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="text"/>
+### text<span id="text"/>
  
  
 **text**contains a single text of any kind, whether unitary or composite, for example a poem or drama, a collection of essays, a novel, a dictionary, or a corpus sample. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-text.html) ] 
@@ -6649,7 +6649,7 @@ The body of a text may be replaced by a group of nested texts, as in the followi
  
  
  
-### textClass<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="textClass"/>
+### textClass<span id="textClass"/>
  
  
 **textClass**(text classification) groups information which describes the nature or topic of a text in terms of a standard classification scheme, thesaurus, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-textClass.html) ] 
@@ -6708,7 +6708,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### title<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="title"/>
+### title<span id="title"/>
  
  
 **title**contains a title for any kind of work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html) ] 
@@ -6821,7 +6821,7 @@ The attributes key and ref, inherited from the class  [att.canonical](#att.canon
  
  
  
-### titlePage<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="titlePage"/>
+### titlePage<span id="titlePage"/>
  
  
 **titlePage**(title page) contains the title page of a text, appearing within the front or back matter. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titlePage.html) ] 
@@ -6886,7 +6886,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### titlePart<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="titlePart"/>
+### titlePart<span id="titlePart"/>
  
  
 **titlePart**contains a subsection or division of the title of a work, as indicated on a title page. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titlePart.html) ] 
@@ -6956,7 +6956,7 @@ character data
  
  
  
-### titleStmt<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="titleStmt"/>
+### titleStmt<span id="titleStmt"/>
  
  
 **titleStmt**(title statement) groups information about the title of a work and those responsible for its content. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html) ] 
@@ -7012,7 +7012,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### trailer<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="trailer"/>
+### trailer<span id="trailer"/>
  
  
 **trailer**contains a closing title or footer appearing at the end of a division of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-trailer.html) ] 
@@ -7092,7 +7092,7 @@ From EEBO A87070
  
  
  
-### val<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="val"/>
+### val<span id="val"/>
  
  
 **val**(value) contains a single attribute value. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-val.html) ] 
@@ -7150,7 +7150,7 @@ Character data only
 ## Schema wea: Attribute classes
  
  
-### att.ascribed<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.ascribed"/>
+### att.ascribed<span id="att.ascribed"/>
  
  
 **att.ascribed** provides attributes for elements representing speech or action that can be ascribed to a specific individual. 
@@ -7192,7 +7192,7 @@ Attributes
  
  
  
-### att.ascribed.directed<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.ascribed.directed"/>
+### att.ascribed.directed<span id="att.ascribed.directed"/>
  
  
 **att.ascribed.directed** provides attributes for elements representing speech or action that can be directed at a group or individual. 
@@ -7237,7 +7237,7 @@ Attributes  [att.ascribed](#att.ascribed)  (@who)
  
  
  
-### att.breaking<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.breaking"/>
+### att.breaking<span id="att.breaking"/>
  
  
 **att.breaking** provides an attribute to indicate whether or not the element concerned is considered to mark the end of an orthographic token in the same way as whitespace. 
@@ -7271,7 +7271,7 @@ Attributes
  
  
  
-### att.canonical<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.canonical"/>
+### att.canonical<span id="att.canonical"/>
  
  
 **att.canonical** provides attributes which can be used to associate a representation such as a name or title with canonical information about the object being named or referenced. 
@@ -7322,7 +7322,7 @@ Attributes
  
  
  
-### att.cReferencing<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.cReferencing"/>
+### att.cReferencing<span id="att.cReferencing"/>
  
  
 **att.cReferencing** provides an attribute which may be used to supply a canonical reference as a means of identifying the target of a pointer. 
@@ -7350,7 +7350,7 @@ Attributes
  
  
  
-### att.datable<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.datable"/>
+### att.datable<span id="att.datable"/>
  
  
 **att.datable** provides attributes for normalization of elements that contain dates, times, or datable events. 
@@ -7397,7 +7397,7 @@ This ‘superclass’ provides attributes that can be used to provide normalized
  
  
  
-### att.datable.w3c<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.datable.w3c"/>
+### att.datable.w3c<span id="att.datable.w3c"/>
  
  
 **att.datable.w3c** provides attributes for normalization of elements that contain datable events conforming to the W3C XML Schema Part 2: Datatypes Second Edition. 
@@ -7489,7 +7489,7 @@ The value of these attributes should be a normalized representation of the date,
  
  
  
-### att.datcat<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.datcat"/>
+### att.datcat<span id="att.datcat"/>
  
  
 **att.datcat** provides the dcr:datacat and dcr:ValueDatacat attributes which are used to align XML elements or attributes with the appropriate Data Categories (DCs) defined by the ISO 12620:2009 standard and stored in the Web repository called ISOCat at  [http://www.isocat.org/](http://www.isocat.org/) . 
@@ -7541,7 +7541,7 @@ ISO 12620:2009 is a standard describing the data model and procedures for a Data
  
  
  
-### att.declarable<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.declarable"/>
+### att.declarable<span id="att.declarable"/>
  
  
 **att.declarable** provides attributes for those elements in the TEI header which may be independently selected by means of the special purpose decls attribute. 
@@ -7577,7 +7577,7 @@ The rules governing the association of declarable elements with individual parts
  
  
  
-### att.declaring<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.declaring"/>
+### att.declaring<span id="att.declaring"/>
  
  
 **att.declaring** provides attributes for elements which may be independently associated with a particular declarable element within the header, thus overriding the inherited default for that element. 
@@ -7613,7 +7613,7 @@ The rules governing the association of declarable elements with individual parts
  
  
  
-### att.dimensions<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.dimensions"/>
+### att.dimensions<span id="att.dimensions"/>
  
  
 **att.dimensions** provides attributes for describing the size of physical objects. 
@@ -7661,7 +7661,7 @@ Attributes  [att.ranging](#att.ranging)  (@atLeast, @atMost, @min, @max, @confi
  
  
  
-### att.divLike<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.divLike"/>
+### att.divLike<span id="att.divLike"/>
  
  
 **att.divLike** provides attributes common to all elements which behave in the same way as divisions. 
@@ -7691,7 +7691,7 @@ Attributes  [att.fragmentable](#att.fragmentable)  (@part)
  
  
  
-### att.docStatus<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.docStatus"/>
+### att.docStatus<span id="att.docStatus"/>
  
  
 **att.docStatus** provides attributes for use on metadata elements describing the status of a document. 
@@ -7734,7 +7734,7 @@ Attributes
  
  
  
-### att.edition<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.edition"/>
+### att.edition<span id="att.edition"/>
  
  
 **att.edition** provides attributes identifying the source edition from which some encoded feature derives. 
@@ -7794,7 +7794,7 @@ Attributes
  
  
  
-### att.editLike<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.editLike"/>
+### att.editLike<span id="att.editLike"/>
  
  
 **att.editLike** provides attributes describing the nature of an encoded scholarly intervention or interpretation of any kind. 
@@ -7840,7 +7840,7 @@ Each pointer on the source (if present) corresponding to a witness or witness gr
  
  
  
-### att.fragmentable<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.fragmentable"/>
+### att.fragmentable<span id="att.fragmentable"/>
  
  
 **att.fragmentable** provides an attribute for representing fragmentation of a structural element, typically as a consequence of some overlapping hierarchy. 
@@ -7868,7 +7868,7 @@ Attributes
  
  
  
-### att.global<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.global"/>
+### att.global<span id="att.global"/>
  
  
 **att.global** provides attributes common to all elements in the TEI encoding scheme. 
@@ -7922,7 +7922,7 @@ Attributes  [att.global.rendition](#att.global.rendition)  (@rend, @style, @ren
  
  
  
-### att.global.analytic<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.global.analytic"/>
+### att.global.analytic<span id="att.global.analytic"/>
  
  
 **att.global.analytic** provides additional global attributes for associating specific analyses or interpretations with appropriate portions of a text. 
@@ -7950,7 +7950,7 @@ Attributes
  
  
  
-### att.global.rendition<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.global.rendition"/>
+### att.global.rendition<span id="att.global.rendition"/>
  
  
 **att.global.rendition** provides rendering attributes common to all elements in the TEI encoding scheme. 
@@ -8009,7 +8009,7 @@ Attributes
  
  
  
-### att.global.responsibility<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.global.responsibility"/>
+### att.global.responsibility<span id="att.global.responsibility"/>
  
  
 **att.global.responsibility** provides attributes indicating the agent responsible for some aspect of the text, the markup or something asserted by the markup, and the degree of certainty associated with it. 
@@ -8072,7 +8072,7 @@ Blessed are the<choice> <sic>cheesemakers</sic> <corr resp="#editor" cert="h
  
  
  
-### att.global.source<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.global.source"/>
+### att.global.source<span id="att.global.source"/>
  
  
 **att.global.source** provides an attribute used by elements to point to an external source. 
@@ -8163,7 +8163,7 @@ Create a schema using components taken from the file mycompiledODD.xml.
  
  
  
-### att.internetMedia<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.internetMedia"/>
+### att.internetMedia<span id="att.internetMedia"/>
  
  
 **att.internetMedia** provides attributes for specifying the type of a computer resource using a standard taxonomy. 
@@ -8213,7 +8213,7 @@ This attribute class provides an attribute for describing a computer resource, t
  
  
  
-### att.linguistic<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.linguistic"/>
+### att.linguistic<span id="att.linguistic"/>
  
  
 **att.linguistic** provides a set of attributes concerning linguistic features of tokens, for usage within token-level elements, specifically w and  [pc](#pc)  in the analysis module. 
@@ -8357,7 +8357,7 @@ These attributes make it possible to encode simple language corpora and to add a
  
  
  
-### att.milestoneUnit<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.milestoneUnit"/>
+### att.milestoneUnit<span id="att.milestoneUnit"/>
  
  
 **att.milestoneUnit** provides an attribute to indicate the type of section which is changing at a specific milestone. 
@@ -8392,7 +8392,7 @@ Attributes
  
  
  
-### att.naming<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.naming"/>
+### att.naming<span id="att.naming"/>
  
  
 **att.naming** provides attributes common to elements which refer to named persons, places, organizations etc. 
@@ -8422,7 +8422,7 @@ Attributes  [att.canonical](#att.canonical)  (@key, @ref)
  
  
  
-### att.notated<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.notated"/>
+### att.notated<span id="att.notated"/>
  
  
 **att.notated** provides an attribute to indicate any specialised notation used for element content. 
@@ -8450,7 +8450,7 @@ Attributes
  
  
  
-### att.patternReplacement<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.patternReplacement"/>
+### att.patternReplacement<span id="att.patternReplacement"/>
  
  
 **att.patternReplacement** provides attributes for regular-expression matching and replacement. 
@@ -8480,7 +8480,7 @@ Attributes
  
  
  
-### att.personal<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.personal"/>
+### att.personal<span id="att.personal"/>
  
  
 **att.personal** (attributes for components of names usually, but not necessarily, personal names) common attributes for those elements which form part of a name usually, but not necessarily, a personal name. 
@@ -8510,7 +8510,7 @@ Attributes  [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.
  
  
  
-### att.placement<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.placement"/>
+### att.placement<span id="att.placement"/>
  
  
 **att.placement** provides attributes for describing where on the source page or object a textual element appears. 
@@ -8553,7 +8553,7 @@ Attributes
  
  
  
-### att.pointing<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.pointing"/>
+### att.pointing<span id="att.pointing"/>
  
  
 **att.pointing** provides a set of attributes used by all elements which point to other elements by means of one or more URI references. 
@@ -8592,7 +8592,7 @@ In the example above, the linkGrp combines pointers at parallel fragments of the
  
  
  
-### att.ranging<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.ranging"/>
+### att.ranging<span id="att.ranging"/>
  
  
 **att.ranging** provides attributes for describing numerical ranges. 
@@ -8643,7 +8643,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike">
  
  
  
-### att.segLike<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.segLike"/>
+### att.segLike<span id="att.segLike"/>
  
  
 **att.segLike** provides attributes for elements used for arbitrary segmentation. 
@@ -8671,7 +8671,7 @@ Attributes  [att.datcat](#att.datcat)  (@datcat, @valueDatcat)  [att.fragmentab
  
  
  
-### att.sortable<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.sortable"/>
+### att.sortable<span id="att.sortable"/>
  
  
 **att.sortable** provides attributes for elements in lists or groups that are sortable, but whose sorting key cannot be derived mechanically from the element content. 
@@ -8708,7 +8708,7 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
  
  
  
-### att.spanning<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.spanning"/>
+### att.spanning<span id="att.spanning"/>
  
  
 **att.spanning** provides attributes for elements which delimit a span of text by pointing mechanisms rather than by enclosing it. 
@@ -8744,7 +8744,7 @@ The span is defined as running in document order from the start of the content o
  
  
  
-### att.styleDef<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.styleDef"/>
+### att.styleDef<span id="att.styleDef"/>
  
  
 **att.styleDef** provides attributes to specify the name of a formal definition language used to provide formatting or rendition information. 
@@ -8774,7 +8774,7 @@ Attributes
  
  
  
-### att.timed<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.timed"/>
+### att.timed<span id="att.timed"/>
  
  
 **att.timed** provides attributes common to those elements which have a duration in time, expressed either absolutely or by reference to an alignment map. 
@@ -8804,7 +8804,7 @@ Attributes
  
  
  
-### att.typed<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.typed"/>
+### att.typed<span id="att.typed"/>
  
 **Members**
  
@@ -8845,7 +8845,7 @@ When appropriate, values from an established typology should be used. Alternativ
  
  
  
-### att.written<xh:span xmlns:xh="http://www.w3.org/1999/xhtml" id="att.written"/>
+### att.written<span id="att.written"/>
  
  
 **att.written** provides an attribute to indicate the hand in which the content of an element was written in the source being transcribed. 
