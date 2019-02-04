@@ -48,7 +48,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [profileDesc](#profileDesc) 
+**header:** [profileDesc](#profileDesc) 
  
  
  
@@ -61,7 +61,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [list](#list)  [p](#p) 
+**core:** [list](#list)  [p](#p) 
  
  
  
@@ -117,11 +117,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -182,9 +182,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl) 
+**core:** [bibl](#bibl) 
  
-**header: ** [editionStmt](#editionStmt)  [titleStmt](#titleStmt) 
+**header:** [editionStmt](#editionStmt)  [titleStmt](#titleStmt) 
  
  
  
@@ -197,13 +197,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -257,7 +257,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [publicationStmt](#publicationStmt) 
+**header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -270,11 +270,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -323,9 +323,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl) 
+**core:** [bibl](#bibl) 
  
-**header: ** [publicationStmt](#publicationStmt) 
+**header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -338,9 +338,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [p](#p) 
+**core:** [p](#p) 
  
-**header: ** [licence](#licence) 
+**header:** [licence](#licence) 
  
  
  
@@ -409,7 +409,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**textstructure: ** [text](#text) 
+**textstructure:** [text](#text) 
  
  
  
@@ -422,9 +422,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [gap](#gap)  [head](#head)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) 
+**core:** [gap](#gap)  [head](#head)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -486,11 +486,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl)  [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
+**core:** [bibl](#bibl)  [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
  
-**header: ** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
+**header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
  
-**textstructure: ** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -503,13 +503,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [availability](#availability)  [distributor](#distributor)  [edition](#edition)  [idno](#idno) 
+**header:** [availability](#availability)  [distributor](#distributor)  [edition](#edition)  [idno](#idno) 
  
-**tagdocs: ** [code](#code) 
+**tagdocs:** [code](#code) 
  
 character data
  
@@ -596,11 +596,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
  
-**header: ** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
+**header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
  
-**textstructure: ** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -613,7 +613,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [editionStmt](#editionStmt)  [fileDesc](#fileDesc)  [notesStmt](#notesStmt)  [profileDesc](#profileDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc)  [titleStmt](#titleStmt) 
+**header:** [editionStmt](#editionStmt)  [fileDesc](#fileDesc)  [notesStmt](#notesStmt)  [profileDesc](#profileDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc)  [titleStmt](#titleStmt) 
  
  
  
@@ -656,7 +656,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**textstructure: ** [text](#text) 
+**textstructure:** [text](#text) 
  
  
  
@@ -669,11 +669,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
+**core:** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
  
-**header: ** [biblFull](#biblFull) 
+**header:** [biblFull](#biblFull) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -716,9 +716,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [lg](#lg)  [list](#list) 
+**core:** [lg](#lg)  [list](#list) 
  
-**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -731,15 +731,15 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
-**textstructure: ** [docAuthor](#docAuthor) 
+**textstructure:** [docAuthor](#docAuthor) 
  
 character data
  
@@ -834,7 +834,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [category](#category) 
+**header:** [category](#category) 
  
  
  
@@ -847,7 +847,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [category](#category) 
+**header:** [category](#category) 
  
  
  
@@ -938,7 +938,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [textClass](#textClass) 
+**header:** [textClass](#textClass) 
  
  
  
@@ -1006,7 +1006,7 @@ Attributes  [att.ascribed](#att.ascribed)  (@who)  [att.datable](#att.datable) 
  
  
  
-**header: ** [listChange](#listChange)  [revisionDesc](#revisionDesc) 
+**header:** [listChange](#listChange)  [revisionDesc](#revisionDesc) 
  
  
  
@@ -1019,13 +1019,13 @@ Attributes  [att.ascribed](#att.ascribed)  (@who)  [att.datable](#att.datable) 
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -1102,13 +1102,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1121,7 +1121,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) 
+**core:** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) 
  
  
  
@@ -1172,9 +1172,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [lg](#lg)  [list](#list) 
+**core:** [lg](#lg)  [list](#list) 
  
-**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
  
@@ -1187,15 +1187,15 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
-**textstructure: ** [dateline](#dateline) 
+**textstructure:** [dateline](#dateline) 
  
 character data
  
@@ -1261,11 +1261,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1318,13 +1318,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1337,13 +1337,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -1404,7 +1404,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [profileDesc](#profileDesc) 
+**header:** [profileDesc](#profileDesc) 
  
  
  
@@ -1417,11 +1417,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [name](#name)  [num](#num)  [ref](#ref)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [name](#name)  [num](#num)  [ref](#ref)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno)  [listChange](#listChange) 
+**header:** [idno](#idno)  [listChange](#listChange) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -1489,11 +1489,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1506,13 +1506,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -1589,9 +1589,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [lg](#lg)  [list](#list) 
+**core:** [lg](#lg)  [list](#list) 
  
-**textstructure: ** [body](#body)  [closer](#closer)  [div](#div)  [front](#front) 
+**textstructure:** [body](#body)  [closer](#closer)  [div](#div)  [front](#front) 
  
  
  
@@ -1604,15 +1604,15 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
-**textstructure: ** [docDate](#docDate) 
+**textstructure:** [docDate](#docDate) 
  
 character data
  
@@ -1673,9 +1673,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl) 
+**core:** [bibl](#bibl) 
  
-**header: ** [publicationStmt](#publicationStmt) 
+**header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -1688,13 +1688,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -1739,7 +1739,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
  
@@ -1752,11 +1752,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
+**core:** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
  
-**header: ** [biblFull](#biblFull) 
+**header:** [biblFull](#biblFull) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -1803,9 +1803,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [lg](#lg)  [list](#list) 
+**core:** [lg](#lg)  [list](#list) 
  
-**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -1818,13 +1818,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -1881,9 +1881,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [lg](#lg)  [list](#list) 
+**core:** [lg](#lg)  [list](#list) 
  
-**textstructure: ** [back](#back)  [body](#body)  [dateline](#dateline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+**textstructure:** [back](#back)  [body](#body)  [dateline](#dateline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -1896,13 +1896,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -1955,7 +1955,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**textstructure: ** [back](#back)  [front](#front)  [titlePage](#titlePage) 
+**textstructure:** [back](#back)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -1968,9 +1968,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
  
-**textstructure: ** [titlePart](#titlePart) 
+**textstructure:** [titlePart](#titlePart) 
  
  
  
@@ -2015,9 +2015,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl) 
+**core:** [bibl](#bibl) 
  
-**header: ** [editionStmt](#editionStmt) 
+**header:** [editionStmt](#editionStmt) 
  
  
  
@@ -2030,13 +2030,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -2082,7 +2082,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+**header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
  
@@ -2095,9 +2095,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [editor](#editor)  [p](#p)  [respStmt](#respStmt) 
+**core:** [author](#author)  [editor](#editor)  [p](#p)  [respStmt](#respStmt) 
  
-**header: ** [edition](#edition) 
+**header:** [edition](#edition) 
  
  
  
@@ -2155,9 +2155,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl) 
+**core:** [bibl](#bibl) 
  
-**header: ** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
+**header:** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
  
  
  
@@ -2170,13 +2170,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -2232,7 +2232,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [encodingDesc](#encodingDesc) 
+**header:** [encodingDesc](#encodingDesc) 
  
  
  
@@ -2245,9 +2245,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [p](#p) 
+**core:** [p](#p) 
  
-**header: ** [hyphenation](#hyphenation) 
+**header:** [hyphenation](#hyphenation) 
  
  
  
@@ -2291,11 +2291,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2308,13 +2308,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -2374,7 +2374,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [teiHeader](#teiHeader) 
+**header:** [teiHeader](#teiHeader) 
  
  
  
@@ -2387,9 +2387,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [p](#p) 
+**core:** [p](#p) 
  
-**header: ** [editorialDecl](#editorialDecl)  [listPrefixDef](#listPrefixDef)  [projectDesc](#projectDesc) 
+**header:** [editorialDecl](#editorialDecl)  [listPrefixDef](#listPrefixDef)  [projectDesc](#projectDesc) 
  
  
  
@@ -2432,9 +2432,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [lg](#lg)  [list](#list) 
+**core:** [lg](#lg)  [list](#list) 
  
-**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -2447,9 +2447,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl)  [gap](#gap)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
+**core:** [bibl](#bibl)  [gap](#gap)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
  
-**header: ** [biblFull](#biblFull) 
+**header:** [biblFull](#biblFull) 
  
  
  
@@ -2494,7 +2494,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [biblFull](#biblFull)  [teiHeader](#teiHeader) 
+**header:** [biblFull](#biblFull)  [teiHeader](#teiHeader) 
  
  
  
@@ -2507,7 +2507,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [editionStmt](#editionStmt)  [notesStmt](#notesStmt)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc)  [titleStmt](#titleStmt) 
+**header:** [editionStmt](#editionStmt)  [notesStmt](#notesStmt)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc)  [titleStmt](#titleStmt) 
  
  
  
@@ -2558,11 +2558,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2575,13 +2575,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -2636,7 +2636,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**textstructure: ** [text](#text) 
+**textstructure:** [text](#text) 
  
  
  
@@ -2649,9 +2649,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [gap](#gap)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) 
+**core:** [gap](#gap)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2743,11 +2743,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
  
-**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2853,11 +2853,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2910,9 +2910,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [lg](#lg)  [list](#list)  [listBibl](#listBibl) 
+**core:** [lg](#lg)  [list](#list)  [listBibl](#listBibl) 
  
-**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
  
@@ -2925,13 +2925,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -3018,11 +3018,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3035,13 +3035,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -3093,7 +3093,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [editorialDecl](#editorialDecl) 
+**header:** [editorialDecl](#editorialDecl) 
  
  
  
@@ -3106,7 +3106,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [p](#p) 
+**core:** [p](#p) 
  
  
  
@@ -3154,11 +3154,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [idno](#idno)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition)  [seriesStmt](#seriesStmt) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [idno](#idno)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition)  [seriesStmt](#seriesStmt) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3171,7 +3171,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
 character data
  
@@ -3232,7 +3232,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [list](#list) 
+**core:** [list](#list) 
  
  
  
@@ -3245,13 +3245,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -3315,7 +3315,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [textClass](#textClass) 
+**header:** [textClass](#textClass) 
  
  
  
@@ -3328,7 +3328,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [list](#list)  [term](#term) 
+**core:** [list](#list)  [term](#term) 
  
  
  
@@ -3394,11 +3394,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
  
-**header: ** [change](#change)  [licence](#licence) 
+**header:** [change](#change)  [licence](#licence) 
  
-**textstructure: ** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3411,13 +3411,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -3469,7 +3469,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [langUsage](#langUsage) 
+**header:** [langUsage](#langUsage) 
  
  
  
@@ -3482,11 +3482,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -3542,7 +3542,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [profileDesc](#profileDesc) 
+**header:** [profileDesc](#profileDesc) 
  
  
  
@@ -3555,9 +3555,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [p](#p) 
+**core:** [p](#p) 
  
-**header: ** [language](#language) 
+**header:** [language](#language) 
  
  
  
@@ -3603,11 +3603,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
  
-**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3681,11 +3681,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
  
-**header: ** [change](#change)  [licence](#licence) 
+**header:** [change](#change)  [licence](#licence) 
  
-**textstructure: ** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3698,9 +3698,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+**core:** [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -3754,7 +3754,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [availability](#availability) 
+**header:** [availability](#availability) 
  
  
  
@@ -3767,13 +3767,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -3846,11 +3846,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
  
-**header: ** [abstract](#abstract)  [change](#change)  [keywords](#keywords)  [licence](#licence)  [rendition](#rendition)  [revisionDesc](#revisionDesc)  [sourceDesc](#sourceDesc) 
+**header:** [abstract](#abstract)  [change](#change)  [keywords](#keywords)  [licence](#licence)  [rendition](#rendition)  [revisionDesc](#revisionDesc)  [sourceDesc](#sourceDesc) 
  
-**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3863,9 +3863,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [gap](#gap)  [head](#head)  [item](#item)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+**core:** [gap](#gap)  [head](#head)  [item](#item)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -4010,11 +4010,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
  
-**header: ** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
+**header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
  
-**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4027,9 +4027,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [pb](#pb) 
+**core:** [bibl](#bibl)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [pb](#pb) 
  
-**header: ** [biblFull](#biblFull) 
+**header:** [biblFull](#biblFull) 
  
  
  
@@ -4076,7 +4076,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [creation](#creation)  [listChange](#listChange)  [revisionDesc](#revisionDesc) 
+**header:** [creation](#creation)  [listChange](#listChange)  [revisionDesc](#revisionDesc) 
  
  
  
@@ -4089,7 +4089,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [change](#change)  [listChange](#listChange) 
+**header:** [change](#change)  [listChange](#listChange) 
  
  
  
@@ -4161,7 +4161,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [encodingDesc](#encodingDesc)  [listPrefixDef](#listPrefixDef) 
+**header:** [encodingDesc](#encodingDesc)  [listPrefixDef](#listPrefixDef) 
  
  
  
@@ -4174,7 +4174,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [listPrefixDef](#listPrefixDef)  [prefixDef](#prefixDef) 
+**header:** [listPrefixDef](#listPrefixDef)  [prefixDef](#prefixDef) 
  
  
  
@@ -4219,11 +4219,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
  
-**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4284,11 +4284,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4301,13 +4301,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -4370,11 +4370,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [notesStmt](#notesStmt) 
+**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [notesStmt](#notesStmt) 
  
-**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4387,13 +4387,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -4458,7 +4458,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+**header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
  
@@ -4471,7 +4471,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [note](#note)  [relatedItem](#relatedItem) 
+**core:** [note](#note)  [relatedItem](#relatedItem) 
  
  
  
@@ -4528,11 +4528,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4545,13 +4545,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -4608,13 +4608,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4627,13 +4627,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -4692,11 +4692,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [item](#item)  [note](#note)  [q](#q)  [quote](#quote) 
+**core:** [item](#item)  [note](#note)  [q](#q)  [quote](#quote) 
  
-**header: ** [abstract](#abstract)  [availability](#availability)  [change](#change)  [editionStmt](#editionStmt)  [editorialDecl](#editorialDecl)  [encodingDesc](#encodingDesc)  [hyphenation](#hyphenation)  [langUsage](#langUsage)  [licence](#licence)  [prefixDef](#prefixDef)  [projectDesc](#projectDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc) 
+**header:** [abstract](#abstract)  [availability](#availability)  [change](#change)  [editionStmt](#editionStmt)  [editorialDecl](#editorialDecl)  [encodingDesc](#encodingDesc)  [hyphenation](#hyphenation)  [langUsage](#langUsage)  [licence](#licence)  [prefixDef](#prefixDef)  [projectDesc](#projectDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc) 
  
-**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front) 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front) 
  
  
  
@@ -4709,13 +4709,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -4760,11 +4760,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
  
-**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4847,11 +4847,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4864,7 +4864,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) 
+**core:** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) 
  
 character data
  
@@ -4934,7 +4934,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [listPrefixDef](#listPrefixDef) 
+**header:** [listPrefixDef](#listPrefixDef) 
  
  
  
@@ -4947,7 +4947,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [p](#p) 
+**core:** [p](#p) 
  
  
  
@@ -4999,7 +4999,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [biblFull](#biblFull)  [teiHeader](#teiHeader) 
+**header:** [biblFull](#biblFull)  [teiHeader](#teiHeader) 
  
  
  
@@ -5012,7 +5012,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [abstract](#abstract)  [creation](#creation)  [langUsage](#langUsage)  [textClass](#textClass) 
+**header:** [abstract](#abstract)  [creation](#creation)  [langUsage](#langUsage)  [textClass](#textClass) 
  
  
  
@@ -5066,7 +5066,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [encodingDesc](#encodingDesc) 
+**header:** [encodingDesc](#encodingDesc) 
  
  
  
@@ -5079,7 +5079,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [p](#p) 
+**core:** [p](#p) 
  
  
  
@@ -5122,7 +5122,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+**header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
  
@@ -5135,9 +5135,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [date](#date)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref) 
+**core:** [date](#date)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref) 
  
-**header: ** [authority](#authority)  [availability](#availability)  [distributor](#distributor)  [idno](#idno) 
+**header:** [authority](#authority)  [availability](#availability)  [distributor](#distributor)  [idno](#idno) 
  
  
  
@@ -5218,9 +5218,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl) 
+**core:** [bibl](#bibl) 
  
-**header: ** [publicationStmt](#publicationStmt) 
+**header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -5233,13 +5233,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -5292,9 +5292,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl) 
+**core:** [bibl](#bibl) 
  
-**header: ** [publicationStmt](#publicationStmt) 
+**header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -5307,13 +5307,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -5362,11 +5362,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5379,13 +5379,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -5438,11 +5438,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5455,13 +5455,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -5514,11 +5514,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5531,13 +5531,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -5607,13 +5607,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5626,13 +5626,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -5696,9 +5696,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl) 
+**core:** [bibl](#bibl) 
  
-**header: ** [notesStmt](#notesStmt) 
+**header:** [notesStmt](#notesStmt) 
  
  
  
@@ -5711,9 +5711,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl)  [listBibl](#listBibl)  [ref](#ref) 
+**core:** [bibl](#bibl)  [listBibl](#listBibl)  [ref](#ref) 
  
-**header: ** [biblFull](#biblFull) 
+**header:** [biblFull](#biblFull) 
  
  
  
@@ -5797,11 +5797,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [num](#num)  [q](#q)  [quote](#quote)  [ref](#ref)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [num](#num)  [q](#q)  [quote](#quote)  [ref](#ref)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -5850,7 +5850,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [respStmt](#respStmt) 
+**core:** [respStmt](#respStmt) 
  
  
  
@@ -5863,11 +5863,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -5921,9 +5921,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl) 
+**core:** [bibl](#bibl) 
  
-**header: ** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
+**header:** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
  
  
  
@@ -5936,7 +5936,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [name](#name)  [note](#note)  [resp](#resp) 
+**core:** [name](#name)  [note](#note)  [resp](#resp) 
  
  
  
@@ -5993,7 +5993,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [teiHeader](#teiHeader) 
+**header:** [teiHeader](#teiHeader) 
  
  
  
@@ -6006,9 +6006,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [list](#list) 
+**core:** [list](#list) 
  
-**header: ** [change](#change)  [listChange](#listChange) 
+**header:** [change](#change)  [listChange](#listChange) 
  
  
  
@@ -6061,7 +6061,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+**header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
  
@@ -6074,9 +6074,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [editor](#editor)  [p](#p)  [respStmt](#respStmt)  [title](#title) 
+**core:** [editor](#editor)  [p](#p)  [respStmt](#respStmt)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
  
  
@@ -6121,13 +6121,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -6140,13 +6140,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -6237,7 +6237,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+**header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
  
@@ -6250,9 +6250,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [bibl](#bibl)  [list](#list)  [listBibl](#listBibl)  [p](#p) 
+**core:** [bibl](#bibl)  [list](#list)  [listBibl](#listBibl)  [p](#p) 
  
-**header: ** [biblFull](#biblFull) 
+**header:** [biblFull](#biblFull) 
  
  
  
@@ -6323,9 +6323,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [teiHeader](#teiHeader) 
+**header:** [teiHeader](#teiHeader) 
  
-**textstructure: ** [text](#text) 
+**textstructure:** [text](#text) 
  
  
  
@@ -6390,7 +6390,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**textstructure: ** [TEI](#TEI) 
+**textstructure:** [TEI](#TEI) 
  
  
  
@@ -6403,7 +6403,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [encodingDesc](#encodingDesc)  [fileDesc](#fileDesc)  [profileDesc](#profileDesc)  [revisionDesc](#revisionDesc) 
+**header:** [encodingDesc](#encodingDesc)  [fileDesc](#fileDesc)  [profileDesc](#profileDesc)  [revisionDesc](#revisionDesc) 
  
  
  
@@ -6461,11 +6461,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [keywords](#keywords)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [keywords](#keywords)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -6478,13 +6478,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [idno](#idno) 
+**header:** [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -6588,7 +6588,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**textstructure: ** [TEI](#TEI) 
+**textstructure:** [TEI](#TEI) 
  
  
  
@@ -6601,9 +6601,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
  
-**textstructure: ** [back](#back)  [body](#body)  [front](#front) 
+**textstructure:** [back](#back)  [body](#body)  [front](#front) 
  
  
  
@@ -6668,7 +6668,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [profileDesc](#profileDesc) 
+**header:** [profileDesc](#profileDesc) 
  
  
  
@@ -6681,7 +6681,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [catRef](#catRef)  [keywords](#keywords) 
+**header:** [catRef](#catRef)  [keywords](#keywords) 
  
  
  
@@ -6733,11 +6733,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -6750,13 +6750,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -6844,7 +6844,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**textstructure: ** [back](#back)  [front](#front) 
+**textstructure:** [back](#back)  [front](#front) 
  
  
  
@@ -6857,9 +6857,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
  
-**textstructure: ** [byline](#byline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePart](#titlePart) 
+**textstructure:** [byline](#byline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePart](#titlePart) 
  
  
  
@@ -6909,7 +6909,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**textstructure: ** [back](#back)  [docTitle](#docTitle)  [front](#front)  [titlePage](#titlePage) 
+**textstructure:** [back](#back)  [docTitle](#docTitle)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -6922,13 +6922,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -6975,7 +6975,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+**header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
  
@@ -6988,7 +6988,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [editor](#editor)  [respStmt](#respStmt)  [title](#title) 
+**core:** [author](#author)  [editor](#editor)  [respStmt](#respStmt)  [title](#title) 
  
  
  
@@ -7031,9 +7031,9 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [lg](#lg)  [list](#list) 
+**core:** [lg](#lg)  [list](#list) 
  
-**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
  
@@ -7046,13 +7046,13 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**analysis: ** [pc](#pc) 
+**analysis:** [pc](#pc) 
  
-**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [biblFull](#biblFull)  [idno](#idno) 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
  
-**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
  
 character data
  
@@ -7111,11 +7111,11 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-**core: ** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
  
-**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
  
-**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
