@@ -107,7 +107,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Sample values include:**: **TEI**: (Text Encoding Initiative) this attribute is part of the TEI scheme. [Default]   ; **DBK**: (Docbook) this attribute is part of the Docbook scheme.  ; **XX**: (unknown) this attribute is part of an unknown scheme.  ; **imaginary**: the attribute is from a non-existent scheme, for illustrative purposes only  ; **XHTML**: the attribute is part of the XHTML language  ; **XML**: the attribute is part of the XML language  ; **XI**: the attribute is defined in the xInclude schema 
+*  **Sample values include:**: 
+ 
+     *    **TEI**: (Text Encoding Initiative) this attribute is part of the TEI scheme. [Default] 
+     *    **DBK**: (Docbook) this attribute is part of the Docbook scheme.
+     *    **XX**: (unknown) this attribute is part of an unknown scheme.
+     *    **imaginary**: the attribute is from a non-existent scheme, for illustrative purposes only
+     *    **XHTML**: the attribute is part of the XHTML language
+     *    **XML**: the attribute is part of the XML language
+     *    **XI**: the attribute is defined in the xInclude schema
  
  
  
@@ -305,7 +313,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **free**: the text is freely available.  ; **unknown**: the status of the text is unknown.  ; **restricted**: the text is not freely available. 
+*  **Legal values are:**: 
+ 
+     *    **free**: the text is freely available.
+     *    **unknown**: the status of the text is unknown.
+     *    **restricted**: the text is not freely available.
  
  
  
@@ -2584,7 +2596,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**:  1–∞ occurrences of teidata.enumerated separated by whitespace
-*  **Suggested values include:**: **cancelled**: [No description available]  ; **deleted**: [No description available]  ; **editorial**: for features omitted from transcription due to editorial policy  ; **illegible**: [No description available]  ; **inaudible**: [No description available]  ; **irrelevant**: [No description available]  ; **sampling**: [No description available] 
+*  **Suggested values include:**: 
+ 
+     *    **cancelled**: [No description available]
+     *    **deleted**: [No description available]
+     *    **editorial**: for features omitted from transcription due to editorial policy
+     *    **illegible**: [No description available]
+     *    **inaudible**: [No description available]
+     *    **irrelevant**: [No description available]
+     *    **sampling**: [No description available]
  
  
  
@@ -2593,7 +2613,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Sample values include:**: **rubbing**: damage results from rubbing of the leaf edges  ; **mildew**: damage results from mildew on the leaf surface  ; **smoke**: damage results from smoke 
+*  **Sample values include:**: 
+ 
+     *    **rubbing**: damage results from rubbing of the leaf edges
+     *    **mildew**: damage results from mildew on the leaf surface
+     *    **smoke**: damage results from smoke
  
  
  
@@ -2709,7 +2733,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Sample values include:**: **TEI**: this element is part of the TEI scheme. [Default]   ; **DBK**: (docbook) this element is part of the Docbook scheme.  ; **XX**: (unknown) this element is part of an unknown scheme.  ; **Schematron**: this element is from Schematron.  ; **HTML**: this element is from the HTML scheme. 
+*  **Sample values include:**: 
+ 
+     *    **TEI**: this element is part of the TEI scheme. [Default] 
+     *    **DBK**: (docbook) this element is part of the Docbook scheme.
+     *    **XX**: (unknown) this element is part of an unknown scheme.
+     *    **Schematron**: this element is from Schematron.
+     *    **HTML**: this element is from the HTML scheme.
  
  
  
@@ -2941,13 +2971,18 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **all**: all end-of-line hyphenation has been retained, even though the lineation of the original
+*  **Legal values are:**: 
+ 
+     *    **all**: all end-of-line hyphenation has been retained, even though the lineation of the original
                                                 may not have been.
-                                               ; **some**: end-of-line hyphenation has been retained in some cases. [Default]   ; **hard**: all soft end-of-line hyphenation has been removed: any remaining end-of-line hyphenation
+                                             
+     *    **some**: end-of-line hyphenation has been retained in some cases. [Default] 
+     *    **hard**: all soft end-of-line hyphenation has been removed: any remaining end-of-line hyphenation
                                                 should be retained.
-                                               ; **none**: all end-of-line hyphenation has been removed: any remaining hyphenation occurred within
+                                             
+     *    **none**: all end-of-line hyphenation has been removed: any remaining hyphenation occurred within
                                                 the line.
-                                              
+                                             
  
  
  
@@ -3013,22 +3048,30 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 *  **Derived from**:  [att.typed](#att.typed) 
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Suggested values include:**: **ISBN**: International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit
+*  **Suggested values include:**: 
+ 
+     *    **ISBN**: International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit
                                                 identifying number assigned by the publishing industry to a published book or similar
-                                                item, registered with the International ISBN Agency.  ; **ISSN**: International Standard Serial Number: an eight-digit number to uniquely identify a
+                                                item, registered with the International ISBN Agency.
+     *    **ISSN**: International Standard Serial Number: an eight-digit number to uniquely identify a
                                                 serial publication.
-                                               ; **DOI**: Digital Object Identifier: a unique string of letters and numbers assigned to an electronic
+                                             
+     *    **DOI**: Digital Object Identifier: a unique string of letters and numbers assigned to an electronic
                                                 document.
-                                               ; **URI**: Uniform Resource Identifier: a string of characters to uniquely identify a resource
+                                             
+     *    **URI**: Uniform Resource Identifier: a string of characters to uniquely identify a resource
                                                 which usually contains indication of the means of accessing that resource, the name
                                                 of its host, and its filepath.
-                                               ; **VIAF**: A data number in the Virtual Internet Authority File assigned to link different names
+                                             
+     *    **VIAF**: A data number in the Virtual Internet Authority File assigned to link different names
                                                 in catalogs around the world for the same entity.
-                                               ; **ESTC**: English Short-Title Catalogue number: an identifying number assigned to a document
+                                             
+     *    **ESTC**: English Short-Title Catalogue number: an identifying number assigned to a document
                                                 in English printed in the British Isles or North America before 1801.
-                                               ; **OCLC**: OCLC control number (record number) for the union catalog record in WorldCat, a union
+                                             
+     *    **OCLC**: OCLC control number (record number) for the union catalog record in WorldCat, a union
                                                 catalog for member libraries in the Online Computer Library Center global cooperative.
-                                              
+                                             
  
  
  
@@ -3699,14 +3742,20 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 *  **Derived from**:  [att.typed](#att.typed) 
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Suggested values include:**: **gloss**: each list item glosses some term or concept, which is given by a label element preceding the list item.
-                                               ; **index**: each list item is an entry in an index such as the alphabetical topical index at the
+*  **Suggested values include:**: 
+ 
+     *    **gloss**: each list item glosses some term or concept, which is given by a label element preceding the list item.
+                                             
+     *    **index**: each list item is an entry in an index such as the alphabetical topical index at the
                                                 back of a print volume.
-                                               ; **instructions**: each list item is a step in a sequence of instructions, as in a recipe.  ; **litany**: each list item is one of a sequence of petitions, supplications or invocations, typically
+                                             
+     *    **instructions**: each list item is a step in a sequence of instructions, as in a recipe.
+     *    **litany**: each list item is one of a sequence of petitions, supplications or invocations, typically
                                                 in a religious ritual.
-                                               ; **syllogism**: each list item is part of an argument consisting of two or more propositions and a
+                                             
+     *    **syllogism**: each list item is part of an argument consisting of two or more propositions and a
                                                 final conclusion derived from them.
-                                              
+                                             
 *  **Note**: Previous versions of these Guidelines recommended the use of type on  [list](#list)  to encode the rendering or appearance of a list (whether it was bulleted, numbered, etc.). The current recommendation is to use the rend or style attributes for these aspects of a list, while using type for the more appropriate task of characterizing the nature of the content of a list. 
 *  **Note**: The formal syntax of the element declarations allows `label` tags to be omitted from lists tagged &lt;list type="gloss"&gt;; this is however a semantic error. 
  
@@ -4381,7 +4430,12 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Suggested values include:**: **cardinal**: absolute number, e.g. 21, 21.5  ; **ordinal**: ordinal number, e.g. 21st  ; **fraction**: fraction, e.g. one half or three-quarters  ; **percentage**: a percentage 
+*  **Suggested values include:**: 
+ 
+     *    **cardinal**: absolute number, e.g. 21, 21.5
+     *    **ordinal**: ordinal number, e.g. 21st
+     *    **fraction**: fraction, e.g. one half or three-quarters
+     *    **percentage**: a percentage
 *  **Note**: If a different typology is desired, other values can be used for this attribute.
  
  
@@ -4692,7 +4746,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **strong**: the punctuation mark is a word separator  ; **weak**: the punctuation mark is not a word separator  ; **inter**: the punctuation mark may or may not be a word separator 
+*  **Legal values are:**: 
+ 
+     *    **strong**: the punctuation mark is a word separator
+     *    **weak**: the punctuation mark is not a word separator
+     *    **inter**: the punctuation mark may or may not be a word separator
  
  
  
@@ -5200,7 +5258,17 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Suggested values include:**: **spoken**: representation of speech  ; **thought**: representation of thought, e.g. internal monologue  ; **written**: quotation from a written source  ; **soCalled**: authorial distance  ; **foreign**: [No description available]  ; **distinct**: linguistically distinct  ; **term**: technical term  ; **emph**: rhetorically emphasized  ; **mentioned**: refering to itself, not its normal referent 
+*  **Suggested values include:**: 
+ 
+     *    **spoken**: representation of speech
+     *    **thought**: representation of thought, e.g. internal monologue
+     *    **written**: quotation from a written source
+     *    **soCalled**: authorial distance
+     *    **foreign**: [No description available]
+     *    **distinct**: linguistically distinct
+     *    **term**: technical term
+     *    **emph**: rhetorically emphasized
+     *    **mentioned**: refering to itself, not its normal referent
  
  
  
@@ -5594,7 +5662,12 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Sample values include:**: **first-line**: styling applies to the first line of the target element  ; **first-letter**: styling applies to the first letter of the target element  ; **before**: styling should be applied immediately before the content of the target element  ; **after**: styling should be applied immediately after the content of the target element 
+*  **Sample values include:**: 
+ 
+     *    **first-line**: styling applies to the first line of the target element
+     *    **first-letter**: styling applies to the first letter of the target element
+     *    **before**: styling should be applied immediately before the content of the target element
+     *    **after**: styling should be applied immediately after the content of the target element
  
  
  
@@ -6518,9 +6591,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 *  **Derived from**:  [att.typed](#att.typed) 
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Sample values include:**: **main**: main title  ; **sub**: (subordinate) subtitle, title of part  ; **alt**: (alternate) alternate title, often in another language, by which the work is also
+*  **Sample values include:**: 
+ 
+     *    **main**: main title
+     *    **sub**: (subordinate) subtitle, title of part
+     *    **alt**: (alternate) alternate title, often in another language, by which the work is also
                                                 known
-                                               ; **short**: abbreviated form of title  ; **desc**: (descriptive) descriptive paraphrase of the work functioning as a title 
+                                             
+     *    **short**: abbreviated form of title
+     *    **desc**: (descriptive) descriptive paraphrase of the work functioning as a title
 *  **Note**: This attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single  [title](#title)  element. 
  
  
@@ -6530,17 +6609,23 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **a**: (analytic) the title applies to an analytic item, such as an article, poem, or other
+*  **Legal values are:**: 
+ 
+     *    **a**: (analytic) the title applies to an analytic item, such as an article, poem, or other
                                                 work published as part of a larger item.
-                                               ; **m**: (monographic) the title applies to a monograph such as a book or other item considered
+                                             
+     *    **m**: (monographic) the title applies to a monograph such as a book or other item considered
                                                 to be a distinct publication, including single volumes of multi-volume works
-                                               ; **j**: (journal) the title applies to any serial or periodical publication such as a journal,
+                                             
+     *    **j**: (journal) the title applies to any serial or periodical publication such as a journal,
                                                 magazine, or newspaper
-                                               ; **s**: (series) the title applies to a series of otherwise distinct publications such as
+                                             
+     *    **s**: (series) the title applies to a series of otherwise distinct publications such as
                                                 a collection
-                                               ; **u**: (unpublished) the title applies to any unpublished material (including theses and
+                                             
+     *    **u**: (unpublished) the title applies to any unpublished material (including theses and
                                                 dissertations unless published by a commercial press)
-                                              
+                                             
 *  **Note**: The level of a title is sometimes implied by its context: for example, a title appearing directly within an `analytic` element is ipso facto of level ‘a’, and one appearing within a `series` element of level ‘s’. For this reason, the level attribute is not required in contexts where its value can be unambiguously inferred. Where it is supplied in such contexts, its value should not contradict the value implied by its parent element. 
  
  
@@ -6723,7 +6808,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Suggested values include:**: **main**: main title of the work [Default]   ; **sub**: (subordinate) subtitle of the work  ; **alt**: (alternate) alternative title of the work  ; **short**: abbreviated form of title  ; **desc**: (descriptive) descriptive paraphrase of the work 
+*  **Suggested values include:**: 
+ 
+     *    **main**: main title of the work [Default] 
+     *    **sub**: (subordinate) subtitle of the work
+     *    **alt**: (alternate) alternative title of the work
+     *    **short**: abbreviated form of title
+     *    **desc**: (descriptive) descriptive paraphrase of the work
  
  
  
@@ -7091,11 +7182,15 @@ Attributes
  
 *  **Status**: Recommended
 *  **Datatype**: teidata.enumerated
-*  **Sample values include**: **yes**: the element bearing this attribute is considered to mark the end of any adjacent orthographic
+*  **Sample values include**: 
+ 
+     *    **yes**: the element bearing this attribute is considered to mark the end of any adjacent orthographic
                                                 token irrespective of the presence of any adjacent whitespace
-                                               ; **no**: the element bearing this attribute is considered not to mark the end of any adjacent
+                                             
+     *    **no**: the element bearing this attribute is considered not to mark the end of any adjacent
                                                 orthographic token irrespective of the presence of any adjacent whitespace
-                                               ; **maybe**: the encoding does not take any position on this issue. 
+                                             
+     *    **maybe**: the encoding does not take any position on this issue.
 *  In the following lines from the Dream of the Rood, linebreaks occur in the middle of the words lāðost and reord-berendum. 
 ```
  
@@ -7508,8 +7603,11 @@ Attributes
  
 *  **Status**: Optional
 *  **Datatype**: teidata.truthValue
-*  **Legal values are:**: **true**: This element is selected if its parent is selected  ; **false**: This element can only be selected explicitly, unless it is the only one of its kind,
-                                                in which case it is selected if its parent is selected. [Default]  
+*  **Legal values are:**: 
+ 
+     *    **true**: This element is selected if its parent is selected
+     *    **false**: This element can only be selected explicitly, unless it is the only one of its kind,
+                                                in which case it is selected if its parent is selected. [Default] 
  
  
  
@@ -7600,7 +7698,13 @@ Attributes  [att.ranging](#att.ranging)  (`@atLeast`, `@atMost`, `@min`, `@max`
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Suggested values include:**: **cm**: (centimetres)   ; **mm**: (millimetres)   ; **in**: (inches)   ; **lines**: lines of text  ; **chars**: (characters) characters of text 
+*  **Suggested values include:**: 
+ 
+     *    **cm**: (centimetres) 
+     *    **mm**: (millimetres) 
+     *    **in**: (inches) 
+     *    **lines**: lines of text
+     *    **chars**: (characters) characters of text
  
  
  
@@ -7647,7 +7751,11 @@ Attributes  [att.ranging](#att.ranging)  (`@atLeast`, `@atMost`, `@min`, `@max`
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Sample values include:**: **all**: measurement applies to all instances.  ; **most**: measurement applies to most of the instances inspected.  ; **range**: measurement applies to only the specified range of instances. 
+*  **Sample values include:**: 
+ 
+     *    **all**: measurement applies to all instances.
+     *    **most**: measurement applies to most of the instances inspected.
+     *    **range**: measurement applies to only the specified range of instances.
  
  
  
@@ -7685,10 +7793,13 @@ Attributes  [att.fragmentable](#att.fragmentable)  (`@part`)
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **composite**: no claim is made about the sequence in which the immediate contents of this division
+*  **Legal values are:**: 
+ 
+     *    **composite**: no claim is made about the sequence in which the immediate contents of this division
                                                 are to be processed, or their inter-relationships.
-                                               ; **uniform**: the immediate contents of this element are regarded as forming a logical unit, to
-                                                be processed in sequence. [Default]  
+                                             
+     *    **uniform**: the immediate contents of this element are regarded as forming a logical unit, to
+                                                be processed in sequence. [Default] 
  
  
  
@@ -7697,7 +7808,13 @@ Attributes  [att.fragmentable](#att.fragmentable)  (`@part`)
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **initial**: division lacks material present at end in source.  ; **medial**: division lacks material at start and end.  ; **final**: division lacks material at start.  ; **unknown**: position of sampled material within original unknown.  ; **complete**: division is not a sample. [Default]  
+*  **Legal values are:**: 
+ 
+     *    **initial**: division lacks material present at end in source.
+     *    **medial**: division lacks material at start and end.
+     *    **final**: division lacks material at start.
+     *    **unknown**: position of sampled material within original unknown.
+     *    **complete**: division is not a sample. [Default] 
  
  
  
@@ -7735,7 +7852,23 @@ Attributes
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Sample values include:**: **approved**: [No description available]  ; **candidate**: [No description available]  ; **cleared**: [No description available]  ; **deprecated**: [No description available]  ; **draft**:  [Default]   ; **embargoed**: [No description available]  ; **expired**: [No description available]  ; **frozen**: [No description available]  ; **galley**: [No description available]  ; **proposed**: [No description available]  ; **published**: [No description available]  ; **recommendation**: [No description available]  ; **submitted**: [No description available]  ; **unfinished**: [No description available]  ; **withdrawn**: [No description available] 
+*  **Sample values include:**: 
+ 
+     *    **approved**: [No description available]
+     *    **candidate**: [No description available]
+     *    **cleared**: [No description available]
+     *    **deprecated**: [No description available]
+     *    **draft**:  [Default] 
+     *    **embargoed**: [No description available]
+     *    **expired**: [No description available]
+     *    **frozen**: [No description available]
+     *    **galley**: [No description available]
+     *    **proposed**: [No description available]
+     *    **published**: [No description available]
+     *    **recommendation**: [No description available]
+     *    **submitted**: [No description available]
+     *    **unfinished**: [No description available]
+     *    **withdrawn**: [No description available]
  
  
  
@@ -7863,9 +7996,13 @@ Attributes
  
 *  **Status**: Optional
 *  **Datatype**:  1–∞ occurrences of teidata.enumerated separated by whitespace
-*  **Suggested values include:**: **internal**: there is internal evidence to support the intervention.  ; **external**: there is external evidence to support the intervention.  ; **conjecture**: the intervention or interpretation has been made by the editor, cataloguer, or scholar
+*  **Suggested values include:**: 
+ 
+     *    **internal**: there is internal evidence to support the intervention.
+     *    **external**: there is external evidence to support the intervention.
+     *    **conjecture**: the intervention or interpretation has been made by the editor, cataloguer, or scholar
                                                 on the basis of their expertise.
-                                              
+                                             
  
  
  
@@ -7928,7 +8065,13 @@ Attributes
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **Y**: (yes) the element is fragmented in some (unspecified) respect  ; **N**: (no) the element is not fragmented, or no claim is made as to its completeness [Default]   ; **I**: (initial) this is the initial part of a fragmented element  ; **M**: (medial) this is a medial part of a fragmented element  ; **F**: (final) this is the final part of a fragmented element 
+*  **Legal values are:**: 
+ 
+     *    **Y**: (yes) the element is fragmented in some (unspecified) respect
+     *    **N**: (no) the element is not fragmented, or no claim is made as to its completeness [Default] 
+     *    **I**: (initial) this is the initial part of a fragmented element
+     *    **M**: (medial) this is a medial part of a fragmented element
+     *    **F**: (final) this is the final part of a fragmented element
 *  **Note**: The values I, M, or F should be used only where it is clear how the element may be be reconstituted. 
  
  
@@ -8022,7 +8165,10 @@ Attributes  [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, 
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **default**: signals that the application's default white-space processing modes are acceptable  ; **preserve**: indicates the intent that applications preserve all white space 
+*  **Legal values are:**: 
+ 
+     *    **default**: signals that the application's default white-space processing modes are acceptable
+     *    **preserve**: indicates the intent that applications preserve all white space
 *  **Note**: The  [XML specification](http://www.w3.org/TR/REC-xml/#sec-white-space)  provides further guidance on the use of this attribute. Note that many parsers may not handle xml:space correctly. 
  
  
@@ -8540,10 +8686,16 @@ Attributes
  
 *  **Status**: Optional
 *  **Datatype**: teidata.text
-*  **Legal values are:**: **no**: (the token is not adjacent to another)   ; **left**: (there is no whitespace on the left side of the token)   ; **right**: (there is no whitespace on the right side of the token)   ; **both**: (there is no whitespace on either side of the token)   ; **overlap**: (the token overlaps with another; other devices (specifying the extent and the area
+*  **Legal values are:**: 
+ 
+     *    **no**: (the token is not adjacent to another) 
+     *    **left**: (there is no whitespace on the left side of the token) 
+     *    **right**: (there is no whitespace on the right side of the token) 
+     *    **both**: (there is no whitespace on either side of the token) 
+     *    **overlap**: (the token overlaps with another; other devices (specifying the extent and the area
                                                 of overlap) are needed to more precisely locate this token in the character stream)
                                                 
-                                              
+                                             
 *  The example below assumes that the lack of whitespace is marked redundantly, by using the appropriate values of join. 
 ```
  
@@ -8614,9 +8766,23 @@ Attributes
  
 *  **Status**: Required
 *  **Datatype**: teidata.enumerated
-*  **Suggested values include:**: **page**: physical page breaks (synonymous with the pb element).
-                                               ; **column**: column breaks.  ; **line**: line breaks (synonymous with the lb element).
-                                               ; **book**: any units termed book, liber, etc.  ; **poem**: individual poems in a collection.  ; **canto**: cantos or other major sections of a poem.  ; **speaker**: changes of speaker or narrator.  ; **stanza**: stanzas within a poem, book, or canto.  ; **act**: acts within a play.  ; **scene**: scenes within a play or act.  ; **section**: sections of any kind.  ; **absent**: passages not present in the reference edition.  ; **unnumbered**: passages present in the text, but not to be included as part of the reference. 
+*  **Suggested values include:**: 
+ 
+     *    **page**: physical page breaks (synonymous with the pb element).
+                                             
+     *    **column**: column breaks.
+     *    **line**: line breaks (synonymous with the lb element).
+                                             
+     *    **book**: any units termed book, liber, etc.
+     *    **poem**: individual poems in a collection.
+     *    **canto**: cantos or other major sections of a poem.
+     *    **speaker**: changes of speaker or narrator.
+     *    **stanza**: stanzas within a poem, book, or canto.
+     *    **act**: acts within a play.
+     *    **scene**: scenes within a play or act.
+     *    **section**: sections of any kind.
+     *    **absent**: passages not present in the reference edition.
+     *    **unnumbered**: passages present in the text, but not to be included as part of the reference.
 *  
 ```
  
@@ -8793,7 +8959,11 @@ Attributes  [att.naming](#att.naming)  (`@role`, `@nymRef`) ( [att.canonical](#
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **yes**: the name component is spelled out in full. [Default]   ; **abb**: (abbreviated) the name component is given in an abbreviated form.  ; **init**: (initial letter) the name component is indicated only by one initial. 
+*  **Legal values are:**: 
+ 
+     *    **yes**: the name component is spelled out in full. [Default] 
+     *    **abb**: (abbreviated) the name component is given in an abbreviated form.
+     *    **init**: (initial letter) the name component is indicated only by one initial.
  
  
  
@@ -8839,7 +9009,18 @@ Attributes
  
 *  **Status**: Recommended
 *  **Datatype**:  1–∞ occurrences of teidata.enumerated separated by whitespace
-*  **Suggested values include:**: **below**: below the line  ; **bottom**: at the foot of the page  ; **margin**: in the margin (left, right, or both)  ; **top**: at the top of the page  ; **opposite**: on the opposite, i.e. facing, page  ; **overleaf**: on the other side of the leaf  ; **above**: above the line  ; **end**: at the end of e.g. chapter or volume.  ; **inline**: within the body of the text.  ; **inspace**: in a predefined space, for example left by an earlier scribe. 
+*  **Suggested values include:**: 
+ 
+     *    **below**: below the line
+     *    **bottom**: at the foot of the page
+     *    **margin**: in the margin (left, right, or both)
+     *    **top**: at the top of the page
+     *    **opposite**: on the opposite, i.e. facing, page
+     *    **overleaf**: on the other side of the leaf
+     *    **above**: above the line
+     *    **end**: at the end of e.g. chapter or volume.
+     *    **inline**: within the body of the text.
+     *    **inspace**: in a predefined space, for example left by an earlier scribe.
 *  
 ```
  
@@ -8920,13 +9101,17 @@ In the example above, the `linkGrp` combines pointers at parallel fragments of t
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **all**: if the element pointed to is itself a pointer, then the target of that pointer will
+*  **Legal values are:**: 
+ 
+     *    **all**: if the element pointed to is itself a pointer, then the target of that pointer will
                                                 be taken, and so on, until an element is found which is not a pointer.
-                                               ; **one**: if the element pointed to is itself a pointer, then its target (whether a pointer
+                                             
+     *    **one**: if the element pointed to is itself a pointer, then its target (whether a pointer
                                                 or not) is taken as the target of this pointer.
-                                               ; **none**: no further evaluation of targets is carried out beyond that needed to find the element
+                                             
+     *    **none**: no further evaluation of targets is carried out beyond that needed to find the element
                                                 specified in the pointer's target.
-                                              
+                                             
 *  **Note**: If no value is given, the application program is responsible for deciding (possibly on the basis of user input) how far to trace a chain of pointers. 
  
  
@@ -9180,7 +9365,12 @@ Attributes
  
 *  **Status**: Optional
 *  **Datatype**: teidata.enumerated
-*  **Legal values are:**: **css**: Cascading Stylesheet Language  ; **xslfo**: Extensible Stylesheet Language Formatting Objects  ; **free**: Informal free text description  ; **other**: A user-defined rendition description language 
+*  **Legal values are:**: 
+ 
+     *    **css**: Cascading Stylesheet Language
+     *    **xslfo**: Extensible Stylesheet Language Formatting Objects
+     *    **free**: Informal free text description
+     *    **other**: A user-defined rendition description language
 *  **Note**: If no value for the @scheme attribute is provided, then the default assumption should be that CSS is in use. 
  
  
