@@ -20,10 +20,7 @@ Note that this is an abridged version of the documentation for editorial use wit
  
 The following are the Guidelines and schema specification for the Winnifred Eaton Archive project (WEA). The project uses a highly constrained version of the TEI Guidelines; the texts are lightly encoded with very little linked data. Primarily, the texts are meant to be easily ported into an existing Omeka framework; the details of this framework are still in development. 
  
- ----- 
- 
 ### 1.1 History and Pre-amble
- 
  
 ## 2 Setting up Github
  
@@ -34,8 +31,6 @@ The following are the Guidelines and schema specification for the Winnifred Eato
 ## Appendix A 
  
 ## Schema wea: Elements
- 
- ----- 
  
 ### `abstract`<span id="abstract"/>
  
@@ -53,6 +48,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [profileDesc](#profileDesc) 
  
  
@@ -60,6 +57,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **core:** [list](#list)  [p](#p) 
  
@@ -90,7 +89,6 @@ This element is intended only for cases where no abstract is available in the or
  
  
  
- 
  ----- 
  
 ### `att`<span id="att"/>
@@ -107,9 +105,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@scheme` supplies an identifier for the scheme in which this name is defined. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    **TEI**: (Text Encoding Initiative) this attribute is part of the TEI scheme. [Default]   ; **DBK**: (Docbook) this attribute is part of the Docbook scheme.  ; **XX**: (unknown) this attribute is part of an unknown scheme.  ; **imaginary**: the attribute is from a non-existent scheme, for illustrative purposes only  ; **XHTML**: the attribute is part of the XHTML language  ; **XML**: the attribute is part of the XML language  ; **XI**: the attribute is defined in the xInclude schema      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Sample values include:***  **TEI**: (Text Encoding Initiative) this attribute is part of the TEI scheme. [Default]   ; **DBK**: (Docbook) this attribute is part of the Docbook scheme.  ; **XX**: (unknown) this attribute is part of an unknown scheme.  ; **imaginary**: the attribute is from a non-existent scheme, for illustrative purposes only  ; **XHTML**: the attribute is part of the XHTML language  ; **XML**: the attribute is part of the XML language  ; **XI**: the attribute is defined in the xInclude schema 
  
  
  
@@ -122,7 +120,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -178,7 +182,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [bibl](#bibl) **header:** [editionStmt](#editionStmt)  [titleStmt](#titleStmt) 
+ 
+ 
+**core:** [bibl](#bibl) 
+ 
+**header:** [editionStmt](#editionStmt)  [titleStmt](#titleStmt) 
  
  
  
@@ -186,7 +194,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -234,6 +250,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [publicationStmt](#publicationStmt) 
  
  
@@ -242,7 +260,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -279,9 +303,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@status` supplies a code identifying the current availability of the text. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **free**: the text is freely available.  ; **unknown**: the status of the text is unknown.  ; **restricted**: the text is not freely available.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **free**: the text is freely available.  ; **unknown**: the status of the text is unknown.  ; **restricted**: the text is not freely available. 
  
  
  
@@ -294,7 +318,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [bibl](#bibl) **header:** [publicationStmt](#publicationStmt) 
+ 
+ 
+**core:** [bibl](#bibl) 
+ 
+**header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -302,7 +330,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [p](#p) **header:** [licence](#licence) 
+ 
+ 
+**core:** [p](#p) 
+ 
+**header:** [licence](#licence) 
  
  
  
@@ -367,6 +399,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **textstructure:** [text](#text) 
  
  
@@ -375,7 +409,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [gap](#gap)  [head](#head)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) **textstructure:** [byline](#byline)  [closer](#closer)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [gap](#gap)  [head](#head)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -433,7 +471,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [bibl](#bibl)  [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) **header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) **textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [bibl](#bibl)  [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
+ 
+**header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
+ 
+**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -441,7 +485,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) **header:** [availability](#availability)  [distributor](#distributor)  [edition](#edition)  [idno](#idno) **tagdocs:** [code](#code) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [availability](#availability)  [distributor](#distributor)  [edition](#edition)  [idno](#idno) 
+ 
+**tagdocs:** [code](#code) character data
  
  
  
@@ -522,13 +574,21 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) **header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) **textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
+ 
+**header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
+ 
+**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
  
  
 #### **May contain**
+ 
+ 
  
 **header:** [editionStmt](#editionStmt)  [fileDesc](#fileDesc)  [notesStmt](#notesStmt)  [profileDesc](#profileDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc)  [titleStmt](#titleStmt) 
  
@@ -569,6 +629,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **textstructure:** [text](#text) 
  
  
@@ -577,7 +639,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) **header:** [biblFull](#biblFull) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+ 
+ 
+**core:** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
+ 
+**header:** [biblFull](#biblFull) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -616,7 +684,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+ 
+ 
+**core:** [lg](#lg)  [list](#list) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -624,7 +696,17 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) **textstructure:** [docAuthor](#docAuthor) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+**textstructure:** [docAuthor](#docAuthor) character data
  
  
  
@@ -713,6 +795,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [category](#category) 
  
  
@@ -720,6 +804,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **header:** [category](#category) 
  
@@ -802,8 +888,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@scheme` identifies the classification scheme within which the set of categories concerned is defined, for example by a `taxonomy` element, or by some other resource. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
  
  
  
@@ -815,6 +901,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **Contained by**
+ 
+ 
  
 **header:** [textClass](#textClass) 
  
@@ -873,8 +961,8 @@ Attributes  [att.ascribed](#att.ascribed)  (`@who`)  [att.datable](#att.datable
 `@target` points to one or more elements that belong to this change. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
  
  
  
@@ -887,6 +975,8 @@ Attributes  [att.ascribed](#att.ascribed)  (`@who`)  [att.datable](#att.datable
  
 #### **Contained by**
  
+ 
+ 
 **header:** [listChange](#listChange)  [revisionDesc](#revisionDesc) 
  
  
@@ -895,7 +985,15 @@ Attributes  [att.ascribed](#att.ascribed)  (`@who`)  [att.datable](#att.datable
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -966,13 +1064,23 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
  
  
 #### **May contain**
+ 
+ 
  
 **core:** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) 
  
@@ -1021,7 +1129,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+ 
+ 
+**core:** [lg](#lg)  [list](#list) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
  
@@ -1029,7 +1141,17 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) **textstructure:** [dateline](#dateline) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+**textstructure:** [dateline](#dateline) character data
  
  
  
@@ -1083,8 +1205,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@lang` (formal language) a name identifying the formal language in which the code is expressed 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.word     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.word
  
  
  
@@ -1097,7 +1219,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1145,7 +1273,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1153,7 +1289,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1208,6 +1352,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [profileDesc](#profileDesc) 
  
  
@@ -1216,7 +1362,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [name](#name)  [num](#num)  [ref](#ref)  [term](#term)  [title](#title) **header:** [idno](#idno)  [listChange](#listChange) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [name](#name)  [num](#num)  [ref](#ref)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno)  [listChange](#listChange) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1278,7 +1430,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1286,7 +1444,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1357,7 +1523,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [lg](#lg)  [list](#list) **textstructure:** [body](#body)  [closer](#closer)  [div](#div)  [front](#front) 
+ 
+ 
+**core:** [lg](#lg)  [list](#list) 
+ 
+**textstructure:** [body](#body)  [closer](#closer)  [div](#div)  [front](#front) 
  
  
  
@@ -1365,7 +1535,17 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) **textstructure:** [docDate](#docDate) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+**textstructure:** [docDate](#docDate) character data
  
  
  
@@ -1420,7 +1600,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [bibl](#bibl) **header:** [publicationStmt](#publicationStmt) 
+ 
+ 
+**core:** [bibl](#bibl) 
+ 
+**header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -1428,7 +1612,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1467,6 +1659,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
@@ -1475,7 +1669,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) **header:** [biblFull](#biblFull) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+ 
+ 
+**core:** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
+ 
+**header:** [biblFull](#biblFull) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -1518,7 +1718,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+ 
+ 
+**core:** [lg](#lg)  [list](#list) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -1526,7 +1730,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1571,9 +1783,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@when` gives the value of the date in standard form, i.e. YYYY-MM-DD. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.temporal.w3c     |     
-   |    **Note**   |    For simple dates, the when attribute should give the Gregorian or proleptic Gregorian date in one of the formats specified in XML Schema Part 2: Datatypes Second Edition.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.temporal.w3c
+*  **Note***  For simple dates, the when attribute should give the Gregorian or proleptic Gregorian date in one of the formats specified in XML Schema Part 2: Datatypes Second Edition. 
  
  
  
@@ -1586,7 +1798,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [dateline](#dateline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+ 
+ 
+**core:** [lg](#lg)  [list](#list) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [dateline](#dateline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -1594,7 +1810,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1641,6 +1865,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **textstructure:** [back](#back)  [front](#front)  [titlePage](#titlePage) 
  
  
@@ -1649,7 +1875,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) **textstructure:** [titlePart](#titlePart) 
+ 
+ 
+**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+ 
+**textstructure:** [titlePart](#titlePart) 
  
  
  
@@ -1690,7 +1920,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [bibl](#bibl) **header:** [editionStmt](#editionStmt) 
+ 
+ 
+**core:** [bibl](#bibl) 
+ 
+**header:** [editionStmt](#editionStmt) 
  
  
  
@@ -1698,7 +1932,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1738,6 +1980,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
@@ -1746,7 +1990,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [author](#author)  [editor](#editor)  [p](#p)  [respStmt](#respStmt) **header:** [edition](#edition) 
+ 
+ 
+**core:** [author](#author)  [editor](#editor)  [p](#p)  [respStmt](#respStmt) 
+ 
+**header:** [edition](#edition) 
  
  
  
@@ -1800,7 +2048,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [bibl](#bibl) **header:** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
+ 
+ 
+**core:** [bibl](#bibl) 
+ 
+**header:** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
  
  
  
@@ -1808,7 +2060,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1858,6 +2118,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [encodingDesc](#encodingDesc) 
  
  
@@ -1866,7 +2128,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [p](#p) **header:** [hyphenation](#hyphenation) 
+ 
+ 
+**core:** [p](#p) 
+ 
+**header:** [hyphenation](#hyphenation) 
  
  
  
@@ -1906,7 +2172,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1914,7 +2186,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1968,6 +2248,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [teiHeader](#teiHeader) 
  
  
@@ -1976,7 +2258,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [p](#p) **header:** [editorialDecl](#editorialDecl)  [listPrefixDef](#listPrefixDef)  [projectDesc](#projectDesc) 
+ 
+ 
+**core:** [p](#p) 
+ 
+**header:** [editorialDecl](#editorialDecl)  [listPrefixDef](#listPrefixDef)  [projectDesc](#projectDesc) 
  
  
  
@@ -2015,7 +2301,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+ 
+ 
+**core:** [lg](#lg)  [list](#list) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -2023,7 +2313,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [bibl](#bibl)  [gap](#gap)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) **header:** [biblFull](#biblFull) 
+ 
+ 
+**core:** [bibl](#bibl)  [gap](#gap)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
+ 
+**header:** [biblFull](#biblFull) 
  
  
  
@@ -2064,6 +2358,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [biblFull](#biblFull)  [teiHeader](#teiHeader) 
  
  
@@ -2071,6 +2367,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **header:** [editionStmt](#editionStmt)  [notesStmt](#notesStmt)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc)  [titleStmt](#titleStmt) 
  
@@ -2119,7 +2417,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2127,7 +2431,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -2176,6 +2488,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **textstructure:** [text](#text) 
  
  
@@ -2184,7 +2498,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [gap](#gap)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [gap](#gap)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2264,18 +2582,18 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@reason` gives the reason for omission 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
-   |    **Suggested values include:**   |    **cancelled**: [No description available]  ; **deleted**: [No description available]  ; **editorial**: for features omitted from transcription due to editorial policy  ; **illegible**: [No description available]  ; **inaudible**: [No description available]  ; **irrelevant**: [No description available]  ; **sampling**: [No description available]      |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.enumerated separated by whitespace
+*  **Suggested values include:***  **cancelled**: [No description available]  ; **deleted**: [No description available]  ; **editorial**: for features omitted from transcription due to editorial policy  ; **illegible**: [No description available]  ; **inaudible**: [No description available]  ; **irrelevant**: [No description available]  ; **sampling**: [No description available] 
  
  
  
 `@agent` in the case of text omitted because of damage, categorizes the cause of the damage, if it can be identified. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    **rubbing**: damage results from rubbing of the leaf edges  ; **mildew**: damage results from mildew on the leaf surface  ; **smoke**: damage results from smoke      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Sample values include:***  **rubbing**: damage results from rubbing of the leaf edges  ; **mildew**: damage results from mildew on the leaf surface  ; **smoke**: damage results from smoke 
  
  
  
@@ -2288,7 +2606,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2383,9 +2707,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@scheme` supplies the name of the scheme in which this name is defined. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    **TEI**: this element is part of the TEI scheme. [Default]   ; **DBK**: (docbook) this element is part of the Docbook scheme.  ; **XX**: (unknown) this element is part of an unknown scheme.  ; **Schematron**: this element is from Schematron.  ; **HTML**: this element is from the HTML scheme.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Sample values include:***  **TEI**: this element is part of the TEI scheme. [Default]   ; **DBK**: (docbook) this element is part of the Docbook scheme.  ; **XX**: (unknown) this element is part of an unknown scheme.  ; **Schematron**: this element is from Schematron.  ; **HTML**: this element is from the HTML scheme. 
  
  
  
@@ -2398,7 +2722,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2446,7 +2776,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [lg](#lg)  [list](#list)  [listBibl](#listBibl) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+ 
+ 
+**core:** [lg](#lg)  [list](#list)  [listBibl](#listBibl) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
  
@@ -2454,7 +2788,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -2535,7 +2877,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2543,7 +2891,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -2583,15 +2939,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@eol` (end-of-line) indicates whether or not end-of-line hyphenation has been retained in a text. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **all**: all end-of-line hyphenation has been retained, even though the lineation of the original
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **all**: all end-of-line hyphenation has been retained, even though the lineation of the original
                                                 may not have been.
                                                ; **some**: end-of-line hyphenation has been retained in some cases. [Default]   ; **hard**: all soft end-of-line hyphenation has been removed: any remaining end-of-line hyphenation
                                                 should be retained.
                                                ; **none**: all end-of-line hyphenation has been removed: any remaining hyphenation occurred within
                                                 the line.
-                                                   |     
+                                              
  
  
  
@@ -2604,6 +2960,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [editorialDecl](#editorialDecl) 
  
  
@@ -2611,6 +2969,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **core:** [p](#p) 
  
@@ -2650,10 +3010,10 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@type` categorizes the identifier, for example as an ISBN, Social Security number, etc. 
  
  
-   |    **Derived from**   |     [att.typed](#att.typed)      |     
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    **ISBN**: International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit
+*  **Derived from***   [att.typed](#att.typed) 
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Suggested values include:***  **ISBN**: International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit
                                                 identifying number assigned by the publishing industry to a published book or similar
                                                 item, registered with the International ISBN Agency.  ; **ISSN**: International Standard Serial Number: an eight-digit number to uniquely identify a
                                                 serial publication.
@@ -2668,7 +3028,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
                                                 in English printed in the British Isles or North America before 1801.
                                                ; **OCLC**: OCLC control number (record number) for the union catalog record in WorldCat, a union
                                                 catalog for member libraries in the Online Computer Library Center global cooperative.
-                                                   |     
+                                              
  
  
  
@@ -2681,13 +3041,21 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [idno](#idno)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition)  [seriesStmt](#seriesStmt) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [idno](#idno)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition)  [seriesStmt](#seriesStmt) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
  
  
 #### **May contain**
+ 
+ 
  
 **header:** [idno](#idno) character data
  
@@ -2744,6 +3112,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **core:** [list](#list) 
  
  
@@ -2752,7 +3122,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -2804,8 +3182,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@scheme` identifies the controlled vocabulary within which the set of keywords concerned is defined, for example by a `taxonomy` element, or by some other resource. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
  
  
  
@@ -2818,6 +3196,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [textClass](#textClass) 
  
  
@@ -2825,6 +3205,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **core:** [list](#list)  [term](#term) 
  
@@ -2888,7 +3270,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) **header:** [change](#change)  [licence](#licence) **textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
+ 
+**header:** [change](#change)  [licence](#licence) 
+ 
+**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2896,7 +3284,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -2934,16 +3330,16 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@ident` (identifier) Supplies a language code constructed as defined in  [BCP 47](https://tools.ietf.org/html/bcp47)  which is used to identify the language documented by this element, and which is referenced by the global xml:lang attribute. 
  
  
-   |    **Status**   |    Required     |     
-   |    **Datatype**   |    teidata.language     |     
+*  **Status***  Required
+*  **Datatype***  teidata.language
  
  
  
 `@usage` specifies the approximate percentage (by volume) of the text which uses this language. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    nonNegativeInteger     |     
+*  **Status***  Optional
+*  **Datatype***  nonNegativeInteger
  
  
  
@@ -2956,6 +3352,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [langUsage](#langUsage) 
  
  
@@ -2964,7 +3362,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3014,6 +3418,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [profileDesc](#profileDesc) 
  
  
@@ -3022,7 +3428,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [p](#p) **header:** [language](#language) 
+ 
+ 
+**core:** [p](#p) 
+ 
+**header:** [language](#language) 
  
  
  
@@ -3064,7 +3474,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3133,7 +3549,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) **header:** [change](#change)  [licence](#licence) **textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
+ 
+**header:** [change](#change)  [licence](#licence) 
+ 
+**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3141,7 +3563,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [milestone](#milestone)  [note](#note)  [pb](#pb) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+ 
+ 
+**core:** [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -3191,6 +3617,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [availability](#availability) 
  
  
@@ -3199,7 +3627,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3260,19 +3696,19 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@type` describes the nature of the items in the list. 
  
  
-   |    **Derived from**   |     [att.typed](#att.typed)      |     
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    **gloss**: each list item glosses some term or concept, which is given by a label element preceding the list item.
+*  **Derived from***   [att.typed](#att.typed) 
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Suggested values include:***  **gloss**: each list item glosses some term or concept, which is given by a label element preceding the list item.
                                                ; **index**: each list item is an entry in an index such as the alphabetical topical index at the
                                                 back of a print volume.
                                                ; **instructions**: each list item is a step in a sequence of instructions, as in a recipe.  ; **litany**: each list item is one of a sequence of petitions, supplications or invocations, typically
                                                 in a religious ritual.
                                                ; **syllogism**: each list item is part of an argument consisting of two or more propositions and a
                                                 final conclusion derived from them.
-                                                   |     
-   |    **Note**   |    Previous versions of these Guidelines recommended the use of type on  [list](#list)  to encode the rendering or appearance of a list (whether it was bulleted, numbered, etc.). The current recommendation is to use the rend or style attributes for these aspects of a list, while using type for the more appropriate task of characterizing the nature of the content of a list.      |     
-   |    **Note**   |    The formal syntax of the element declarations allows `label` tags to be omitted from lists tagged &lt;list type="gloss"&gt;; this is however a semantic error.      |     
+                                              
+*  **Note***  Previous versions of these Guidelines recommended the use of type on  [list](#list)  to encode the rendering or appearance of a list (whether it was bulleted, numbered, etc.). The current recommendation is to use the rend or style attributes for these aspects of a list, while using type for the more appropriate task of characterizing the nature of the content of a list. 
+*  **Note***  The formal syntax of the element declarations allows `label` tags to be omitted from lists tagged &lt;list type="gloss"&gt;; this is however a semantic error. 
  
  
  
@@ -3285,7 +3721,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) **header:** [abstract](#abstract)  [change](#change)  [keywords](#keywords)  [licence](#licence)  [rendition](#rendition)  [revisionDesc](#revisionDesc)  [sourceDesc](#sourceDesc) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
+ 
+**header:** [abstract](#abstract)  [change](#change)  [keywords](#keywords)  [licence](#licence)  [rendition](#rendition)  [revisionDesc](#revisionDesc)  [sourceDesc](#sourceDesc) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3293,7 +3735,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [gap](#gap)  [head](#head)  [item](#item)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+ 
+ 
+**core:** [gap](#gap)  [head](#head)  [item](#item)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -3434,7 +3880,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) **header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
+ 
+**header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3442,7 +3894,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [bibl](#bibl)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [pb](#pb) **header:** [biblFull](#biblFull) 
+ 
+ 
+**core:** [bibl](#bibl)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [pb](#pb) 
+ 
+**header:** [biblFull](#biblFull) 
  
  
  
@@ -3479,9 +3935,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@ordered` indicates whether the ordering of its child  [change](#change)  elements is to be considered significant or not 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.truthValue     |     
-   |    **Default**   |    true     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.truthValue
+*  **Default***  true
  
  
  
@@ -3494,6 +3950,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [creation](#creation)  [listChange](#listChange)  [revisionDesc](#revisionDesc) 
  
  
@@ -3501,6 +3959,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **header:** [change](#change)  [listChange](#listChange) 
  
@@ -3570,6 +4030,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [encodingDesc](#encodingDesc)  [listPrefixDef](#listPrefixDef) 
  
  
@@ -3577,6 +4039,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **header:** [listPrefixDef](#listPrefixDef)  [prefixDef](#prefixDef) 
  
@@ -3619,7 +4083,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3675,7 +4145,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3683,7 +4159,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3732,19 +4216,19 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@anchored` indicates whether the copy text shows the exact place of reference for the note. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.truthValue     |     
-   |    **Default**   |    true     |     
-   |    **Note**   |    In modern texts, notes are usually anchored by means of explicit footnote or endnote symbols. An explicit indication of the phrase or line annotated may however be used instead (e.g. ‘page 218, lines 3–4’). The anchored attribute indicates whether any explicit location is given, whether by symbol or by prose cross-reference. The value true indicates that such an explicit location is indicated in the copy text; the value false indicates that the copy text does not indicate a specific place of attachment for the note. If the specific symbols used in the copy text at the location the note is anchored are to be recorded, use the n attribute.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.truthValue
+*  **Default***  true
+*  **Note***  In modern texts, notes are usually anchored by means of explicit footnote or endnote symbols. An explicit indication of the phrase or line annotated may however be used instead (e.g. ‘page 218, lines 3–4’). The anchored attribute indicates whether any explicit location is given, whether by symbol or by prose cross-reference. The value true indicates that such an explicit location is indicated in the copy text; the value false indicates that the copy text does not indicate a specific place of attachment for the note. If the specific symbols used in the copy text at the location the note is anchored are to be recorded, use the n attribute. 
  
  
  
 `@targetEnd` points to the end of the span to which the note is attached, if the note is not embedded in the text at that point. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
-   |    **Note**   |    This attribute is retained for backwards compatibility; it may be removed at a subsequent release of the Guidelines. The recommended way of pointing to a span of elements is by means of the range function of XPointer, as further described in  [16.2.4.6. range()](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATSRN) .      |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
+*  **Note***  This attribute is retained for backwards compatibility; it may be removed at a subsequent release of the Guidelines. The recommended way of pointing to a span of elements is by means of the range function of XPointer, as further described in  [16.2.4.6. range()](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATSRN) . 
  
  
  
@@ -3757,7 +4241,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [notesStmt](#notesStmt) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [notesStmt](#notesStmt) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3765,7 +4255,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3824,6 +4322,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
@@ -3831,6 +4331,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **core:** [note](#note)  [relatedItem](#relatedItem) 
  
@@ -3877,20 +4379,20 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@type` indicates the type of numeric value. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    **cardinal**: absolute number, e.g. 21, 21.5  ; **ordinal**: ordinal number, e.g. 21st  ; **fraction**: fraction, e.g. one half or three-quarters  ; **percentage**: a percentage      |     
-   |    **Note**   |    If a different typology is desired, other values can be used for this attribute.     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Suggested values include:***  **cardinal**: absolute number, e.g. 21, 21.5  ; **ordinal**: ordinal number, e.g. 21st  ; **fraction**: fraction, e.g. one half or three-quarters  ; **percentage**: a percentage 
+*  **Note***  If a different typology is desired, other values can be used for this attribute.
  
  
  
 `@value` supplies the value of the number in standard form. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.numeric     |     
-   |    **Values**   |    a numeric value.     |     
-   |    **Note**   |    The standard form used is defined by the TEI datatype data.numeric.     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.numeric
+*  **Values***  a numeric value.
+*  **Note***  The standard form used is defined by the TEI datatype data.numeric.
  
  
  
@@ -3903,7 +4405,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3911,7 +4419,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3962,7 +4478,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3970,7 +4494,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4023,7 +4555,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [item](#item)  [note](#note)  [q](#q)  [quote](#quote) **header:** [abstract](#abstract)  [availability](#availability)  [change](#change)  [editionStmt](#editionStmt)  [editorialDecl](#editorialDecl)  [encodingDesc](#encodingDesc)  [hyphenation](#hyphenation)  [langUsage](#langUsage)  [licence](#licence)  [prefixDef](#prefixDef)  [projectDesc](#projectDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front) 
+ 
+ 
+**core:** [item](#item)  [note](#note)  [q](#q)  [quote](#quote) 
+ 
+**header:** [abstract](#abstract)  [availability](#availability)  [change](#change)  [editionStmt](#editionStmt)  [editorialDecl](#editorialDecl)  [encodingDesc](#encodingDesc)  [hyphenation](#hyphenation)  [langUsage](#langUsage)  [licence](#licence)  [prefixDef](#prefixDef)  [projectDesc](#projectDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front) 
  
  
  
@@ -4031,7 +4569,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4070,7 +4616,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4138,25 +4690,25 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@force` indicates the extent to which this punctuation mark conventionally separates words or phrases 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **strong**: the punctuation mark is a word separator  ; **weak**: the punctuation mark is not a word separator  ; **inter**: the punctuation mark may or may not be a word separator      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **strong**: the punctuation mark is a word separator  ; **weak**: the punctuation mark is not a word separator  ; **inter**: the punctuation mark may or may not be a word separator 
  
  
  
 `@unit` provides a name for the kind of unit delimited by this punctuation mark. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
  
  
  
 `@pre` indicates whether this punctuation mark precedes or follows the unit it delimits. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.truthValue     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.truthValue
  
  
  
@@ -4169,13 +4721,21 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
  
  
 #### **May contain**
+ 
+ 
  
 **core:** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) character data
  
@@ -4235,9 +4795,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@ident` supplies a name which functions as the prefix for an abbreviated pointing scheme such as a private URI scheme. The prefix constitutes the text preceding the first colon. 
  
  
-   |    **Status**   |    Required     |     
-   |    **Datatype**   |    teidata.prefix     |     
-   |    **Note**   |    The value is limited to teidata.prefix so that it may be mapped directly to a URI prefix.      |     
+*  **Status***  Required
+*  **Datatype***  teidata.prefix
+*  **Note***  The value is limited to teidata.prefix so that it may be mapped directly to a URI prefix. 
  
  
  
@@ -4250,6 +4810,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [listPrefixDef](#listPrefixDef) 
  
  
@@ -4257,6 +4819,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **core:** [p](#p) 
  
@@ -4306,6 +4870,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [biblFull](#biblFull)  [teiHeader](#teiHeader) 
  
  
@@ -4313,6 +4879,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **header:** [abstract](#abstract)  [creation](#creation)  [langUsage](#langUsage)  [textClass](#textClass) 
  
@@ -4364,6 +4932,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [encodingDesc](#encodingDesc) 
  
  
@@ -4371,6 +4941,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **core:** [p](#p) 
  
@@ -4411,6 +4983,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
@@ -4419,7 +4993,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [date](#date)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref) **header:** [authority](#authority)  [availability](#availability)  [distributor](#distributor)  [idno](#idno) 
+ 
+ 
+**core:** [date](#date)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref) 
+ 
+**header:** [authority](#authority)  [availability](#availability)  [distributor](#distributor)  [idno](#idno) 
  
  
  
@@ -4496,7 +5074,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [bibl](#bibl) **header:** [publicationStmt](#publicationStmt) 
+ 
+ 
+**core:** [bibl](#bibl) 
+ 
+**header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -4504,7 +5086,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4551,7 +5141,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [bibl](#bibl) **header:** [publicationStmt](#publicationStmt) 
+ 
+ 
+**core:** [bibl](#bibl) 
+ 
+**header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -4559,7 +5153,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4596,9 +5198,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@type` may be used to indicate whether the offset passage is spoken or thought, or to characterize it more finely. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    **spoken**: representation of speech  ; **thought**: representation of thought, e.g. internal monologue  ; **written**: quotation from a written source  ; **soCalled**: authorial distance  ; **foreign**: [No description available]  ; **distinct**: linguistically distinct  ; **term**: technical term  ; **emph**: rhetorically emphasized  ; **mentioned**: refering to itself, not its normal referent      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Suggested values include:***  **spoken**: representation of speech  ; **thought**: representation of thought, e.g. internal monologue  ; **written**: quotation from a written source  ; **soCalled**: authorial distance  ; **foreign**: [No description available]  ; **distinct**: linguistically distinct  ; **term**: technical term  ; **emph**: rhetorically emphasized  ; **mentioned**: refering to itself, not its normal referent 
  
  
  
@@ -4611,7 +5213,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) **textstructure:** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4619,7 +5227,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4666,7 +5282,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) **textstructure:** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4674,7 +5296,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4721,7 +5351,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4729,7 +5365,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4793,7 +5437,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4801,7 +5453,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4853,8 +5513,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@target` points to the related bibliographic element by means of an absolute or relative URI reference 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
  
  
  
@@ -4867,7 +5527,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [bibl](#bibl) **header:** [notesStmt](#notesStmt) 
+ 
+ 
+**core:** [bibl](#bibl) 
+ 
+**header:** [notesStmt](#notesStmt) 
  
  
  
@@ -4875,7 +5539,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [bibl](#bibl)  [listBibl](#listBibl)  [ref](#ref) **header:** [biblFull](#biblFull) 
+ 
+ 
+**core:** [bibl](#bibl)  [listBibl](#listBibl)  [ref](#ref) 
+ 
+**header:** [biblFull](#biblFull) 
  
  
  
@@ -4924,35 +5592,35 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@scope` where CSS is used, provides a way of defining ‘pseudo-elements’, that is, styling rules applicable to specific sub-portions of an element. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    **first-line**: styling applies to the first line of the target element  ; **first-letter**: styling applies to the first letter of the target element  ; **before**: styling should be applied immediately before the content of the target element  ; **after**: styling should be applied immediately after the content of the target element      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Sample values include:***  **first-line**: styling applies to the first line of the target element  ; **first-letter**: styling applies to the first letter of the target element  ; **before**: styling should be applied immediately before the content of the target element  ; **after**: styling should be applied immediately after the content of the target element 
  
  
  
 `@selector` contains a selector or series of selectors specifying the elements to which the contained style description applies, expressed in the language specified in the scheme attribute. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.text     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.text
+*  
 ```
  
 <rendition scheme="css" selector="text, front, back, body, div, p, ab">
                                                  display: block;</rendition>
  
 ```
- [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ]      |     
-   |    
+ [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ] 
+*  
 ```
  
 <rendition scheme="css" selector="*[rend*=italic]">
                                                  font-style: italic;</rendition>
  
 ```
- [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ]      |     
-   |    **Note**   |    Since the default value of the scheme attribute is assumed to be CSS, the default expectation for this attribute, in the absence of scheme, is that CSS selector syntax will be used.      |     
-   |    **Note**   |    While rendition is used to point from an element in the transcribed source to a  [rendition](#rendition)  element in the header which describes how it appears, the selector attribute allows the encoder to point in the other direction: from a  [rendition](#rendition)  in the header to a collection of elements which all share the same renditional features. In both cases, the intention is to record the appearance of the source text, not to prescribe any particular output rendering.      |     
+ [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ] 
+*  **Note***  Since the default value of the scheme attribute is assumed to be CSS, the default expectation for this attribute, in the absence of scheme, is that CSS selector syntax will be used. 
+*  **Note***  While rendition is used to point from an element in the transcribed source to a  [rendition](#rendition)  element in the header which describes how it appears, the selector attribute allows the encoder to point in the other direction: from a  [rendition](#rendition)  in the header to a collection of elements which all share the same renditional features. In both cases, the intention is to record the appearance of the source text, not to prescribe any particular output rendering. 
  
  
  
@@ -4973,7 +5641,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [bibl](#bibl)  [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [num](#num)  [q](#q)  [quote](#quote)  [ref](#ref)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [num](#num)  [q](#q)  [quote](#quote)  [ref](#ref)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5016,6 +5690,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **core:** [respStmt](#respStmt) 
  
  
@@ -5024,7 +5700,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5072,13 +5754,19 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [bibl](#bibl) **header:** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
+ 
+ 
+**core:** [bibl](#bibl) 
+ 
+**header:** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
  
  
  
  
  
 #### **May contain**
+ 
+ 
  
 **core:** [name](#name)  [note](#note)  [resp](#resp) 
  
@@ -5133,6 +5821,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [teiHeader](#teiHeader) 
  
  
@@ -5141,7 +5831,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [list](#list) **header:** [change](#change)  [listChange](#listChange) 
+ 
+ 
+**core:** [list](#list) 
+ 
+**header:** [change](#change)  [listChange](#listChange) 
  
  
  
@@ -5190,6 +5884,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
@@ -5198,7 +5894,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [editor](#editor)  [p](#p)  [respStmt](#respStmt)  [title](#title) **header:** [idno](#idno) 
+ 
+ 
+**core:** [editor](#editor)  [p](#p)  [respStmt](#respStmt)  [title](#title) 
+ 
+**header:** [idno](#idno) 
  
  
  
@@ -5239,7 +5939,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5247,7 +5955,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5332,6 +6048,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
@@ -5340,7 +6058,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [bibl](#bibl)  [list](#list)  [listBibl](#listBibl)  [p](#p) **header:** [biblFull](#biblFull) 
+ 
+ 
+**core:** [bibl](#bibl)  [list](#list)  [listBibl](#listBibl)  [p](#p) 
+ 
+**header:** [biblFull](#biblFull) 
  
  
  
@@ -5392,9 +6114,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@version` specifies the version number of the TEI Guidelines against which this document is valid. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.version     |     
-   |    **Note**   |    Major editions of the Guidelines have long been informally referred to by a name made up of the letter P (for Proposal) followed by a digit. The current release is one of the many releases of the fifth major edition of the Guidelines, known as P5. This attribute may be used to associate a TEI document with a specific release of the P5 Guidelines, in the absence of a more precise association provided by the source attribute on the associated `schemaSpec`.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.version
+*  **Note***  Major editions of the Guidelines have long been informally referred to by a name made up of the letter P (for Proposal) followed by a digit. The current release is one of the many releases of the fifth major edition of the Guidelines, known as P5. This attribute may be used to associate a TEI document with a specific release of the P5 Guidelines, in the absence of a more precise association provided by the source attribute on the associated `schemaSpec`. 
  
  
  
@@ -5415,7 +6137,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**header:** [teiHeader](#teiHeader) **textstructure:** [text](#text) 
+ 
+ 
+**header:** [teiHeader](#teiHeader) 
+ 
+**textstructure:** [text](#text) 
  
  
  
@@ -5476,6 +6202,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **textstructure:** [TEI](#TEI) 
  
  
@@ -5483,6 +6211,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **header:** [encodingDesc](#encodingDesc)  [fileDesc](#fileDesc)  [profileDesc](#profileDesc)  [revisionDesc](#revisionDesc) 
  
@@ -5538,7 +6268,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [keywords](#keywords)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [keywords](#keywords)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5546,7 +6282,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5644,6 +6388,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **textstructure:** [TEI](#TEI) 
  
  
@@ -5652,7 +6398,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) **textstructure:** [back](#back)  [body](#body)  [front](#front) 
+ 
+ 
+**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [front](#front) 
  
  
  
@@ -5713,6 +6463,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [profileDesc](#profileDesc) 
  
  
@@ -5720,6 +6472,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **header:** [catRef](#catRef)  [keywords](#keywords) 
  
@@ -5761,22 +6515,22 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@type` classifies the title according to some convenient typology. 
  
  
-   |    **Derived from**   |     [att.typed](#att.typed)      |     
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    **main**: main title  ; **sub**: (subordinate) subtitle, title of part  ; **alt**: (alternate) alternate title, often in another language, by which the work is also
+*  **Derived from***   [att.typed](#att.typed) 
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Sample values include:***  **main**: main title  ; **sub**: (subordinate) subtitle, title of part  ; **alt**: (alternate) alternate title, often in another language, by which the work is also
                                                 known
-                                               ; **short**: abbreviated form of title  ; **desc**: (descriptive) descriptive paraphrase of the work functioning as a title      |     
-   |    **Note**   |    This attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single  [title](#title)  element.      |     
+                                               ; **short**: abbreviated form of title  ; **desc**: (descriptive) descriptive paraphrase of the work functioning as a title 
+*  **Note***  This attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single  [title](#title)  element. 
  
  
  
 `@level` indicates the bibliographic level for a title, that is, whether it identifies an article, book, journal, series, or unpublished material. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **a**: (analytic) the title applies to an analytic item, such as an article, poem, or other
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **a**: (analytic) the title applies to an analytic item, such as an article, poem, or other
                                                 work published as part of a larger item.
                                                ; **m**: (monographic) the title applies to a monograph such as a book or other item considered
                                                 to be a distinct publication, including single volumes of multi-volume works
@@ -5786,8 +6540,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
                                                 a collection
                                                ; **u**: (unpublished) the title applies to any unpublished material (including theses and
                                                 dissertations unless published by a commercial press)
-                                                   |     
-   |    **Note**   |    The level of a title is sometimes implied by its context: for example, a title appearing directly within an `analytic` element is ipso facto of level ‘a’, and one appearing within a `series` element of level ‘s’. For this reason, the level attribute is not required in contexts where its value can be unambiguously inferred. Where it is supplied in such contexts, its value should not contradict the value implied by its parent element.      |     
+                                              
+*  **Note***  The level of a title is sometimes implied by its context: for example, a title appearing directly within an `analytic` element is ipso facto of level ‘a’, and one appearing within a `series` element of level ‘s’. For this reason, the level attribute is not required in contexts where its value can be unambiguously inferred. Where it is supplied in such contexts, its value should not contradict the value implied by its parent element. 
  
  
  
@@ -5800,7 +6554,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5808,7 +6568,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5884,9 +6652,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@type` classifies the title page according to any convenient typology. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Note**   |    This attribute allows the same element to be used for volume title pages, series title pages, etc., as well as for the ‘main’ title page of a work.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Note***  This attribute allows the same element to be used for volume title pages, series title pages, etc., as well as for the ‘main’ title page of a work. 
  
  
  
@@ -5899,6 +6667,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **textstructure:** [back](#back)  [front](#front) 
  
  
@@ -5907,7 +6677,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) **textstructure:** [byline](#byline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePart](#titlePart) 
+ 
+ 
+**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+ 
+**textstructure:** [byline](#byline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePart](#titlePart) 
  
  
  
@@ -5947,9 +6721,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
 `@type` specifies the role of this subdivision of the title. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    **main**: main title of the work [Default]   ; **sub**: (subordinate) subtitle of the work  ; **alt**: (alternate) alternative title of the work  ; **short**: abbreviated form of title  ; **desc**: (descriptive) descriptive paraphrase of the work      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Suggested values include:***  **main**: main title of the work [Default]   ; **sub**: (subordinate) subtitle of the work  ; **alt**: (alternate) alternative title of the work  ; **short**: abbreviated form of title  ; **desc**: (descriptive) descriptive paraphrase of the work 
  
  
  
@@ -5962,6 +6736,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **textstructure:** [back](#back)  [docTitle](#docTitle)  [front](#front)  [titlePage](#titlePage) 
  
  
@@ -5970,7 +6746,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -6011,6 +6795,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
+ 
+ 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
  
  
@@ -6018,6 +6804,8 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
 #### **May contain**
+ 
+ 
  
 **core:** [author](#author)  [editor](#editor)  [respStmt](#respStmt)  [title](#title) 
  
@@ -6058,7 +6846,11 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+ 
+ 
+**core:** [lg](#lg)  [list](#list) 
+ 
+**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
  
@@ -6066,7 +6858,15 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
-**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
+ 
+ 
+**analysis:** [pc](#pc) 
+ 
+**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -6119,7 +6919,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
-**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -6174,9 +6980,9 @@ Attributes
 `@who` indicates the person, or group of people, to whom the element content is ascribed. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
-   |    In the following example from Hamlet, speeches (`sp`) in the body of the play are linked to `castItem` elements in the `castList` using the who attribute. 
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
+*  In the following example from Hamlet, speeches (`sp`) in the body of the play are linked to `castItem` elements in the `castList` using the who attribute. 
 ```
  
 <castItem type="role">
@@ -6190,8 +6996,8 @@ Attributes
                                                 Nay, answer me: stand, and unfold yourself.</l></sp>
  
 ```
-     |     
-   |    **Note**   |    For transcribed speech, this will typically identify a participant or participant group; in other contexts, it will point to any identified `person` element.      |     
+ 
+*  **Note***  For transcribed speech, this will typically identify a participant or participant group; in other contexts, it will point to any identified `person` element. 
  
  
  
@@ -6227,9 +7033,9 @@ Attributes  [att.ascribed](#att.ascribed)  (`@who`)
 `@toWhom` indicates the person, or group of people, to whom a speech act or action is directed. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
-   |    In the following example from Mary Pix's The False Friend, speeches (`sp`) in the body of the play are linked to `castItem` elements in the `castList` using the toWhom attribute, which is used to specify who the speech is directed to. Additionally, the `stage` includes toWhom to indicate the directionality of the action. 
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
+*  In the following example from Mary Pix's The False Friend, speeches (`sp`) in the body of the play are linked to `castItem` elements in the `castList` using the toWhom attribute, which is used to specify who the speech is directed to. Additionally, the `stage` includes toWhom to indicate the directionality of the action. 
 ```
  
 <castItem type="role">
@@ -6246,8 +7052,8 @@ Attributes  [att.ascribed](#att.ascribed)  (`@who`)
                                                 Pointing to her Woman.</stage> <l>But that poor helpless wretch——</l></sp>
  
 ```
-     |     
-   |    **Note**   |    To indicate the recipient of written correspondence, use the elements used in section  [2.4.6. Correspondence Description](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD44CD) , rather than a toWhom attribute.      |     
+ 
+*  **Note***  To indicate the recipient of written correspondence, use the elements used in section  [2.4.6. Correspondence Description](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD44CD) , rather than a toWhom attribute. 
  
  
  
@@ -6283,20 +7089,20 @@ Attributes
 `@break` indicates whether or not the element bearing this attribute should be considered to mark the end of an orthographic token in the same way as whitespace. 
  
  
-   |    **Status**   |    Recommended     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include**   |    **yes**: the element bearing this attribute is considered to mark the end of any adjacent orthographic
+*  **Status***  Recommended
+*  **Datatype***  teidata.enumerated
+*  **Sample values include***  **yes**: the element bearing this attribute is considered to mark the end of any adjacent orthographic
                                                 token irrespective of the presence of any adjacent whitespace
                                                ; **no**: the element bearing this attribute is considered not to mark the end of any adjacent
                                                 orthographic token irrespective of the presence of any adjacent whitespace
-                                               ; **maybe**: the encoding does not take any position on this issue.      |     
-   |    In the following lines from the Dream of the Rood, linebreaks occur in the middle of the words lāðost and reord-berendum. 
+                                               ; **maybe**: the encoding does not take any position on this issue. 
+*  In the following lines from the Dream of the Rood, linebreaks occur in the middle of the words lāðost and reord-berendum. 
 ```
  
 <ab> ...eƿesa tome iu icƿæs ȝeƿorden ƿita heardoſt . leodum la<lb break="no"/> ðost ærþan ichim lifes ƿeȝ rihtne ȝerymde reord be<lb break="no"/> rendum hƿæt me þaȝeƿeorðode ƿuldres ealdor ofer...</ab>
  
 ```
-     |     
+ 
  
  
  
@@ -6332,42 +7138,42 @@ Attributes
 `@key` provides an externally-defined means of identifying the entity (or entities) being named, using a coded value of some kind. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.text     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.text
+*  
 ```
  
 <author> <name key="name 427308"  type="organisation">
                                                 [New Zealand Parliament, Legislative Council]</name></author>
  
 ```
-     |     
-   |    
+ 
+*  
 ```
  
 <author> <name key="Hugo, Victor (1802-1885)"  ref="http://www.idref.fr/026927608">
                                                 Victor Hugo</name></author>
  
 ```
-     |     
-   |    **Note**   |    The value may be a unique identifier from a database, or any other externally-defined string identifying the referent. No particular syntax is proposed for the values of the key attribute, since its form will depend entirely on practice within a given project. For the same reason, this attribute is not recommended in data interchange, since there is no way of ensuring that the values used by one project are distinct from those used by another. In such a situation, a preferable approach for magic tokens which follows standard practice on the Web is to use a ref attribute whose value is a tag URI as defined in RFC 4151.      |     
+ 
+*  **Note***  The value may be a unique identifier from a database, or any other externally-defined string identifying the referent. No particular syntax is proposed for the values of the key attribute, since its form will depend entirely on practice within a given project. For the same reason, this attribute is not recommended in data interchange, since there is no way of ensuring that the values used by one project are distinct from those used by another. In such a situation, a preferable approach for magic tokens which follows standard practice on the Web is to use a ref attribute whose value is a tag URI as defined in RFC 4151. 
  
  
  
 `@ref` (reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
+*  
 ```
  
 <name ref="http://viaf.org/viaf/109557338" type="person">
                                                 Seamus Heaney</name>
  
 ```
-     |     
-   |    **Note**   |    The value must point directly to one or more XML elements or other resources by means of one or more URIs, separated by whitespace. If more than one is supplied the implication is that the name identifies several distinct entities.      |     
+ 
+*  **Note***  The value must point directly to one or more XML elements or other resources by means of one or more URIs, separated by whitespace. If more than one is supplied the implication is that the name identifies several distinct entities. 
  
  
  
@@ -6403,9 +7209,9 @@ Attributes
 `@cRef` (canonical reference) specifies the destination of the pointer by supplying a canonical reference expressed using the scheme defined in a `refsDecl` element in the TEI header 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.text     |     
-   |    **Note**   |    The value of cRef should be constructed so that when the algorithm for the resolution of canonical references (described in section  [16.2.5. Canonical References](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SACR) ) is applied to it the result is a valid URI reference to the intended target. The `refsDecl` to use may be indicated with the decls attribute. Currently these Guidelines only provide for a single canonical reference to be encoded on any given `ptr` element.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.text
+*  **Note***  The value of cRef should be constructed so that when the algorithm for the resolution of canonical references (described in section  [16.2.5. Canonical References](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SACR) ) is applied to it the result is a valid URI reference to the intended target. The `refsDecl` to use may be indicated with the decls attribute. Currently these Guidelines only provide for a single canonical reference to be encoded on any given `ptr` element. 
  
  
  
@@ -6441,9 +7247,9 @@ Attributes  [att.datable.w3c](#att.datable.w3c)  (`@when`, `@notBefore`, `@notA
 `@calendar` indicates the system or calendar to which the date represented by the content of this element belongs. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
+*  
 ```
  
 He was born on <date calendar="#gregorian">
@@ -6452,16 +7258,16 @@ He was born on <date calendar="#gregorian">
                                           
  
 ```
-     |     
-   |    **Note**   |    Note that the calendar attribute (unlike datingMethod defined in att.datable.custom) defines the calendar system of the date in the original material defined by the parent element, not the calendar to which the date is normalized.      |     
+ 
+*  **Note***  Note that the calendar attribute (unlike datingMethod defined in att.datable.custom) defines the calendar system of the date in the original material defined by the parent element, not the calendar to which the date is normalized. 
  
  
  
 `@period` supplies a pointer to some location defining a named period of time within which the datable item is understood to have occurred. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
  
  
  
@@ -6505,9 +7311,9 @@ Attributes
 `@when` supplies the value of the date or time in a standard form, e.g. yyyy-mm-dd. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.temporal.w3c     |     
-   |    Examples of W3C date, time, and date &amp; time formats.
+*  **Status***  Optional
+*  **Datatype***  teidata.temporal.w3c
+*  Examples of W3C date, time, and date &amp; time formats.
 ```
  
 <p> <date when="1945-10-24">
@@ -6524,8 +7330,8 @@ Attributes
                                                 56 BC</date></p>
  
 ```
-     |     
-   |    
+ 
+*  
 ```
  
 This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Sunday after Pentecost, in that year the<date calendar="#julian" when="1632-06-06">
@@ -6533,8 +7339,8 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
                                           
  
 ```
-     |     
-   |    
+ 
+*  
 ```
  
 <opener> <dateline>  <placeName>Dorchester, Village,</placeName>  <date when="1828-03-02">
@@ -6542,39 +7348,39 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
                                                 noon.</time></opener>
  
 ```
-     |     
+ 
  
  
  
 `@notBefore` specifies the earliest possible date for the event in standard form, e.g. yyyy-mm-dd. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.temporal.w3c     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.temporal.w3c
  
  
  
 `@notAfter` specifies the latest possible date for the event in standard form, e.g. yyyy-mm-dd. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.temporal.w3c     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.temporal.w3c
  
  
  
 `@from` indicates the starting point of the period in standard form, e.g. yyyy-mm-dd. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.temporal.w3c     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.temporal.w3c
  
  
  
 `@to` indicates the ending point of the period in standard form, e.g. yyyy-mm-dd. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.temporal.w3c     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.temporal.w3c
  
  
  
@@ -6633,16 +7439,16 @@ Attributes
 `@datcat` contains a PID (persistent identifier) that aligns the given element with the appropriate Data Category (or categories) in ISOcat. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
  
  
  
 `@valueDatcat` contains a PID (persistent identifier) that aligns the content of the given element or the value of the given attribute with the appropriate simple Data Category (or categories) in ISOcat. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
  
  
  
@@ -6700,10 +7506,10 @@ Attributes
 `@default` indicates whether or not this element is selected by default when its parent is selected. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.truthValue     |     
-   |    **Legal values are:**   |    **true**: This element is selected if its parent is selected  ; **false**: This element can only be selected explicitly, unless it is the only one of its kind,
-                                                in which case it is selected if its parent is selected. [Default]       |     
+*  **Status***  Optional
+*  **Datatype***  teidata.truthValue
+*  **Legal values are:***  **true**: This element is selected if its parent is selected  ; **false**: This element can only be selected explicitly, unless it is the only one of its kind,
+                                                in which case it is selected if its parent is selected. [Default]  
  
  
  
@@ -6747,8 +7553,8 @@ Attributes
 `@decls` identifies one or more declarable elements within the header, which are understood to apply to the element bearing this attribute and its content. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
  
  
  
@@ -6792,56 +7598,56 @@ Attributes  [att.ranging](#att.ranging)  (`@atLeast`, `@atMost`, `@min`, `@max`
 `@unit` names the unit used for the measurement 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    **cm**: (centimetres)   ; **mm**: (millimetres)   ; **in**: (inches)   ; **lines**: lines of text  ; **chars**: (characters) characters of text      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Suggested values include:***  **cm**: (centimetres)   ; **mm**: (millimetres)   ; **in**: (inches)   ; **lines**: lines of text  ; **chars**: (characters) characters of text 
  
  
  
 `@quantity` specifies the length in the units specified 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.numeric     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.numeric
  
  
  
 `@extent` indicates the size of the object concerned using a project-specific vocabulary combining quantity and units in a single string of words. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.text     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.text
+*  
 ```
  
 <gap extent="5 words"/>
  
 ```
-     |     
-   |    
+ 
+*  
 ```
  
 <height extent="half the page"/>
  
 ```
-     |     
+ 
  
  
  
 `@precision` characterizes the precision of the values specified by the other attributes. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.certainty     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.certainty
  
  
  
 `@scope` where the measurement summarizes more than one observation, specifies the applicability of this measurement. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    **all**: measurement applies to all instances.  ; **most**: measurement applies to most of the instances inspected.  ; **range**: measurement applies to only the specified range of instances.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Sample values include:***  **all**: measurement applies to all instances.  ; **most**: measurement applies to most of the instances inspected.  ; **range**: measurement applies to only the specified range of instances. 
  
  
  
@@ -6877,21 +7683,21 @@ Attributes  [att.fragmentable](#att.fragmentable)  (`@part`)
 `@org` (organization) specifies how the content of the division is organized. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **composite**: no claim is made about the sequence in which the immediate contents of this division
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **composite**: no claim is made about the sequence in which the immediate contents of this division
                                                 are to be processed, or their inter-relationships.
                                                ; **uniform**: the immediate contents of this element are regarded as forming a logical unit, to
-                                                be processed in sequence. [Default]       |     
+                                                be processed in sequence. [Default]  
  
  
  
 `@sample` indicates whether this division is a sample of the original source and if so, from which part. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **initial**: division lacks material present at end in source.  ; **medial**: division lacks material at start and end.  ; **final**: division lacks material at start.  ; **unknown**: position of sampled material within original unknown.  ; **complete**: division is not a sample. [Default]       |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **initial**: division lacks material present at end in source.  ; **medial**: division lacks material at start and end.  ; **final**: division lacks material at start.  ; **unknown**: position of sampled material within original unknown.  ; **complete**: division is not a sample. [Default]  
  
  
  
@@ -6927,9 +7733,9 @@ Attributes
 `@status` describes the status of a document either currently or, when associated with a dated element, at the time indicated. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    **approved**: [No description available]  ; **candidate**: [No description available]  ; **cleared**: [No description available]  ; **deprecated**: [No description available]  ; **draft**:  [Default]   ; **embargoed**: [No description available]  ; **expired**: [No description available]  ; **frozen**: [No description available]  ; **galley**: [No description available]  ; **proposed**: [No description available]  ; **published**: [No description available]  ; **recommendation**: [No description available]  ; **submitted**: [No description available]  ; **unfinished**: [No description available]  ; **withdrawn**: [No description available]      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Sample values include:***  **approved**: [No description available]  ; **candidate**: [No description available]  ; **cleared**: [No description available]  ; **deprecated**: [No description available]  ; **draft**:  [Default]   ; **embargoed**: [No description available]  ; **expired**: [No description available]  ; **frozen**: [No description available]  ; **galley**: [No description available]  ; **proposed**: [No description available]  ; **published**: [No description available]  ; **recommendation**: [No description available]  ; **submitted**: [No description available]  ; **unfinished**: [No description available]  ; **withdrawn**: [No description available] 
  
  
  
@@ -6980,16 +7786,16 @@ Attributes
 `@ed` (edition) supplies a sigil or other arbitrary identifier for the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.word separated by whitespace     |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.word separated by whitespace
  
  
  
 `@edRef` (edition reference) provides a pointer to the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
  
  
  
@@ -7055,20 +7861,20 @@ Attributes
 `@evidence` indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
-   |    **Suggested values include:**   |    **internal**: there is internal evidence to support the intervention.  ; **external**: there is external evidence to support the intervention.  ; **conjecture**: the intervention or interpretation has been made by the editor, cataloguer, or scholar
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.enumerated separated by whitespace
+*  **Suggested values include:***  **internal**: there is internal evidence to support the intervention.  ; **external**: there is external evidence to support the intervention.  ; **conjecture**: the intervention or interpretation has been made by the editor, cataloguer, or scholar
                                                 on the basis of their expertise.
-                                                   |     
+                                              
  
  
  
 `@instant` indicates whether this is an instant revision or not. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.xTruthValue     |     
-   |    **Default**   |    false     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.xTruthValue
+*  **Default***  false
  
  
  
@@ -7120,10 +7926,10 @@ Attributes
 `@part` specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **Y**: (yes) the element is fragmented in some (unspecified) respect  ; **N**: (no) the element is not fragmented, or no claim is made as to its completeness [Default]   ; **I**: (initial) this is the initial part of a fragmented element  ; **M**: (medial) this is a medial part of a fragmented element  ; **F**: (final) this is the final part of a fragmented element      |     
-   |    **Note**   |    The values I, M, or F should be used only where it is clear how the element may be be reconstituted.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **Y**: (yes) the element is fragmented in some (unspecified) respect  ; **N**: (no) the element is not fragmented, or no claim is made as to its completeness [Default]   ; **I**: (initial) this is the initial part of a fragmented element  ; **M**: (medial) this is a medial part of a fragmented element  ; **F**: (final) this is the final part of a fragmented element 
+*  **Note***  The values I, M, or F should be used only where it is clear how the element may be be reconstituted. 
  
  
  
@@ -7159,44 +7965,44 @@ Attributes  [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, 
 `@xml:id` (identifier) provides a unique identifier for the element bearing the attribute. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    ID     |     
-   |    **Note**   |    The xml:id attribute may be used to specify a canonical reference for an element; see section  [3.10. Reference Systems](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CORS) .      |     
+*  **Status***  Optional
+*  **Datatype***  ID
+*  **Note***  The xml:id attribute may be used to specify a canonical reference for an element; see section  [3.10. Reference Systems](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CORS) . 
  
  
  
 `@n` (number) gives a number (or other label) for an element, which is not necessarily unique within the document. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.text     |     
-   |    **Note**   |    The value of this attribute is always understood to be a single token, even if it contains space or other punctuation characters, and need not be composed of numbers only. It is typically used to specify the numbering of chapters, sections, list items, etc.; it may also be used in the specification of a standard reference system for the text.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.text
+*  **Note***  The value of this attribute is always understood to be a single token, even if it contains space or other punctuation characters, and need not be composed of numbers only. It is typically used to specify the numbering of chapters, sections, list items, etc.; it may also be used in the specification of a standard reference system for the text. 
  
  
  
 `@xml:lang` (language) indicates the language of the element content using a ‘tag’ generated according to  [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt) . 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.language     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.language
+*  
 ```
  
 <p> … The consequences of this rapid depopulation were the loss of the last<foreign xml:lang="rap">
                                                 ariki</foreign> or chief (Routledge 1920:205,210) and their connections to ancestral territorial organization.</p>
  
 ```
-     |     
-   |    **Note**   |    The xml:lang value will be inherited from the immediately enclosing element, or from its parent, and so on up the document hierarchy. It is generally good practice to specify xml:lang at the highest appropriate level, noticing that a different default may be needed for the teiHeader from that needed for the associated resource element or elements, and that a single TEI document may contain texts in many languages. The authoritative list of registered language subtags is maintained by IANA and is available at  [http://www.iana.org/assignments/language-subtag-registry](http://www.iana.org/assignments/language-subtag-registry) . For a good general overview of the construction of language tags, see  [http://www.w3.org/International/articles/language-tags/](http://www.w3.org/International/articles/language-tags/) , and for a practical step-by-step guide, see  [https://www.w3.org/International/questions/qa-choosing-language-tags.en.php](https://www.w3.org/International/questions/qa-choosing-language-tags.en.php) . The value used must conform with BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a  [language](#language)  element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions.      |     
+ 
+*  **Note***  The xml:lang value will be inherited from the immediately enclosing element, or from its parent, and so on up the document hierarchy. It is generally good practice to specify xml:lang at the highest appropriate level, noticing that a different default may be needed for the teiHeader from that needed for the associated resource element or elements, and that a single TEI document may contain texts in many languages. The authoritative list of registered language subtags is maintained by IANA and is available at  [http://www.iana.org/assignments/language-subtag-registry](http://www.iana.org/assignments/language-subtag-registry) . For a good general overview of the construction of language tags, see  [http://www.w3.org/International/articles/language-tags/](http://www.w3.org/International/articles/language-tags/) , and for a practical step-by-step guide, see  [https://www.w3.org/International/questions/qa-choosing-language-tags.en.php](https://www.w3.org/International/questions/qa-choosing-language-tags.en.php) . The value used must conform with BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a  [language](#language)  element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions. 
  
  
  
 `@xml:base` provides a base URI reference with which applications can resolve relative URI references into absolute URI references. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
+*  
 ```
  
 <div type="bibl">
@@ -7207,17 +8013,17 @@ Attributes  [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, 
                                                     <title>Essays in Rhyme on Morals and Manners</title>   </ref>  </bibl> </listBibl></div>
  
 ```
-     |     
+ 
  
  
  
 `@xml:space` signals an intention about how white space should be managed by applications. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **default**: signals that the application's default white-space processing modes are acceptable  ; **preserve**: indicates the intent that applications preserve all white space      |     
-   |    **Note**   |    The  [XML specification](http://www.w3.org/TR/REC-xml/#sec-white-space)  provides further guidance on the use of this attribute. Note that many parsers may not handle xml:space correctly.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **default**: signals that the application's default white-space processing modes are acceptable  ; **preserve**: indicates the intent that applications preserve all white space 
+*  **Note***  The  [XML specification](http://www.w3.org/TR/REC-xml/#sec-white-space)  provides further guidance on the use of this attribute. Note that many parsers may not handle xml:space correctly. 
  
  
  
@@ -7253,9 +8059,9 @@ Attributes
 `@ana` (analysis) indicates one or more elements containing interpretations of the element on which the ana attribute appears. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
-   |    **Note**   |    When multiple values are given, they may reflect either multiple divergent interpretations of an ambiguous text, or multiple mutually consistent interpretations of the same passage in different contexts.      |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
+*  **Note***  When multiple values are given, they may reflect either multiple divergent interpretations of an ambiguous text, or multiple mutually consistent interpretations of the same passage in different contexts. 
  
  
  
@@ -7291,9 +8097,9 @@ Attributes
 `@rend` (rendition) indicates how the element in question was rendered or presented in the source text. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.word separated by whitespace     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.word separated by whitespace
+*  
 ```
  
 <head rend="align(center) case(allcaps)">
@@ -7301,17 +8107,17 @@ Attributes
                                                 New Blazing-World</hi>. </head>
  
 ```
-     |     
-   |    **Note**   |    These Guidelines make no binding recommendations for the values of the rend attribute; the characteristics of visual presentation vary too much from text to text and the decision to record or ignore individual characteristics varies too much from project to project. Some potentially useful conventions are noted from time to time at appropriate points in the Guidelines. The values of the rend attribute are a set of sequence-indeterminate individual tokens separated by whitespace.      |     
+ 
+*  **Note***  These Guidelines make no binding recommendations for the values of the rend attribute; the characteristics of visual presentation vary too much from text to text and the decision to record or ignore individual characteristics varies too much from project to project. Some potentially useful conventions are noted from time to time at appropriate points in the Guidelines. The values of the rend attribute are a set of sequence-indeterminate individual tokens separated by whitespace. 
  
  
  
 `@style` contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.text     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.text
+*  
 ```
  
 <head style="text-align: center; font-variant: small-caps">
@@ -7319,17 +8125,17 @@ Attributes
                                                 New Blazing-World</hi>. </head>
  
 ```
-     |     
-   |    **Note**   |    Unlike the attribute values of rend, which uses whitespace as a separator, the style attribute may contain whitespace. This attribute is intended for recording inline stylistic information concerning the source, not any particular output. The formal language in which values for this attribute are expressed may be specified using the `styleDefDecl` element in the TEI header. If style and rendition are both present on an element, then style overrides or complements rendition. style should not be used in conjunction with rend, because the latter does not employ a formal style definition language.      |     
+ 
+*  **Note***  Unlike the attribute values of rend, which uses whitespace as a separator, the style attribute may contain whitespace. This attribute is intended for recording inline stylistic information concerning the source, not any particular output. The formal language in which values for this attribute are expressed may be specified using the `styleDefDecl` element in the TEI header. If style and rendition are both present on an element, then style overrides or complements rendition. style should not be used in conjunction with rend, because the latter does not employ a formal style definition language. 
  
  
  
 `@rendition` points to a description of the rendering or presentation used for this element in the source text. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
+*  
 ```
  
 <head rendition="#ac #sc">
@@ -7340,8 +8146,8 @@ Attributes
                                                 text-align: center</rendition>
  
 ```
-     |     
-   |    **Note**   |    The rendition attribute is used in a very similar way to the class attribute defined for XHTML but with the important distinction that its function is to describe the appearance of the source text, not necessarily to determine how that text should be presented on screen or paper. If rendition is used to refer to a style definition in a formal language like CSS, it is recommended that it not be used in conjunction with rend. Where both rendition and rend are supplied, the latter is understood to override or complement the former. Each URI provided should indicate a  [rendition](#rendition)  element defining the intended rendition in terms of some appropriate style language, as indicated by the scheme attribute.      |     
+ 
+*  **Note***  The rendition attribute is used in a very similar way to the class attribute defined for XHTML but with the important distinction that its function is to describe the appearance of the source text, not necessarily to determine how that text should be presented on screen or paper. If rendition is used to refer to a style definition in a formal language like CSS, it is recommended that it not be used in conjunction with rend. Where both rendition and rend are supplied, the latter is understood to override or complement the former. Each URI provided should indicate a  [rendition](#rendition)  element defining the intended rendition in terms of some appropriate style language, as indicated by the scheme attribute. 
  
  
  
@@ -7377,17 +8183,17 @@ Attributes
 `@cert` (certainty) signifies the degree of certainty associated with the intervention or interpretation. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.probCert     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.probCert
  
  
  
 `@resp` (responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
-   |    **Note**   |    To reduce the ambiguity of a resp pointing directly to a person or organization, we recommend that resp be used to point not to an agent (`person` or `org`) but to a  [respStmt](#respStmt) ,  [author](#author) ,  [editor](#editor)  or similar element which clarifies the exact role played by the agent. Pointing to multiple  [respStmt](#respStmt) s allows the encoder to specify clearly each of the roles played in part of a TEI file (creating, transcribing, encoding, editing, proofing etc.).      |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
+*  **Note***  To reduce the ambiguity of a resp pointing directly to a person or organization, we recommend that resp be used to point not to an agent (`person` or `org`) but to a  [respStmt](#respStmt) ,  [author](#author) ,  [editor](#editor)  or similar element which clarifies the exact role played by the agent. Pointing to multiple  [respStmt](#respStmt) s allows the encoder to specify clearly each of the roles played in part of a TEI file (creating, transcribing, encoding, editing, proofing etc.). 
  
  
  
@@ -7456,9 +8262,9 @@ Attributes
 `@source` specifies the source from which some aspect of this element is drawn. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
-   |    **Note**   |    The source attribute points to an external source. When used on elements describing schema components such as `schemaSpec` or `moduleRef` it identifies the source from which declarations for the components of the object being defined may be obtained. On other elements it provides a pointer to the bibliographical source from which a quotation or citation is drawn. In either case, the location may be provided using any form of URI, for example an absolute URI, a relative URI, or private scheme URI that is expanded to an absolute URI as documented in a  [prefixDef](#prefixDef) . If more than one location is specified, the default assumption is that the required source should be obtained by combining the resources indicated.      |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
+*  **Note***  The source attribute points to an external source. When used on elements describing schema components such as `schemaSpec` or `moduleRef` it identifies the source from which declarations for the components of the object being defined may be obtained. On other elements it provides a pointer to the bibliographical source from which a quotation or citation is drawn. In either case, the location may be provided using any form of URI, for example an absolute URI, a relative URI, or private scheme URI that is expanded to an absolute URI as documented in a  [prefixDef](#prefixDef) . If more than one location is specified, the default assumption is that the required source should be obtained by combining the resources indicated. 
  
  
  
@@ -7557,8 +8363,8 @@ Attributes
 `@mimeType` (MIME media type) specifies the applicable multimedia internet mail extension (MIME) media type 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.word separated by whitespace     |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.word separated by whitespace
  
  
  
@@ -7616,33 +8422,33 @@ Attributes
 `@lemma` provides a lemma (base form) for the word, typically uninflected and serving both as an identifier (e.g. in dictionary contexts, as a headword), and as a basis for potential inflections. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.text     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.text
+*  
 ```
  
 <w lemma="wife">
                                                 wives</w>
  
 ```
-     |     
-   |    
+ 
+*  
 ```
  
 <w lemma="Arznei">
                                                 Artzeneyen</w>
  
 ```
-     |     
+ 
  
  
  
 `@lemmaRef` provides a pointer to a definition of the lemma for the word, for example in an online lexicon. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
+*  
 ```
  
 <w type="verb" lemma="hit" lemmaRef="http://www.example.com/lexicon/hitvb.xml">
@@ -7650,16 +8456,16 @@ Attributes
                                                 ing</m></w>
  
 ```
-     |     
+ 
  
  
  
 `@pos` (part of speech) indicates the part of speech assigned to a token (i.e. information on whether it is a noun, adjective, or verb), usually according to some official reference vocabulary (e.g. for German: STTS, for English: CLAWS, for Polish: NKJP, etc.). 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.text     |     
-   |    The German sentence ‘Wir fahren in den Urlaub.’ tagged with the Stuttgart-Tuebingen-Tagset (STTS). 
+*  **Status***  Optional
+*  **Datatype***  teidata.text
+*  The German sentence ‘Wir fahren in den Urlaub.’ tagged with the Stuttgart-Tuebingen-Tagset (STTS). 
 ```
  
 <s> <w pos="PPER">
@@ -7671,8 +8477,8 @@ Attributes
                                                 .</w></s>
  
 ```
-     |     
-   |    The English sentence ‘We're going to Brazil.’ tagged with the  [CLAWS-5](http://ucrel.lancs.ac.uk/claws5tags.html)  tagset, arranged inline (with significant whitespace). 
+ 
+*  The English sentence ‘We're going to Brazil.’ tagged with the  [CLAWS-5](http://ucrel.lancs.ac.uk/claws5tags.html)  tagset, arranged inline (with significant whitespace). 
 ```
  
 <p><w pos="PNP">
@@ -7686,8 +8492,8 @@ Attributes
                                           
  
 ```
-     |     
-   |    The English sentence ‘We're going on vacation to Brazil for a month!’ tagged with the  [CLAWS-7](http://ucrel.lancs.ac.uk/claws7tags.html)  tagset and arranged sequentially. 
+ 
+*  The English sentence ‘We're going on vacation to Brazil for a month!’ tagged with the  [CLAWS-7](http://ucrel.lancs.ac.uk/claws7tags.html)  tagset and arranged sequentially. 
 ```
  
 <p> <w pos="PPIS2">
@@ -7704,16 +8510,16 @@ Attributes
                                                 !</pc></p>
  
 ```
-     |     
+ 
  
  
  
 `@msd` (morphosyntactic description) supplies morphosyntactic information for a token, usually according to some official reference vocabulary (e.g. for German:  [STTS-large tagset](http://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/TagSets/stts-1999.pdf) ; for a feature description system designed as (pragmatically) universal, see  [Universal Features](http://universaldependencies.org/u/feat/index.html) ). 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.text     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.text
+*  
 ```
  
 <ab> <w pos="PPER" msd="1.Pl.*.Nom">
@@ -7725,20 +8531,20 @@ Attributes
                                                 .</pc></ab>
  
 ```
-     |     
+ 
  
  
  
 `@join` when present, it provides information on whether the token in question is adjacent to another, and if so, on which side. The definition of this attribute is adapted from ISO MAF (Morpho-syntactic Annotation Framework), ISO 24611:2012. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.text     |     
-   |    **Legal values are:**   |    **no**: (the token is not adjacent to another)   ; **left**: (there is no whitespace on the left side of the token)   ; **right**: (there is no whitespace on the right side of the token)   ; **both**: (there is no whitespace on either side of the token)   ; **overlap**: (the token overlaps with another; other devices (specifying the extent and the area
+*  **Status***  Optional
+*  **Datatype***  teidata.text
+*  **Legal values are:***  **no**: (the token is not adjacent to another)   ; **left**: (there is no whitespace on the left side of the token)   ; **right**: (there is no whitespace on the right side of the token)   ; **both**: (there is no whitespace on either side of the token)   ; **overlap**: (the token overlaps with another; other devices (specifying the extent and the area
                                                 of overlap) are needed to more precisely locate this token in the character stream)
                                                 
-                                                   |     
-   |    The example below assumes that the lack of whitespace is marked redundantly, by using the appropriate values of join. 
+                                              
+*  The example below assumes that the lack of whitespace is marked redundantly, by using the appropriate values of join. 
 ```
  
 <s> <pc join="right">
@@ -7749,8 +8555,8 @@ Attributes
                                                 "</pc></s>
  
 ```
-Note that a project may make a decision to only indicate lack of whitespace in one direction, or do that non-redundantly. The existing proposal is the broadest possible, on the assumption that we adopt the "streamable view", where all the information on the current element needs to be represented locally.      |     
-   |    The English sentence ‘We're going on vacation.’ tagged with the CLAWS-5 tagset, arranged sequentially, tagged on the assumption that only the lack of the preceding whitespace is indicated. 
+Note that a project may make a decision to only indicate lack of whitespace in one direction, or do that non-redundantly. The existing proposal is the broadest possible, on the assumption that we adopt the "streamable view", where all the information on the current element needs to be represented locally. 
+*  The English sentence ‘We're going on vacation.’ tagged with the CLAWS-5 tagset, arranged sequentially, tagged on the assumption that only the lack of the preceding whitespace is indicated. 
 ```
  
 <p> <w pos="PNP">
@@ -7762,7 +8568,7 @@ Note that a project may make a decision to only indicate lack of whitespace in o
                                                 .</pc></p>
  
 ```
-     |     
+ 
  
  
  
@@ -7806,20 +8612,20 @@ Attributes
 `@unit` provides a conventional name for the kind of section changing at this milestone. 
  
  
-   |    **Status**   |    Required     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    **page**: physical page breaks (synonymous with the pb element).
+*  **Status***  Required
+*  **Datatype***  teidata.enumerated
+*  **Suggested values include:***  **page**: physical page breaks (synonymous with the pb element).
                                                ; **column**: column breaks.  ; **line**: line breaks (synonymous with the lb element).
-                                               ; **book**: any units termed book, liber, etc.  ; **poem**: individual poems in a collection.  ; **canto**: cantos or other major sections of a poem.  ; **speaker**: changes of speaker or narrator.  ; **stanza**: stanzas within a poem, book, or canto.  ; **act**: acts within a play.  ; **scene**: scenes within a play or act.  ; **section**: sections of any kind.  ; **absent**: passages not present in the reference edition.  ; **unnumbered**: passages present in the text, but not to be included as part of the reference.      |     
-   |    
+                                               ; **book**: any units termed book, liber, etc.  ; **poem**: individual poems in a collection.  ; **canto**: cantos or other major sections of a poem.  ; **speaker**: changes of speaker or narrator.  ; **stanza**: stanzas within a poem, book, or canto.  ; **act**: acts within a play.  ; **scene**: scenes within a play or act.  ; **section**: sections of any kind.  ; **absent**: passages not present in the reference edition.  ; **unnumbered**: passages present in the text, but not to be included as part of the reference. 
+*  
 ```
  
 <milestone n="23" ed="La" unit="Dreissiger"/> ... <milestone n="24" ed="AV" unit="verse"/> ...
                                           
  
 ```
-     |     
-   |    **Note**   |    If the milestone marks the beginning of a piece of text not present in the reference edition, the special value absent may be used as the value of unit. The normal interpretation is that the reference edition does not contain the text which follows, until the next  [milestone](#milestone)  tag for the edition in question is encountered. In addition to the values suggested, other terms may be appropriate (e.g. Stephanus for the Stephanus numbers in Plato).      |     
+ 
+*  **Note***  If the milestone marks the beginning of a piece of text not present in the reference edition, the special value absent may be used as the value of unit. The normal interpretation is that the reference edition does not contain the text which follows, until the next  [milestone](#milestone)  tag for the edition in question is encountered. In addition to the values suggested, other terms may be appropriate (e.g. Stephanus for the Stephanus numbers in Plato). 
  
  
  
@@ -7855,17 +8661,17 @@ Attributes  [att.canonical](#att.canonical)  (`@key`, `@ref`)
 `@role` may be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.enumerated separated by whitespace
  
  
  
 `@nymRef` (reference to the canonical name) provides a means of locating the canonical form (nym) of the names associated with the object named by the element bearing it. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
-   |    **Note**   |    The value must point directly to one or more XML elements by means of one or more URIs, separated by whitespace. If more than one is supplied, the implication is that the name is associated with several distinct canonical names.      |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
+*  **Note***  The value must point directly to one or more XML elements by means of one or more URIs, separated by whitespace. If more than one is supplied, the implication is that the name is associated with several distinct canonical names. 
  
  
  
@@ -7901,8 +8707,8 @@ Attributes
 `@notation` names the notation used for the content of the element. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
  
  
  
@@ -7938,18 +8744,18 @@ Attributes
 `@matchPattern` specifies a regular expression against which the values of other attributes can be matched. 
  
  
-   |    **Status**   |    Required     |     
-   |    **Datatype**   |    teidata.pattern     |     
-   |    **Note**   |    The syntax used should follow that defined by  [W3C XPath syntax](http://www.w3.org/TR/xpath-functions/#regex-syntax) . Note that parenthesized groups are used not only for establishing order of precedence and atoms for quantification, but also for creating subpatterns to be referenced by the replacementPattern attribute.      |     
+*  **Status***  Required
+*  **Datatype***  teidata.pattern
+*  **Note***  The syntax used should follow that defined by  [W3C XPath syntax](http://www.w3.org/TR/xpath-functions/#regex-syntax) . Note that parenthesized groups are used not only for establishing order of precedence and atoms for quantification, but also for creating subpatterns to be referenced by the replacementPattern attribute. 
  
  
  
 `@replacementPattern` specifies a ‘replacement pattern’, that is, the skeleton of a relative or absolute URI containing references to groups in the matchPattern which, once subpattern substitution has been performed, complete the URI. 
  
  
-   |    **Status**   |    Required     |     
-   |    **Datatype**   |    teidata.replacement     |     
-   |    **Note**   |    The strings $1, $2 etc. are references to the corresponding group in the regular expression specified by matchPattern (counting open parenthesis, left to right). Processors are expected to replace them with whatever matched the corresponding group in the regular expression. If a digit preceded by a dollar sign is needed in the actual replacement pattern (as opposed to being used as a back reference), the dollar sign must be written as %24.      |     
+*  **Status***  Required
+*  **Datatype***  teidata.replacement
+*  **Note***  The strings $1, $2 etc. are references to the corresponding group in the regular expression specified by matchPattern (counting open parenthesis, left to right). Processors are expected to replace them with whatever matched the corresponding group in the regular expression. If a digit preceded by a dollar sign is needed in the actual replacement pattern (as opposed to being used as a back reference), the dollar sign must be written as %24. 
  
  
  
@@ -7985,17 +8791,17 @@ Attributes  [att.naming](#att.naming)  (`@role`, `@nymRef`) ( [att.canonical](#
 `@full` indicates whether the name component is given in full, as an abbreviation or simply as an initial. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **yes**: the name component is spelled out in full. [Default]   ; **abb**: (abbreviated) the name component is given in an abbreviated form.  ; **init**: (initial letter) the name component is indicated only by one initial.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **yes**: the name component is spelled out in full. [Default]   ; **abb**: (abbreviated) the name component is given in an abbreviated form.  ; **init**: (initial letter) the name component is indicated only by one initial. 
  
  
  
 `@sort` specifies the sort order of the name component in relation to others within the name. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.count     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.count
  
  
  
@@ -8031,10 +8837,10 @@ Attributes
 `@place` specifies where this item is placed. 
  
  
-   |    **Status**   |    Recommended     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
-   |    **Suggested values include:**   |    **below**: below the line  ; **bottom**: at the foot of the page  ; **margin**: in the margin (left, right, or both)  ; **top**: at the top of the page  ; **opposite**: on the opposite, i.e. facing, page  ; **overleaf**: on the other side of the leaf  ; **above**: above the line  ; **end**: at the end of e.g. chapter or volume.  ; **inline**: within the body of the text.  ; **inspace**: in a predefined space, for example left by an earlier scribe.      |     
-   |    
+*  **Status***  Recommended
+*  **Datatype***   1–∞ occurrences of teidata.enumerated separated by whitespace
+*  **Suggested values include:***  **below**: below the line  ; **bottom**: at the foot of the page  ; **margin**: in the margin (left, right, or both)  ; **top**: at the top of the page  ; **opposite**: on the opposite, i.e. facing, page  ; **overleaf**: on the other side of the leaf  ; **above**: above the line  ; **end**: at the end of e.g. chapter or volume.  ; **inline**: within the body of the text.  ; **inspace**: in a predefined space, for example left by an earlier scribe. 
+*  
 ```
  
 <add place="margin">
@@ -8042,15 +8848,15 @@ Attributes
                                                 [An addition written at the foot of the current page and also on the facing page]</add>
  
 ```
-     |     
-   |    
+ 
+*  
 ```
  
 <note place="bottom">
                                                 Ibid, p.7</note>
  
 ```
-     |     
+ 
  
  
  
@@ -8086,42 +8892,42 @@ Attributes
 `@targetLang` specifies the language of the content to be found at the destination referenced by target, using a ‘language tag’ generated according to  [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt) . 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.language     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.language
+*  
 ```
  
 <linkGrp xml:id="pol-swh_aln_2.1-linkGrp">
                                                  <ptr xml:id="pol-swh_aln_2.1.1-ptr"  target="pol/UDHR/text.xml#pol_txt_1-head" type="tuv" targetLang="pl"/> <ptr xml:id="pol-swh_aln_2.1.2-ptr"  target="swh/UDHR/text.xml#swh_txt_1-head" type="tuv" targetLang="sw"/></linkGrp>
  
 ```
-In the example above, the `linkGrp` combines pointers at parallel fragments of the Universal Declaration of Human Rights: one of them is in Polish, the other in Swahili.      |     
-   |    **Note**   |    The value must conform to BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a  [language](#language)  element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions.      |     
+In the example above, the `linkGrp` combines pointers at parallel fragments of the Universal Declaration of Human Rights: one of them is in Polish, the other in Swahili. 
+*  **Note***  The value must conform to BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a  [language](#language)  element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions. 
  
  
  
 `@target` specifies the destination of the reference by supplying one or more URI References 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
-   |    **Note**   |    One or more syntactically valid URI references, separated by whitespace. Because whitespace is used to separate URIs, no whitespace is permitted inside a single URI. If a whitespace character is required in a URI, it should be escaped with the normal mechanism, e.g. TEI%20Consortium.      |     
+*  **Status***  Optional
+*  **Datatype***   1–∞ occurrences of teidata.pointer separated by whitespace
+*  **Note***  One or more syntactically valid URI references, separated by whitespace. Because whitespace is used to separate URIs, no whitespace is permitted inside a single URI. If a whitespace character is required in a URI, it should be escaped with the normal mechanism, e.g. TEI%20Consortium. 
  
  
  
 `@evaluate` specifies the intended meaning when the target of a pointer is itself a pointer. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **all**: if the element pointed to is itself a pointer, then the target of that pointer will
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **all**: if the element pointed to is itself a pointer, then the target of that pointer will
                                                 be taken, and so on, until an element is found which is not a pointer.
                                                ; **one**: if the element pointed to is itself a pointer, then its target (whether a pointer
                                                 or not) is taken as the target of this pointer.
                                                ; **none**: no further evaluation of targets is carried out beyond that needed to find the element
                                                 specified in the pointer's target.
-                                                   |     
-   |    **Note**   |    If no value is given, the application program is responsible for deciding (possibly on the basis of user input) how far to trace a chain of pointers.      |     
+                                              
+*  **Note***  If no value is given, the application program is responsible for deciding (possibly on the basis of user input) how far to trace a chain of pointers. 
  
  
  
@@ -8157,40 +8963,40 @@ Attributes
 `@atLeast` gives a minimum estimated value for the approximate measurement. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.numeric     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.numeric
  
  
  
 `@atMost` gives a maximum estimated value for the approximate measurement. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.numeric     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.numeric
  
  
  
 `@min` where the measurement summarizes more than one observation or a range, supplies the minimum value observed. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.numeric     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.numeric
  
  
  
 `@max` where the measurement summarizes more than one observation or a range, supplies the maximum value observed. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.numeric     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.numeric
  
  
  
 `@confidence` specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.probability     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.probability
  
  
  
@@ -8241,9 +9047,9 @@ Attributes  [att.datcat](#att.datcat)  (`@datcat`, `@valueDatcat`)  [att.fragme
 `@function` characterizes the function of the segment. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Note**   |    Attribute values will often vary depending on the type of element to which they are attached. For example, a `cl`, may take values such as coordinate, subject, adverbial etc. For a `phr`, such values as subject, predicate etc. may be more appropriate. Such constraints will typically be implemented by a project-defined customization.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Note***  Attribute values will often vary depending on the type of element to which they are attached. For example, a `cl`, may take values such as coordinate, subject, adverbial etc. For a `phr`, such values as subject, predicate etc. may be more appropriate. Such constraints will typically be implemented by a project-defined customization. 
  
  
  
@@ -8279,9 +9085,9 @@ Attributes
 `@sortKey` supplies the sort key for this element in an index, list or group which contains it. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.word     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.word
+*  
 ```
  
 David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
@@ -8290,8 +9096,8 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
                                           
  
 ```
-     |     
-   |    **Note**   |    The sort key is used to determine the sequence and grouping of entries in an index. It provides a sequence of characters which, when sorted with the other values, will produced the desired order; specifics of sort key construction are application-dependent Dictionary order often differs from the collation sequence of machine-readable character sets; in English-language dictionaries, an entry for 4-H will often appear alphabetized under ‘fourh’, and McCoy may be alphabetized under ‘maccoy’, while A1, A4, and A5 may all appear in numeric order ‘alphabetized’ between ‘a-’ and ‘AA’. The sort key is required if the orthography of the dictionary entry does not suffice to determine its location.      |     
+ 
+*  **Note***  The sort key is used to determine the sequence and grouping of entries in an index. It provides a sequence of characters which, when sorted with the other values, will produced the desired order; specifics of sort key construction are application-dependent Dictionary order often differs from the collation sequence of machine-readable character sets; in English-language dictionaries, an entry for 4-H will often appear alphabetized under ‘fourh’, and McCoy may be alphabetized under ‘maccoy’, while A1, A4, and A5 may all appear in numeric order ‘alphabetized’ between ‘a-’ and ‘AA’. The sort key is required if the orthography of the dictionary entry does not suffice to determine its location. 
  
  
  
@@ -8327,8 +9133,8 @@ Attributes
 `@spanTo` indicates the end of a span initiated by the element bearing this attribute. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
  
  
  
@@ -8372,19 +9178,19 @@ Attributes
 `@scheme` identifies the language used to describe the rendition. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    **css**: Cascading Stylesheet Language  ; **xslfo**: Extensible Stylesheet Language Formatting Objects  ; **free**: Informal free text description  ; **other**: A user-defined rendition description language      |     
-   |    **Note**   |    If no value for the @scheme attribute is provided, then the default assumption should be that CSS is in use.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Legal values are:***  **css**: Cascading Stylesheet Language  ; **xslfo**: Extensible Stylesheet Language Formatting Objects  ; **free**: Informal free text description  ; **other**: A user-defined rendition description language 
+*  **Note***  If no value for the @scheme attribute is provided, then the default assumption should be that CSS is in use. 
  
  
  
 `@schemeVersion` supplies a version number for the style language provided in scheme. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.versionNumber     |     
-   |    **Note**   |    If schemeVersion is used, then scheme should also appear, with a value other than free.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.versionNumber
+*  **Note***  If schemeVersion is used, then scheme should also appear, with a value other than free. 
  
  
  
@@ -8420,18 +9226,18 @@ Attributes
 `@start` indicates the location within a temporal alignment at which this element begins. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
-   |    **Note**   |    If no value is supplied, the element is assumed to follow the immediately preceding element at the same hierarchic level.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
+*  **Note***  If no value is supplied, the element is assumed to follow the immediately preceding element at the same hierarchic level. 
  
  
  
 `@end` indicates the location within a temporal alignment at which this element ends. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
-   |    **Note**   |    If no value is supplied, the element is assumed to precede the immediately following element at the same hierarchic level.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
+*  **Note***  If no value is supplied, the element is assumed to precede the immediately following element at the same hierarchic level. 
  
  
  
@@ -8461,9 +9267,9 @@ Attributes
 `@type` characterizes the element in some sense, using any convenient classification scheme or typology. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  
 ```
  
 <div type="verse">
@@ -8472,17 +9278,17 @@ Attributes
                                                   <l>A wind sprang up from nowhere as the sky</l>  <l>…</l> </lg></div>
  
 ```
-     |     
-   |    **Note**   |    The type attribute is present on a number of elements, not all of which are members of  [att.typed](#att.typed) , usually because these elements restrict the possible values for the attribute in a specific way.      |     
+ 
+*  **Note***  The type attribute is present on a number of elements, not all of which are members of  [att.typed](#att.typed) , usually because these elements restrict the possible values for the attribute in a specific way. 
  
  
  
 `@subtype` provides a sub-categorization of the element, if needed 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.enumerated     |     
-   |    **Note**   |    The subtype attribute may be used to provide any sub-classification for the element additional to that provided by its type attribute.      |     
+*  **Status***  Optional
+*  **Datatype***  teidata.enumerated
+*  **Note***  The subtype attribute may be used to provide any sub-classification for the element additional to that provided by its type attribute. 
  
  
  
@@ -8526,8 +9332,8 @@ Attributes
 `@hand` points to a `handNote` element describing the hand considered responsible for the content of the element concerned. 
  
  
-   |    **Status**   |    Optional     |     
-   |    **Datatype**   |    teidata.pointer     |     
+*  **Status***  Optional
+*  **Datatype***  teidata.pointer
  
  
  
