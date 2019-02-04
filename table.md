@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>ODD Customization for the Winniferd Eaton Archive ProjectAuthor Joey Takeda
+ 
 ## Winnifred Eaton Archive Project Documentation
+ 
+ 
 Note that this is an abridged version of the documentation for editorial use within oXygen. See [docs/documentation_full.html](docs/documentation_full.html) for full documentation. 
+ 
 ## Table of contents
  1 [Introduction](#index.xml-body.1_div.1) 1.1 [History and Pre-amble](#index.xml-body.1_div.1_div.1) 2 [Setting up Github](#index.xml-body.1_div.2) 3 [Setting up oXygen](#index.xml-body.1_div.3) 4 [Editing the Texts](#index.xml-body.1_div.4)
+ 
 ## 1 Introduction
  
 The following are the Guidelines and schema specification for the Winnifred Eaton Archive project (WEA). The project uses a highly constrained version of the TEI Guidelines; the texts are lightly encoded with very little linked data. Primarily, the texts are meant to be easily ported into an existing Omeka framework; the details of this framework are still in development. 
  
+ 
 ### 1.1 History and Pre-amble
+ 
  
 ## 2 Setting up Github
  
@@ -15,26 +22,39 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
 ## 4 Editing the Texts
  
+ 
+ 
 ## Appendix A 
  
 ## Schema wea: Elements
  
+ 
 ### abstract
  
  
-**abstract**contains a summary or formal abstract prefixed to an existing source document by the encoder. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-abstract.html)] 
+**abstract**contains a summary or formal abstract prefixed to an existing source document by the encoder. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-abstract.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[profileDesc](#profileDesc)
+     *
+ 
+ 
+**header: ** [profileDesc](#profileDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[list](#list)[p](#p)
+     *
+ 
+**core: ** [list](#list)  [p](#p) 
+ 
+ 
  
 *    **Note**
-     *This element is intended only for cases where no abstract is available in the original source. Any abstract already present in the source document should be encoded as a [div](#div) within the [front](#front), as it should for a born-digital document. 
+     *This element is intended only for cases where no abstract is available in the original source. Any abstract already present in the source document should be encoded as a  [div](#div)  within the  [front](#front) , as it should for a born-digital document. 
  
 *    **Example**
      *
@@ -47,20 +67,32 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### att
  
  
-**att**(attribute) contains the name of an attribute appearing within running text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.html)] 
+**att**(attribute) contains the name of an attribute appearing within running text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
 @schemesupplies an identifier for the scheme in which this name is defined. 
 **Status**Optional**Datatype**teidata.enumerated**Sample values include:**TEI(Text Encoding Initiative) this attribute is part of the TEI scheme. [Default] DBK(Docbook) this attribute is part of the Docbook scheme.XX(unknown) this attribute is part of an unknown scheme.imaginarythe attribute is from a non-existent scheme, for illustrative purposes onlyXHTMLthe attribute is part of the XHTML languageXMLthe attribute is part of the XML languageXIthe attribute is defined in the xInclude schema
  
  
  
 *    **Contained by**
-     ***core: **[author](#author)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
      *Empty element
@@ -79,19 +111,41 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### author
  
  
-**author**in a bibliographic reference, contains the name(s) of an author, personal or corporate, of a work; for example in the same form as that provided by a recognized bibliographic name authority. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-author.html)] 
+**author**in a bibliographic reference, contains the name(s) of an author, personal or corporate, of a work; for example in the same form as that provided by a recognized bibliographic name authority. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-author.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.naming](#att.naming) (@role, @nymRef) ([att.canonical](#att.canonical) (@key, @ref)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.canonical)  (@key, @ref)) 
  
 *    **Contained by**
-     ***core: **[bibl](#bibl)**header: **[editionStmt](#editionStmt)[titleStmt](#titleStmt)
+     *
+ 
+ 
+**core: ** [bibl](#bibl) 
+ 
+**header: ** [editionStmt](#editionStmt)  [titleStmt](#titleStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
      *Particularly where cataloguing is likely to be based on the content of the header, it is advisable to use a generally recognized name authority file to supply the content for this element. The attributes key or ref may also be used to reference canonical information about the author(s) intended from any appropriate authority, such as a library catalogue or online resource. In the case of a broadcast, use this element for the name of the company or network responsible for making the broadcast. Where an author is unknown or unspecified, this element may contain text such as Unknown or Anonymous. When the appropriate TEI modules are in use, it may also contain detailed tagging of the names used for people, organizations or places, in particular where multiple names are given. 
@@ -107,19 +161,37 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### authority
  
  
-**authority**(release authority) supplies the name of a person or other agency responsible for making a work available, other than a publisher or distributor. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-authority.html)] 
+**authority**(release authority) supplies the name of a person or other agency responsible for making a work available, other than a publisher or distributor. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-authority.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
  
 *    **Contained by**
-     ***header: **[publicationStmt](#publicationStmt)
+     *
+ 
+ 
+**header: ** [publicationStmt](#publicationStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[choice](#choice)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[pb](#pb)[ref](#ref)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**core: ** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -131,23 +203,39 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### availability
  
  
-**availability**supplies information about the availability of a text, for example any restrictions on its use or distribution, its copyright status, any licence applying to it, etc. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-availability.html)] 
+**availability**supplies information about the availability of a text, for example any restrictions on its use or distribution, its copyright status, any licence applying to it, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-availability.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
 @statussupplies a code identifying the current availability of the text. 
 **Status**Optional**Datatype**teidata.enumerated**Legal values are:**freethe text is freely available.unknownthe status of the text is unknown.restrictedthe text is not freely available.
  
  
  
 *    **Contained by**
-     ***core: **[bibl](#bibl)**header: **[publicationStmt](#publicationStmt)
+     *
+ 
+ 
+**core: ** [bibl](#bibl) 
+ 
+**header: ** [publicationStmt](#publicationStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[p](#p)**header: **[licence](#licence)
+     *
+ 
+**core: ** [p](#p) 
+ 
+**header: ** [licence](#licence) 
+ 
+ 
  
 *    **Note**
      *A consistent format should be adopted
@@ -175,22 +263,36 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### back
  
  
-**back**(back matter) contains any appendixes, etc. following the main part of a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-back.html)] 
+**back**(back matter) contains any appendixes, etc. following the main part of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-back.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declaring](#att.declaring) (@decls) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls) 
  
 *    **Contained by**
-     ***textstructure: **[text](#text)
+     *
+ 
+ 
+**textstructure: ** [text](#text) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[gap](#gap)[head](#head)[lb](#lb)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[note](#note)[p](#p)[pb](#pb)**textstructure: **[byline](#byline)[closer](#closer)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[epigraph](#epigraph)[titlePage](#titlePage)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+**core: ** [gap](#gap)  [head](#head)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
  
 *    **Note**
-     *Because cultural conventions differ as to which elements are grouped as back matter and which as front matter, the content models for the [back](#back) and [front](#front) elements are identical. 
+     *Because cultural conventions differ as to which elements are grouped as back matter and which as front matter, the content models for the  [back](#back)  and  [front](#front)  elements are identical. 
  
 *    **Example**
      *
@@ -213,19 +315,43 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### bibl
  
  
-**bibl**(bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-bibl.html)] 
+**bibl**(bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-bibl.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) [att.typed](#att.typed) (@type, @subtype) [att.sortable](#att.sortable) (@sortKey) [att.docStatus](#att.docStatus) (@status) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default)  [att.typed](#att.typed)  (@type, @subtype)  [att.sortable](#att.sortable)  (@sortKey)  [att.docStatus](#att.docStatus)  (@status) 
  
 *    **Contained by**
-     ***core: **[bibl](#bibl)[corr](#corr)[emph](#emph)[head](#head)[hi](#hi)[item](#item)[l](#l)[listBibl](#listBibl)[note](#note)[orig](#orig)[p](#p)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[sic](#sic)[title](#title)**header: **[change](#change)[licence](#licence)[rendition](#rendition)[sourceDesc](#sourceDesc)**textstructure: **[body](#body)[div](#div)[epigraph](#epigraph)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [bibl](#bibl)  [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
+ 
+**header: ** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
+ 
+**textstructure: ** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[author](#author)[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[pubPlace](#pubPlace)[publisher](#publisher)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[respStmt](#respStmt)[sic](#sic)[term](#term)[title](#title)**header: **[availability](#availability)[distributor](#distributor)[edition](#edition)[idno](#idno)**tagdocs: **[code](#code)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [availability](#availability)  [distributor](#distributor)  [edition](#edition)  [idno](#idno) 
+ 
+**tagdocs: ** [code](#code) 
+ 
+character data
+ 
+ 
  
 *    **Note**
      *Contains phrase-level elements, together with any combination of elements from the model.biblPart class 
@@ -264,19 +390,35 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### biblFull
  
  
-**biblFull**(fully-structured bibliographic citation) contains a fully-structured bibliographic citation, in which all components of the TEI file description are present. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-biblFull.html)] 
+**biblFull**(fully-structured bibliographic citation) contains a fully-structured bibliographic citation, in which all components of the TEI file description are present. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-biblFull.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) [att.sortable](#att.sortable) (@sortKey) [att.docStatus](#att.docStatus) (@status) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default)  [att.sortable](#att.sortable)  (@sortKey)  [att.docStatus](#att.docStatus)  (@status) 
  
 *    **Contained by**
-     ***core: **[corr](#corr)[emph](#emph)[head](#head)[hi](#hi)[item](#item)[l](#l)[listBibl](#listBibl)[note](#note)[orig](#orig)[p](#p)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[sic](#sic)[title](#title)**header: **[change](#change)[licence](#licence)[rendition](#rendition)[sourceDesc](#sourceDesc)**textstructure: **[body](#body)[div](#div)[epigraph](#epigraph)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
+ 
+**header: ** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
+ 
+**textstructure: ** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***header: **[editionStmt](#editionStmt)[fileDesc](#fileDesc)[notesStmt](#notesStmt)[profileDesc](#profileDesc)[publicationStmt](#publicationStmt)[seriesStmt](#seriesStmt)[sourceDesc](#sourceDesc)[titleStmt](#titleStmt)
+     *
+ 
+**header: ** [editionStmt](#editionStmt)  [fileDesc](#fileDesc)  [notesStmt](#notesStmt)  [profileDesc](#profileDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc)  [titleStmt](#titleStmt) 
+ 
+ 
  
 *    **Example**
      *
@@ -288,19 +430,35 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### body
  
  
-**body**(text body) contains the whole body of a single unitary text, excluding any front or back matter. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-body.html)] 
+**body**(text body) contains the whole body of a single unitary text, excluding any front or back matter. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-body.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declaring](#att.declaring) (@decls) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls) 
  
 *    **Contained by**
-     ***textstructure: **[text](#text)
+     *
+ 
+ 
+**textstructure: ** [text](#text) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[bibl](#bibl)[gap](#gap)[head](#head)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[note](#note)[p](#p)[pb](#pb)[q](#q)[quote](#quote)**header: **[biblFull](#biblFull)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[epigraph](#epigraph)[trailer](#trailer)
+     *
+ 
+**core: ** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
+ 
+**header: ** [biblFull](#biblFull) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+ 
+ 
  
 *    **Example**
      *
@@ -312,22 +470,46 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### byline
  
  
-**byline**contains the primary statement of responsibility given for a work on its title page or at the head or end of the work. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-byline.html)] 
+**byline**contains the primary statement of responsibility given for a work on its title page or at the head or end of the work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-byline.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***core: **[lg](#lg)[list](#list)**textstructure: **[back](#back)[body](#body)[div](#div)[front](#front)[titlePage](#titlePage)
+     *
+ 
+ 
+**core: ** [lg](#lg)  [list](#list) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)**textstructure: **[docAuthor](#docAuthor)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+**textstructure: ** [docAuthor](#docAuthor) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *The byline on a title page may include either the name or a description for the document's author. Where the name is included, it may optionally be tagged using the [docAuthor](#docAuthor) element. 
+     *The byline on a title page may include either the name or a description for the document's author. Where the name is included, it may optionally be tagged using the  [docAuthor](#docAuthor)  element. 
  
 *    **Example**
      *
@@ -366,19 +548,31 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### category
  
  
-**category**contains an individual descriptive category, possibly nested within a superordinate category, within a user-defined taxonomy. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-category.html)] 
+**category**contains an individual descriptive category, possibly nested within a superordinate category, within a user-defined taxonomy. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-category.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[category](#category)
+     *
+ 
+ 
+**header: ** [category](#category) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***header: **[category](#category)
+     *
+ 
+**header: ** [category](#category) 
+ 
+ 
  
 *    **Example**
      *
@@ -424,20 +618,28 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### catRef
  
  
-**catRef**(category reference) specifies one or more defined categories within some taxonomy or text typology. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-catRef.html)] 
+**catRef**(category reference) specifies one or more defined categories within some taxonomy or text typology. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-catRef.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.pointing](#att.pointing) (@targetLang, @target, @evaluate) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.pointing](#att.pointing)  (@targetLang, @target, @evaluate) 
 @schemeidentifies the classification scheme within which the set of categories concerned is defined, for example by a taxonomy element, or by some other resource. 
 **Status**Optional**Datatype**teidata.pointer
  
  
  
 *    **Contained by**
-     ***header: **[textClass](#textClass)
+     *
+ 
+ 
+**header: ** [textClass](#textClass) 
+ 
+ 
+ 
  
 *    **May contain**
      *Empty element
@@ -459,26 +661,46 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### change
  
  
-**change**documents a change or set of changes made during the production of a source document, or during the revision of an electronic file. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-change.html)] 
+**change**documents a change or set of changes made during the production of a source document, or during the revision of an electronic file. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-change.html) ] 
  
 *    **Attributes**
-     *Attributes [att.ascribed](#att.ascribed) (@who) [att.datable](#att.datable) (@calendar, @period) ([att.datable.w3c](#att.datable.w3c) (@when, @notBefore, @notAfter, @from, @to)) [att.docStatus](#att.docStatus) (@status) [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.typed](#att.typed) (@type, @subtype) 
+     *Attributes  [att.ascribed](#att.ascribed)  (@who)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to))  [att.docStatus](#att.docStatus)  (@status)  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype) 
 @targetpoints to one or more elements that belong to this change. 
 **Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespace
  
  
  
 *    **Contained by**
-     ***header: **[listChange](#listChange)[revisionDesc](#revisionDesc)
+     *
+ 
+ 
+**header: ** [listChange](#listChange)  [revisionDesc](#revisionDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *The who attribute may be used to point to any other element, but will typically specify a [respStmt](#respStmt) or person element elsewhere in the header, identifying the person responsible for the change and their role in making it. It is recommended that changes be recorded with the most recent first. The status attribute may be used to indicate the status of a document following the change documented. 
+     *The who attribute may be used to point to any other element, but will typically specify a  [respStmt](#respStmt)  or person element elsewhere in the header, identifying the person responsible for the change and their role in making it. It is recommended that changes be recorded with the most recent first. The status attribute may be used to indicate the status of a document following the change documented. 
  
 *    **Example**
      *
@@ -509,22 +731,40 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### choice
  
  
-**choice**groups a number of alternative encodings for the same point in a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html)] 
+**choice**groups a number of alternative encodings for the same point in a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***analysis: **[pc](#pc)**core: **[author](#author)[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[choice](#choice)[corr](#corr)[orig](#orig)[reg](#reg)[sic](#sic)
+     *
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) 
+ 
+ 
  
 *    **Note**
-     *Because the children of a [choice](#choice) element all represent alternative ways of encoding the same sequence, it is natural to think of them as mutually exclusive. However, there may be cases where a full representation of a text requires the alternative encodings to be considered as parallel. Note also that [choice](#choice) elements may self-nest. Where the purpose of an encoding is to record multiple witnesses of a single work, rather than to identify multiple possible encoding decisions at a given point, the app element and associated elements discussed in section [12.1. The Apparatus Entry, Readings, and Witnesses](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TC.html#TCAPLL) should be preferred. 
+     *Because the children of a  [choice](#choice)  element all represent alternative ways of encoding the same sequence, it is natural to think of them as mutually exclusive. However, there may be cases where a full representation of a text requires the alternative encodings to be considered as parallel. Note also that  [choice](#choice)  elements may self-nest. Where the purpose of an encoding is to record multiple witnesses of a single work, rather than to identify multiple possible encoding decisions at a given point, the app element and associated elements discussed in section  [12.1. The Apparatus Entry, Readings, and Witnesses](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TC.html#TCAPLL)  should be preferred. 
  
 *    **Example**
      *An American encoding of Gulliver's Travels which retains the British spelling but also provides a version regularized to American spelling might be encoded as follows. 
@@ -536,19 +776,43 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### closer
  
  
-**closer**groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html)] 
+**closer**groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.written](#att.written) (@hand) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.written](#att.written)  (@hand) 
  
 *    **Contained by**
-     ***core: **[lg](#lg)[list](#list)**textstructure: **[back](#back)[body](#body)[div](#div)[front](#front)
+     *
+ 
+ 
+**core: ** [lg](#lg)  [list](#list) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)**textstructure: **[dateline](#dateline)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+**textstructure: ** [dateline](#dateline) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -572,20 +836,32 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### code
  
  
-**code**contains literal code from some formal language such as a programming language. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-code.html)] 
+**code**contains literal code from some formal language such as a programming language. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-code.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
 @lang(formal language) a name identifying the formal language in which the code is expressed 
 **Status**Optional**Datatype**teidata.word
  
  
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
      *Character data only
@@ -601,22 +877,48 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
  
  
+ 
+ 
 ### corr
  
  
-**corr**(correction) contains the correct form of a passage apparently erroneous in the copy text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-corr.html)] 
+**corr**(correction) contains the correct form of a passage apparently erroneous in the copy text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-corr.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.editLike](#att.editLike) (@evidence, @instant) [att.typed](#att.typed) (@type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.editLike](#att.editLike)  (@evidence, @instant)  [att.typed](#att.typed)  (@type, @subtype) 
  
 *    **Contained by**
-     ***analysis: **[pc](#pc)**core: **[author](#author)[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[change](#change)[distributor](#distributor)[edition](#edition)[licence](#licence)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
-     *If all that is desired is to call attention to the fact that the copy text has been corrected, [corr](#corr) may be used alone: 
+     *If all that is desired is to call attention to the fact that the copy text has been corrected,  [corr](#corr)  may be used alone: 
 ```
  
 I don't know, Juan. It's so far in the past now — how <corr>can we</corr> prove or disprove anyone's theories?
@@ -626,7 +928,7 @@ I don't know, Juan. It's so far in the past now — how <corr>can we</corr> prov
  
  
 *    **Example**
-     *It is also possible, using the [choice](#choice) and [sic](#sic) elements, to provide an uncorrected reading: 
+     *It is also possible, using the  [choice](#choice)  and  [sic](#sic)  elements, to provide an uncorrected reading: 
 ```
  
 I don't know, Juan. It's so far in the past now — how <choice> <sic>we can</sic> <corr>can we</corr></choice> prove or disprove anyone's theories?
@@ -636,22 +938,40 @@ I don't know, Juan. It's so far in the past now — how <choice> <sic>we can</s
  
  
  
+ 
+ 
 ### creation
  
  
-**creation**contains information about the creation of a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-creation.html)] 
+**creation**contains information about the creation of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-creation.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.datable](#att.datable) (@calendar, @period) ([att.datable.w3c](#att.datable.w3c) (@when, @notBefore, @notAfter, @from, @to)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to)) 
  
 *    **Contained by**
-     ***header: **[profileDesc](#profileDesc)
+     *
+ 
+ 
+**header: ** [profileDesc](#profileDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[choice](#choice)[date](#date)[emph](#emph)[foreign](#foreign)[hi](#hi)[name](#name)[num](#num)[ref](#ref)[term](#term)[title](#title)**header: **[idno](#idno)[listChange](#listChange)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**core: ** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [name](#name)  [num](#num)  [ref](#ref)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno)  [listChange](#listChange) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *The [creation](#creation) element may be used to record details of a text's creation, e.g. the date and place it was composed, if these are of interest. It may also contain a more structured account of the various stages or revisions associated with the evolution of a text; this should be encoded using the [listChange](#listChange) element. It should not be confused with the [publicationStmt](#publicationStmt) element, which records date and place of publication. 
+     *The  [creation](#creation)  element may be used to record details of a text's creation, e.g. the date and place it was composed, if these are of interest. It may also contain a more structured account of the various stages or revisions associated with the evolution of a text; this should be encoded using the  [listChange](#listChange)  element. It should not be confused with the  [publicationStmt](#publicationStmt)  element, which records date and place of publication. 
  
 *    **Example**
      *
@@ -673,19 +993,43 @@ I don't know, Juan. It's so far in the past now — how <choice> <sic>we can</s
  
  
  
+ 
+ 
 ### date
  
  
-**date**contains a date in any format. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html)] 
+**date**contains a date in any format. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) [att.datable](#att.datable) (@calendar, @period) ([att.datable.w3c](#att.datable.w3c) (@when, @notBefore, @notAfter, @from, @to)) [att.editLike](#att.editLike) (@evidence, @instant) [att.dimensions](#att.dimensions) (@unit, @quantity, @extent, @precision, @scope) ([att.ranging](#att.ranging) (@atLeast, @atMost, @min, @max, @confidence)) [att.typed](#att.typed) (@type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to))  [att.editLike](#att.editLike)  (@evidence, @instant)  [att.dimensions](#att.dimensions)  (@unit, @quantity, @extent, @precision, @scope) ( [att.ranging](#att.ranging)  (@atLeast, @atMost, @min, @max, @confidence))  [att.typed](#att.typed)  (@type, @subtype) 
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[publicationStmt](#publicationStmt)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -719,19 +1063,43 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### dateline
  
  
-**dateline**contains a brief description of the place, date, time, etc. of production of a letter, newspaper story, or other work, prefixed or suffixed to it as a kind of heading or trailer. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-dateline.html)] 
+**dateline**contains a brief description of the place, date, time, etc. of production of a letter, newspaper story, or other work, prefixed or suffixed to it as a kind of heading or trailer. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-dateline.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***core: **[lg](#lg)[list](#list)**textstructure: **[body](#body)[closer](#closer)[div](#div)[front](#front)
+     *
+ 
+ 
+**core: ** [lg](#lg)  [list](#list) 
+ 
+**textstructure: ** [body](#body)  [closer](#closer)  [div](#div)  [front](#front) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)**textstructure: **[docDate](#docDate)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+**textstructure: ** [docDate](#docDate) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -754,19 +1122,41 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### distributor
  
  
-**distributor**supplies the name of a person or other agency responsible for the distribution of a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-distributor.html)] 
+**distributor**supplies the name of a person or other agency responsible for the distribution of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-distributor.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
  
 *    **Contained by**
-     ***core: **[bibl](#bibl)**header: **[publicationStmt](#publicationStmt)
+     *
+ 
+ 
+**core: ** [bibl](#bibl) 
+ 
+**header: ** [publicationStmt](#publicationStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -778,19 +1168,35 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### div
  
  
-**div**(text division) contains a subdivision of the front, body, or back of a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-div.html)] 
+**div**(text division) contains a subdivision of the front, body, or back of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-div.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.divLike](#att.divLike) (@org, @sample) ([att.fragmentable](#att.fragmentable) (@part)) [att.typed](#att.typed) (@type, @subtype) [att.declaring](#att.declaring) (@decls) [att.written](#att.written) (@hand) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.divLike](#att.divLike)  (@org, @sample) ( [att.fragmentable](#att.fragmentable)  (@part))  [att.typed](#att.typed)  (@type, @subtype)  [att.declaring](#att.declaring)  (@decls)  [att.written](#att.written)  (@hand) 
  
 *    **Contained by**
-     ***textstructure: **[back](#back)[body](#body)[div](#div)[front](#front)
+     *
+ 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[bibl](#bibl)[gap](#gap)[head](#head)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[note](#note)[p](#p)[pb](#pb)[q](#q)[quote](#quote)**header: **[biblFull](#biblFull)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[epigraph](#epigraph)[trailer](#trailer)
+     *
+ 
+**core: ** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
+ 
+**header: ** [biblFull](#biblFull) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+ 
+ 
  
 *    **Example**
      *
@@ -806,22 +1212,44 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### docAuthor
  
  
-**docAuthor**(document author) contains the name of the author of the document, as given on the title page (often but not always contained in a byline). [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docAuthor.html)] 
+**docAuthor**(document author) contains the name of the author of the document, as given on the title page (often but not always contained in a byline). [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docAuthor.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
  
 *    **Contained by**
-     ***core: **[lg](#lg)[list](#list)**textstructure: **[back](#back)[body](#body)[byline](#byline)[div](#div)[front](#front)[titlePage](#titlePage)
+     *
+ 
+ 
+**core: ** [lg](#lg)  [list](#list) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *The document author's name often occurs within a byline, but the [docAuthor](#docAuthor) element may be used whether the [byline](#byline) element is used or not. It should be used only for the author(s) of the entire document, not for author(s) of any subset or part of it. (Attributions of authorship of a subset or part of the document, for example of a chapter in a textbook or an article in a newspaper, may be encoded with [byline](#byline) without [docAuthor](#docAuthor).) 
+     *The document author's name often occurs within a byline, but the  [docAuthor](#docAuthor)  element may be used whether the  [byline](#byline)  element is used or not. It should be used only for the author(s) of the entire document, not for author(s) of any subset or part of it. (Attributions of authorship of a subset or part of the document, for example of a chapter in a textbook or an article in a newspaper, may be encoded with  [byline](#byline)  without  [docAuthor](#docAuthor) .) 
  
 *    **Example**
      *
@@ -833,26 +1261,48 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### docDate
  
  
-**docDate**(document date) contains the date of a document, as given on a title page or in a dateline. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docDate.html)] 
+**docDate**(document date) contains the date of a document, as given on a title page or in a dateline. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docDate.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
 @whengives the value of the date in standard form, i.e. YYYY-MM-DD. 
 **Status**Optional**Datatype**teidata.temporal.w3c**Note**For simple dates, the when attribute should give the Gregorian or proleptic Gregorian date in one of the formats specified in XML Schema Part 2: Datatypes Second Edition. 
  
  
  
 *    **Contained by**
-     ***core: **[lg](#lg)[list](#list)**textstructure: **[back](#back)[body](#body)[dateline](#dateline)[div](#div)[front](#front)[titlePage](#titlePage)
+     *
+ 
+ 
+**core: ** [lg](#lg)  [list](#list) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [dateline](#dateline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *Cf. the general [date](#date) element in the core tag set. This specialized element is provided for convenience in marking and processing the date of the documents, since it is likely to require specialized handling for many applications. It should be used only for the date of the entire document, not for any subset or part of it. 
+     *Cf. the general  [date](#date)  element in the core tag set. This specialized element is provided for convenience in marking and processing the date of the documents, since it is likely to require specialized handling for many applications. It should be used only for the date of the entire document, not for any subset or part of it. 
  
 *    **Example**
      *
@@ -864,19 +1314,33 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### docTitle
  
  
-**docTitle**(document title) contains the title of a document, including all its constituents, as given on a title page. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docTitle.html)] 
+**docTitle**(document title) contains the title of a document, including all its constituents, as given on a title page. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docTitle.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
  
 *    **Contained by**
-     ***textstructure: **[back](#back)[front](#front)[titlePage](#titlePage)
+     *
+ 
+ 
+**textstructure: ** [back](#back)  [front](#front)  [titlePage](#titlePage) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[gap](#gap)[lb](#lb)[milestone](#milestone)[note](#note)[pb](#pb)**textstructure: **[titlePart](#titlePart)
+     *
+ 
+**core: ** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+ 
+**textstructure: ** [titlePart](#titlePart) 
+ 
+ 
  
 *    **Example**
      *
@@ -890,19 +1354,41 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### edition
  
  
-**edition**describes the particularities of one edition of a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-edition.html)] 
+**edition**describes the particularities of one edition of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-edition.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***core: **[bibl](#bibl)**header: **[editionStmt](#editionStmt)
+     *
+ 
+ 
+**core: ** [bibl](#bibl) 
+ 
+**header: ** [editionStmt](#editionStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -915,19 +1401,33 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### editionStmt
  
  
-**editionStmt**(edition statement) groups information relating to one edition of a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editionStmt.html)] 
+**editionStmt**(edition statement) groups information relating to one edition of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editionStmt.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[biblFull](#biblFull)[fileDesc](#fileDesc)
+     *
+ 
+ 
+**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[author](#author)[editor](#editor)[p](#p)[respStmt](#respStmt)**header: **[edition](#edition)
+     *
+ 
+**core: ** [author](#author)  [editor](#editor)  [p](#p)  [respStmt](#respStmt) 
+ 
+**header: ** [edition](#edition) 
+ 
+ 
  
 *    **Example**
      *
@@ -949,19 +1449,41 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### editor
  
  
-**editor**contains a secondary statement of responsibility for a bibliographic item, for example the name of an individual, institution or organization, (or of several such) acting as editor, compiler, translator, etc. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editor.html)] 
+**editor**contains a secondary statement of responsibility for a bibliographic item, for example the name of an individual, institution or organization, (or of several such) acting as editor, compiler, translator, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editor.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.naming](#att.naming) (@role, @nymRef) ([att.canonical](#att.canonical) (@key, @ref)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.canonical)  (@key, @ref)) 
  
 *    **Contained by**
-     ***core: **[bibl](#bibl)**header: **[editionStmt](#editionStmt)[seriesStmt](#seriesStmt)[titleStmt](#titleStmt)
+     *
+ 
+ 
+**core: ** [bibl](#bibl) 
+ 
+**header: ** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
      *A consistent format should be adopted.Particularly where cataloguing is likely to be based on the content of the header, it is advisable to use generally recognized authority lists for the exact form of personal names. 
@@ -979,19 +1501,33 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### editorialDecl
  
  
-**editorialDecl**(editorial practice declaration) provides details of editorial principles and practices applied during the encoding of a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editorialDecl.html)] 
+**editorialDecl**(editorial practice declaration) provides details of editorial principles and practices applied during the encoding of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editorialDecl.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
  
 *    **Contained by**
-     ***header: **[encodingDesc](#encodingDesc)
+     *
+ 
+ 
+**header: ** [encodingDesc](#encodingDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[p](#p)**header: **[hyphenation](#hyphenation)
+     *
+ 
+**core: ** [p](#p) 
+ 
+**header: ** [hyphenation](#hyphenation) 
+ 
+ 
  
 *    **Example**
      *
@@ -1004,19 +1540,43 @@ Given on the <date when="1977-06-12">
  
  
  
+ 
+ 
 ### emph
  
  
-**emph**(emphasized) marks words or phrases which are stressed or emphasized for linguistic or rhetorical effect. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-emph.html)] 
+**emph**(emphasized) marks words or phrases which are stressed or emphasized for linguistic or rhetorical effect. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-emph.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -1038,19 +1598,33 @@ You took the car and did <emph>what</emph>?!!
  
  
  
+ 
+ 
 ### encodingDesc
  
  
-**encodingDesc**(encoding description) documents the relationship between an electronic text and the source or sources from which it was derived. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-encodingDesc.html)] 
+**encodingDesc**(encoding description) documents the relationship between an electronic text and the source or sources from which it was derived. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-encodingDesc.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[teiHeader](#teiHeader)
+     *
+ 
+ 
+**header: ** [teiHeader](#teiHeader) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[p](#p)**header: **[editorialDecl](#editorialDecl)[listPrefixDef](#listPrefixDef)[projectDesc](#projectDesc)
+     *
+ 
+**core: ** [p](#p) 
+ 
+**header: ** [editorialDecl](#editorialDecl)  [listPrefixDef](#listPrefixDef)  [projectDesc](#projectDesc) 
+ 
+ 
  
 *    **Example**
      *
@@ -1062,19 +1636,35 @@ You took the car and did <emph>what</emph>?!!
  
  
  
+ 
+ 
 ### epigraph
  
  
-**epigraph**contains a quotation, anonymous or attributed, appearing at the start or end of a section or on a title page. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-epigraph.html)] 
+**epigraph**contains a quotation, anonymous or attributed, appearing at the start or end of a section or on a title page. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-epigraph.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***core: **[lg](#lg)[list](#list)**textstructure: **[back](#back)[body](#body)[div](#div)[front](#front)[titlePage](#titlePage)
+     *
+ 
+ 
+**core: ** [lg](#lg)  [list](#list) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[bibl](#bibl)[gap](#gap)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[note](#note)[p](#p)[pb](#pb)[q](#q)[quote](#quote)**header: **[biblFull](#biblFull)
+     *
+ 
+**core: ** [bibl](#bibl)  [gap](#gap)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
+ 
+**header: ** [biblFull](#biblFull) 
+ 
+ 
  
 *    **Example**
      *
@@ -1088,19 +1678,31 @@ You took the car and did <emph>what</emph>?!!
  
  
  
+ 
+ 
 ### fileDesc
  
  
-**fileDesc**(file description) contains a full bibliographic description of an electronic file. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html)] 
+**fileDesc**(file description) contains a full bibliographic description of an electronic file. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[biblFull](#biblFull)[teiHeader](#teiHeader)
+     *
+ 
+ 
+**header: ** [biblFull](#biblFull)  [teiHeader](#teiHeader) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***header: **[editionStmt](#editionStmt)[notesStmt](#notesStmt)[publicationStmt](#publicationStmt)[seriesStmt](#seriesStmt)[sourceDesc](#sourceDesc)[titleStmt](#titleStmt)
+     *
+ 
+**header: ** [editionStmt](#editionStmt)  [notesStmt](#notesStmt)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc)  [titleStmt](#titleStmt) 
+ 
+ 
  
 *    **Note**
      *The major source of information for those seeking to create a catalogue entry or bibliographic citation for an electronic file. As such, it provides a title and statements of responsibility together with details of the publication or distribution of the file, of any series to which it belongs, and detailed bibliographic notes for matters not addressed elsewhere in the header. It also contains a full bibliographic description for the source or sources from which the electronic text was derived. 
@@ -1115,22 +1717,46 @@ You took the car and did <emph>what</emph>?!!
  
  
  
+ 
+ 
 ### foreign
  
  
-**foreign**identifies a word or phrase as belonging to some language other than that of the surrounding text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-foreign.html)] 
+**foreign**identifies a word or phrase as belonging to some language other than that of the surrounding text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-foreign.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *The global xml:lang attribute should be supplied for this element to identify the language of the word or phrase marked. As elsewhere, its value should be a language tag as defined in [6.1. Language Identification](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CH.html#CHSH). This element is intended for use only where no other element is available to mark the phrase or words concerned. The global xml:lang attribute should be used in preference to this element where it is intended to mark the language of the whole of some text element. The distinct element may be used to identify phrases belonging to sublanguages or registers not generally regarded as true languages. 
+     *The global xml:lang attribute should be supplied for this element to identify the language of the word or phrase marked. As elsewhere, its value should be a language tag as defined in  [6.1. Language Identification](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CH.html#CHSH) . This element is intended for use only where no other element is available to mark the phrase or words concerned. The global xml:lang attribute should be used in preference to this element where it is intended to mark the language of the whole of some text element. The distinct element may be used to identify phrases belonging to sublanguages or registers not generally regarded as true languages. 
  
 *    **Example**
      *
@@ -1144,22 +1770,36 @@ This is heathen Greek to you still? Your <foreign xml:lang="la">
  
  
  
+ 
+ 
 ### front
  
  
-**front**(front matter) contains any prefatory matter (headers, abstracts, title page, prefaces, dedications, etc.) found at the start of a document, before the main body. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-front.html)] 
+**front**(front matter) contains any prefatory matter (headers, abstracts, title page, prefaces, dedications, etc.) found at the start of a document, before the main body. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-front.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declaring](#att.declaring) (@decls) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls) 
  
 *    **Contained by**
-     ***textstructure: **[text](#text)
+     *
+ 
+ 
+**textstructure: ** [text](#text) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[gap](#gap)[head](#head)[lb](#lb)[listBibl](#listBibl)[milestone](#milestone)[note](#note)[p](#p)[pb](#pb)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[epigraph](#epigraph)[titlePage](#titlePage)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+**core: ** [gap](#gap)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
  
 *    **Note**
-     *Because cultural conventions differ as to which elements are grouped as front matter and which as back matter, the content models for the [front](#front) and [back](#back) elements are identical. 
+     *Because cultural conventions differ as to which elements are grouped as front matter and which as back matter, the content models for the  [front](#front)  and  [back](#back)  elements are identical. 
  
 *    **Example**
      *
@@ -1196,13 +1836,15 @@ This is heathen Greek to you still? Your <foreign xml:lang="la">
  
  
  
+ 
+ 
 ### gap
  
  
-**gap**indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-gap.html)] 
+**gap**indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-gap.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.timed](#att.timed) (@start, @end) [att.editLike](#att.editLike) (@evidence, @instant) [att.dimensions](#att.dimensions) (@unit, @quantity, @extent, @precision, @scope) ([att.ranging](#att.ranging) (@atLeast, @atMost, @min, @max, @confidence)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.timed](#att.timed)  (@start, @end)  [att.editLike](#att.editLike)  (@evidence, @instant)  [att.dimensions](#att.dimensions)  (@unit, @quantity, @extent, @precision, @scope) ( [att.ranging](#att.ranging)  (@atLeast, @atMost, @min, @max, @confidence)) 
 @reasongives the reason for omission 
 **Status**Optional**Datatype** 1–∞ occurrences of teidata.enumerated separated by whitespace**Suggested values include:**cancelled[No description available]deleted[No description available]editorialfor features omitted from transcription due to editorial policyillegible[No description available]inaudible[No description available]irrelevant[No description available]sampling[No description available]
 @agentin the case of text omitted because of damage, categorizes the cause of the damage, if it can be identified. 
@@ -1211,13 +1853,23 @@ This is heathen Greek to you still? Your <foreign xml:lang="la">
  
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[lg](#lg)[list](#list)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)**textstructure: **[back](#back)[body](#body)[byline](#byline)[closer](#closer)[dateline](#dateline)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[epigraph](#epigraph)[front](#front)[text](#text)[titlePage](#titlePage)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
      *Empty element
  
 *    **Note**
-     *The [gap](#gap), unclear, and del core tag elements may be closely allied in use with the damage and supplied elements, available when using the additional tagset for transcription of primary sources. See section [11.3.3.2. Use of the gap, del, damage, unclear, and supplied Elements in Combination](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCOMB) for discussion of which element is appropriate for which circumstance. The [gap](#gap) tag simply signals the editors decision to omit or inability to transcribe a span of text. Other information, such as the interpretation that text was deliberately erased or covered, should be indicated using the relevant tags, such as del in the case of deliberate deletion. 
+     *The  [gap](#gap) , unclear, and del core tag elements may be closely allied in use with the damage and supplied elements, available when using the additional tagset for transcription of primary sources. See section  [11.3.3.2. Use of the gap, del, damage, unclear, and supplied Elements in Combination](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCOMB)  for discussion of which element is appropriate for which circumstance. The  [gap](#gap)  tag simply signals the editors decision to omit or inability to transcribe a span of text. Other information, such as the interpretation that text was deliberately erased or covered, should be indicated using the relevant tags, such as del in the case of deliberate deletion. 
  
 *    **Example**
      *
@@ -1256,20 +1908,32 @@ This is heathen Greek to you still? Your <foreign xml:lang="la">
  
  
  
+ 
+ 
 ### gi
  
  
-**gi**(element name) contains the name (generic identifier) of an element. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-gi.html)] 
+**gi**(element name) contains the name (generic identifier) of an element. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-gi.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
 @schemesupplies the name of the scheme in which this name is defined. 
 **Status**Optional**Datatype**teidata.enumerated**Sample values include:**TEIthis element is part of the TEI scheme. [Default] DBK(docbook) this element is part of the Docbook scheme.XX(unknown) this element is part of an unknown scheme.Schematronthis element is from Schematron.HTMLthis element is from the HTML scheme.
  
  
  
 *    **Contained by**
-     ***core: **[author](#author)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
      *Empty element
@@ -1282,28 +1946,50 @@ This is heathen Greek to you still? Your <foreign xml:lang="la">
                               listItem</gi> element.</p>
  
 ```
-This example shows the use of both a namespace prefix and the scheme attribute as alternative ways of indicating that the [gi](#gi) in question is not a TEI element name: in practice only one method should be adopted. 
+This example shows the use of both a namespace prefix and the scheme attribute as alternative ways of indicating that the  [gi](#gi)  in question is not a TEI element name: in practice only one method should be adopted. 
+ 
+ 
  
  
 ### head
  
  
-**head**(heading) contains any type of heading, for example the title of a section, or the heading of a list, glossary, manuscript description, etc. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-head.html)] 
+**head**(heading) contains any type of heading, for example the title of a section, or the heading of a list, glossary, manuscript description, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-head.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.typed](#att.typed) (@type, @subtype) [att.placement](#att.placement) (@place) [att.written](#att.written) (@hand) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype)  [att.placement](#att.placement)  (@place)  [att.written](#att.written)  (@hand) 
  
 *    **Contained by**
-     ***core: **[lg](#lg)[list](#list)[listBibl](#listBibl)**textstructure: **[back](#back)[body](#body)[div](#div)[front](#front)
+     *
+ 
+ 
+**core: ** [lg](#lg)  [list](#list)  [listBibl](#listBibl) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *The [head](#head) element is used for headings at all levels; software which treats (e.g.) chapter headings, section headings, and list titles differently must determine the proper processing of a [head](#head) element based on its structural position. A [head](#head) occurring as the first element of a list is the title of that list; one occurring as the first element of a div1 is the title of that chapter or section. 
+     *The  [head](#head)  element is used for headings at all levels; software which treats (e.g.) chapter headings, section headings, and list titles differently must determine the proper processing of a  [head](#head)  element based on its structural position. A  [head](#head)  occurring as the first element of a list is the title of that list; one occurring as the first element of a div1 is the title of that chapter or section. 
  
 *    **Example**
-     *The most common use for the [head](#head) element is to mark the headings of sections. In older writings, the headings or incipits may be rather longer than usual in modern works. If a section has an explicit ending as well as a heading, it should be marked as a [trailer](#trailer), as in this example: 
+     *The most common use for the  [head](#head)  element is to mark the headings of sections. In older writings, the headings or incipits may be rather longer than usual in modern works. If a section has an explicit ending as well as a heading, it should be marked as a  [trailer](#trailer) , as in this example: 
 ```
  
 <div1 n="I" type="book">
@@ -1314,7 +2000,7 @@ This example shows the use of both a namespace prefix and the scheme attribute a
  
  
 *    **Example**
-     *When headings are not inline with the running text (see e.g. [the heading "Secunda conclusio"](http://diglib.hab.de/show_image.php?dir=drucke/ed000364&amp;pointer=34)) they might however be encoded as if. The actual placement in the source document can be captured with the place attribute. 
+     *When headings are not inline with the running text (see e.g.  [the heading "Secunda conclusio"](http://diglib.hab.de/show_image.php?dir=drucke/ed000364&amp;pointer=34) ) they might however be encoded as if. The actual placement in the source document can be captured with the place attribute. 
 ```
  
 <div type="subsection">
@@ -1326,7 +2012,7 @@ This example shows the use of both a namespace prefix and the scheme attribute a
  
  
 *    **Example**
-     *The [head](#head) element is also used to mark headings of other units, such as lists: 
+     *The  [head](#head)  element is also used to mark headings of other units, such as lists: 
 ```
  
 With a few exceptions, connectives are equally useful in all kinds of discourse: description, narration, exposition, argument. <list rend="bulleted">
@@ -1336,19 +2022,43 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
  
  
  
+ 
+ 
 ### hi
  
  
-**hi**(highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hi.html)] 
+**hi**(highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hi.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.written](#att.written) (@hand) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.written](#att.written)  (@hand) 
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -1363,23 +2073,35 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
  
  
  
+ 
+ 
 ### hyphenation
  
  
-**hyphenation**summarizes the way in which hyphenation in a source text has been treated in an encoded version of it. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hyphenation.html)] 
+**hyphenation**summarizes the way in which hyphenation in a source text has been treated in an encoded version of it. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hyphenation.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
 @eol(end-of-line) indicates whether or not end-of-line hyphenation has been retained in a text. 
 **Status**Optional**Datatype**teidata.enumerated**Legal values are:**allall end-of-line hyphenation has been retained, even though the lineation of the original may not have been. someend-of-line hyphenation has been retained in some cases. [Default] hardall soft end-of-line hyphenation has been removed: any remaining end-of-line hyphenation should be retained. noneall end-of-line hyphenation has been removed: any remaining hyphenation occurred within the line. 
  
  
  
 *    **Contained by**
-     ***header: **[editorialDecl](#editorialDecl)
+     *
+ 
+ 
+**header: ** [editorialDecl](#editorialDecl) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[p](#p)
+     *
+ 
+**core: ** [p](#p) 
+ 
+ 
  
 *    **Example**
      *
@@ -1392,26 +2114,44 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
  
  
  
+ 
+ 
 ### idno
  
  
-**idno**(identifier) supplies any form of identifier used to identify some object, such as a bibliographic item, a person, a title, an organization, etc. in a standardized way. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-idno.html)] 
+**idno**(identifier) supplies any form of identifier used to identify some object, such as a bibliographic item, a person, a title, an organization, etc. in a standardized way. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-idno.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.sortable](#att.sortable) (@sortKey) [att.datable](#att.datable) (@calendar, @period) ([att.datable.w3c](#att.datable.w3c) (@when, @notBefore, @notAfter, @from, @to)) [att.typed](#att.typed) (type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.sortable](#att.sortable)  (@sortKey)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to))  [att.typed](#att.typed)  (type, @subtype) 
 @typecategorizes the identifier, for example as an ISBN, Social Security number, etc. 
-**Derived from**[att.typed](#att.typed)**Status**Optional**Datatype**teidata.enumerated**Suggested values include:**ISBNInternational Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit identifying number assigned by the publishing industry to a published book or similar item, registered with the [International ISBN Agency.](https://www.isbn-international.org)ISSNInternational Standard Serial Number: an eight-digit number to uniquely identify a serial publication. DOIDigital Object Identifier: a unique string of letters and numbers assigned to an electronic document. URIUniform Resource Identifier: a string of characters to uniquely identify a resource which usually contains indication of the means of accessing that resource, the name of its host, and its filepath. VIAFA data number in the Virtual Internet Authority File assigned to link different names in catalogs around the world for the same entity. ESTCEnglish Short-Title Catalogue number: an identifying number assigned to a document in English printed in the British Isles or North America before 1801. OCLCOCLC control number (record number) for the union catalog record in WorldCat, a union catalog for member libraries in the Online Computer Library Center global cooperative. 
+**Derived from** [att.typed](#att.typed) **Status**Optional**Datatype**teidata.enumerated**Suggested values include:**ISBNInternational Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit identifying number assigned by the publishing industry to a published book or similar item, registered with the  [International ISBN Agency.](https://www.isbn-international.org) ISSNInternational Standard Serial Number: an eight-digit number to uniquely identify a serial publication. DOIDigital Object Identifier: a unique string of letters and numbers assigned to an electronic document. URIUniform Resource Identifier: a string of characters to uniquely identify a resource which usually contains indication of the means of accessing that resource, the name of its host, and its filepath. VIAFA data number in the Virtual Internet Authority File assigned to link different names in catalogs around the world for the same entity. ESTCEnglish Short-Title Catalogue number: an identifying number assigned to a document in English printed in the British Isles or North America before 1801. OCLCOCLC control number (record number) for the union catalog record in WorldCat, a union catalog for member libraries in the Online Computer Library Center global cooperative. 
  
  
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[idno](#idno)[language](#language)[licence](#licence)[publicationStmt](#publicationStmt)[rendition](#rendition)[seriesStmt](#seriesStmt)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [idno](#idno)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition)  [seriesStmt](#seriesStmt) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***header: **[idno](#idno)character data
+     *
+ 
+**header: ** [idno](#idno) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *[idno](#idno) should be used for labels which identify an object or concept in a formal cataloguing system such as a database or an RDF store, or in a distributed system such as the World Wide Web. Some suggested values for type on [idno](#idno) are ISBN, ISSN, DOI, and URI. 
+     * [idno](#idno)  should be used for labels which identify an object or concept in a formal cataloguing system such as a database or an RDF store, or in a distributed system such as the World Wide Web. Some suggested values for type on  [idno](#idno)  are ISBN, ISSN, DOI, and URI. 
  
 *    **Example**
      *
@@ -1431,22 +2171,42 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
 In the last case, the identifier includes a non-Unicode character which is defined elsewhere by means of a glyph or char element referenced here as #sym. 
  
  
+ 
+ 
 ### item
  
  
-**item**contains one component of a list. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-item.html)] 
+**item**contains one component of a list. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-item.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.sortable](#att.sortable) (@sortKey) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.sortable](#att.sortable)  (@sortKey) 
  
 *    **Contained by**
-     ***core: **[list](#list)
+     *
+ 
+ 
+**core: ** [list](#list) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *May contain simple prose or a sequence of chunks.Whatever string of characters is used to label a list item in the copy text may be used as the value of the global n attribute, but it is not required that numbering be recorded explicitly. In ordered lists, the n attribute on the [item](#item) element is by definition synonymous with the use of the label element to record the enumerator of the list item. In glossary lists, however, the term being defined should be given with the label element, not n. 
+     *May contain simple prose or a sequence of chunks.Whatever string of characters is used to label a list item in the copy text may be used as the value of the global n attribute, but it is not required that numbering be recorded explicitly. In ordered lists, the n attribute on the  [item](#item)  element is by definition synonymous with the use of the label element to record the enumerator of the list item. In glossary lists, however, the term being defined should be given with the label element, not n. 
  
 *    **Example**
      *
@@ -1465,26 +2225,38 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
+ 
+ 
 ### keywords
  
  
-**keywords**contains a list of keywords or phrases identifying the topic or nature of a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-keywords.html)] 
+**keywords**contains a list of keywords or phrases identifying the topic or nature of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-keywords.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
 @schemeidentifies the controlled vocabulary within which the set of keywords concerned is defined, for example by a taxonomy element, or by some other resource. 
 **Status**Optional**Datatype**teidata.pointer
  
  
  
 *    **Contained by**
-     ***header: **[textClass](#textClass)
+     *
+ 
+ 
+**header: ** [textClass](#textClass) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[list](#list)[term](#term)
+     *
+ 
+**core: ** [list](#list)  [term](#term) 
+ 
+ 
  
 *    **Note**
-     *Each individual keyword (including compound subject headings) should be supplied as a [term](#term) element directly within the [keywords](#keywords) element. An alternative usage, in which each [term](#term) appears within a [item](#item) inside a [list](#list) is permitted for backwards compatibility, but is deprecated. If no control list exists for the keywords used, then no value should be supplied for the scheme attribute. 
+     *Each individual keyword (including compound subject headings) should be supplied as a  [term](#term)  element directly within the  [keywords](#keywords)  element. An alternative usage, in which each  [term](#term)  appears within a  [item](#item)  inside a  [list](#list)  is permitted for backwards compatibility, but is deprecated. If no control list exists for the keywords used, then no value should be supplied for the scheme attribute. 
  
 *    **Example**
      *
@@ -1506,19 +2278,43 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
+ 
+ 
 ### l
  
  
-**l**(verse line) contains a single, possibly incomplete, line of verse. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-l.html)] 
+**l**(verse line) contains a single, possibly incomplete, line of verse. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-l.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.fragmentable](#att.fragmentable) (@part) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.fragmentable](#att.fragmentable)  (@part) 
  
 *    **Contained by**
-     ***core: **[corr](#corr)[emph](#emph)[head](#head)[hi](#hi)[item](#item)[lg](#lg)[note](#note)[orig](#orig)[p](#p)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[title](#title)**header: **[change](#change)[licence](#licence)**textstructure: **[body](#body)[div](#div)[epigraph](#epigraph)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
+ 
+**header: ** [change](#change)  [licence](#licence) 
+ 
+**textstructure: ** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -1531,14 +2327,16 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
+ 
+ 
 ### language
  
  
-**language**characterizes a single language or sublanguage used within a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-language.html)] 
+**language**characterizes a single language or sublanguage used within a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-language.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
-@ident(identifier) Supplies a language code constructed as defined in [BCP 47](https://tools.ietf.org/html/bcp47) which is used to identify the language documented by this element, and which is referenced by the global xml:lang attribute. 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+@ident(identifier) Supplies a language code constructed as defined in  [BCP 47](https://tools.ietf.org/html/bcp47)  which is used to identify the language documented by this element, and which is referenced by the global xml:lang attribute. 
 **Status**Required**Datatype**teidata.language
 @usagespecifies the approximate percentage (by volume) of the text which uses this language. 
 **Status**Optional**Datatype**nonNegativeInteger
@@ -1546,10 +2344,26 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
 *    **Contained by**
-     ***header: **[langUsage](#langUsage)
+     *
+ 
+ 
+**header: ** [langUsage](#langUsage) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[choice](#choice)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[pb](#pb)[ref](#ref)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**core: ** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
      *Particularly for sublanguages, an informal prose characterization should be supplied as content for the element. 
@@ -1567,19 +2381,33 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
+ 
+ 
 ### langUsage
  
  
-**langUsage**(language usage) describes the languages, sublanguages, registers, dialects, etc. represented within a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-langUsage.html)] 
+**langUsage**(language usage) describes the languages, sublanguages, registers, dialects, etc. represented within a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-langUsage.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
  
 *    **Contained by**
-     ***header: **[profileDesc](#profileDesc)
+     *
+ 
+ 
+**header: ** [profileDesc](#profileDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[p](#p)**header: **[language](#language)
+     *
+ 
+**core: ** [p](#p) 
+ 
+**header: ** [language](#language) 
+ 
+ 
  
 *    **Example**
      *
@@ -1594,22 +2422,34 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
+ 
+ 
 ### lb
  
  
-**lb**(line beginning) marks the beginning of a new (typographic) line in some edition or version of a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html)] 
+**lb**(line beginning) marks the beginning of a new (typographic) line in some edition or version of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.typed](#att.typed) (@type, @subtype) [att.edition](#att.edition) (@ed, @edRef) [att.spanning](#att.spanning) (@spanTo) [att.breaking](#att.breaking) (@break) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype)  [att.edition](#att.edition)  (@ed, @edRef)  [att.spanning](#att.spanning)  (@spanTo)  [att.breaking](#att.breaking)  (@break) 
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[lg](#lg)[list](#list)[listBibl](#listBibl)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)**textstructure: **[back](#back)[body](#body)[byline](#byline)[closer](#closer)[dateline](#dateline)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[epigraph](#epigraph)[front](#front)[text](#text)[titlePage](#titlePage)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
      *Empty element
  
 *    **Note**
-     *By convention, [lb](#lb) elements should appear at the point in the text where a new line starts. The n attribute, if used, indicates the number or other value associated with the text between this point and the next [lb](#lb) element, typically the sequence number of the line within the page, or other appropriate unit. This element is intended to be used for marking actual line breaks on a manuscript or printed page, at the point where they occur; it should not be used to tag structural units such as lines of verse (for which the [l](#l) element is available) except in circumstances where structural units cannot otherwise be marked. The type attribute may be used to characterize the line break in any respect. The more specialized attributes break, ed, or edRef should be preferred when the intent is to indicate whether or not the line break is word-breaking, or to note the source from which it derives. 
+     *By convention,  [lb](#lb)  elements should appear at the point in the text where a new line starts. The n attribute, if used, indicates the number or other value associated with the text between this point and the next  [lb](#lb)  element, typically the sequence number of the line within the page, or other appropriate unit. This element is intended to be used for marking actual line breaks on a manuscript or printed page, at the point where they occur; it should not be used to tag structural units such as lines of verse (for which the  [l](#l)  element is available) except in circumstances where structural units cannot otherwise be marked. The type attribute may be used to characterize the line break in any respect. The more specialized attributes break, ed, or edRef should be preferred when the intent is to indicate whether or not the line break is word-breaking, or to note the source from which it derives. 
  
 *    **Example**
      *This example shows typographical line breaks within metrical lines, where they occur at different places in different editions: 
@@ -1630,19 +2470,37 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
+ 
+ 
 ### lg
  
  
-**lg**(line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lg.html)] 
+**lg**(line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lg.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.divLike](#att.divLike) (@org, @sample) ([att.fragmentable](#att.fragmentable) (@part)) [att.typed](#att.typed) (@type, @subtype) [att.declaring](#att.declaring) (@decls) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.divLike](#att.divLike)  (@org, @sample) ( [att.fragmentable](#att.fragmentable)  (@part))  [att.typed](#att.typed)  (@type, @subtype)  [att.declaring](#att.declaring)  (@decls) 
  
 *    **Contained by**
-     ***core: **[corr](#corr)[emph](#emph)[head](#head)[hi](#hi)[item](#item)[lg](#lg)[note](#note)[orig](#orig)[p](#p)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[title](#title)**header: **[change](#change)[licence](#licence)**textstructure: **[body](#body)[div](#div)[epigraph](#epigraph)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
+ 
+**header: ** [change](#change)  [licence](#licence) 
+ 
+**textstructure: ** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[gap](#gap)[head](#head)[l](#l)[lb](#lb)[lg](#lg)[milestone](#milestone)[note](#note)[pb](#pb)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[epigraph](#epigraph)[trailer](#trailer)
+     *
+ 
+**core: ** [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+ 
+ 
  
 *    **Note**
      *contains verse lines or nested line groups only, possibly prefixed by a heading.
@@ -1660,22 +2518,42 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
+ 
+ 
 ### licence
  
  
-**licence**contains information about a licence or other legal agreement applicable to the text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-licence.html)] 
+**licence**contains information about a licence or other legal agreement applicable to the text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-licence.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.pointing](#att.pointing) (@targetLang, @target, @evaluate) [att.datable](#att.datable) (@calendar, @period) ([att.datable.w3c](#att.datable.w3c) (@when, @notBefore, @notAfter, @from, @to)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.pointing](#att.pointing)  (@targetLang, @target, @evaluate)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to)) 
  
 *    **Contained by**
-     ***header: **[availability](#availability)
+     *
+ 
+ 
+**header: ** [availability](#availability) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *A [licence](#licence) element should be supplied for each licence agreement applicable to the text in question. The target attribute may be used to reference a full version of the licence. The when, notBefore, notAfter, from or to attributes may be used in combination to indicate the date or dates of applicability of the licence. 
+     *A  [licence](#licence)  element should be supplied for each licence agreement applicable to the text in question. The target attribute may be used to reference a full version of the licence. The when, notBefore, notAfter, from or to attributes may be used in combination to indicate the date or dates of applicability of the licence. 
  
 *    **Example**
      *
@@ -1698,23 +2576,41 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
+ 
+ 
 ### list
  
  
-**list**contains any sequence of items organized as a list. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-list.html)] 
+**list**contains any sequence of items organized as a list. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-list.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.sortable](#att.sortable) (@sortKey) [att.typed](#att.typed) (type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.sortable](#att.sortable)  (@sortKey)  [att.typed](#att.typed)  (type, @subtype) 
 @typedescribes the nature of the items in the list. 
-**Derived from**[att.typed](#att.typed)**Status**Optional**Datatype**teidata.enumerated**Suggested values include:**glosseach list item glosses some term or concept, which is given by a label element preceding the list item. indexeach list item is an entry in an index such as the alphabetical topical index at the back of a print volume. instructionseach list item is a step in a sequence of instructions, as in a recipe.litanyeach list item is one of a sequence of petitions, supplications or invocations, typically in a religious ritual. syllogismeach list item is part of an argument consisting of two or more propositions and a final conclusion derived from them. **Note**Previous versions of these Guidelines recommended the use of type on [list](#list) to encode the rendering or appearance of a list (whether it was bulleted, numbered, etc.). The current recommendation is to use the rend or style attributes for these aspects of a list, while using type for the more appropriate task of characterizing the nature of the content of a list. **Note**The formal syntax of the element declarations allows label tags to be omitted from lists tagged &lt;list type="gloss"&gt;; this is however a semantic error. 
+**Derived from** [att.typed](#att.typed) **Status**Optional**Datatype**teidata.enumerated**Suggested values include:**glosseach list item glosses some term or concept, which is given by a label element preceding the list item. indexeach list item is an entry in an index such as the alphabetical topical index at the back of a print volume. instructionseach list item is a step in a sequence of instructions, as in a recipe.litanyeach list item is one of a sequence of petitions, supplications or invocations, typically in a religious ritual. syllogismeach list item is part of an argument consisting of two or more propositions and a final conclusion derived from them. **Note**Previous versions of these Guidelines recommended the use of type on  [list](#list)  to encode the rendering or appearance of a list (whether it was bulleted, numbered, etc.). The current recommendation is to use the rend or style attributes for these aspects of a list, while using type for the more appropriate task of characterizing the nature of the content of a list. **Note**The formal syntax of the element declarations allows label tags to be omitted from lists tagged &lt;list type="gloss"&gt;; this is however a semantic error. 
  
  
  
 *    **Contained by**
-     ***core: **[corr](#corr)[emph](#emph)[head](#head)[hi](#hi)[item](#item)[l](#l)[note](#note)[orig](#orig)[p](#p)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[title](#title)**header: **[abstract](#abstract)[change](#change)[keywords](#keywords)[licence](#licence)[rendition](#rendition)[revisionDesc](#revisionDesc)[sourceDesc](#sourceDesc)**textstructure: **[back](#back)[body](#body)[div](#div)[epigraph](#epigraph)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
+ 
+**header: ** [abstract](#abstract)  [change](#change)  [keywords](#keywords)  [licence](#licence)  [rendition](#rendition)  [revisionDesc](#revisionDesc)  [sourceDesc](#sourceDesc) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[gap](#gap)[head](#head)[item](#item)[lb](#lb)[milestone](#milestone)[note](#note)[pb](#pb)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[epigraph](#epigraph)[trailer](#trailer)
+     *
+ 
+**core: ** [gap](#gap)  [head](#head)  [item](#item)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
+ 
+ 
  
 *    **Note**
      *May contain an optional heading followed by a series of items, or a series of label and item pairs, the latter being optionally preceded by one or two specialized headings. 
@@ -1803,19 +2699,37 @@ Note that nested lists have been used so the tagging mirrors the structure indic
  
  
  
+ 
+ 
 ### listBibl
  
  
-**listBibl**(citation list) contains a list of bibliographic citations of any kind. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listBibl.html)] 
+**listBibl**(citation list) contains a list of bibliographic citations of any kind. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listBibl.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.sortable](#att.sortable) (@sortKey) [att.declarable](#att.declarable) (@default) [att.typed](#att.typed) (@type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.sortable](#att.sortable)  (@sortKey)  [att.declarable](#att.declarable)  (@default)  [att.typed](#att.typed)  (@type, @subtype) 
  
 *    **Contained by**
-     ***core: **[corr](#corr)[emph](#emph)[head](#head)[hi](#hi)[item](#item)[l](#l)[listBibl](#listBibl)[note](#note)[orig](#orig)[p](#p)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[sic](#sic)[title](#title)**header: **[change](#change)[licence](#licence)[rendition](#rendition)[sourceDesc](#sourceDesc)**textstructure: **[back](#back)[body](#body)[div](#div)[epigraph](#epigraph)[front](#front)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
+ 
+**header: ** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[bibl](#bibl)[head](#head)[lb](#lb)[listBibl](#listBibl)[milestone](#milestone)[pb](#pb)**header: **[biblFull](#biblFull)
+     *
+ 
+**core: ** [bibl](#bibl)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [pb](#pb) 
+ 
+**header: ** [biblFull](#biblFull) 
+ 
+ 
  
 *    **Example**
      *
@@ -1827,26 +2741,38 @@ Note that nested lists have been used so the tagging mirrors the structure indic
  
  
  
+ 
+ 
 ### listChange
  
  
-**listChange**groups a number of change descriptions associated with either the creation of a source text or the revision of an encoded text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listChange.html)] 
+**listChange**groups a number of change descriptions associated with either the creation of a source text or the revision of an encoded text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listChange.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.sortable](#att.sortable) (@sortKey) [att.typed](#att.typed) (@type, @subtype) 
-@orderedindicates whether the ordering of its child [change](#change) elements is to be considered significant or not 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.sortable](#att.sortable)  (@sortKey)  [att.typed](#att.typed)  (@type, @subtype) 
+@orderedindicates whether the ordering of its child  [change](#change)  elements is to be considered significant or not 
 **Status**Optional**Datatype**teidata.truthValue**Default**true
  
  
  
 *    **Contained by**
-     ***header: **[creation](#creation)[listChange](#listChange)[revisionDesc](#revisionDesc)
+     *
+ 
+ 
+**header: ** [creation](#creation)  [listChange](#listChange)  [revisionDesc](#revisionDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***header: **[change](#change)[listChange](#listChange)
+     *
+ 
+**header: ** [change](#change)  [listChange](#listChange) 
+ 
+ 
  
 *    **Note**
-     *When this element appears within the [creation](#creation) element it documents the set of revision campaigns or stages identified during the evolution of the original text. When it appears within the [revisionDesc](#revisionDesc) element, it documents only changes made during the evolution of the encoded representation of that text. 
+     *When this element appears within the  [creation](#creation)  element it documents the set of revision campaigns or stages identified during the evolution of the original text. When it appears within the  [revisionDesc](#revisionDesc)  element, it documents only changes made during the evolution of the encoded representation of that text. 
  
 *    **Example**
      *
@@ -1874,22 +2800,34 @@ Note that nested lists have been used so the tagging mirrors the structure indic
  
  
  
+ 
+ 
 ### listPrefixDef
  
  
-**listPrefixDef**(list of prefix definitions) contains a list of definitions of prefixing schemes used in data.pointer values, showing how abbreviated URIs using each scheme may be expanded into full URIs. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listPrefixDef.html)] 
+**listPrefixDef**(list of prefix definitions) contains a list of definitions of prefixing schemes used in data.pointer values, showing how abbreviated URIs using each scheme may be expanded into full URIs. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listPrefixDef.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[encodingDesc](#encodingDesc)[listPrefixDef](#listPrefixDef)
+     *
+ 
+ 
+**header: ** [encodingDesc](#encodingDesc)  [listPrefixDef](#listPrefixDef) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***header: **[listPrefixDef](#listPrefixDef)[prefixDef](#prefixDef)
+     *
+ 
+**header: ** [listPrefixDef](#listPrefixDef)  [prefixDef](#prefixDef) 
+ 
+ 
  
 *    **Example**
-     *In this example, two private URI scheme prefixes are defined and patterns are provided for dereferencing them. Each prefix is also supplied with a human-readable explanation in a [p](#p) element. 
+     *In this example, two private URI scheme prefixes are defined and patterns are provided for dereferencing them. Each prefix is also supplied with a human-readable explanation in a  [p](#p)  element. 
 ```
  
 <listPrefixDef> <prefixDef ident="psn"  matchPattern="([A-Z]+)"  replacementPattern="personography.xml#$1">
@@ -1900,22 +2838,34 @@ Note that nested lists have been used so the tagging mirrors the structure indic
  
  
  
+ 
+ 
 ### milestone
  
  
-**milestone**marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-milestone.html)] 
+**milestone**marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-milestone.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.milestoneUnit](#att.milestoneUnit) (@unit) [att.typed](#att.typed) (@type, @subtype) [att.edition](#att.edition) (@ed, @edRef) [att.spanning](#att.spanning) (@spanTo) [att.breaking](#att.breaking) (@break) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.milestoneUnit](#att.milestoneUnit)  (@unit)  [att.typed](#att.typed)  (@type, @subtype)  [att.edition](#att.edition)  (@ed, @edRef)  [att.spanning](#att.spanning)  (@spanTo)  [att.breaking](#att.breaking)  (@break) 
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[lg](#lg)[list](#list)[listBibl](#listBibl)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)**textstructure: **[back](#back)[body](#body)[byline](#byline)[closer](#closer)[dateline](#dateline)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[epigraph](#epigraph)[front](#front)[text](#text)[titlePage](#titlePage)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
      *Empty element
  
 *    **Note**
-     *For this element, the global n attribute indicates the new number or other value for the unit which changes at this milestone. The special value unnumbered should be used in passages which fall outside the normal numbering scheme, such as chapter or other headings, poem numbers or titles, etc. The order in which [milestone](#milestone) elements are given at a given point is not normally significant. 
+     *For this element, the global n attribute indicates the new number or other value for the unit which changes at this milestone. The special value unnumbered should be used in passages which fall outside the normal numbering scheme, such as chapter or other headings, poem numbers or titles, etc. The order in which  [milestone](#milestone)  elements are given at a given point is not normally significant. 
  
 *    **Example**
      *
@@ -1928,19 +2878,43 @@ Note that nested lists have been used so the tagging mirrors the structure indic
  
  
  
+ 
+ 
 ### name
  
  
-**name**(name, proper noun) contains a proper noun or noun phrase. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-name.html)] 
+**name**(name, proper noun) contains a proper noun or noun phrase. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-name.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.personal](#att.personal) (@full, @sort) ([att.naming](#att.naming) (@role, @nymRef) ([att.canonical](#att.canonical) (@key, @ref)) ) [att.datable](#att.datable) (@calendar, @period) ([att.datable.w3c](#att.datable.w3c) (@when, @notBefore, @notAfter, @from, @to)) [att.editLike](#att.editLike) (@evidence, @instant) [att.typed](#att.typed) (@type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.personal](#att.personal)  (@full, @sort) ( [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.canonical)  (@key, @ref)) )  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to))  [att.editLike](#att.editLike)  (@evidence, @instant)  [att.typed](#att.typed)  (@type, @subtype) 
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[respStmt](#respStmt)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
      *Proper nouns referring to people, places, and organizations may be tagged instead with persName, placeName, or orgName, when the TEI module for names and dates is included. 
@@ -1959,25 +2933,49 @@ Note that nested lists have been used so the tagging mirrors the structure indic
  
  
  
+ 
+ 
 ### note
  
  
-**note**contains a note or annotation. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-note.html)] 
+**note**contains a note or annotation. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-note.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.placement](#att.placement) (@place) [att.pointing](#att.pointing) (@targetLang, @target, @evaluate) [att.typed](#att.typed) (@type, @subtype) [att.written](#att.written) (@hand) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.placement](#att.placement)  (@place)  [att.pointing](#att.pointing)  (@targetLang, @target, @evaluate)  [att.typed](#att.typed)  (@type, @subtype)  [att.written](#att.written)  (@hand) 
 @anchoredindicates whether the copy text shows the exact place of reference for the note. 
 **Status**Optional**Datatype**teidata.truthValue**Default**true**Note**In modern texts, notes are usually anchored by means of explicit footnote or endnote symbols. An explicit indication of the phrase or line annotated may however be used instead (e.g. ‘page 218, lines 3–4’). The anchored attribute indicates whether any explicit location is given, whether by symbol or by prose cross-reference. The value true indicates that such an explicit location is indicated in the copy text; the value false indicates that the copy text does not indicate a specific place of attachment for the note. If the specific symbols used in the copy text at the location the note is anchored are to be recorded, use the n attribute. 
 @targetEndpoints to the end of the span to which the note is attached, if the note is not embedded in the text at that point. 
-**Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespace**Note**This attribute is retained for backwards compatibility; it may be removed at a subsequent release of the Guidelines. The recommended way of pointing to a span of elements is by means of the range function of XPointer, as further described in [16.2.4.6. range()](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATSRN). 
+**Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespace**Note**This attribute is retained for backwards compatibility; it may be removed at a subsequent release of the Guidelines. The recommended way of pointing to a span of elements is by means of the range function of XPointer, as further described in  [16.2.4.6. range()](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATSRN) . 
  
  
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[lg](#lg)[list](#list)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[respStmt](#respStmt)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[notesStmt](#notesStmt)**textstructure: **[back](#back)[body](#body)[byline](#byline)[closer](#closer)[dateline](#dateline)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[epigraph](#epigraph)[front](#front)[text](#text)[titlePage](#titlePage)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [notesStmt](#notesStmt) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *In the following example, the translator has supplied a footnote containing an explanation of the term translated as "painterly": 
@@ -2004,19 +3002,31 @@ Mevorakh b. Saadya's mother, the matriarch of the family during the second half 
 However, if notes are numbered in sequence and their numbering can be reconstructed automatically by processing software, it may well be considered unnecessary to record the note numbers. 
  
  
+ 
+ 
 ### notesStmt
  
  
-**notesStmt**(notes statement) collects together any notes providing information about a text additional to that recorded in other parts of the bibliographic description. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-notesStmt.html)] 
+**notesStmt**(notes statement) collects together any notes providing information about a text additional to that recorded in other parts of the bibliographic description. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-notesStmt.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[biblFull](#biblFull)[fileDesc](#fileDesc)
+     *
+ 
+ 
+**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[note](#note)[relatedItem](#relatedItem)
+     *
+ 
+**core: ** [note](#note)  [relatedItem](#relatedItem) 
+ 
+ 
  
 *    **Note**
      *Information of different kinds should not be grouped together into the same note.
@@ -2031,13 +3041,15 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### num
  
  
-**num**(number) contains a number, written in any form. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-num.html)] 
+**num**(number) contains a number, written in any form. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-num.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.ranging](#att.ranging) (@atLeast, @atMost, @min, @max, @confidence) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.ranging](#att.ranging)  (@atLeast, @atMost, @min, @max, @confidence) 
 @typeindicates the type of numeric value. 
 **Status**Optional**Datatype**teidata.enumerated**Suggested values include:**cardinalabsolute number, e.g. 21, 21.5ordinalordinal number, e.g. 21stfractionfraction, e.g. one half or three-quarterspercentagea percentage**Note**If a different typology is desired, other values can be used for this attribute.
 @valuesupplies the value of the number in standard form. 
@@ -2046,13 +3058,35 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *Detailed analyses of quantities and units of measure in historical documents may also use the feature structure mechanism described in chapter [18. Feature Structures](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/FS.html#FS). The [num](#num) element is intended for use in simple applications. 
+     *Detailed analyses of quantities and units of measure in historical documents may also use the feature structure mechanism described in chapter  [18. Feature Structures](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/FS.html#FS) . The  [num](#num)  element is intended for use in simple applications. 
  
 *    **Example**
      *
@@ -2068,22 +3102,48 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### orig
  
  
-**orig**(original form) contains a reading which is marked as following the original, rather than being normalized or corrected. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html)] 
+**orig**(original form) contains a reading which is marked as following the original, rather than being normalized or corrected. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***analysis: **[pc](#pc)**core: **[author](#author)[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[change](#change)[distributor](#distributor)[edition](#edition)[licence](#licence)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
-     *If all that is desired is to call attention to the original version in the copy text, [orig](#orig) may be used alone: 
+     *If all that is desired is to call attention to the original version in the copy text,  [orig](#orig)  may be used alone: 
 ```
  
 <l>But this will be a <orig>meere</orig> confusion</l><l>And hardly shall we all be <orig>vnderstoode</orig></l>
@@ -2092,7 +3152,7 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
 *    **Example**
-     *More usually, an [orig](#orig) will be combined with a regularized form within a [choice](#choice) element: 
+     *More usually, an  [orig](#orig)  will be combined with a regularized form within a  [choice](#choice)  element: 
 ```
  
 <l>But this will be a <choice>  <orig>meere</orig>  <reg>mere</reg> </choice> confusion</l><l>And hardly shall we all be <choice>  <orig>vnderstoode</orig>  <reg>understood</reg> </choice></l>
@@ -2101,19 +3161,43 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### p
  
  
-**p**(paragraph) marks paragraphs in prose. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html)] 
+**p**(paragraph) marks paragraphs in prose. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declaring](#att.declaring) (@decls) [att.fragmentable](#att.fragmentable) (@part) [att.written](#att.written) (@hand) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls)  [att.fragmentable](#att.fragmentable)  (@part)  [att.written](#att.written)  (@hand) 
  
 *    **Contained by**
-     ***core: **[item](#item)[note](#note)[q](#q)[quote](#quote)**header: **[abstract](#abstract)[availability](#availability)[change](#change)[editionStmt](#editionStmt)[editorialDecl](#editorialDecl)[encodingDesc](#encodingDesc)[hyphenation](#hyphenation)[langUsage](#langUsage)[licence](#licence)[prefixDef](#prefixDef)[projectDesc](#projectDesc)[publicationStmt](#publicationStmt)[seriesStmt](#seriesStmt)[sourceDesc](#sourceDesc)**textstructure: **[back](#back)[body](#body)[div](#div)[epigraph](#epigraph)[front](#front)
+     *
+ 
+ 
+**core: ** [item](#item)  [note](#note)  [q](#q)  [quote](#quote) 
+ 
+**header: ** [abstract](#abstract)  [availability](#availability)  [change](#change)  [editionStmt](#editionStmt)  [editorialDecl](#editorialDecl)  [encodingDesc](#encodingDesc)  [hyphenation](#hyphenation)  [langUsage](#langUsage)  [licence](#licence)  [prefixDef](#prefixDef)  [projectDesc](#projectDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -2125,22 +3209,34 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### pb
  
  
-**pb**(page beginning) marks the beginning of a new page in a paginated document. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html)] 
+**pb**(page beginning) marks the beginning of a new page in a paginated document. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.typed](#att.typed) (@type, @subtype) [att.edition](#att.edition) (@ed, @edRef) [att.spanning](#att.spanning) (@spanTo) [att.breaking](#att.breaking) (@break) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype)  [att.edition](#att.edition)  (@ed, @edRef)  [att.spanning](#att.spanning)  (@spanTo)  [att.breaking](#att.breaking)  (@break) 
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[lg](#lg)[list](#list)[listBibl](#listBibl)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)**textstructure: **[back](#back)[body](#body)[byline](#byline)[closer](#closer)[dateline](#dateline)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[epigraph](#epigraph)[front](#front)[text](#text)[titlePage](#titlePage)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
      *Empty element
  
 *    **Note**
-     *A [pb](#pb) element should appear at the start of the page which it identifies. The global n attribute indicates the number or other value associated with this page. This will normally be the page number or signature printed on it, since the physical sequence number is implicit in the presence of the [pb](#pb) element itself. The type attribute may be used to characterize the page break in any respect. The more specialized attributes break, ed, or edRef should be preferred when the intent is to indicate whether or not the page break is word-breaking, or to note the source from which it derives. 
+     *A  [pb](#pb)  element should appear at the start of the page which it identifies. The global n attribute indicates the number or other value associated with this page. This will normally be the page number or signature printed on it, since the physical sequence number is implicit in the presence of the  [pb](#pb)  element itself. The type attribute may be used to characterize the page break in any respect. The more specialized attributes break, ed, or edRef should be preferred when the intent is to indicate whether or not the page break is word-breaking, or to note the source from which it derives. 
  
 *    **Example**
      *Page numbers may vary in different editions of a text.
@@ -2162,13 +3258,15 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### pc
  
  
-**pc**(punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pc.html)] 
+**pc**(punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pc.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.segLike](#att.segLike) (@function) ([att.datcat](#att.datcat) (@datcat, @valueDatcat)) ([att.fragmentable](#att.fragmentable) (@part)) [att.typed](#att.typed) (@type, @subtype) [att.linguistic](#att.linguistic) (@lemma, @lemmaRef, @pos, @msd, @join) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.segLike](#att.segLike)  (@function) ( [att.datcat](#att.datcat)  (@datcat, @valueDatcat)) ( [att.fragmentable](#att.fragmentable)  (@part))  [att.typed](#att.typed)  (@type, @subtype)  [att.linguistic](#att.linguistic)  (@lemma, @lemmaRef, @pos, @msd, @join) 
 @forceindicates the extent to which this punctuation mark conventionally separates words or phrases 
 **Status**Optional**Datatype**teidata.enumerated**Legal values are:**strongthe punctuation mark is a word separatorweakthe punctuation mark is not a word separatorinterthe punctuation mark may or may not be a word separator
 @unitprovides a name for the kind of unit delimited by this punctuation mark. 
@@ -2179,10 +3277,26 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[change](#change)[distributor](#distributor)[edition](#edition)[licence](#licence)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[choice](#choice)[corr](#corr)[orig](#orig)[reg](#reg)[sic](#sic)character data
+     *
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -2195,7 +3309,7 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
 *    **Example**
-     *Example encoding of the German sentence Wir fahren in den Urlaub., encoded with attributes from [att.linguistic](#att.linguistic) discussed in section [ID AILALW in TEI Guidelines]. 
+     *Example encoding of the German sentence Wir fahren in den Urlaub., encoded with attributes from  [att.linguistic](#att.linguistic)  discussed in section [ID AILALW in TEI Guidelines]. 
 ```
  
 <s> <w pos="PPER" msd="1.Pl.*.Nom">
@@ -2210,26 +3324,38 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### prefixDef
  
  
-**prefixDef**(prefix definition) defines a prefixing scheme used in data.pointer values, showing how abbreviated URIs using the scheme may be expanded into full URIs. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-prefixDef.html)] 
+**prefixDef**(prefix definition) defines a prefixing scheme used in data.pointer values, showing how abbreviated URIs using the scheme may be expanded into full URIs. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-prefixDef.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.patternReplacement](#att.patternReplacement) (@matchPattern, @replacementPattern) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.patternReplacement](#att.patternReplacement)  (@matchPattern, @replacementPattern) 
 @identsupplies a name which functions as the prefix for an abbreviated pointing scheme such as a private URI scheme. The prefix constitutes the text preceding the first colon. 
 **Status**Required**Datatype**teidata.prefix**Note**The value is limited to teidata.prefix so that it may be mapped directly to a URI prefix. 
  
  
  
 *    **Contained by**
-     ***header: **[listPrefixDef](#listPrefixDef)
+     *
+ 
+ 
+**header: ** [listPrefixDef](#listPrefixDef) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[p](#p)
+     *
+ 
+**core: ** [p](#p) 
+ 
+ 
  
 *    **Note**
-     *The abbreviated pointer may be dereferenced to produce either an absolute or a relative URI reference. In the latter case it is combined with the value of xml:base in force at the place where the pointing attribute occurs to form an absolute URI in the usual manner as prescribed by [XML Base](http://www.w3.org/TR/xmlbase/). 
+     *The abbreviated pointer may be dereferenced to produce either an absolute or a relative URI reference. In the latter case it is combined with the value of xml:base in force at the place where the pointing attribute occurs to form an absolute URI in the usual manner as prescribed by  [XML Base](http://www.w3.org/TR/xmlbase/) . 
  
 *    **Example**
      *
@@ -2242,22 +3368,34 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### profileDesc
  
  
-**profileDesc**(text-profile description) provides a detailed description of non-bibliographic aspects of a text, specifically the languages and sublanguages used, the situation in which it was produced, the participants and their setting. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-profileDesc.html)] 
+**profileDesc**(text-profile description) provides a detailed description of non-bibliographic aspects of a text, specifically the languages and sublanguages used, the situation in which it was produced, the participants and their setting. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-profileDesc.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[biblFull](#biblFull)[teiHeader](#teiHeader)
+     *
+ 
+ 
+**header: ** [biblFull](#biblFull)  [teiHeader](#teiHeader) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***header: **[abstract](#abstract)[creation](#creation)[langUsage](#langUsage)[textClass](#textClass)
+     *
+ 
+**header: ** [abstract](#abstract)  [creation](#creation)  [langUsage](#langUsage)  [textClass](#textClass) 
+ 
+ 
  
 *    **Note**
-     *Although the content model permits it, it is rarely meaningful to supply multiple occurrences for any of the child elements of [profileDesc](#profileDesc) unless these are documenting multiple texts. 
+     *Although the content model permits it, it is rarely meaningful to supply multiple occurrences for any of the child elements of  [profileDesc](#profileDesc)  unless these are documenting multiple texts. 
  
 *    **Example**
      *
@@ -2272,19 +3410,31 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### projectDesc
  
  
-**projectDesc**(project description) describes in detail the aim or purpose for which an electronic file was encoded, together with any other relevant information concerning the process by which it was assembled or collected. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-projectDesc.html)] 
+**projectDesc**(project description) describes in detail the aim or purpose for which an electronic file was encoded, together with any other relevant information concerning the process by which it was assembled or collected. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-projectDesc.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
  
 *    **Contained by**
-     ***header: **[encodingDesc](#encodingDesc)
+     *
+ 
+ 
+**header: ** [encodingDesc](#encodingDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[p](#p)
+     *
+ 
+**core: ** [p](#p) 
+ 
+ 
  
 *    **Example**
      *
@@ -2296,19 +3446,33 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### publicationStmt
  
  
-**publicationStmt**(publication statement) groups information concerning the publication or distribution of an electronic or other text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html)] 
+**publicationStmt**(publication statement) groups information concerning the publication or distribution of an electronic or other text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[biblFull](#biblFull)[fileDesc](#fileDesc)
+     *
+ 
+ 
+**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[date](#date)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[ref](#ref)**header: **[authority](#authority)[availability](#availability)[distributor](#distributor)[idno](#idno)
+     *
+ 
+**core: ** [date](#date)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref) 
+ 
+**header: ** [authority](#authority)  [availability](#availability)  [distributor](#distributor)  [idno](#idno) 
+ 
+ 
  
 *    **Note**
      *Where a publication statement contains several members of the model.publicationStmtPart.agency or model.publicationStmtPart.detail classes rather than one or more paragraphs or anonymous blocks, care should be taken to ensure that the repeated elements are presented in a meaningful order. It is a conformance requirement that elements supplying information about publication place, address, identifier, availability, and date be given following the name of the publisher, distributor, or authority concerned, and preferably in that order. 
@@ -2343,19 +3507,41 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### publisher
  
  
-**publisher**provides the name of the organization responsible for the publication or distribution of a bibliographic item. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publisher.html)] 
+**publisher**provides the name of the organization responsible for the publication or distribution of a bibliographic item. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publisher.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
  
 *    **Contained by**
-     ***core: **[bibl](#bibl)**header: **[publicationStmt](#publicationStmt)
+     *
+ 
+ 
+**core: ** [bibl](#bibl) 
+ 
+**header: ** [publicationStmt](#publicationStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
      *Use the full form of the name by which a company is usually referred to, rather than any abbreviation of it which may appear on a title page 
@@ -2370,19 +3556,41 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### pubPlace
  
  
-**pubPlace**(publication place) contains the name of the place where a bibliographic item was published. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pubPlace.html)] 
+**pubPlace**(publication place) contains the name of the place where a bibliographic item was published. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pubPlace.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.naming](#att.naming) (@role, @nymRef) ([att.canonical](#att.canonical) (@key, @ref)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.canonical)  (@key, @ref)) 
  
 *    **Contained by**
-     ***core: **[bibl](#bibl)**header: **[publicationStmt](#publicationStmt)
+     *
+ 
+ 
+**core: ** [bibl](#bibl) 
+ 
+**header: ** [publicationStmt](#publicationStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -2394,26 +3602,50 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ 
+ 
 ### q
  
  
-**q**(quoted) contains material which is distinguished from the surrounding text using quotation marks or a similar method, for any one of a variety of reasons including, but not limited to: direct speech or thought, technical terms or jargon, authorial distance, quotations from elsewhere, and passages that are mentioned but not used. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-q.html)] 
+**q**(quoted) contains material which is distinguished from the surrounding text using quotation marks or a similar method, for any one of a variety of reasons including, but not limited to: direct speech or thought, technical terms or jargon, authorial distance, quotations from elsewhere, and passages that are mentioned but not used. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-q.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.ascribed.directed](#att.ascribed.directed) (@toWhom) ([att.ascribed](#att.ascribed) (@who)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.ascribed.directed](#att.ascribed.directed)  (@toWhom) ( [att.ascribed](#att.ascribed)  (@who)) 
 @typemay be used to indicate whether the offset passage is spoken or thought, or to characterize it more finely. 
 **Status**Optional**Datatype**teidata.enumerated**Suggested values include:**spokenrepresentation of speechthoughtrepresentation of thought, e.g. internal monologuewrittenquotation from a written sourcesoCalledauthorial distanceforeign[No description available]distinctlinguistically distincttermtechnical termemphrhetorically emphasizedmentionedrefering to itself, not its normal referent
  
  
  
 *    **Contained by**
-     ***core: **[author](#author)[corr](#corr)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[change](#change)[distributor](#distributor)[edition](#edition)[licence](#licence)[rendition](#rendition)**textstructure: **[body](#body)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[epigraph](#epigraph)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *May be used to indicate that a passage is distinguished from the surrounding text for reasons concerning which no claim is made. When used in this manner, [q](#q) may be thought of as syntactic sugar for [hi](#hi) with a value of rend that indicates the use of such mechanisms as quotation marks. 
+     *May be used to indicate that a passage is distinguished from the surrounding text for reasons concerning which no claim is made. When used in this manner,  [q](#q)  may be thought of as syntactic sugar for  [hi](#hi)  with a value of rend that indicates the use of such mechanisms as quotation marks. 
  
 *    **Example**
      *
@@ -2425,19 +3657,43 @@ It is spelled <q>Tübingen</q> — to enter the letter <q>u</q> with an umlaut h
  
  
  
+ 
+ 
 ### quote
  
  
-**quote**(quotation) contains a phrase or passage attributed by the narrator or author to some agency external to the text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-quote.html)] 
+**quote**(quotation) contains a phrase or passage attributed by the narrator or author to some agency external to the text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-quote.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.typed](#att.typed) (@type, @subtype) [att.notated](#att.notated) (@notation) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype)  [att.notated](#att.notated)  (@notation) 
  
 *    **Contained by**
-     ***core: **[author](#author)[corr](#corr)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[change](#change)[distributor](#distributor)[edition](#edition)[licence](#licence)[rendition](#rendition)**textstructure: **[body](#body)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[epigraph](#epigraph)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
      *If a bibliographic citation is supplied for the source of a quotation, the two may be grouped using the cit element. 
@@ -2452,19 +3708,43 @@ Lexicography has shown little sign of being affected by the work of followers of
  
  
  
+ 
+ 
 ### ref
  
  
-**ref**(reference) defines a reference to another location, possibly modified by additional text or comment. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-ref.html)] 
+**ref**(reference) defines a reference to another location, possibly modified by additional text or comment. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-ref.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.pointing](#att.pointing) (@targetLang, @target, @evaluate) [att.internetMedia](#att.internetMedia) (@mimeType) [att.typed](#att.typed) (@type, @subtype) [att.declaring](#att.declaring) (@decls) [att.cReferencing](#att.cReferencing) (@cRef) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.pointing](#att.pointing)  (@targetLang, @target, @evaluate)  [att.internetMedia](#att.internetMedia)  (@mimeType)  [att.typed](#att.typed)  (@type, @subtype)  [att.declaring](#att.declaring)  (@decls)  [att.cReferencing](#att.cReferencing)  (@cRef) 
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[publicationStmt](#publicationStmt)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
      *The target and cRef attributes are mutually exclusive. 
@@ -2491,22 +3771,48 @@ See also <ref target="#locution">
  
  
  
+ 
+ 
 ### reg
  
  
-**reg**(regularization) contains a reading which has been regularized or normalized in some sense. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html)] 
+**reg**(regularization) contains a reading which has been regularized or normalized in some sense. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.editLike](#att.editLike) (@evidence, @instant) [att.typed](#att.typed) (@type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.editLike](#att.editLike)  (@evidence, @instant)  [att.typed](#att.typed)  (@type, @subtype) 
  
 *    **Contained by**
-     ***analysis: **[pc](#pc)**core: **[author](#author)[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[change](#change)[distributor](#distributor)[edition](#edition)[licence](#licence)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
-     *If all that is desired is to call attention to the fact that the copy text has been regularized, [reg](#reg) may be used alone: 
+     *If all that is desired is to call attention to the fact that the copy text has been regularized,  [reg](#reg)  may be used alone: 
 ```
  
 <q>Please <reg>knock</reg> if an <reg>answer</reg> is <reg>required</reg></q>
@@ -2515,7 +3821,7 @@ See also <ref target="#locution">
  
  
 *    **Example**
-     *It is also possible to identify the individual responsible for the regularization, and, using the [choice](#choice) and [orig](#orig) elements, to provide both the original and regularized readings: 
+     *It is also possible to identify the individual responsible for the regularization, and, using the  [choice](#choice)  and  [orig](#orig)  elements, to provide both the original and regularized readings: 
 ```
  
 <q>Please <choice>  <reg resp="#LB">
@@ -2525,23 +3831,39 @@ See also <ref target="#locution">
  
  
  
+ 
+ 
 ### relatedItem
  
  
-**relatedItem**contains or references some other bibliographic item which is related to the present one in some specified manner, for example as a constituent or alternative version of it. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-relatedItem.html)] 
+**relatedItem**contains or references some other bibliographic item which is related to the present one in some specified manner, for example as a constituent or alternative version of it. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-relatedItem.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.typed](#att.typed) (@type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype) 
 @targetpoints to the related bibliographic element by means of an absolute or relative URI reference 
 **Status**Optional**Datatype**teidata.pointer
  
  
  
 *    **Contained by**
-     ***core: **[bibl](#bibl)**header: **[notesStmt](#notesStmt)
+     *
+ 
+ 
+**core: ** [bibl](#bibl) 
+ 
+**header: ** [notesStmt](#notesStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[bibl](#bibl)[listBibl](#listBibl)[ref](#ref)**header: **[biblFull](#biblFull)
+     *
+ 
+**core: ** [bibl](#bibl)  [listBibl](#listBibl)  [ref](#ref) 
+ 
+**header: ** [biblFull](#biblFull) 
+ 
+ 
  
 *    **Note**
      *If the target attribute is used to reference the related bibliographic item, the element must be empty. 
@@ -2560,13 +3882,15 @@ See also <ref target="#locution">
  
  
  
+ 
+ 
 ### rendition
  
  
-**rendition**supplies information about the rendition or appearance of one or more elements in the source text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html)] 
+**rendition**supplies information about the rendition or appearance of one or more elements in the source text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.styleDef](#att.styleDef) (@scheme, @schemeVersion) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.styleDef](#att.styleDef)  (@scheme, @schemeVersion) 
 @scopewhere CSS is used, provides a way of defining ‘pseudo-elements’, that is, styling rules applicable to specific sub-portions of an element. 
 **Status**Optional**Datatype**teidata.enumerated**Sample values include:**first-linestyling applies to the first line of the target elementfirst-letterstyling applies to the first letter of the target elementbeforestyling should be applied immediately before the content of the target elementafterstyling should be applied immediately after the content of the target element
 @selectorcontains a selector or series of selectors specifying the elements to which the contained style description applies, expressed in the language specified in the scheme attribute. 
@@ -2577,22 +3901,34 @@ See also <ref target="#locution">
                                                  display: block;</rendition>
  
 ```
- [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html)] 
+ [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ] 
 ```
  
 <rendition scheme="css" selector="*[rend*=italic]">
                                                  font-style: italic;</rendition>
  
 ```
- [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html)] **Note**Since the default value of the scheme attribute is assumed to be CSS, the default expectation for this attribute, in the absence of scheme, is that CSS selector syntax will be used. **Note**While rendition is used to point from an element in the transcribed source to a [rendition](#rendition) element in the header which describes how it appears, the selector attribute allows the encoder to point in the other direction: from a [rendition](#rendition) in the header to a collection of elements which all share the same renditional features. In both cases, the intention is to record the appearance of the source text, not to prescribe any particular output rendering. 
+ [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ] **Note**Since the default value of the scheme attribute is assumed to be CSS, the default expectation for this attribute, in the absence of scheme, is that CSS selector syntax will be used. **Note**While rendition is used to point from an element in the transcribed source to a  [rendition](#rendition)  element in the header which describes how it appears, the selector attribute allows the encoder to point in the other direction: from a  [rendition](#rendition)  in the header to a collection of elements which all share the same renditional features. In both cases, the intention is to record the appearance of the source text, not to prescribe any particular output rendering. 
  
  
  
 *    **Contained by**
-     *—
+     *
+—
+ 
  
 *    **May contain**
-     ***core: **[bibl](#bibl)[choice](#choice)[date](#date)[emph](#emph)[foreign](#foreign)[hi](#hi)[list](#list)[listBibl](#listBibl)[name](#name)[num](#num)[q](#q)[quote](#quote)[ref](#ref)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [num](#num)  [q](#q)  [quote](#quote)  [ref](#ref)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -2608,22 +3944,40 @@ See also <ref target="#locution">
  
  
  
+ 
+ 
 ### resp
  
  
-**resp**(responsibility) contains a phrase describing the nature of a person's intellectual responsibility, or an organization's role in the production or distribution of a work. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-resp.html)] 
+**resp**(responsibility) contains a phrase describing the nature of a person's intellectual responsibility, or an organization's role in the production or distribution of a work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-resp.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) [att.datable](#att.datable) (@calendar, @period) ([att.datable.w3c](#att.datable.w3c) (@when, @notBefore, @notAfter, @from, @to)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to)) 
  
 *    **Contained by**
-     ***core: **[respStmt](#respStmt)
+     *
+ 
+ 
+**core: ** [respStmt](#respStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[choice](#choice)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[pb](#pb)[ref](#ref)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**core: ** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *The attribute ref, inherited from the class [att.canonical](#att.canonical) may be used to indicate the kind of responsibility in a normalized form by referring directly to a standardized list of responsibility types, such as that maintained by a naming authority, for example the list maintained at [http://www.loc.gov/marc/relators/relacode.html](http://www.loc.gov/marc/relators/relacode.html) for bibliographic usage. 
+     *The attribute ref, inherited from the class  [att.canonical](#att.canonical)  may be used to indicate the kind of responsibility in a normalized form by referring directly to a standardized list of responsibility types, such as that maintained by a naming authority, for example the list maintained at  [http://www.loc.gov/marc/relators/relacode.html](http://www.loc.gov/marc/relators/relacode.html)  for bibliographic usage. 
  
 *    **Example**
      *
@@ -2636,19 +3990,33 @@ See also <ref target="#locution">
  
  
  
+ 
+ 
 ### respStmt
  
  
-**respStmt**(statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or series, where the specialized elements for authors, editors, etc. do not suffice or do not apply. May also be used to encode information about individuals or organizations which have played a role in the production or distribution of a bibliographic work. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-respStmt.html)] 
+**respStmt**(statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or series, where the specialized elements for authors, editors, etc. do not suffice or do not apply. May also be used to encode information about individuals or organizations which have played a role in the production or distribution of a bibliographic work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-respStmt.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
  
 *    **Contained by**
-     ***core: **[bibl](#bibl)**header: **[editionStmt](#editionStmt)[seriesStmt](#seriesStmt)[titleStmt](#titleStmt)
+     *
+ 
+ 
+**core: ** [bibl](#bibl) 
+ 
+**header: ** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[name](#name)[note](#note)[resp](#resp)
+     *
+ 
+**core: ** [name](#name)  [note](#note)  [resp](#resp) 
+ 
+ 
  
 *    **Example**
      *
@@ -2669,22 +4037,36 @@ See also <ref target="#locution">
  
  
  
+ 
+ 
 ### revisionDesc
  
  
-**revisionDesc**(revision description) summarizes the revision history for a file. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-revisionDesc.html)] 
+**revisionDesc**(revision description) summarizes the revision history for a file. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-revisionDesc.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.docStatus](#att.docStatus) (@status) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.docStatus](#att.docStatus)  (@status) 
  
 *    **Contained by**
-     ***header: **[teiHeader](#teiHeader)
+     *
+ 
+ 
+**header: ** [teiHeader](#teiHeader) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[list](#list)**header: **[change](#change)[listChange](#listChange)
+     *
+ 
+**core: ** [list](#list) 
+ 
+**header: ** [change](#change)  [listChange](#listChange) 
+ 
+ 
  
 *    **Note**
-     *If present on this element, the status attribute should indicate the current status of the document. The same attribute may appear on any [change](#change) to record the status at the time of that change. Conventionally [change](#change) elements should be given in reverse date order, with the most recent change at the start of the list. 
+     *If present on this element, the status attribute should indicate the current status of the document. The same attribute may appear on any  [change](#change)  to record the status at the time of that change. Conventionally  [change](#change)  elements should be given in reverse date order, with the most recent change at the start of the list. 
  
 *    **Example**
      *
@@ -2698,19 +4080,33 @@ See also <ref target="#locution">
  
  
  
+ 
+ 
 ### seriesStmt
  
  
-**seriesStmt**(series statement) groups information about the series, if any, to which a publication belongs. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html)] 
+**seriesStmt**(series statement) groups information about the series, if any, to which a publication belongs. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[biblFull](#biblFull)[fileDesc](#fileDesc)
+     *
+ 
+ 
+**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[editor](#editor)[p](#p)[respStmt](#respStmt)[title](#title)**header: **[idno](#idno)
+     *
+ 
+**core: ** [editor](#editor)  [p](#p)  [respStmt](#respStmt)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+ 
  
 *    **Example**
      *
@@ -2724,19 +4120,45 @@ See also <ref target="#locution">
  
  
  
+ 
+ 
 ### sic
  
  
-**sic**(Latin for thus or so) contains text reproduced although apparently incorrect or inaccurate. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sic.html)] 
+**sic**(Latin for thus or so) contains text reproduced although apparently incorrect or inaccurate. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sic.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***analysis: **[pc](#pc)**core: **[author](#author)[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[change](#change)[distributor](#distributor)[edition](#edition)[licence](#licence)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -2749,7 +4171,7 @@ for his nose was as sharp as a pen, and <sic>a Table</sic> of green fields.
  
  
 *    **Example**
-     *If all that is desired is to call attention to the apparent problem in the copy text, [sic](#sic) may be used alone: 
+     *If all that is desired is to call attention to the apparent problem in the copy text,  [sic](#sic)  may be used alone: 
 ```
  
 I don't know, Juan. It's so far in the past now — how <sic>we can</sic> prove or disprove anyone's theories?
@@ -2759,7 +4181,7 @@ I don't know, Juan. It's so far in the past now — how <sic>we can</sic> prove 
  
  
 *    **Example**
-     *It is also possible, using the [choice](#choice) and [corr](#corr) elements, to provide a corrected reading: 
+     *It is also possible, using the  [choice](#choice)  and  [corr](#corr)  elements, to provide a corrected reading: 
 ```
  
 I don't know, Juan. It's so far in the past now — how <choice> <sic>we can</sic> <corr>can we</corr></choice> prove or disprove anyone's theories?
@@ -2779,19 +4201,33 @@ for his nose was as sharp as a pen, and <choice> <sic>a Table</sic> <corr>a' b
  
  
  
+ 
+ 
 ### sourceDesc
  
  
-**sourceDesc**(source description) describes the source from which an electronic text was derived or generated, typically a bibliographic description in the case of a digitized text, or a phrase such as "born digital" for a text which has no previous existence. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html)] 
+**sourceDesc**(source description) describes the source from which an electronic text was derived or generated, typically a bibliographic description in the case of a digitized text, or a phrase such as "born digital" for a text which has no previous existence. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
  
 *    **Contained by**
-     ***header: **[biblFull](#biblFull)[fileDesc](#fileDesc)
+     *
+ 
+ 
+**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[bibl](#bibl)[list](#list)[listBibl](#listBibl)[p](#p)**header: **[biblFull](#biblFull)
+     *
+ 
+**core: ** [bibl](#bibl)  [list](#list)  [listBibl](#listBibl)  [p](#p) 
+ 
+**header: ** [biblFull](#biblFull) 
+ 
+ 
  
 *    **Example**
      *
@@ -2813,23 +4249,33 @@ for his nose was as sharp as a pen, and <choice> <sic>a Table</sic> <corr>a' b
  
  
  
+ 
+ 
 ### TEI
  
  
-**TEI**(TEI document) contains a single TEI-conformant document, combining a single TEI header with one or more members of the model.resourceLike class. Multiple [TEI](#TEI) elements may be combined to form a teiCorpus element. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-TEI.html)] 
+**TEI**(TEI document) contains a single TEI-conformant document, combining a single TEI header with one or more members of the model.resourceLike class. Multiple  [TEI](#TEI)  elements may be combined to form a teiCorpus element. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-TEI.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.typed](#att.typed) (@type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype) 
 @versionspecifies the version number of the TEI Guidelines against which this document is valid. 
 **Status**Optional**Datatype**teidata.version**Note**Major editions of the Guidelines have long been informally referred to by a name made up of the letter P (for Proposal) followed by a digit. The current release is one of the many releases of the fifth major edition of the Guidelines, known as P5. This attribute may be used to associate a TEI document with a specific release of the P5 Guidelines, in the absence of a more precise association provided by the source attribute on the associated schemaSpec. 
  
  
  
 *    **Contained by**
-     *—
+     *
+—
+ 
  
 *    **May contain**
-     ***header: **[teiHeader](#teiHeader)**textstructure: **[text](#text)
+     *
+ 
+**header: ** [teiHeader](#teiHeader) 
+ 
+**textstructure: ** [text](#text) 
+ 
+ 
  
 *    **Note**
      *This element is required. It is customary to specify the TEI namespace http://www.tei-c.org/ns/1.0 on it, using the xmlns attribute. 
@@ -2853,19 +4299,31 @@ for his nose was as sharp as a pen, and <choice> <sic>a Table</sic> <corr>a' b
  
  
  
+ 
+ 
 ### teiHeader
  
  
-**teiHeader**(TEI header) supplies descriptive and declarative metadata associated with a digital resource or set of resources. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html)] 
+**teiHeader**(TEI header) supplies descriptive and declarative metadata associated with a digital resource or set of resources. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***textstructure: **[TEI](#TEI)
+     *
+ 
+ 
+**textstructure: ** [TEI](#TEI) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***header: **[encodingDesc](#encodingDesc)[fileDesc](#fileDesc)[profileDesc](#profileDesc)[revisionDesc](#revisionDesc)
+     *
+ 
+**header: ** [encodingDesc](#encodingDesc)  [fileDesc](#fileDesc)  [profileDesc](#profileDesc)  [revisionDesc](#revisionDesc) 
+ 
+ 
  
 *    **Note**
      *One of the few elements unconditionally required in any TEI document.
@@ -2887,22 +4345,46 @@ for his nose was as sharp as a pen, and <choice> <sic>a Table</sic> <corr>a' b
  
  
  
+ 
+ 
 ### term
  
  
-**term**contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-term.html)] 
+**term**contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-term.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declaring](#att.declaring) (@decls) [att.pointing](#att.pointing) (@targetLang, @target, @evaluate) [att.typed](#att.typed) (@type, @subtype) [att.canonical](#att.canonical) (@key, @ref) [att.sortable](#att.sortable) (@sortKey) [att.cReferencing](#att.cReferencing) (@cRef) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls)  [att.pointing](#att.pointing)  (@targetLang, @target, @evaluate)  [att.typed](#att.typed)  (@type, @subtype)  [att.canonical](#att.canonical)  (@key, @ref)  [att.sortable](#att.sortable)  (@sortKey)  [att.cReferencing](#att.cReferencing)  (@cRef) 
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[keywords](#keywords)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [keywords](#keywords)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *When this element appears within an index element, it is understood to supply the form under which an index entry is to be made for that location. Elsewhere, it is understood simply to indicate that its content is to be regarded as a technical or specialised term. It may be associated with a gloss element by means of its ref attribute; alternatively a gloss element may point to a [term](#term) element by means of its target attribute. In formal terminological work, there is frequently discussion over whether terms must be atomic or may include multi-word lexical items, symbolic designations, or phraseological units. The [term](#term) element may be used to mark any of these. No position is taken on the philosophical issue of what a term can be; the looser definition simply allows the [term](#term) element to be used by practitioners of any persuasion. As with other members of the [att.canonical](#att.canonical) class, instances of this element occuring in a text may be associated with a canonical definition, either by means of a URI (using the ref attribute), or by means of some system-specific code value (using the key attribute). Because the mutually exclusive target and cRef attributes overlap with the function of the ref attribute, they are deprecated and may be removed at a subsequent release. 
+     *When this element appears within an index element, it is understood to supply the form under which an index entry is to be made for that location. Elsewhere, it is understood simply to indicate that its content is to be regarded as a technical or specialised term. It may be associated with a gloss element by means of its ref attribute; alternatively a gloss element may point to a  [term](#term)  element by means of its target attribute. In formal terminological work, there is frequently discussion over whether terms must be atomic or may include multi-word lexical items, symbolic designations, or phraseological units. The  [term](#term)  element may be used to mark any of these. No position is taken on the philosophical issue of what a term can be; the looser definition simply allows the  [term](#term)  element to be used by practitioners of any persuasion. As with other members of the  [att.canonical](#att.canonical)  class, instances of this element occuring in a text may be associated with a canonical definition, either by means of a URI (using the ref attribute), or by means of some system-specific code value (using the key attribute). Because the mutually exclusive target and cRef attributes overlap with the function of the ref attribute, they are deprecated and may be removed at a subsequent release. 
  
 *    **Example**
      *
@@ -2950,19 +4432,33 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
  
  
+ 
+ 
 ### text
  
  
-**text**contains a single text of any kind, whether unitary or composite, for example a poem or drama, a collection of essays, a novel, a dictionary, or a corpus sample. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-text.html)] 
+**text**contains a single text of any kind, whether unitary or composite, for example a poem or drama, a collection of essays, a novel, a dictionary, or a corpus sample. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-text.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declaring](#att.declaring) (@decls) [att.typed](#att.typed) (@type, @subtype) [att.written](#att.written) (@hand) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls)  [att.typed](#att.typed)  (@type, @subtype)  [att.written](#att.written)  (@hand) 
  
 *    **Contained by**
-     ***textstructure: **[TEI](#TEI)
+     *
+ 
+ 
+**textstructure: ** [TEI](#TEI) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[gap](#gap)[lb](#lb)[milestone](#milestone)[note](#note)[pb](#pb)**textstructure: **[back](#back)[body](#body)[front](#front)
+     *
+ 
+**core: ** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [front](#front) 
+ 
+ 
  
 *    **Note**
      *This element should not be used to represent a text which is inserted at an arbitrary point within the structure of another, for example as in an embedded or quoted narrative; the floatingText is provided for this purpose. 
@@ -2986,19 +4482,31 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
  
  
+ 
+ 
 ### textClass
  
  
-**textClass**(text classification) groups information which describes the nature or topic of a text in terms of a standard classification scheme, thesaurus, etc. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-textClass.html)] 
+**textClass**(text classification) groups information which describes the nature or topic of a text in terms of a standard classification scheme, thesaurus, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-textClass.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
  
 *    **Contained by**
-     ***header: **[profileDesc](#profileDesc)
+     *
+ 
+ 
+**header: ** [profileDesc](#profileDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***header: **[catRef](#catRef)[keywords](#keywords)
+     *
+ 
+**header: ** [catRef](#catRef)  [keywords](#keywords) 
+ 
+ 
  
 *    **Example**
      *
@@ -3013,28 +4521,52 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
  
  
+ 
+ 
 ### title
  
  
-**title**contains a title for any kind of work. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html)] 
+**title**contains a title for any kind of work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) [att.datable](#att.datable) (@calendar, @period) ([att.datable.w3c](#att.datable.w3c) (@when, @notBefore, @notAfter, @from, @to)) [att.typed](#att.typed) (type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to))  [att.typed](#att.typed)  (type, @subtype) 
 @typeclassifies the title according to some convenient typology. 
-**Derived from**[att.typed](#att.typed)**Status**Optional**Datatype**teidata.enumerated**Sample values include:**mainmain titlesub(subordinate) subtitle, title of partalt(alternate) alternate title, often in another language, by which the work is also known shortabbreviated form of titledesc(descriptive) descriptive paraphrase of the work functioning as a title**Note**This attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single [title](#title) element. 
+**Derived from** [att.typed](#att.typed) **Status**Optional**Datatype**teidata.enumerated**Sample values include:**mainmain titlesub(subordinate) subtitle, title of partalt(alternate) alternate title, often in another language, by which the work is also known shortabbreviated form of titledesc(descriptive) descriptive paraphrase of the work functioning as a title**Note**This attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single  [title](#title)  element. 
 @levelindicates the bibliographic level for a title, that is, whether it identifies an article, book, journal, series, or unpublished material. 
 **Status**Optional**Datatype**teidata.enumerated**Legal values are:**a(analytic) the title applies to an analytic item, such as an article, poem, or other work published as part of a larger item. m(monographic) the title applies to a monograph such as a book or other item considered to be a distinct publication, including single volumes of multi-volume works j(journal) the title applies to any serial or periodical publication such as a journal, magazine, or newspaper s(series) the title applies to a series of otherwise distinct publications such as a collection u(unpublished) the title applies to any unpublished material (including theses and dissertations unless published by a commercial press) **Note**The level of a title is sometimes implied by its context: for example, a title appearing directly within an analytic element is ipso facto of level ‘a’, and one appearing within a series element of level ‘s’. For this reason, the level attribute is not required in contexts where its value can be unambiguously inferred. Where it is supplied in such contexts, its value should not contradict the value implied by its parent element. 
  
  
  
 *    **Contained by**
-     ***core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)[seriesStmt](#seriesStmt)[titleStmt](#titleStmt)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Note**
-     *The attributes key and ref, inherited from the class [att.canonical](#att.canonical) may be used to indicate the canonical form for the title; the former, by supplying (for example) the identifier of a record in some external library system; the latter by pointing to an XML element somewhere containing the canonical form of the title. 
+     *The attributes key and ref, inherited from the class  [att.canonical](#att.canonical)  may be used to indicate the canonical form for the title; the former, by supplying (for example) the identifier of a record in some external library system; the latter by pointing to an XML element somewhere containing the canonical form of the title. 
  
 *    **Example**
      *
@@ -3067,23 +4599,37 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
  
  
+ 
+ 
 ### titlePage
  
  
-**titlePage**(title page) contains the title page of a text, appearing within the front or back matter. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titlePage.html)] 
+**titlePage**(title page) contains the title page of a text, appearing within the front or back matter. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titlePage.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
 @typeclassifies the title page according to any convenient typology. 
 **Status**Optional**Datatype**teidata.enumerated**Note**This attribute allows the same element to be used for volume title pages, series title pages, etc., as well as for the ‘main’ title page of a work. 
  
  
  
 *    **Contained by**
-     ***textstructure: **[back](#back)[front](#front)
+     *
+ 
+ 
+**textstructure: ** [back](#back)  [front](#front) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[gap](#gap)[lb](#lb)[milestone](#milestone)[note](#note)[pb](#pb)**textstructure: **[byline](#byline)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[epigraph](#epigraph)[titlePart](#titlePart)
+     *
+ 
+**core: ** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
+ 
+**textstructure: ** [byline](#byline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePart](#titlePart) 
+ 
+ 
  
 *    **Example**
      *
@@ -3098,23 +4644,43 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
  
  
+ 
+ 
 ### titlePart
  
  
-**titlePart**contains a subsection or division of the title of a work, as indicated on a title page. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titlePart.html)] 
+**titlePart**contains a subsection or division of the title of a work, as indicated on a title page. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titlePart.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
 @typespecifies the role of this subdivision of the title. 
 **Status**Optional**Datatype**teidata.enumerated**Suggested values include:**mainmain title of the work [Default] sub(subordinate) subtitle of the workalt(alternate) alternative title of the workshortabbreviated form of titledesc(descriptive) descriptive paraphrase of the work
  
  
  
 *    **Contained by**
-     ***textstructure: **[back](#back)[docTitle](#docTitle)[front](#front)[titlePage](#titlePage)
+     *
+ 
+ 
+**textstructure: ** [back](#back)  [docTitle](#docTitle)  [front](#front)  [titlePage](#titlePage) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -3128,19 +4694,31 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
  
  
+ 
+ 
 ### titleStmt
  
  
-**titleStmt**(title statement) groups information about the title of a work and those responsible for its content. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html)] 
+**titleStmt**(title statement) groups information about the title of a work and those responsible for its content. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***header: **[biblFull](#biblFull)[fileDesc](#fileDesc)
+     *
+ 
+ 
+**header: ** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***core: **[author](#author)[editor](#editor)[respStmt](#respStmt)[title](#title)
+     *
+ 
+**core: ** [author](#author)  [editor](#editor)  [respStmt](#respStmt)  [title](#title) 
+ 
+ 
  
 *    **Example**
      *
@@ -3152,19 +4730,41 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
  
  
+ 
+ 
 ### trailer
  
  
-**trailer**contains a closing title or footer appearing at the end of a division of a text. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-trailer.html)] 
+**trailer**contains a closing title or footer appearing at the end of a division of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-trailer.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) [att.typed](#att.typed) (@type, @subtype) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype) 
  
 *    **Contained by**
-     ***core: **[lg](#lg)[list](#list)**textstructure: **[back](#back)[body](#body)[div](#div)[front](#front)
+     *
+ 
+ 
+**core: ** [lg](#lg)  [list](#list) 
+ 
+**textstructure: ** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
+ 
+ 
+ 
  
 *    **May contain**
-     ***analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data
+     *
+ 
+**analysis: ** [pc](#pc) 
+ 
+**core: ** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [biblFull](#biblFull)  [idno](#idno) 
+ 
+**tagdocs: ** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
+ 
+character data
+ 
+ 
  
 *    **Example**
      *
@@ -3185,16 +4785,28 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
 From EEBO A87070
  
  
+ 
+ 
 ### val
  
  
-**val**(value) contains a single attribute value. [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-val.html)] 
+**val**(value) contains a single attribute value. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-val.html) ] 
  
 *    **Attributes**
-     *Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition)) ([att.global.analytic](#att.global.analytic) (@ana)) ([att.global.responsibility](#att.global.responsibility) (@cert, @resp)) ([att.global.source](#att.global.source) (@source)) 
+     *Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
  
 *    **Contained by**
-     ***core: **[author](#author)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)
+     *
+ 
+ 
+**core: ** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
+ 
+**header: ** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
+ 
+**textstructure: ** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
+ 
+ 
+ 
  
 *    **May contain**
      *Character data only
@@ -3209,7 +4821,9 @@ From EEBO A87070
  
  
  
+ 
 ## Schema wea: Attribute classes
+ 
  
 ### att.ascribed
  
@@ -3217,7 +4831,7 @@ From EEBO A87070
 **att.ascribed** provides attributes for elements representing speech or action that can be ascribed to a specific individual. 
  
 *    **Members**
-     *[att.ascribed.directed](#att.ascribed.directed) [[q](#q)] [change](#change)
+     * [att.ascribed.directed](#att.ascribed.directed)  [ [q](#q) ]  [change](#change) 
  
 *    **Attributes**
      *Attributes 
@@ -3241,16 +4855,18 @@ From EEBO A87070
  
  
  
+ 
+ 
 ### att.ascribed.directed
  
  
 **att.ascribed.directed** provides attributes for elements representing speech or action that can be directed at a group or individual. 
  
 *    **Members**
-     *[q](#q)
+     * [q](#q) 
  
 *    **Attributes**
-     *Attributes [att.ascribed](#att.ascribed) (@who) 
+     *Attributes  [att.ascribed](#att.ascribed)  (@who) 
 @toWhomindicates the person, or group of people, to whom a speech act or action is directed. 
 **Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespaceIn the following example from Mary Pix's The False Friend, speeches (sp) in the body of the play are linked to castItem elements in the castList using the toWhom attribute, which is used to specify who the speech is directed to. Additionally, the stage includes toWhom to indicate the directionality of the action. 
 ```
@@ -3269,7 +4885,9 @@ From EEBO A87070
                                                 Pointing to her Woman.</stage> <l>But that poor helpless wretch——</l></sp>
  
 ```
-**Note**To indicate the recipient of written correspondence, use the elements used in section [2.4.6. Correspondence Description](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD44CD), rather than a toWhom attribute. 
+**Note**To indicate the recipient of written correspondence, use the elements used in section  [2.4.6. Correspondence Description](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD44CD) , rather than a toWhom attribute. 
+ 
+ 
  
  
  
@@ -3280,7 +4898,7 @@ From EEBO A87070
 **att.breaking** provides an attribute to indicate whether or not the element concerned is considered to mark the end of an orthographic token in the same way as whitespace. 
  
 *    **Members**
-     *[lb](#lb)[milestone](#milestone)[pb](#pb)
+     * [lb](#lb)  [milestone](#milestone)  [pb](#pb) 
  
 *    **Attributes**
      *Attributes 
@@ -3296,13 +4914,15 @@ From EEBO A87070
  
  
  
+ 
+ 
 ### att.canonical
  
  
 **att.canonical** provides attributes which can be used to associate a representation such as a name or title with canonical information about the object being named or referenced. 
  
 *    **Members**
-     *[att.naming](#att.naming) [[att.personal](#att.personal) [[name](#name)] [author](#author)[editor](#editor)[pubPlace](#pubPlace)] [authority](#authority)[date](#date)[distributor](#distributor)[docAuthor](#docAuthor)[docTitle](#docTitle)[publisher](#publisher)[resp](#resp)[respStmt](#respStmt)[term](#term)[title](#title)
+     * [att.naming](#att.naming)  [ [att.personal](#att.personal)  [ [name](#name) ]  [author](#author)  [editor](#editor)  [pubPlace](#pubPlace) ]  [authority](#authority)  [date](#date)  [distributor](#distributor)  [docAuthor](#docAuthor)  [docTitle](#docTitle)  [publisher](#publisher)  [resp](#resp)  [respStmt](#respStmt)  [term](#term)  [title](#title) 
  
 *    **Attributes**
      *Attributes 
@@ -3335,18 +4955,22 @@ From EEBO A87070
  
  
  
+ 
+ 
 ### att.cReferencing
  
  
 **att.cReferencing** provides an attribute which may be used to supply a canonical reference as a means of identifying the target of a pointer. 
  
 *    **Members**
-     *[ref](#ref)[term](#term)
+     * [ref](#ref)  [term](#term) 
  
 *    **Attributes**
      *Attributes 
 @cRef(canonical reference) specifies the destination of the pointer by supplying a canonical reference expressed using the scheme defined in a refsDecl element in the TEI header 
-**Status**Optional**Datatype**teidata.text**Note**The value of cRef should be constructed so that when the algorithm for the resolution of canonical references (described in section [16.2.5. Canonical References](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SACR)) is applied to it the result is a valid URI reference to the intended target. The refsDecl to use may be indicated with the decls attribute. Currently these Guidelines only provide for a single canonical reference to be encoded on any given ptr element. 
+**Status**Optional**Datatype**teidata.text**Note**The value of cRef should be constructed so that when the algorithm for the resolution of canonical references (described in section  [16.2.5. Canonical References](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SACR) ) is applied to it the result is a valid URI reference to the intended target. The refsDecl to use may be indicated with the decls attribute. Currently these Guidelines only provide for a single canonical reference to be encoded on any given ptr element. 
+ 
+ 
  
  
  
@@ -3357,10 +4981,10 @@ From EEBO A87070
 **att.datable** provides attributes for normalization of elements that contain dates, times, or datable events. 
  
 *    **Members**
-     *[change](#change)[creation](#creation)[date](#date)[idno](#idno)[licence](#licence)[name](#name)[resp](#resp)[title](#title)
+     * [change](#change)  [creation](#creation)  [date](#date)  [idno](#idno)  [licence](#licence)  [name](#name)  [resp](#resp)  [title](#title) 
  
 *    **Attributes**
-     *Attributes [att.datable.w3c](#att.datable.w3c) (@when, @notBefore, @notAfter, @from, @to) 
+     *Attributes  [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to) 
 @calendarindicates the system or calendar to which the date represented by the content of this element belongs. 
 **Status**Optional**Datatype**teidata.pointer
 ```
@@ -3378,7 +5002,9 @@ He was born on <date calendar="#gregorian">
  
  
 *    **Note**
-     *This ‘superclass’ provides attributes that can be used to provide normalized values of temporal information. By default, the attributes from the [att.datable.w3c](#att.datable.w3c) class are provided. If the module for names &amp; dates is loaded, this class also provides attributes from the att.datable.iso and att.datable.custom classes. In general, the possible values of attributes restricted to the W3C datatypes form a subset of those values available via the ISO 8601 standard. However, the greater expressiveness of the ISO datatypes may not be needed, and there exists much greater software support for the W3C datatypes. 
+     *This ‘superclass’ provides attributes that can be used to provide normalized values of temporal information. By default, the attributes from the  [att.datable.w3c](#att.datable.w3c)  class are provided. If the module for names &amp; dates is loaded, this class also provides attributes from the att.datable.iso and att.datable.custom classes. In general, the possible values of attributes restricted to the W3C datatypes form a subset of those values available via the ISO 8601 standard. However, the greater expressiveness of the ISO datatypes may not be needed, and there exists much greater software support for the W3C datatypes. 
+ 
+ 
  
  
 ### att.datable.w3c
@@ -3387,7 +5013,7 @@ He was born on <date calendar="#gregorian">
 **att.datable.w3c** provides attributes for normalization of elements that contain datable events conforming to the W3C XML Schema Part 2: Datatypes Second Edition. 
  
 *    **Members**
-     *[att.datable](#att.datable) [[change](#change)[creation](#creation)[date](#date)[idno](#idno)[licence](#licence)[name](#name)[resp](#resp)[title](#title)] 
+     * [att.datable](#att.datable)  [ [change](#change)  [creation](#creation)  [date](#date)  [idno](#idno)  [licence](#licence)  [name](#name)  [resp](#resp)  [title](#title) ] 
  
 *    **Attributes**
      *Attributes 
@@ -3451,13 +5077,15 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
      *The value of these attributes should be a normalized representation of the date, time, or combined date &amp; time intended, in any of the standard formats specified by XML Schema Part 2: Datatypes Second Edition, using the Gregorian calendar. The most commonly-encountered format for the date portion of a temporal attribute is yyyy-mm-dd, but yyyy, --mm, ---dd, yyyy-mm, or --mm-dd may also be used. For the time part, the form hh:mm:ss is used. Note that this format does not currently permit use of the value 0000 to represent the year 1 BCE; instead the value -0001 should be used. 
  
  
+ 
+ 
 ### att.datcat
  
  
-**att.datcat** provides the dcr:datacat and dcr:ValueDatacat attributes which are used to align XML elements or attributes with the appropriate Data Categories (DCs) defined by the ISO 12620:2009 standard and stored in the Web repository called ISOCat at [http://www.isocat.org/](http://www.isocat.org/). 
+**att.datcat** provides the dcr:datacat and dcr:ValueDatacat attributes which are used to align XML elements or attributes with the appropriate Data Categories (DCs) defined by the ISO 12620:2009 standard and stored in the Web repository called ISOCat at  [http://www.isocat.org/](http://www.isocat.org/) . 
  
 *    **Members**
-     *[att.segLike](#att.segLike) [[pc](#pc)] 
+     * [att.segLike](#att.segLike)  [ [pc](#pc) ] 
  
 *    **Attributes**
      *Attributes 
@@ -3469,7 +5097,7 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
  
  
 *    **Example**
-     *In this example dcr:datcat relates the feature name to the data category "partOfSpeech" and dcr:valueDatcat the feature value to the data category "commonNoun". Both these data categories reside in the ISOcat DCR at [www.isocat.org](http://www.isocat.org), which is the DCR used by ISO TC37 and hosted by its registration authority, the MPI for Psycholinguistics in Nijmegen. 
+     *In this example dcr:datcat relates the feature name to the data category "partOfSpeech" and dcr:valueDatcat the feature value to the data category "commonNoun". Both these data categories reside in the ISOcat DCR at  [www.isocat.org](http://www.isocat.org) , which is the DCR used by ISO TC37 and hosted by its registration authority, the MPI for Psycholinguistics in Nijmegen. 
 ```
  
 <fs> <f name="POS"  dcr:datcat="http://www.isocat.org/datcat/DC-1345" fVal="#commonNoun"  dcr:valueDatcat="http://www.isocat.org/datcat/DC-1256"/></fs>
@@ -3478,7 +5106,9 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
  
  
 *    **Note**
-     *ISO 12620:2009 is a standard describing the data model and procedures for a Data Category Registry (DCR). Data categories are defined as elementary descriptors in a linguistic structure. In the DCR data model each data category gets assigned a unique Peristent IDentifier (PID), i.e., an URI. Linguistic resources or preferably their schemas that make use of data categories from a DCR should refer to them using this PID. For XML-based resources, like TEI documents, ISO 12620:2009 normative Annex A gives a small Data Category Reference XML vocabulary (also available online at [http://www.isocat.org/12620/](http://www.isocat.org/12620/)), which provides two attributes, dcr:datcat and dcr:valueDatcat. 
+     *ISO 12620:2009 is a standard describing the data model and procedures for a Data Category Registry (DCR). Data categories are defined as elementary descriptors in a linguistic structure. In the DCR data model each data category gets assigned a unique Peristent IDentifier (PID), i.e., an URI. Linguistic resources or preferably their schemas that make use of data categories from a DCR should refer to them using this PID. For XML-based resources, like TEI documents, ISO 12620:2009 normative Annex A gives a small Data Category Reference XML vocabulary (also available online at  [http://www.isocat.org/12620/](http://www.isocat.org/12620/) ), which provides two attributes, dcr:datcat and dcr:valueDatcat. 
+ 
+ 
  
  
 ### att.declarable
@@ -3487,7 +5117,7 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
 **att.declarable** provides attributes for those elements in the TEI header which may be independently selected by means of the special purpose decls attribute. 
  
 *    **Members**
-     *[availability](#availability)[bibl](#bibl)[biblFull](#biblFull)[editorialDecl](#editorialDecl)[hyphenation](#hyphenation)[langUsage](#langUsage)[listBibl](#listBibl)[projectDesc](#projectDesc)[sourceDesc](#sourceDesc)[textClass](#textClass)
+     * [availability](#availability)  [bibl](#bibl)  [biblFull](#biblFull)  [editorialDecl](#editorialDecl)  [hyphenation](#hyphenation)  [langUsage](#langUsage)  [listBibl](#listBibl)  [projectDesc](#projectDesc)  [sourceDesc](#sourceDesc)  [textClass](#textClass) 
  
 *    **Attributes**
      *Attributes 
@@ -3497,7 +5127,9 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
  
  
 *    **Note**
-     *The rules governing the association of declarable elements with individual parts of a TEI text are fully defined in chapter [15.3. Associating Contextual Information with a Text](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAS). Only one element of a particular type may have a default attribute with a value of true. 
+     *The rules governing the association of declarable elements with individual parts of a TEI text are fully defined in chapter  [15.3. Associating Contextual Information with a Text](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAS) . Only one element of a particular type may have a default attribute with a value of true. 
+ 
+ 
  
  
 ### att.declaring
@@ -3506,7 +5138,7 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
 **att.declaring** provides attributes for elements which may be independently associated with a particular declarable element within the header, thus overriding the inherited default for that element. 
  
 *    **Members**
-     *[back](#back)[body](#body)[div](#div)[front](#front)[lg](#lg)[p](#p)[ref](#ref)[term](#term)[text](#text)
+     * [back](#back)  [body](#body)  [div](#div)  [front](#front)  [lg](#lg)  [p](#p)  [ref](#ref)  [term](#term)  [text](#text) 
  
 *    **Attributes**
      *Attributes 
@@ -3516,7 +5148,9 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
  
  
 *    **Note**
-     *The rules governing the association of declarable elements with individual parts of a TEI text are fully defined in chapter [15.3. Associating Contextual Information with a Text](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAS). 
+     *The rules governing the association of declarable elements with individual parts of a TEI text are fully defined in chapter  [15.3. Associating Contextual Information with a Text](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAS) . 
+ 
+ 
  
  
 ### att.dimensions
@@ -3525,10 +5159,10 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
 **att.dimensions** provides attributes for describing the size of physical objects. 
  
 *    **Members**
-     *[date](#date)[gap](#gap)
+     * [date](#date)  [gap](#gap) 
  
 *    **Attributes**
-     *Attributes [att.ranging](#att.ranging) (@atLeast, @atMost, @min, @max, @confidence) 
+     *Attributes  [att.ranging](#att.ranging)  (@atLeast, @atMost, @min, @max, @confidence) 
 @unitnames the unit used for the measurement 
 **Status**Optional**Datatype**teidata.enumerated**Suggested values include:**cm(centimetres) mm(millimetres) in(inches) lineslines of textchars(characters) characters of text
 @quantityspecifies the length in the units specified 
@@ -3555,20 +5189,24 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
  
  
  
+ 
+ 
 ### att.divLike
  
  
 **att.divLike** provides attributes common to all elements which behave in the same way as divisions. 
  
 *    **Members**
-     *[div](#div)[lg](#lg)
+     * [div](#div)  [lg](#lg) 
  
 *    **Attributes**
-     *Attributes [att.fragmentable](#att.fragmentable) (@part) 
+     *Attributes  [att.fragmentable](#att.fragmentable)  (@part) 
 @org(organization) specifies how the content of the division is organized. 
 **Status**Optional**Datatype**teidata.enumerated**Legal values are:**compositeno claim is made about the sequence in which the immediate contents of this division are to be processed, or their inter-relationships. uniformthe immediate contents of this element are regarded as forming a logical unit, to be processed in sequence. [Default] 
 @sampleindicates whether this division is a sample of the original source and if so, from which part. 
 **Status**Optional**Datatype**teidata.enumerated**Legal values are:**initialdivision lacks material present at end in source.medialdivision lacks material at start and end.finaldivision lacks material at start.unknownposition of sampled material within original unknown.completedivision is not a sample. [Default] 
+ 
+ 
  
  
  
@@ -3579,7 +5217,7 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
 **att.docStatus** provides attributes for use on metadata elements describing the status of a document. 
  
 *    **Members**
-     *[bibl](#bibl)[biblFull](#biblFull)[change](#change)[revisionDesc](#revisionDesc)
+     * [bibl](#bibl)  [biblFull](#biblFull)  [change](#change)  [revisionDesc](#revisionDesc) 
  
 *    **Attributes**
      *Attributes 
@@ -3599,13 +5237,15 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
  
  
  
+ 
+ 
 ### att.edition
  
  
 **att.edition** provides attributes identifying the source edition from which some encoded feature derives. 
  
 *    **Members**
-     *[lb](#lb)[milestone](#milestone)[pb](#pb)
+     * [lb](#lb)  [milestone](#milestone)  [pb](#pb) 
  
 *    **Attributes**
      *Attributes 
@@ -3637,13 +5277,15 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
  
  
  
+ 
+ 
 ### att.editLike
  
  
 **att.editLike** provides attributes describing the nature of an encoded scholarly intervention or interpretation of any kind. 
  
 *    **Members**
-     *[corr](#corr)[date](#date)[gap](#gap)[name](#name)[reg](#reg)
+     * [corr](#corr)  [date](#date)  [gap](#gap)  [name](#name)  [reg](#reg) 
  
 *    **Attributes**
      *Attributes 
@@ -3658,7 +5300,9 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
      *The members of this attribute class are typically used to represent any kind of editorial intervention in a text, for example a correction or interpretation, or to date or localize manuscripts etc. 
  
 *    **Note**
-     *Each pointer on the source (if present) corresponding to a witness or witness group should reference a bibliographic citation such as a witness, msDesc, or [bibl](#bibl) element, or another external bibliographic citation, documenting the source concerned. 
+     *Each pointer on the source (if present) corresponding to a witness or witness group should reference a bibliographic citation such as a witness, msDesc, or  [bibl](#bibl)  element, or another external bibliographic citation, documenting the source concerned. 
+ 
+ 
  
  
 ### att.fragmentable
@@ -3667,12 +5311,14 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
 **att.fragmentable** provides an attribute for representing fragmentation of a structural element, typically as a consequence of some overlapping hierarchy. 
  
 *    **Members**
-     *[att.divLike](#att.divLike) [[div](#div)[lg](#lg)] [att.segLike](#att.segLike) [[pc](#pc)] [l](#l)[p](#p)
+     * [att.divLike](#att.divLike)  [ [div](#div)  [lg](#lg) ]  [att.segLike](#att.segLike)  [ [pc](#pc) ]  [l](#l)  [p](#p) 
  
 *    **Attributes**
      *Attributes 
 @partspecifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers. 
 **Status**Optional**Datatype**teidata.enumerated**Legal values are:**Y(yes) the element is fragmented in some (unspecified) respectN(no) the element is not fragmented, or no claim is made as to its completeness [Default] I(initial) this is the initial part of a fragmented elementM(medial) this is a medial part of a fragmented elementF(final) this is the final part of a fragmented element**Note**The values I, M, or F should be used only where it is clear how the element may be be reconstituted. 
+ 
+ 
  
  
  
@@ -3683,15 +5329,15 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
 **att.global** provides attributes common to all elements in the TEI encoding scheme. 
  
 *    **Members**
-     *[TEI](#TEI)[abstract](#abstract)[att](#att)[author](#author)[authority](#authority)[availability](#availability)[back](#back)[bibl](#bibl)[biblFull](#biblFull)[body](#body)[byline](#byline)[catRef](#catRef)[category](#category)[change](#change)[choice](#choice)[closer](#closer)[code](#code)[corr](#corr)[creation](#creation)[date](#date)[dateline](#dateline)[distributor](#distributor)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[edition](#edition)[editionStmt](#editionStmt)[editor](#editor)[editorialDecl](#editorialDecl)[emph](#emph)[encodingDesc](#encodingDesc)[epigraph](#epigraph)[fileDesc](#fileDesc)[foreign](#foreign)[front](#front)[gap](#gap)[gi](#gi)[head](#head)[hi](#hi)[hyphenation](#hyphenation)[idno](#idno)[item](#item)[keywords](#keywords)[l](#l)[langUsage](#langUsage)[language](#language)[lb](#lb)[lg](#lg)[licence](#licence)[list](#list)[listBibl](#listBibl)[listChange](#listChange)[listPrefixDef](#listPrefixDef)[milestone](#milestone)[name](#name)[note](#note)[notesStmt](#notesStmt)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[pc](#pc)[prefixDef](#prefixDef)[profileDesc](#profileDesc)[projectDesc](#projectDesc)[pubPlace](#pubPlace)[publicationStmt](#publicationStmt)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[rendition](#rendition)[resp](#resp)[respStmt](#respStmt)[revisionDesc](#revisionDesc)[seriesStmt](#seriesStmt)[sic](#sic)[sourceDesc](#sourceDesc)[teiHeader](#teiHeader)[term](#term)[text](#text)[textClass](#textClass)[title](#title)[titlePage](#titlePage)[titlePart](#titlePart)[titleStmt](#titleStmt)[trailer](#trailer)[val](#val)
+     * [TEI](#TEI)  [abstract](#abstract)  [att](#att)  [author](#author)  [authority](#authority)  [availability](#availability)  [back](#back)  [bibl](#bibl)  [biblFull](#biblFull)  [body](#body)  [byline](#byline)  [catRef](#catRef)  [category](#category)  [change](#change)  [choice](#choice)  [closer](#closer)  [code](#code)  [corr](#corr)  [creation](#creation)  [date](#date)  [dateline](#dateline)  [distributor](#distributor)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [edition](#edition)  [editionStmt](#editionStmt)  [editor](#editor)  [editorialDecl](#editorialDecl)  [emph](#emph)  [encodingDesc](#encodingDesc)  [epigraph](#epigraph)  [fileDesc](#fileDesc)  [foreign](#foreign)  [front](#front)  [gap](#gap)  [gi](#gi)  [head](#head)  [hi](#hi)  [hyphenation](#hyphenation)  [idno](#idno)  [item](#item)  [keywords](#keywords)  [l](#l)  [langUsage](#langUsage)  [language](#language)  [lb](#lb)  [lg](#lg)  [licence](#licence)  [list](#list)  [listBibl](#listBibl)  [listChange](#listChange)  [listPrefixDef](#listPrefixDef)  [milestone](#milestone)  [name](#name)  [note](#note)  [notesStmt](#notesStmt)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [pc](#pc)  [prefixDef](#prefixDef)  [profileDesc](#profileDesc)  [projectDesc](#projectDesc)  [pubPlace](#pubPlace)  [publicationStmt](#publicationStmt)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [rendition](#rendition)  [resp](#resp)  [respStmt](#respStmt)  [revisionDesc](#revisionDesc)  [seriesStmt](#seriesStmt)  [sic](#sic)  [sourceDesc](#sourceDesc)  [teiHeader](#teiHeader)  [term](#term)  [text](#text)  [textClass](#textClass)  [title](#title)  [titlePage](#titlePage)  [titlePart](#titlePart)  [titleStmt](#titleStmt)  [trailer](#trailer)  [val](#val) 
  
 *    **Attributes**
-     *Attributes [att.global.rendition](#att.global.rendition) (@rend, @style, @rendition) [att.global.analytic](#att.global.analytic) (@ana) [att.global.responsibility](#att.global.responsibility) (@cert, @resp) [att.global.source](#att.global.source) (@source) 
+     *Attributes  [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)  [att.global.analytic](#att.global.analytic)  (@ana)  [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)  [att.global.source](#att.global.source)  (@source) 
 @xml:id(identifier) provides a unique identifier for the element bearing the attribute. 
-**Status**Optional**Datatype**ID**Note**The xml:id attribute may be used to specify a canonical reference for an element; see section [3.10. Reference Systems](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CORS). 
+**Status**Optional**Datatype**ID**Note**The xml:id attribute may be used to specify a canonical reference for an element; see section  [3.10. Reference Systems](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CORS) . 
 @n(number) gives a number (or other label) for an element, which is not necessarily unique within the document. 
 **Status**Optional**Datatype**teidata.text**Note**The value of this attribute is always understood to be a single token, even if it contains space or other punctuation characters, and need not be composed of numbers only. It is typically used to specify the numbering of chapters, sections, list items, etc.; it may also be used in the specification of a standard reference system for the text. 
-@xml:lang(language) indicates the language of the element content using a ‘tag’ generated according to [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt). 
+@xml:lang(language) indicates the language of the element content using a ‘tag’ generated according to  [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt) . 
 **Status**Optional**Datatype**teidata.language
 ```
  
@@ -3699,7 +5345,7 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
                                                 ariki</foreign> or chief (Routledge 1920:205,210) and their connections to ancestral territorial organization.</p>
  
 ```
-**Note**The xml:lang value will be inherited from the immediately enclosing element, or from its parent, and so on up the document hierarchy. It is generally good practice to specify xml:lang at the highest appropriate level, noticing that a different default may be needed for the teiHeader from that needed for the associated resource element or elements, and that a single TEI document may contain texts in many languages. The authoritative list of registered language subtags is maintained by IANA and is available at [http://www.iana.org/assignments/language-subtag-registry](http://www.iana.org/assignments/language-subtag-registry). For a good general overview of the construction of language tags, see [http://www.w3.org/International/articles/language-tags/](http://www.w3.org/International/articles/language-tags/), and for a practical step-by-step guide, see [https://www.w3.org/International/questions/qa-choosing-language-tags.en.php](https://www.w3.org/International/questions/qa-choosing-language-tags.en.php). The value used must conform with BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a [language](#language) element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions. 
+**Note**The xml:lang value will be inherited from the immediately enclosing element, or from its parent, and so on up the document hierarchy. It is generally good practice to specify xml:lang at the highest appropriate level, noticing that a different default may be needed for the teiHeader from that needed for the associated resource element or elements, and that a single TEI document may contain texts in many languages. The authoritative list of registered language subtags is maintained by IANA and is available at  [http://www.iana.org/assignments/language-subtag-registry](http://www.iana.org/assignments/language-subtag-registry) . For a good general overview of the construction of language tags, see  [http://www.w3.org/International/articles/language-tags/](http://www.w3.org/International/articles/language-tags/) , and for a practical step-by-step guide, see  [https://www.w3.org/International/questions/qa-choosing-language-tags.en.php](https://www.w3.org/International/questions/qa-choosing-language-tags.en.php) . The value used must conform with BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a  [language](#language)  element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions. 
 @xml:baseprovides a base URI reference with which applications can resolve relative URI references into absolute URI references. 
 **Status**Optional**Datatype**teidata.pointer
 ```
@@ -3714,7 +5360,9 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
 ```
  
 @xml:spacesignals an intention about how white space should be managed by applications. 
-**Status**Optional**Datatype**teidata.enumerated**Legal values are:**defaultsignals that the application's default white-space processing modes are acceptablepreserveindicates the intent that applications preserve all white space**Note**The [XML specification](http://www.w3.org/TR/REC-xml/#sec-white-space) provides further guidance on the use of this attribute. Note that many parsers may not handle xml:space correctly. 
+**Status**Optional**Datatype**teidata.enumerated**Legal values are:**defaultsignals that the application's default white-space processing modes are acceptablepreserveindicates the intent that applications preserve all white space**Note**The  [XML specification](http://www.w3.org/TR/REC-xml/#sec-white-space)  provides further guidance on the use of this attribute. Note that many parsers may not handle xml:space correctly. 
+ 
+ 
  
  
  
@@ -3725,12 +5373,14 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
 **att.global.analytic** provides additional global attributes for associating specific analyses or interpretations with appropriate portions of a text. 
  
 *    **Members**
-     *[att.global](#att.global) [[TEI](#TEI)[abstract](#abstract)[att](#att)[author](#author)[authority](#authority)[availability](#availability)[back](#back)[bibl](#bibl)[biblFull](#biblFull)[body](#body)[byline](#byline)[catRef](#catRef)[category](#category)[change](#change)[choice](#choice)[closer](#closer)[code](#code)[corr](#corr)[creation](#creation)[date](#date)[dateline](#dateline)[distributor](#distributor)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[edition](#edition)[editionStmt](#editionStmt)[editor](#editor)[editorialDecl](#editorialDecl)[emph](#emph)[encodingDesc](#encodingDesc)[epigraph](#epigraph)[fileDesc](#fileDesc)[foreign](#foreign)[front](#front)[gap](#gap)[gi](#gi)[head](#head)[hi](#hi)[hyphenation](#hyphenation)[idno](#idno)[item](#item)[keywords](#keywords)[l](#l)[langUsage](#langUsage)[language](#language)[lb](#lb)[lg](#lg)[licence](#licence)[list](#list)[listBibl](#listBibl)[listChange](#listChange)[listPrefixDef](#listPrefixDef)[milestone](#milestone)[name](#name)[note](#note)[notesStmt](#notesStmt)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[pc](#pc)[prefixDef](#prefixDef)[profileDesc](#profileDesc)[projectDesc](#projectDesc)[pubPlace](#pubPlace)[publicationStmt](#publicationStmt)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[rendition](#rendition)[resp](#resp)[respStmt](#respStmt)[revisionDesc](#revisionDesc)[seriesStmt](#seriesStmt)[sic](#sic)[sourceDesc](#sourceDesc)[teiHeader](#teiHeader)[term](#term)[text](#text)[textClass](#textClass)[title](#title)[titlePage](#titlePage)[titlePart](#titlePart)[titleStmt](#titleStmt)[trailer](#trailer)[val](#val)] 
+     * [att.global](#att.global)  [ [TEI](#TEI)  [abstract](#abstract)  [att](#att)  [author](#author)  [authority](#authority)  [availability](#availability)  [back](#back)  [bibl](#bibl)  [biblFull](#biblFull)  [body](#body)  [byline](#byline)  [catRef](#catRef)  [category](#category)  [change](#change)  [choice](#choice)  [closer](#closer)  [code](#code)  [corr](#corr)  [creation](#creation)  [date](#date)  [dateline](#dateline)  [distributor](#distributor)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [edition](#edition)  [editionStmt](#editionStmt)  [editor](#editor)  [editorialDecl](#editorialDecl)  [emph](#emph)  [encodingDesc](#encodingDesc)  [epigraph](#epigraph)  [fileDesc](#fileDesc)  [foreign](#foreign)  [front](#front)  [gap](#gap)  [gi](#gi)  [head](#head)  [hi](#hi)  [hyphenation](#hyphenation)  [idno](#idno)  [item](#item)  [keywords](#keywords)  [l](#l)  [langUsage](#langUsage)  [language](#language)  [lb](#lb)  [lg](#lg)  [licence](#licence)  [list](#list)  [listBibl](#listBibl)  [listChange](#listChange)  [listPrefixDef](#listPrefixDef)  [milestone](#milestone)  [name](#name)  [note](#note)  [notesStmt](#notesStmt)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [pc](#pc)  [prefixDef](#prefixDef)  [profileDesc](#profileDesc)  [projectDesc](#projectDesc)  [pubPlace](#pubPlace)  [publicationStmt](#publicationStmt)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [rendition](#rendition)  [resp](#resp)  [respStmt](#respStmt)  [revisionDesc](#revisionDesc)  [seriesStmt](#seriesStmt)  [sic](#sic)  [sourceDesc](#sourceDesc)  [teiHeader](#teiHeader)  [term](#term)  [text](#text)  [textClass](#textClass)  [title](#title)  [titlePage](#titlePage)  [titlePart](#titlePart)  [titleStmt](#titleStmt)  [trailer](#trailer)  [val](#val) ] 
  
 *    **Attributes**
      *Attributes 
 @ana(analysis) indicates one or more elements containing interpretations of the element on which the ana attribute appears. 
 **Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespace**Note**When multiple values are given, they may reflect either multiple divergent interpretations of an ambiguous text, or multiple mutually consistent interpretations of the same passage in different contexts. 
+ 
+ 
  
  
  
@@ -3741,7 +5391,7 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
 **att.global.rendition** provides rendering attributes common to all elements in the TEI encoding scheme. 
  
 *    **Members**
-     *[att.global](#att.global) [[TEI](#TEI)[abstract](#abstract)[att](#att)[author](#author)[authority](#authority)[availability](#availability)[back](#back)[bibl](#bibl)[biblFull](#biblFull)[body](#body)[byline](#byline)[catRef](#catRef)[category](#category)[change](#change)[choice](#choice)[closer](#closer)[code](#code)[corr](#corr)[creation](#creation)[date](#date)[dateline](#dateline)[distributor](#distributor)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[edition](#edition)[editionStmt](#editionStmt)[editor](#editor)[editorialDecl](#editorialDecl)[emph](#emph)[encodingDesc](#encodingDesc)[epigraph](#epigraph)[fileDesc](#fileDesc)[foreign](#foreign)[front](#front)[gap](#gap)[gi](#gi)[head](#head)[hi](#hi)[hyphenation](#hyphenation)[idno](#idno)[item](#item)[keywords](#keywords)[l](#l)[langUsage](#langUsage)[language](#language)[lb](#lb)[lg](#lg)[licence](#licence)[list](#list)[listBibl](#listBibl)[listChange](#listChange)[listPrefixDef](#listPrefixDef)[milestone](#milestone)[name](#name)[note](#note)[notesStmt](#notesStmt)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[pc](#pc)[prefixDef](#prefixDef)[profileDesc](#profileDesc)[projectDesc](#projectDesc)[pubPlace](#pubPlace)[publicationStmt](#publicationStmt)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[rendition](#rendition)[resp](#resp)[respStmt](#respStmt)[revisionDesc](#revisionDesc)[seriesStmt](#seriesStmt)[sic](#sic)[sourceDesc](#sourceDesc)[teiHeader](#teiHeader)[term](#term)[text](#text)[textClass](#textClass)[title](#title)[titlePage](#titlePage)[titlePart](#titlePart)[titleStmt](#titleStmt)[trailer](#trailer)[val](#val)] 
+     * [att.global](#att.global)  [ [TEI](#TEI)  [abstract](#abstract)  [att](#att)  [author](#author)  [authority](#authority)  [availability](#availability)  [back](#back)  [bibl](#bibl)  [biblFull](#biblFull)  [body](#body)  [byline](#byline)  [catRef](#catRef)  [category](#category)  [change](#change)  [choice](#choice)  [closer](#closer)  [code](#code)  [corr](#corr)  [creation](#creation)  [date](#date)  [dateline](#dateline)  [distributor](#distributor)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [edition](#edition)  [editionStmt](#editionStmt)  [editor](#editor)  [editorialDecl](#editorialDecl)  [emph](#emph)  [encodingDesc](#encodingDesc)  [epigraph](#epigraph)  [fileDesc](#fileDesc)  [foreign](#foreign)  [front](#front)  [gap](#gap)  [gi](#gi)  [head](#head)  [hi](#hi)  [hyphenation](#hyphenation)  [idno](#idno)  [item](#item)  [keywords](#keywords)  [l](#l)  [langUsage](#langUsage)  [language](#language)  [lb](#lb)  [lg](#lg)  [licence](#licence)  [list](#list)  [listBibl](#listBibl)  [listChange](#listChange)  [listPrefixDef](#listPrefixDef)  [milestone](#milestone)  [name](#name)  [note](#note)  [notesStmt](#notesStmt)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [pc](#pc)  [prefixDef](#prefixDef)  [profileDesc](#profileDesc)  [projectDesc](#projectDesc)  [pubPlace](#pubPlace)  [publicationStmt](#publicationStmt)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [rendition](#rendition)  [resp](#resp)  [respStmt](#respStmt)  [revisionDesc](#revisionDesc)  [seriesStmt](#seriesStmt)  [sic](#sic)  [sourceDesc](#sourceDesc)  [teiHeader](#teiHeader)  [term](#term)  [text](#text)  [textClass](#textClass)  [title](#title)  [titlePage](#titlePage)  [titlePart](#titlePart)  [titleStmt](#titleStmt)  [trailer](#trailer)  [val](#val) ] 
  
 *    **Attributes**
      *Attributes 
@@ -3777,7 +5427,9 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
                                                 text-align: center</rendition>
  
 ```
-**Note**The rendition attribute is used in a very similar way to the class attribute defined for XHTML but with the important distinction that its function is to describe the appearance of the source text, not necessarily to determine how that text should be presented on screen or paper. If rendition is used to refer to a style definition in a formal language like CSS, it is recommended that it not be used in conjunction with rend. Where both rendition and rend are supplied, the latter is understood to override or complement the former. Each URI provided should indicate a [rendition](#rendition) element defining the intended rendition in terms of some appropriate style language, as indicated by the scheme attribute. 
+**Note**The rendition attribute is used in a very similar way to the class attribute defined for XHTML but with the important distinction that its function is to describe the appearance of the source text, not necessarily to determine how that text should be presented on screen or paper. If rendition is used to refer to a style definition in a formal language like CSS, it is recommended that it not be used in conjunction with rend. Where both rendition and rend are supplied, the latter is understood to override or complement the former. Each URI provided should indicate a  [rendition](#rendition)  element defining the intended rendition in terms of some appropriate style language, as indicated by the scheme attribute. 
+ 
+ 
  
  
  
@@ -3788,14 +5440,14 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
 **att.global.responsibility** provides attributes indicating the agent responsible for some aspect of the text, the markup or something asserted by the markup, and the degree of certainty associated with it. 
  
 *    **Members**
-     *[att.global](#att.global) [[TEI](#TEI)[abstract](#abstract)[att](#att)[author](#author)[authority](#authority)[availability](#availability)[back](#back)[bibl](#bibl)[biblFull](#biblFull)[body](#body)[byline](#byline)[catRef](#catRef)[category](#category)[change](#change)[choice](#choice)[closer](#closer)[code](#code)[corr](#corr)[creation](#creation)[date](#date)[dateline](#dateline)[distributor](#distributor)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[edition](#edition)[editionStmt](#editionStmt)[editor](#editor)[editorialDecl](#editorialDecl)[emph](#emph)[encodingDesc](#encodingDesc)[epigraph](#epigraph)[fileDesc](#fileDesc)[foreign](#foreign)[front](#front)[gap](#gap)[gi](#gi)[head](#head)[hi](#hi)[hyphenation](#hyphenation)[idno](#idno)[item](#item)[keywords](#keywords)[l](#l)[langUsage](#langUsage)[language](#language)[lb](#lb)[lg](#lg)[licence](#licence)[list](#list)[listBibl](#listBibl)[listChange](#listChange)[listPrefixDef](#listPrefixDef)[milestone](#milestone)[name](#name)[note](#note)[notesStmt](#notesStmt)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[pc](#pc)[prefixDef](#prefixDef)[profileDesc](#profileDesc)[projectDesc](#projectDesc)[pubPlace](#pubPlace)[publicationStmt](#publicationStmt)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[rendition](#rendition)[resp](#resp)[respStmt](#respStmt)[revisionDesc](#revisionDesc)[seriesStmt](#seriesStmt)[sic](#sic)[sourceDesc](#sourceDesc)[teiHeader](#teiHeader)[term](#term)[text](#text)[textClass](#textClass)[title](#title)[titlePage](#titlePage)[titlePart](#titlePart)[titleStmt](#titleStmt)[trailer](#trailer)[val](#val)] 
+     * [att.global](#att.global)  [ [TEI](#TEI)  [abstract](#abstract)  [att](#att)  [author](#author)  [authority](#authority)  [availability](#availability)  [back](#back)  [bibl](#bibl)  [biblFull](#biblFull)  [body](#body)  [byline](#byline)  [catRef](#catRef)  [category](#category)  [change](#change)  [choice](#choice)  [closer](#closer)  [code](#code)  [corr](#corr)  [creation](#creation)  [date](#date)  [dateline](#dateline)  [distributor](#distributor)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [edition](#edition)  [editionStmt](#editionStmt)  [editor](#editor)  [editorialDecl](#editorialDecl)  [emph](#emph)  [encodingDesc](#encodingDesc)  [epigraph](#epigraph)  [fileDesc](#fileDesc)  [foreign](#foreign)  [front](#front)  [gap](#gap)  [gi](#gi)  [head](#head)  [hi](#hi)  [hyphenation](#hyphenation)  [idno](#idno)  [item](#item)  [keywords](#keywords)  [l](#l)  [langUsage](#langUsage)  [language](#language)  [lb](#lb)  [lg](#lg)  [licence](#licence)  [list](#list)  [listBibl](#listBibl)  [listChange](#listChange)  [listPrefixDef](#listPrefixDef)  [milestone](#milestone)  [name](#name)  [note](#note)  [notesStmt](#notesStmt)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [pc](#pc)  [prefixDef](#prefixDef)  [profileDesc](#profileDesc)  [projectDesc](#projectDesc)  [pubPlace](#pubPlace)  [publicationStmt](#publicationStmt)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [rendition](#rendition)  [resp](#resp)  [respStmt](#respStmt)  [revisionDesc](#revisionDesc)  [seriesStmt](#seriesStmt)  [sic](#sic)  [sourceDesc](#sourceDesc)  [teiHeader](#teiHeader)  [term](#term)  [text](#text)  [textClass](#textClass)  [title](#title)  [titlePage](#titlePage)  [titlePart](#titlePart)  [titleStmt](#titleStmt)  [trailer](#trailer)  [val](#val) ] 
  
 *    **Attributes**
      *Attributes 
 @cert(certainty) signifies the degree of certainty associated with the intervention or interpretation. 
 **Status**Optional**Datatype**teidata.probCert
 @resp(responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber. 
-**Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespace**Note**To reduce the ambiguity of a resp pointing directly to a person or organization, we recommend that resp be used to point not to an agent (person or org) but to a [respStmt](#respStmt), [author](#author), [editor](#editor) or similar element which clarifies the exact role played by the agent. Pointing to multiple [respStmt](#respStmt)s allows the encoder to specify clearly each of the roles played in part of a TEI file (creating, transcribing, encoding, editing, proofing etc.). 
+**Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespace**Note**To reduce the ambiguity of a resp pointing directly to a person or organization, we recommend that resp be used to point not to an agent (person or org) but to a  [respStmt](#respStmt) ,  [author](#author) ,  [editor](#editor)  or similar element which clarifies the exact role played by the agent. Pointing to multiple  [respStmt](#respStmt) s allows the encoder to specify clearly each of the roles played in part of a TEI file (creating, transcribing, encoding, editing, proofing etc.). 
  
  
  
@@ -3823,18 +5475,20 @@ Blessed are the<choice> <sic>cheesemakers</sic> <corr resp="#editor" cert="h
  
  
  
+ 
+ 
 ### att.global.source
  
  
 **att.global.source** provides an attribute used by elements to point to an external source. 
  
 *    **Members**
-     *[att.global](#att.global) [[TEI](#TEI)[abstract](#abstract)[att](#att)[author](#author)[authority](#authority)[availability](#availability)[back](#back)[bibl](#bibl)[biblFull](#biblFull)[body](#body)[byline](#byline)[catRef](#catRef)[category](#category)[change](#change)[choice](#choice)[closer](#closer)[code](#code)[corr](#corr)[creation](#creation)[date](#date)[dateline](#dateline)[distributor](#distributor)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[docTitle](#docTitle)[edition](#edition)[editionStmt](#editionStmt)[editor](#editor)[editorialDecl](#editorialDecl)[emph](#emph)[encodingDesc](#encodingDesc)[epigraph](#epigraph)[fileDesc](#fileDesc)[foreign](#foreign)[front](#front)[gap](#gap)[gi](#gi)[head](#head)[hi](#hi)[hyphenation](#hyphenation)[idno](#idno)[item](#item)[keywords](#keywords)[l](#l)[langUsage](#langUsage)[language](#language)[lb](#lb)[lg](#lg)[licence](#licence)[list](#list)[listBibl](#listBibl)[listChange](#listChange)[listPrefixDef](#listPrefixDef)[milestone](#milestone)[name](#name)[note](#note)[notesStmt](#notesStmt)[num](#num)[orig](#orig)[p](#p)[pb](#pb)[pc](#pc)[prefixDef](#prefixDef)[profileDesc](#profileDesc)[projectDesc](#projectDesc)[pubPlace](#pubPlace)[publicationStmt](#publicationStmt)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[rendition](#rendition)[resp](#resp)[respStmt](#respStmt)[revisionDesc](#revisionDesc)[seriesStmt](#seriesStmt)[sic](#sic)[sourceDesc](#sourceDesc)[teiHeader](#teiHeader)[term](#term)[text](#text)[textClass](#textClass)[title](#title)[titlePage](#titlePage)[titlePart](#titlePart)[titleStmt](#titleStmt)[trailer](#trailer)[val](#val)] 
+     * [att.global](#att.global)  [ [TEI](#TEI)  [abstract](#abstract)  [att](#att)  [author](#author)  [authority](#authority)  [availability](#availability)  [back](#back)  [bibl](#bibl)  [biblFull](#biblFull)  [body](#body)  [byline](#byline)  [catRef](#catRef)  [category](#category)  [change](#change)  [choice](#choice)  [closer](#closer)  [code](#code)  [corr](#corr)  [creation](#creation)  [date](#date)  [dateline](#dateline)  [distributor](#distributor)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [edition](#edition)  [editionStmt](#editionStmt)  [editor](#editor)  [editorialDecl](#editorialDecl)  [emph](#emph)  [encodingDesc](#encodingDesc)  [epigraph](#epigraph)  [fileDesc](#fileDesc)  [foreign](#foreign)  [front](#front)  [gap](#gap)  [gi](#gi)  [head](#head)  [hi](#hi)  [hyphenation](#hyphenation)  [idno](#idno)  [item](#item)  [keywords](#keywords)  [l](#l)  [langUsage](#langUsage)  [language](#language)  [lb](#lb)  [lg](#lg)  [licence](#licence)  [list](#list)  [listBibl](#listBibl)  [listChange](#listChange)  [listPrefixDef](#listPrefixDef)  [milestone](#milestone)  [name](#name)  [note](#note)  [notesStmt](#notesStmt)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [pc](#pc)  [prefixDef](#prefixDef)  [profileDesc](#profileDesc)  [projectDesc](#projectDesc)  [pubPlace](#pubPlace)  [publicationStmt](#publicationStmt)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [rendition](#rendition)  [resp](#resp)  [respStmt](#respStmt)  [revisionDesc](#revisionDesc)  [seriesStmt](#seriesStmt)  [sic](#sic)  [sourceDesc](#sourceDesc)  [teiHeader](#teiHeader)  [term](#term)  [text](#text)  [textClass](#textClass)  [title](#title)  [titlePage](#titlePage)  [titlePart](#titlePart)  [titleStmt](#titleStmt)  [trailer](#trailer)  [val](#val) ] 
  
 *    **Attributes**
      *Attributes 
 @sourcespecifies the source from which some aspect of this element is drawn. 
-**Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespace**Note**The source attribute points to an external source. When used on elements describing schema components such as schemaSpec or moduleRef it identifies the source from which declarations for the components of the object being defined may be obtained. On other elements it provides a pointer to the bibliographical source from which a quotation or citation is drawn. In either case, the location may be provided using any form of URI, for example an absolute URI, a relative URI, or private scheme URI that is expanded to an absolute URI as documented in a [prefixDef](#prefixDef). If more than one location is specified, the default assumption is that the required source should be obtained by combining the resources indicated. 
+**Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespace**Note**The source attribute points to an external source. When used on elements describing schema components such as schemaSpec or moduleRef it identifies the source from which declarations for the components of the object being defined may be obtained. On other elements it provides a pointer to the bibliographical source from which a quotation or citation is drawn. In either case, the location may be provided using any form of URI, for example an absolute URI, a relative URI, or private scheme URI that is expanded to an absolute URI as documented in a  [prefixDef](#prefixDef) . If more than one location is specified, the default assumption is that the required source should be obtained by combining the resources indicated. 
  
  
  
@@ -3869,7 +5523,7 @@ Blessed are the<choice> <sic>cheesemakers</sic> <corr resp="#editor" cert="h
 <elementRef key="p" source="tei:2.0.1"/>
  
 ```
-Include in the schema an element named [p](#p) available from the TEI P5 2.0.1 release. 
+Include in the schema an element named  [p](#p)  available from the TEI P5 2.0.1 release. 
  
 *    **Example**
      *
@@ -3882,13 +5536,15 @@ Include in the schema an element named [p](#p) available from the TEI P5 2.0.1 r
 Create a schema using components taken from the file mycompiledODD.xml. 
  
  
+ 
+ 
 ### att.internetMedia
  
  
 **att.internetMedia** provides attributes for specifying the type of a computer resource using a standard taxonomy. 
  
 *    **Members**
-     *[ref](#ref)
+     * [ref](#ref) 
  
 *    **Attributes**
      *Attributes 
@@ -3907,16 +5563,18 @@ Create a schema using components taken from the file mycompiledODD.xml.
  
  
 *    **Note**
-     *This attribute class provides an attribute for describing a computer resource, typically available over the internet, using a value taken from a standard taxonomy. At present only a single taxonomy is supported, the Multipurpose Internet Mail Extensions (MIME) Media Type system. This typology of media types is defined by the Internet Engineering Task Force in [RFC 2046](http://www.ietf.org/rfc/rfc2046.txt). The [list of types](http://www.iana.org/assignments/media-types/) is maintained by the Internet Assigned Numbers Authority (IANA). The mimeType attribute must have a value taken from this list. 
+     *This attribute class provides an attribute for describing a computer resource, typically available over the internet, using a value taken from a standard taxonomy. At present only a single taxonomy is supported, the Multipurpose Internet Mail Extensions (MIME) Media Type system. This typology of media types is defined by the Internet Engineering Task Force in  [RFC 2046](http://www.ietf.org/rfc/rfc2046.txt) . The  [list of types](http://www.iana.org/assignments/media-types/)  is maintained by the Internet Assigned Numbers Authority (IANA). The mimeType attribute must have a value taken from this list. 
+ 
+ 
  
  
 ### att.linguistic
  
  
-**att.linguistic** provides a set of attributes concerning linguistic features of tokens, for usage within token-level elements, specifically w and [pc](#pc) in the analysis module. 
+**att.linguistic** provides a set of attributes concerning linguistic features of tokens, for usage within token-level elements, specifically w and  [pc](#pc)  in the analysis module. 
  
 *    **Members**
-     *[pc](#pc)
+     * [pc](#pc) 
  
 *    **Attributes**
      *Attributes 
@@ -3959,7 +5617,7 @@ Create a schema using components taken from the file mycompiledODD.xml.
                                                 .</w></s>
  
 ```
-The English sentence ‘We're going to Brazil.’ tagged with the [CLAWS-5](http://ucrel.lancs.ac.uk/claws5tags.html) tagset, arranged inline (with significant whitespace). 
+The English sentence ‘We're going to Brazil.’ tagged with the  [CLAWS-5](http://ucrel.lancs.ac.uk/claws5tags.html)  tagset, arranged inline (with significant whitespace). 
 ```
  
 <p><w pos="PNP">
@@ -3973,7 +5631,7 @@ The English sentence ‘We're going to Brazil.’ tagged with the [CLAWS-5](http
                                           
  
 ```
-The English sentence ‘We're going on vacation to Brazil for a month!’ tagged with the [CLAWS-7](http://ucrel.lancs.ac.uk/claws7tags.html) tagset and arranged sequentially. 
+The English sentence ‘We're going on vacation to Brazil for a month!’ tagged with the  [CLAWS-7](http://ucrel.lancs.ac.uk/claws7tags.html)  tagset and arranged sequentially. 
 ```
  
 <p> <w pos="PPIS2">
@@ -3991,7 +5649,7 @@ The English sentence ‘We're going on vacation to Brazil for a month!’ tagged
  
 ```
  
-@msd(morphosyntactic description) supplies morphosyntactic information for a token, usually according to some official reference vocabulary (e.g. for German: [STTS-large tagset](http://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/TagSets/stts-1999.pdf); for a feature description system designed as (pragmatically) universal, see [Universal Features](http://universaldependencies.org/u/feat/index.html)). 
+@msd(morphosyntactic description) supplies morphosyntactic information for a token, usually according to some official reference vocabulary (e.g. for German:  [STTS-large tagset](http://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/TagSets/stts-1999.pdf) ; for a feature description system designed as (pragmatically) universal, see  [Universal Features](http://universaldependencies.org/u/feat/index.html) ). 
 **Status**Optional**Datatype**teidata.text
 ```
  
@@ -4034,7 +5692,9 @@ Note that a project may make a decision to only indicate lack of whitespace in o
  
  
 *    **Note**
-     *These attributes make it possible to encode simple language corpora and to add a layer of linguistic information to any tokenized resource. See section [17.4.2. Lightweight Linguistic Annotation](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AILALW) for discussion. 
+     *These attributes make it possible to encode simple language corpora and to add a layer of linguistic information to any tokenized resource. See section  [17.4.2. Lightweight Linguistic Annotation](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AILALW)  for discussion. 
+ 
+ 
  
  
 ### att.milestoneUnit
@@ -4043,19 +5703,21 @@ Note that a project may make a decision to only indicate lack of whitespace in o
 **att.milestoneUnit** provides an attribute to indicate the type of section which is changing at a specific milestone. 
  
 *    **Members**
-     *[milestone](#milestone)
+     * [milestone](#milestone) 
  
 *    **Attributes**
      *Attributes 
 @unitprovides a conventional name for the kind of section changing at this milestone. 
-**Status**Required**Datatype**teidata.enumerated**Suggested values include:**pagephysical page breaks (synonymous with the [pb](#pb) element). columncolumn breaks.lineline breaks (synonymous with the [lb](#lb) element). bookany units termed book, liber, etc.poemindividual poems in a collection.cantocantos or other major sections of a poem.speakerchanges of speaker or narrator.stanzastanzas within a poem, book, or canto.actacts within a play.scenescenes within a play or act.sectionsections of any kind.absentpassages not present in the reference edition.unnumberedpassages present in the text, but not to be included as part of the reference.
+**Status**Required**Datatype**teidata.enumerated**Suggested values include:**pagephysical page breaks (synonymous with the  [pb](#pb)  element). columncolumn breaks.lineline breaks (synonymous with the  [lb](#lb)  element). bookany units termed book, liber, etc.poemindividual poems in a collection.cantocantos or other major sections of a poem.speakerchanges of speaker or narrator.stanzastanzas within a poem, book, or canto.actacts within a play.scenescenes within a play or act.sectionsections of any kind.absentpassages not present in the reference edition.unnumberedpassages present in the text, but not to be included as part of the reference.
 ```
  
 <milestone n="23" ed="La" unit="Dreissiger"/> ... <milestone n="24" ed="AV" unit="verse"/> ...
                                           
  
 ```
-**Note**If the milestone marks the beginning of a piece of text not present in the reference edition, the special value absent may be used as the value of unit. The normal interpretation is that the reference edition does not contain the text which follows, until the next [milestone](#milestone) tag for the edition in question is encountered. In addition to the values suggested, other terms may be appropriate (e.g. Stephanus for the Stephanus numbers in Plato). 
+**Note**If the milestone marks the beginning of a piece of text not present in the reference edition, the special value absent may be used as the value of unit. The normal interpretation is that the reference edition does not contain the text which follows, until the next  [milestone](#milestone)  tag for the edition in question is encountered. In addition to the values suggested, other terms may be appropriate (e.g. Stephanus for the Stephanus numbers in Plato). 
+ 
+ 
  
  
  
@@ -4066,14 +5728,16 @@ Note that a project may make a decision to only indicate lack of whitespace in o
 **att.naming** provides attributes common to elements which refer to named persons, places, organizations etc. 
  
 *    **Members**
-     *[att.personal](#att.personal) [[name](#name)] [author](#author)[editor](#editor)[pubPlace](#pubPlace)
+     * [att.personal](#att.personal)  [ [name](#name) ]  [author](#author)  [editor](#editor)  [pubPlace](#pubPlace) 
  
 *    **Attributes**
-     *Attributes [att.canonical](#att.canonical) (@key, @ref) 
+     *Attributes  [att.canonical](#att.canonical)  (@key, @ref) 
 @rolemay be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place. 
 **Status**Optional**Datatype** 1–∞ occurrences of teidata.enumerated separated by whitespace
 @nymRef(reference to the canonical name) provides a means of locating the canonical form (nym) of the names associated with the object named by the element bearing it. 
 **Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespace**Note**The value must point directly to one or more XML elements by means of one or more URIs, separated by whitespace. If more than one is supplied, the implication is that the name is associated with several distinct canonical names. 
+ 
+ 
  
  
  
@@ -4084,12 +5748,14 @@ Note that a project may make a decision to only indicate lack of whitespace in o
 **att.notated** provides an attribute to indicate any specialised notation used for element content. 
  
 *    **Members**
-     *[quote](#quote)
+     * [quote](#quote) 
  
 *    **Attributes**
      *Attributes 
 @notationnames the notation used for the content of the element. 
 **Status**Optional**Datatype**teidata.enumerated
+ 
+ 
  
  
  
@@ -4100,14 +5766,16 @@ Note that a project may make a decision to only indicate lack of whitespace in o
 **att.patternReplacement** provides attributes for regular-expression matching and replacement. 
  
 *    **Members**
-     *[prefixDef](#prefixDef)
+     * [prefixDef](#prefixDef) 
  
 *    **Attributes**
      *Attributes 
 @matchPatternspecifies a regular expression against which the values of other attributes can be matched. 
-**Status**Required**Datatype**teidata.pattern**Note**The syntax used should follow that defined by [W3C XPath syntax](http://www.w3.org/TR/xpath-functions/#regex-syntax). Note that parenthesized groups are used not only for establishing order of precedence and atoms for quantification, but also for creating subpatterns to be referenced by the replacementPattern attribute. 
+**Status**Required**Datatype**teidata.pattern**Note**The syntax used should follow that defined by  [W3C XPath syntax](http://www.w3.org/TR/xpath-functions/#regex-syntax) . Note that parenthesized groups are used not only for establishing order of precedence and atoms for quantification, but also for creating subpatterns to be referenced by the replacementPattern attribute. 
 @replacementPatternspecifies a ‘replacement pattern’, that is, the skeleton of a relative or absolute URI containing references to groups in the matchPattern which, once subpattern substitution has been performed, complete the URI. 
 **Status**Required**Datatype**teidata.replacement**Note**The strings $1, $2 etc. are references to the corresponding group in the regular expression specified by matchPattern (counting open parenthesis, left to right). Processors are expected to replace them with whatever matched the corresponding group in the regular expression. If a digit preceded by a dollar sign is needed in the actual replacement pattern (as opposed to being used as a back reference), the dollar sign must be written as %24. 
+ 
+ 
  
  
  
@@ -4118,14 +5786,16 @@ Note that a project may make a decision to only indicate lack of whitespace in o
 **att.personal** (attributes for components of names usually, but not necessarily, personal names) common attributes for those elements which form part of a name usually, but not necessarily, a personal name. 
  
 *    **Members**
-     *[name](#name)
+     * [name](#name) 
  
 *    **Attributes**
-     *Attributes [att.naming](#att.naming) (@role, @nymRef) ([att.canonical](#att.canonical) (@key, @ref)) 
+     *Attributes  [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.canonical)  (@key, @ref)) 
 @fullindicates whether the name component is given in full, as an abbreviation or simply as an initial. 
 **Status**Optional**Datatype**teidata.enumerated**Legal values are:**yesthe name component is spelled out in full. [Default] abb(abbreviated) the name component is given in an abbreviated form.init(initial letter) the name component is indicated only by one initial.
 @sortspecifies the sort order of the name component in relation to others within the name. 
 **Status**Optional**Datatype**teidata.count
+ 
+ 
  
  
  
@@ -4136,7 +5806,7 @@ Note that a project may make a decision to only indicate lack of whitespace in o
 **att.placement** provides attributes for describing where on the source page or object a textual element appears. 
  
 *    **Members**
-     *[head](#head)[note](#note)
+     * [head](#head)  [note](#note) 
  
 *    **Attributes**
      *Attributes 
@@ -4161,17 +5831,19 @@ Note that a project may make a decision to only indicate lack of whitespace in o
  
  
  
+ 
+ 
 ### att.pointing
  
  
 **att.pointing** provides a set of attributes used by all elements which point to other elements by means of one or more URI references. 
  
 *    **Members**
-     *[catRef](#catRef)[licence](#licence)[note](#note)[ref](#ref)[term](#term)
+     * [catRef](#catRef)  [licence](#licence)  [note](#note)  [ref](#ref)  [term](#term) 
  
 *    **Attributes**
      *Attributes 
-@targetLangspecifies the language of the content to be found at the destination referenced by target, using a ‘language tag’ generated according to [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt). 
+@targetLangspecifies the language of the content to be found at the destination referenced by target, using a ‘language tag’ generated according to  [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt) . 
 **Status**Optional**Datatype**teidata.language
 ```
  
@@ -4179,11 +5851,13 @@ Note that a project may make a decision to only indicate lack of whitespace in o
                                                  <ptr xml:id="pol-swh_aln_2.1.1-ptr"  target="pol/UDHR/text.xml#pol_txt_1-head" type="tuv" targetLang="pl"/> <ptr xml:id="pol-swh_aln_2.1.2-ptr"  target="swh/UDHR/text.xml#swh_txt_1-head" type="tuv" targetLang="sw"/></linkGrp>
  
 ```
-In the example above, the linkGrp combines pointers at parallel fragments of the Universal Declaration of Human Rights: one of them is in Polish, the other in Swahili. **Note**The value must conform to BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a [language](#language) element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions. 
+In the example above, the linkGrp combines pointers at parallel fragments of the Universal Declaration of Human Rights: one of them is in Polish, the other in Swahili. **Note**The value must conform to BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a  [language](#language)  element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions. 
 @targetspecifies the destination of the reference by supplying one or more URI References 
 **Status**Optional**Datatype** 1–∞ occurrences of teidata.pointer separated by whitespace**Note**One or more syntactically valid URI references, separated by whitespace. Because whitespace is used to separate URIs, no whitespace is permitted inside a single URI. If a whitespace character is required in a URI, it should be escaped with the normal mechanism, e.g. TEI%20Consortium. 
 @evaluatespecifies the intended meaning when the target of a pointer is itself a pointer. 
 **Status**Optional**Datatype**teidata.enumerated**Legal values are:**allif the element pointed to is itself a pointer, then the target of that pointer will be taken, and so on, until an element is found which is not a pointer. oneif the element pointed to is itself a pointer, then its target (whether a pointer or not) is taken as the target of this pointer. noneno further evaluation of targets is carried out beyond that needed to find the element specified in the pointer's target. **Note**If no value is given, the application program is responsible for deciding (possibly on the basis of user input) how far to trace a chain of pointers. 
+ 
+ 
  
  
  
@@ -4194,7 +5868,7 @@ In the example above, the linkGrp combines pointers at parallel fragments of the
 **att.ranging** provides attributes for describing numerical ranges. 
  
 *    **Members**
-     *[att.dimensions](#att.dimensions) [[date](#date)[gap](#gap)] [num](#num)
+     * [att.dimensions](#att.dimensions)  [ [date](#date)  [gap](#gap) ]  [num](#num) 
  
 *    **Attributes**
      *Attributes 
@@ -4222,18 +5896,22 @@ The MS. was lost in transmission by mail from <del rend="overstrike">
  
  
  
+ 
+ 
 ### att.segLike
  
  
 **att.segLike** provides attributes for elements used for arbitrary segmentation. 
  
 *    **Members**
-     *[pc](#pc)
+     * [pc](#pc) 
  
 *    **Attributes**
-     *Attributes [att.datcat](#att.datcat) (@datcat, @valueDatcat) [att.fragmentable](#att.fragmentable) (@part) 
+     *Attributes  [att.datcat](#att.datcat)  (@datcat, @valueDatcat)  [att.fragmentable](#att.fragmentable)  (@part) 
 @functioncharacterizes the function of the segment. 
 **Status**Optional**Datatype**teidata.enumerated**Note**Attribute values will often vary depending on the type of element to which they are attached. For example, a cl, may take values such as coordinate, subject, adverbial etc. For a phr, such values as subject, predicate etc. may be more appropriate. Such constraints will typically be implemented by a project-defined customization. 
+ 
+ 
  
  
  
@@ -4244,7 +5922,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike">
 **att.sortable** provides attributes for elements in lists or groups that are sortable, but whose sorting key cannot be derived mechanically from the element content. 
  
 *    **Members**
-     *[bibl](#bibl)[biblFull](#biblFull)[idno](#idno)[item](#item)[list](#list)[listBibl](#listBibl)[listChange](#listChange)[term](#term)
+     * [bibl](#bibl)  [biblFull](#biblFull)  [idno](#idno)  [item](#item)  [list](#list)  [listBibl](#listBibl)  [listChange](#listChange)  [term](#term) 
  
 *    **Attributes**
      *Attributes 
@@ -4263,13 +5941,15 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
  
  
  
+ 
+ 
 ### att.spanning
  
  
 **att.spanning** provides attributes for elements which delimit a span of text by pointing mechanisms rather than by enclosing it. 
  
 *    **Members**
-     *[lb](#lb)[milestone](#milestone)[pb](#pb)
+     * [lb](#lb)  [milestone](#milestone)  [pb](#pb) 
  
 *    **Attributes**
      *Attributes 
@@ -4282,13 +5962,15 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
      *The span is defined as running in document order from the start of the content of the pointing element to the end of the content of the element pointed to by the spanTo attribute (if any). If no value is supplied for the attribute, the assumption is that the span is coextensive with the pointing element. If no content is present, the assumption is that the starting point of the span is immediately following the element itself. 
  
  
+ 
+ 
 ### att.styleDef
  
  
 **att.styleDef** provides attributes to specify the name of a formal definition language used to provide formatting or rendition information. 
  
 *    **Members**
-     *[rendition](#rendition)
+     * [rendition](#rendition) 
  
 *    **Attributes**
      *Attributes 
@@ -4300,13 +5982,15 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
  
  
  
+ 
+ 
 ### att.timed
  
  
 **att.timed** provides attributes common to those elements which have a duration in time, expressed either absolutely or by reference to an alignment map. 
  
 *    **Members**
-     *[gap](#gap)
+     * [gap](#gap) 
  
 *    **Attributes**
      *Attributes 
@@ -4318,10 +6002,12 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
  
  
  
+ 
+ 
 ### att.typed
  
 **Members**
-     *[TEI](#TEI)[bibl](#bibl)[change](#change)[corr](#corr)[date](#date)[div](#div)[head](#head)[lb](#lb)[lg](#lg)[listBibl](#listBibl)[listChange](#listChange)[milestone](#milestone)[name](#name)[note](#note)[pb](#pb)[pc](#pc)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[term](#term)[text](#text)[trailer](#trailer)
+     * [TEI](#TEI)  [bibl](#bibl)  [change](#change)  [corr](#corr)  [date](#date)  [div](#div)  [head](#head)  [lb](#lb)  [lg](#lg)  [listBibl](#listBibl)  [listChange](#listChange)  [milestone](#milestone)  [name](#name)  [note](#note)  [pb](#pb)  [pc](#pc)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [term](#term)  [text](#text)  [trailer](#trailer) 
 *    **Attributes**
      *Attributes 
 @typecharacterizes the element in some sense, using any convenient classification scheme or typology. 
@@ -4334,14 +6020,16 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
                                                   <l>A wind sprang up from nowhere as the sky</l>  <l>…</l> </lg></div>
  
 ```
-**Note**The type attribute is present on a number of elements, not all of which are members of [att.typed](#att.typed), usually because these elements restrict the possible values for the attribute in a specific way. 
+**Note**The type attribute is present on a number of elements, not all of which are members of  [att.typed](#att.typed) , usually because these elements restrict the possible values for the attribute in a specific way. 
 @subtypeprovides a sub-categorization of the element, if needed 
 **Status**Optional**Datatype**teidata.enumerated**Note**The subtype attribute may be used to provide any sub-classification for the element additional to that provided by its type attribute. 
  
  
  
 *    **Note**
-     *When appropriate, values from an established typology should be used. Alternatively a typology may be defined in the associated TEI header. If values are to be taken from a project-specific list, this should be defined using the valList element in the project-specific schema description, as described in [23.3.1.4. Modification of Attribute and Attribute Value Lists](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html#MDMDAL) . 
+     *When appropriate, values from an established typology should be used. Alternatively a typology may be defined in the associated TEI header. If values are to be taken from a project-specific list, this should be defined using the valList element in the project-specific schema description, as described in  [23.3.1.4. Modification of Attribute and Attribute Value Lists](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html#MDMDAL)  . 
+ 
+ 
  
  
 ### att.written
@@ -4350,7 +6038,7 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
 **att.written** provides an attribute to indicate the hand in which the content of an element was written in the source being transcribed. 
  
 *    **Members**
-     *[closer](#closer)[div](#div)[head](#head)[hi](#hi)[note](#note)[p](#p)[text](#text)
+     * [closer](#closer)  [div](#div)  [head](#head)  [hi](#hi)  [note](#note)  [p](#p)  [text](#text) 
  
 *    **Attributes**
      *Attributes 
@@ -4359,4 +6047,9 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
  
  
  
-[](http://www.example.com/) Home [Feedback](#)  Date: 2019-02-03
+ 
+ 
+ 
+ 
+[](http://www.example.com/) Home [Feedback](#)  
+Date: 2019-02-03
