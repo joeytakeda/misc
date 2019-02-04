@@ -23,7 +23,8 @@ This element is intended only for cases where no abstract is available in the or
                         
 |**Example**||```
 <profileDesc> <abstract resp="#LB">
-                                <p>Good database design involves the acquisition and deployment of     skills which have a wider relevance to the educational process. From     a set of more or less instinctive rules of thumb a formal discipline     or "methodology" of database design has evolved. Applying that     methodology can be of great benefit to a very wide range of academic     subjects: it requires fundamental skills of abstraction and     generalisation and it provides a simple mechanism whereby complex     ideas and information structures can be represented and manipulated,     even without the use of a computer. </p> </abstract></profileDesc>```
+                                <p>Good database design involves the acquisition and deployment of     skills which have a wider relevance to the educational process. From     a set of more or less instinctive rules of thumb a formal discipline     or "methodology" of database design has evolved. Applying that     methodology can be of great benefit to a very wide range of academic     subjects: it requires fundamental skills of abstraction and     generalisation and it provides a simple mechanism whereby complex     ideas and information structures can be represented and manipulated,     even without the use of a computer. </p> </abstract></profileDesc>
+```
 ### att
  
 |**att**(attribute) contains the name of an attribute appearing within running text. 
@@ -41,7 +42,8 @@ As an alternative to using the scheme attribute a namespace prefix may be used. 
                         
 |**Example**||```
 <p>The TEI defines several <soCalled>global</soCalled> attributes; their names include<att>xml:id</att>, <att>rend</att>, <att>xml:lang</att>, <att>n</att>, <att>xml:space</att>, and <att>xml:base</att>; <att scheme="XX">
-                              type</att> is not amongst them.</p>```
+                              type</att> is not amongst them.</p>
+```
 ### author
  
 |**author**in a bibliographic reference, contains the name(s) of an author, personal or corporate,
@@ -68,7 +70,8 @@ Where an author is unknown or unspecified, this element may contain text such as
                         
 |**Example**||```
 <author>British Broadcasting Corporation</author><author>La Fayette, Marie Madeleine Pioche de la Vergne, comtesse de (1634–1693)</author><author>Anonymous</author><author>Bill and Melinda Gates Foundation</author><author> <persName>Beaumont, Francis</persName> and<persName>John Fletcher</persName></author><author> <orgName key="BBC">
-                              British Broadcasting   Corporation</orgName>: Radio 3 Network</author>```
+                              British Broadcasting   Corporation</orgName>: Radio 3 Network</author>
+```
 ### authority
  
 |**authority**(release authority) supplies the name of a person or other agency responsible for
@@ -78,7 +81,8 @@ Where an author is unknown or unspecified, this element may contain text such as
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) 
                      |**Contained by**||**header: **[publicationStmt](#publicationStmt)|**May contain**||**core: **[choice](#choice)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[pb](#pb)[ref](#ref)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
-<authority>John Smith</authority>```
+<authority>John Smith</authority>
+```
 ### availability
  
 |**availability**supplies information about the availability of a text, for example any restrictions
@@ -99,9 +103,11 @@ A consistent format should be adopted
 <availability status="restricted">
                                <p>Available for academic research purposes only.</p></availability><availability status="free">
                                <p>In the public domain</p></availability><availability status="restricted">
-                               <p>Available under licence from the publishers.</p></availability>```|**Example**||```
+                               <p>Available under licence from the publishers.</p></availability>
+```|**Example**||```
 <availability> <licence target="http://opensource.org/licenses/MIT">
-                                <p>The MIT License     applies to this document.</p>  <p>Copyright (C) 2011 by The University of Victoria</p>  <p>Permission is hereby granted, free of charge, to any person obtaining a copy     of this software and associated documentation files (the "Software"), to deal     in the Software without restriction, including without limitation the rights     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell     copies of the Software, and to permit persons to whom the Software is     furnished to do so, subject to the following conditions:</p>  <p>The above copyright notice and this permission notice shall be included in     all copies or substantial portions of the Software.</p>  <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN     THE SOFTWARE.</p> </licence></availability>```
+                                <p>The MIT License     applies to this document.</p>  <p>Copyright (C) 2011 by The University of Victoria</p>  <p>Permission is hereby granted, free of charge, to any person obtaining a copy     of this software and associated documentation files (the "Software"), to deal     in the Software without restriction, including without limitation the rights     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell     copies of the Software, and to permit persons to whom the Software is     furnished to do so, subject to the following conditions:</p>  <p>The above copyright notice and this permission notice shall be included in     all copies or substantial portions of the Software.</p>  <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN     THE SOFTWARE.</p> </licence></availability>
+```
 ### back
  
 |**back**(back matter) contains any appendixes, etc. following the main part of a text. 
@@ -125,7 +131,8 @@ Because cultural conventions differ as to which elements are grouped as back mat
                               A Curious Collection of Travels, selected from the Writers of all Nations,       10 Vol, Pr. bound 1l.</item>  </list> </div> <div type="advert">
                                 <head>By the KING's Royal Patent, Are sold by J. NEWBERY, at the Bible and Sun in St.     Paul's Church-Yard.</head>  <list>   <item n="1">
                               Dr. James's Powders for Fevers, the Small-Pox, Measles, Colds, &amp;c. 2s.       6d</item>   <item n="2">
-                              Dr. Hooper's Female Pills, 1s.</item><!-- ... -->  </list> </div></back>```
+                              Dr. Hooper's Female Pills, 1s.</item><!-- ... -->  </list> </div></back>
+```
 ### bibl
  
 |**bibl**(bibliographic citation) contains a loosely-structured bibliographic citation of which
@@ -138,15 +145,18 @@ Because cultural conventions differ as to which elements are grouped as back mat
 Contains phrase-level elements, together with any combination of elements from the model.biblPart class
                         
 |**Example**||```
-<bibl>Blain, Clements and Grundy: Feminist Companion to Literature in English (Yale, 1990)</bibl>```|**Example**||```
+<bibl>Blain, Clements and Grundy: Feminist Companion to Literature in English (Yale, 1990)</bibl>
+```|**Example**||```
 <bibl> <title level="a">
-                              The Interesting story of the Children in the Wood</title>. In<author>Victor E Neuberg</author>, <title>The Penny Histories</title>.<publisher>OUP</publisher> <date>1968</date>. </bibl>```|**Example**||```
+                              The Interesting story of the Children in the Wood</title>. In<author>Victor E Neuberg</author>, <title>The Penny Histories</title>.<publisher>OUP</publisher> <date>1968</date>. </bibl>
+```|**Example**||```
 <bibl type="article" subtype="book_chapter" xml:id="carlin_2003">
                                <author>  <name>   <surname>Carlin</surname>     (<forename>Claire</forename>)</name> </author>,<title level="a">
                               The Staging of Impotence : France’s last   congrès</title> dans<bibl type="monogr">
                                 <title level="m">
                               Theatrum mundi : studies in honor of Ronald W.     Tobin</title>, éd. <editor>   <name>    <forename>Claire</forename>    <surname>Carlin</surname>   </name>  </editor> et <editor>   <name>    <forename>Kathleen</forename>    <surname>Wine</surname>   </name>  </editor>, <pubPlace>Charlottesville, Va.</pubPlace>, <publisher>Rookwood Press</publisher>, <date when="2003">
-                              2003</date>. </bibl></bibl>```
+                              2003</date>. </bibl></bibl>
+```
 ### biblFull
  
 |**biblFull**(fully-structured bibliographic citation) contains a fully-structured bibliographic
@@ -156,7 +166,8 @@ Contains phrase-level elements, together with any combination of elements from t
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) [att.sortable](#att.sortable) (@sortKey) [att.docStatus](#att.docStatus) (@status) 
                      |**Contained by**||**core: **[corr](#corr)[emph](#emph)[head](#head)[hi](#hi)[item](#item)[l](#l)[listBibl](#listBibl)[note](#note)[orig](#orig)[p](#p)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[sic](#sic)[title](#title)**header: **[change](#change)[licence](#licence)[rendition](#rendition)[sourceDesc](#sourceDesc)**textstructure: **[body](#body)[div](#div)[epigraph](#epigraph)[titlePart](#titlePart)[trailer](#trailer)|**May contain**||**header: **[editionStmt](#editionStmt)[fileDesc](#fileDesc)[notesStmt](#notesStmt)[profileDesc](#profileDesc)[publicationStmt](#publicationStmt)[seriesStmt](#seriesStmt)[sourceDesc](#sourceDesc)[titleStmt](#titleStmt)|**Example**||```
-<biblFull> <titleStmt>  <title>The Feminist Companion to Literature in English: women writers from the middle ages     to the present</title>  <author>Blain, Virginia</author>  <author>Clements, Patricia</author>  <author>Grundy, Isobel</author> </titleStmt> <editionStmt>  <edition>UK edition</edition> </editionStmt> <extent>1231 pp</extent> <publicationStmt>  <publisher>Yale University Press</publisher>  <pubPlace>New Haven and London</pubPlace>  <date>1990</date> </publicationStmt> <sourceDesc>  <p>No source: this is an original work</p> </sourceDesc></biblFull>```
+<biblFull> <titleStmt>  <title>The Feminist Companion to Literature in English: women writers from the middle ages     to the present</title>  <author>Blain, Virginia</author>  <author>Clements, Patricia</author>  <author>Grundy, Isobel</author> </titleStmt> <editionStmt>  <edition>UK edition</edition> </editionStmt> <extent>1231 pp</extent> <publicationStmt>  <publisher>Yale University Press</publisher>  <pubPlace>New Haven and London</pubPlace>  <date>1990</date> </publicationStmt> <sourceDesc>  <p>No source: this is an original work</p> </sourceDesc></biblFull>
+```
 ### body
  
 |**body**(text body) contains the whole body of a single unitary text, excluding any front
@@ -166,7 +177,8 @@ Contains phrase-level elements, together with any combination of elements from t
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.declaring](#att.declaring) (@decls) 
                      |**Contained by**||**textstructure: **[text](#text)|**May contain**||**core: **[bibl](#bibl)[gap](#gap)[head](#head)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[note](#note)[p](#p)[pb](#pb)[q](#q)[quote](#quote)**header: **[biblFull](#biblFull)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[div](#div)[docAuthor](#docAuthor)[docDate](#docDate)[epigraph](#epigraph)[trailer](#trailer)|**Example**||```
-<body> <l>Nu scylun hergan hefaenricaes uard</l> <l>metudæs maecti end his modgidanc</l> <l>uerc uuldurfadur sue he uundra gihuaes</l> <l>eci dryctin or astelidæ</l> <l>he aerist scop aelda barnum</l> <l>heben til hrofe haleg scepen.</l> <l>tha middungeard moncynnæs uard</l> <l>eci dryctin æfter tiadæ</l> <l>firum foldu frea allmectig</l> <trailer>primo cantauit Cædmon istud carmen.</trailer></body>```
+<body> <l>Nu scylun hergan hefaenricaes uard</l> <l>metudæs maecti end his modgidanc</l> <l>uerc uuldurfadur sue he uundra gihuaes</l> <l>eci dryctin or astelidæ</l> <l>he aerist scop aelda barnum</l> <l>heben til hrofe haleg scepen.</l> <l>tha middungeard moncynnæs uard</l> <l>eci dryctin æfter tiadæ</l> <l>firum foldu frea allmectig</l> <trailer>primo cantauit Cædmon istud carmen.</trailer></body>
+```
 ### byline
  
 |**byline**contains the primary statement of responsibility given for a work on its title page
@@ -180,10 +192,14 @@ The byline on a title page may include either the name or a description for the 
                            author. Where the name is included, it may optionally be tagged using the [docAuthor](#docAuthor) element.
                         
 |**Example**||```
-<byline>Written by a CITIZEN who continued all the while in London. Never made publick before.</byline>```|**Example**||```
-<byline>Written from her own MEMORANDUMS</byline>```|**Example**||```
-<byline>By George Jones, Political Editor, in Washington</byline>```|**Example**||```
-<byline>BY<docAuthor>THOMAS PHILIPOTT,</docAuthor> Master of Arts, (Somtimes) Of Clare-Hall in Cambridge.</byline>```
+<byline>Written by a CITIZEN who continued all the while in London. Never made publick before.</byline>
+```|**Example**||```
+<byline>Written from her own MEMORANDUMS</byline>
+```|**Example**||```
+<byline>By George Jones, Political Editor, in Washington</byline>
+```|**Example**||```
+<byline>BY<docAuthor>THOMAS PHILIPOTT,</docAuthor> Master of Arts, (Somtimes) Of Clare-Hall in Cambridge.</byline>
+```
 ### category
  
 |**category**contains an individual descriptive category, possibly nested within a superordinate
@@ -194,11 +210,13 @@ The byline on a title page may include either the name or a description for the 
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) 
                      |**Contained by**||**header: **[category](#category)|**May contain**||**header: **[category](#category)|**Example**||```
 <category xml:id="b1">
-                               <catDesc>Prose reportage</catDesc></category>```|**Example**||```
+                               <catDesc>Prose reportage</catDesc></category>
+```|**Example**||```
 <category xml:id="b2">
                                <catDesc>Prose </catDesc> <category xml:id="b11">
                                 <catDesc>journalism</catDesc> </category> <category xml:id="b12">
-                                <catDesc>fiction</catDesc> </category></category>```|**Example**||```
+                                <catDesc>fiction</catDesc> </category></category>
+```|**Example**||```
 <category xml:id="LIT">
                                <catDesc xml:lang="pl">
                               literatura piękna</catDesc> <catDesc xml:lang="en">
@@ -211,7 +229,8 @@ The byline on a title page may include either the name or a description for the 
                               poetry</catDesc> </category> <category xml:id="LDRAMA">
                                 <catDesc xml:lang="pl">
                               dramat</catDesc>  <catDesc xml:lang="en">
-                              drama</catDesc> </category></category>```
+                              drama</catDesc> </category></category>
+```
 ### catRef
  
 |**catRef**(category reference) specifies one or more defined categories within some taxonomy
@@ -234,7 +253,8 @@ The scheme attribute needs to be supplied only if more than one taxonomy has bee
                                <category xml:id="news">
                                 <catDesc>Newspapers</catDesc> </category> <category xml:id="prov">
                                 <catDesc>Provincial</catDesc> </category> <category xml:id="sales2">
-                                <catDesc>Low to average annual sales</catDesc> </category></taxonomy>```
+                                <catDesc>Low to average annual sales</catDesc> </category></taxonomy>
+```
 ### change
  
 |**change**documents a change or set of changes made during the production of a source document,
@@ -264,11 +284,13 @@ It is recommended that changes be recorded with the most recent first. The statu
                               Finished chapter 23</change> <change who="#BZ" when="2008-01-02"  status="draft">
                               Finished chapter 2</change> <change n="P2.2" when="1991-12-21"  who="#LDB">
                               Added examples to section 3</change> <change when="1991-11-11" who="#MSM">
-                              Deleted chapter 10</change></revisionDesc>```|**Example**||```
+                              Deleted chapter 10</change></revisionDesc>
+```|**Example**||```
 <profileDesc> <creation>  <listChange>   <change xml:id="DRAFT1">
                               First draft in pencil</change>   <change xml:id="DRAFT2"    notBefore="1880-12-09">
                               First revision, mostly       using green ink</change>   <change xml:id="DRAFT3"    notBefore="1881-02-13">
-                              Final corrections as       supplied to printer.</change>  </listChange> </creation></profileDesc>```
+                              Final corrections as       supplied to printer.</change>  </listChange> </creation></profileDesc>
+```
 ### choice
  
 |**choice**groups a number of alternative encodings for the same point in a text. 
@@ -294,7 +316,8 @@ An American encoding of Gulliver's Travels which retains the British spelling bu
                            spelling might be encoded as follows.
                         
 ```
-<p>Lastly, That, upon his solemn oath to observe all the above articles, the said man-mountain shall have a daily allowance of meat and drink sufficient for the support of <choice>  <sic>1724</sic>  <corr>1728</corr> </choice> of our subjects, with free access to our royal person, and other marks of our<choice>  <orig>favour</orig>  <reg>favor</reg> </choice>.</p>```
+<p>Lastly, That, upon his solemn oath to observe all the above articles, the said man-mountain shall have a daily allowance of meat and drink sufficient for the support of <choice>  <sic>1724</sic>  <corr>1728</corr> </choice> of our subjects, with free access to our royal person, and other marks of our<choice>  <orig>favour</orig>  <reg>favor</reg> </choice>.</p>
+```
 ### closer
  
 |**closer**groups together salutations, datelines, and similar phrases appearing as a final group
@@ -305,10 +328,12 @@ An American encoding of Gulliver's Travels which retains the British spelling bu
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.written](#att.written) (@hand) 
                      |**Contained by**||**core: **[lg](#lg)[list](#list)**textstructure: **[back](#back)[body](#body)[div](#div)[front](#front)|**May contain**||**analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)**textstructure: **[dateline](#dateline)character data|**Example**||```
 <div type="letter">
-                               <p> perhaps you will favour me with a sight of it when convenient.</p> <closer>  <salute>I remain, &amp;c. &amp;c.</salute>  <signed>H. Colburn</signed> </closer></div>```|**Example**||```
+                               <p> perhaps you will favour me with a sight of it when convenient.</p> <closer>  <salute>I remain, &amp;c. &amp;c.</salute>  <signed>H. Colburn</signed> </closer></div>
+```|**Example**||```
 <div type="chapter">
                                <p><!-- ... --> and his heart was going like mad and yes I said yes I will Yes.</p> <closer>  <dateline>   <name type="place">
-                              Trieste-Zürich-Paris,</name>   <date>1914–1921</date>  </dateline> </closer></div>```
+                              Trieste-Zürich-Paris,</name>   <date>1914–1921</date>  </dateline> </closer></div>
+```
 ### code
  
 |**code**contains literal code from some formal language such as a programming language. 
@@ -323,7 +348,8 @@ An American encoding of Gulliver's Travels which retains the British spelling bu
  
 |**Contained by**||**core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)|**May contain**||Character data only|**Example**||```
 <code lang="JAVA">
-                               Size fCheckbox1Size = new Size(); fCheckbox1Size.Height = 500; fCheckbox1Size.Width = 500; xCheckbox1.setSize(fCheckbox1Size);</code>```
+                               Size fCheckbox1Size = new Size(); fCheckbox1Size.Height = 500; fCheckbox1Size.Width = 500; xCheckbox1.setSize(fCheckbox1Size);</code>
+```
 ### corr
  
 |**corr**(correction) contains the correct form of a passage apparently erroneous in the copy
@@ -338,12 +364,14 @@ If all that is desired is to call attention to the fact that the copy text has b
                         
 ```
 I don't know, Juan. It's so far in the past now — how <corr>can we</corr> prove or disprove anyone's theories?
-                        ```|**Example**||
+                        
+```|**Example**||
 It is also possible, using the [choice](#choice) and [sic](#sic) elements, to provide an uncorrected reading:
                         
 ```
 I don't know, Juan. It's so far in the past now — how <choice> <sic>we can</sic> <corr>can we</corr></choice> prove or disprove anyone's theories?
-                        ```
+                        
+```
 ### creation
  
 |**creation**contains information about the creation of a text. 
@@ -360,9 +388,11 @@ It may also contain a more structured account of the various stages or revisions
                            with the evolution of a text; this should be encoded using the [listChange](#listChange) element. It should not be confused with the [publicationStmt](#publicationStmt) element, which records date and place of publication.
                         
 |**Example**||```
-<creation> <date>Before 1987</date></creation>```|**Example**||```
+<creation> <date>Before 1987</date></creation>
+```|**Example**||```
 <creation> <date when="1988-07-10">
-                              10 July 1988</date></creation>```
+                              10 July 1988</date></creation>
+```
 ### date
  
 |**date**contains a date in any format. 
@@ -372,12 +402,15 @@ It may also contain a more structured account of the various stages or revisions
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) [att.datable](#att.datable) (@calendar, @period)  ([att.datable.w3c](#att.datable.w3c) (@when, @notBefore, @notAfter, @from, @to)) [att.editLike](#att.editLike) (@evidence, @instant) [att.dimensions](#att.dimensions) (@unit, @quantity, @extent, @precision, @scope)  ([att.ranging](#att.ranging) (@atLeast, @atMost, @min, @max, @confidence)) [att.typed](#att.typed) (@type, @subtype) 
                      |**Contained by**||**core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[publicationStmt](#publicationStmt)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)|**May contain**||**analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
 <date when="1980-02">
-                              early February 1980</date>```|**Example**||```
+                              early February 1980</date>
+```|**Example**||```
 Given on the <date when="1977-06-12">
                               Twelfth Day of June in the Year of Our Lord One Thousand Nine Hundred and Seventy-seven of the
-                           Republic the Two Hundredth and first and of the University the Eighty-Sixth.</date>```|**Example**||```
+                           Republic the Two Hundredth and first and of the University the Eighty-Sixth.</date>
+```|**Example**||```
 <date when="1990-09">
-                              September 1990</date>```
+                              September 1990</date>
+```
 ### dateline
  
 |**dateline**contains a brief description of the place, date, time, etc. of production of a letter,
@@ -388,10 +421,12 @@ Given on the <date when="1977-06-12">
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) 
                      |**Contained by**||**core: **[lg](#lg)[list](#list)**textstructure: **[body](#body)[closer](#closer)[div](#div)[front](#front)|**May contain**||**analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)**textstructure: **[docDate](#docDate)character data|**Example**||```
-<dateline>Walden, this 29. of August 1592</dateline>```|**Example**||```
+<dateline>Walden, this 29. of August 1592</dateline>
+```|**Example**||```
 <div type="chapter">
                                <p><!-- ... --> and his heart was going like mad and yes I said yes I will Yes.</p> <closer>  <dateline>   <name type="place">
-                              Trieste-Zürich-Paris,</name>   <date>1914–1921</date>  </dateline> </closer></div>```
+                              Trieste-Zürich-Paris,</name>   <date>1914–1921</date>  </dateline> </closer></div>
+```
 ### distributor
  
 |**distributor**supplies the name of a person or other agency responsible for the distribution of
@@ -401,7 +436,8 @@ Given on the <date when="1977-06-12">
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) 
                      |**Contained by**||**core: **[bibl](#bibl)**header: **[publicationStmt](#publicationStmt)|**May contain**||**analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
-<distributor>Oxford Text Archive</distributor><distributor>Redwood and Burn Ltd</distributor>```
+<distributor>Oxford Text Archive</distributor><distributor>Redwood and Burn Ltd</distributor>
+```
 ### div
  
 |**div**(text division) contains a subdivision of the front, body, or back of a text. 
@@ -414,7 +450,8 @@ Given on the <date when="1977-06-12">
                                 <head>Fallacies of Authority</head>  <p>The subject of which is Authority in various shapes, and the object, to repress all     exercise of the reasoning faculty.</p>  <div n="1" type="chapter">
                                  <head>The Nature of Authority</head>   <p>With reference to any proposed measures having for their object the greatest       happiness of the greatest number [...]</p>   <div n="1.1" type="section">
                                   <head>Analysis of Authority</head>    <p>What on any given occasion is the legitimate weight or influence to be attached to         authority [...] </p>   </div>   <div n="1.2" type="section">
-                                  <head>Appeal to Authority, in What Cases Fallacious.</head>    <p>Reference to authority is open to the charge of fallacy when [...] </p>   </div>  </div> </div></body>```
+                                  <head>Appeal to Authority, in What Cases Fallacious.</head>    <p>Reference to authority is open to the charge of fallacy when [...] </p>   </div>  </div> </div></body>
+```
 ### docAuthor
  
 |**docAuthor**(document author) contains the name of the author of the document, as given on the
@@ -430,7 +467,8 @@ The document author's name often occurs within a byline, but the [docAuthor](#do
                            newspaper, may be encoded with [byline](#byline) without [docAuthor](#docAuthor).)
                         
 |**Example**||```
-<titlePage> <docTitle>  <titlePart>Travels into Several Remote Nations of the World, in Four     Parts.</titlePart> </docTitle> <byline> By <docAuthor>Lemuel Gulliver</docAuthor>, First a Surgeon,   and then a Captain of several Ships</byline></titlePage>```
+<titlePage> <docTitle>  <titlePart>Travels into Several Remote Nations of the World, in Four     Parts.</titlePart> </docTitle> <byline> By <docAuthor>Lemuel Gulliver</docAuthor>, First a Surgeon,   and then a Captain of several Ships</byline></titlePage>
+```
 ### docDate
  
 |**docDate**(document date) contains the date of a document, as given on a title page or in a
@@ -455,7 +493,8 @@ Cf. the general [date](#date) element in the core tag set. This specialized elem
                            the entire document, not for any subset or part of it.
                         
 |**Example**||```
-<docImprint>Oxford, Clarendon Press, <docDate>1987</docDate></docImprint>```
+<docImprint>Oxford, Clarendon Press, <docDate>1987</docDate></docImprint>
+```
 ### docTitle
  
 |**docTitle**(document title) contains the title of a document, including all its constituents,
@@ -467,7 +506,8 @@ Cf. the general [date](#date) element in the core tag set. This specialized elem
                      |**Contained by**||**textstructure: **[back](#back)[front](#front)[titlePage](#titlePage)|**May contain**||**core: **[gap](#gap)[lb](#lb)[milestone](#milestone)[note](#note)[pb](#pb)**textstructure: **[titlePart](#titlePart)|**Example**||```
 <docTitle> <titlePart type="main">
                               The DUNCIAD, VARIOURVM.</titlePart> <titlePart type="sub">
-                              WITH THE PROLEGOMENA of SCRIBLERUS.</titlePart></docTitle>```
+                              WITH THE PROLEGOMENA of SCRIBLERUS.</titlePart></docTitle>
+```
 ### edition
  
 |**edition**describes the particularities of one edition of a text. 
@@ -477,7 +517,8 @@ Cf. the general [date](#date) element in the core tag set. This specialized elem
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) 
                      |**Contained by**||**core: **[bibl](#bibl)**header: **[editionStmt](#editionStmt)|**May contain**||**analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
 <edition>First edition <date>Oct 1990</date></edition><edition n="S2">
-                              Students' edition</edition>```
+                              Students' edition</edition>
+```
 ### editionStmt
  
 |**editionStmt**(edition statement) groups information relating to one edition of a text. 
@@ -487,8 +528,10 @@ Cf. the general [date](#date) element in the core tag set. This specialized elem
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) 
                      |**Contained by**||**header: **[biblFull](#biblFull)[fileDesc](#fileDesc)|**May contain**||**core: **[author](#author)[editor](#editor)[p](#p)[respStmt](#respStmt)**header: **[edition](#edition)|**Example**||```
 <editionStmt> <edition n="S2">
-                              Students' edition</edition> <respStmt>  <resp>Adapted by </resp>  <name>Elizabeth Kirk</name> </respStmt></editionStmt>```|**Example**||```
-<editionStmt> <p>First edition, <date>Michaelmas Term, 1991.</date> </p></editionStmt>```
+                              Students' edition</edition> <respStmt>  <resp>Adapted by </resp>  <name>Elizabeth Kirk</name> </respStmt></editionStmt>
+```|**Example**||```
+<editionStmt> <p>First edition, <date>Michaelmas Term, 1991.</date> </p></editionStmt>
+```
 ### editor
  
 |**editor**contains a secondary statement of responsibility for a bibliographic item, for example
@@ -509,7 +552,8 @@ Particularly where cataloguing is likely to be based on the content of the heade
 <editor role="Technical_Editor">
                               Ron Van den Branden</editor><editor role="Editor-in-Chief">
                               John Walsh</editor><editor role="Managing_Editor">
-                              Anne Baillot</editor>```
+                              Anne Baillot</editor>
+```
 ### editorialDecl
  
 |**editorialDecl**(editorial practice declaration) provides details of editorial principles and practices
@@ -520,7 +564,8 @@ Particularly where cataloguing is likely to be based on the content of the heade
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) 
                      |**Contained by**||**header: **[encodingDesc](#encodingDesc)|**May contain**||**core: **[p](#p)**header: **[hyphenation](#hyphenation)|**Example**||```
 <editorialDecl> <normalization>  <p>All words converted to Modern American spelling using     Websters 9th Collegiate dictionary  </p> </normalization> <quotation marks="all">
-                                <p>All opening quotation marks converted to “ all closing     quotation marks converted to &amp;cdq;.</p> </quotation></editorialDecl>```
+                                <p>All opening quotation marks converted to “ all closing     quotation marks converted to &amp;cdq;.</p> </quotation></editorialDecl>
+```
 ### emph
  
 |**emph**(emphasized) marks words or phrases which are stressed or emphasized for linguistic
@@ -531,8 +576,10 @@ Particularly where cataloguing is likely to be based on the content of the heade
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) 
                      |**Contained by**||**core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)|**May contain**||**analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
 You took the car and did <emph>what</emph>?!!
-                        ```|**Example**||```
-<q>What it all comes to is this,</q> he said. <q> <emph>What   does Christopher Robin do in the morning nowadays?</emph></q>```
+                        
+```|**Example**||```
+<q>What it all comes to is this,</q> he said. <q> <emph>What   does Christopher Robin do in the morning nowadays?</emph></q>
+```
 ### encodingDesc
  
 |**encodingDesc**(encoding description) documents the relationship between an electronic text and the
@@ -542,7 +589,8 @@ You took the car and did <emph>what</emph>?!!
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) 
                      |**Contained by**||**header: **[teiHeader](#teiHeader)|**May contain**||**core: **[p](#p)**header: **[editorialDecl](#editorialDecl)[listPrefixDef](#listPrefixDef)[projectDesc](#projectDesc)|**Example**||```
-<encodingDesc> <p>Basic encoding, capturing lexical information only. All   hyphenation, punctuation, and variant spellings normalized. No   formatting or layout information preserved.</p></encodingDesc>```
+<encodingDesc> <p>Basic encoding, capturing lexical information only. All   hyphenation, punctuation, and variant spellings normalized. No   formatting or layout information preserved.</p></encodingDesc>
+```
 ### epigraph
  
 |**epigraph**contains a quotation, anonymous or attributed, appearing at the start or end of a
@@ -554,7 +602,8 @@ You took the car and did <emph>what</emph>?!!
                      |**Contained by**||**core: **[lg](#lg)[list](#list)**textstructure: **[back](#back)[body](#body)[div](#div)[front](#front)[titlePage](#titlePage)|**May contain**||**core: **[bibl](#bibl)[gap](#gap)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[note](#note)[p](#p)[pb](#pb)[q](#q)[quote](#quote)**header: **[biblFull](#biblFull)|**Example**||```
 <epigraph xml:lang="la">
                                <cit>  <bibl>Lucret.</bibl>  <quote>   <l part="F">
-                              petere inde coronam,</l>   <l>Vnde prius nulli velarint tempora Musae.</l>  </quote> </cit></epigraph>```
+                              petere inde coronam,</l>   <l>Vnde prius nulli velarint tempora Musae.</l>  </quote> </cit></epigraph>
+```
 ### fileDesc
  
 |**fileDesc**(file description) contains a full bibliographic description of an electronic file.
@@ -572,7 +621,8 @@ The major source of information for those seeking to create a catalogue entry or
                            sources from which the electronic text was derived.
                         
 |**Example**||```
-<fileDesc> <titleStmt>  <title>The shortest possible TEI document</title> </titleStmt> <publicationStmt>  <p>Distributed as part of TEI P5</p> </publicationStmt> <sourceDesc>  <p>No print source exists: this is an original digital text</p> </sourceDesc></fileDesc>```
+<fileDesc> <titleStmt>  <title>The shortest possible TEI document</title> </titleStmt> <publicationStmt>  <p>Distributed as part of TEI P5</p> </publicationStmt> <sourceDesc>  <p>No print source exists: this is an original digital text</p> </sourceDesc></fileDesc>
+```
 ### foreign
  
 |**foreign**identifies a word or phrase as belonging to some language other than that of the surrounding
@@ -597,7 +647,8 @@ The distinct element may be used to identify phrases belonging to sublanguages o
 |**Example**||```
 This is heathen Greek to you still? Your <foreign xml:lang="la">
                               lapis philosophicus</foreign>?
-                        ```
+                        
+```
 ### front
  
 |**front**(front matter) contains any prefatory matter (headers, abstracts, title page, prefaces,
@@ -615,12 +666,15 @@ Because cultural conventions differ as to which elements are grouped as front ma
                               Σίβυλλα τί       θέλεις</q>; respondebat illa: <q xml:lang="gr">
                               ὰποθανεῖν θέλω.</q>  </quote> </epigraph> <div type="dedication">
                                 <p>For Ezra Pound <q xml:lang="it">
-                              il miglior fabbro.</q>  </p> </div></front>```|**Example**||```
+                              il miglior fabbro.</q>  </p> </div></front>
+```|**Example**||```
 <front> <div type="dedication">
                                 <p>To our three selves</p> </div> <div type="preface">
-                                <head>Author's Note</head>  <p>All the characters in this book are purely imaginary, and if the     author has used names that may suggest a reference to living persons     she has done so inadvertently. ...</p> </div></front>```|**Example**||```
+                                <head>Author's Note</head>  <p>All the characters in this book are purely imaginary, and if the     author has used names that may suggest a reference to living persons     she has done so inadvertently. ...</p> </div></front>
+```|**Example**||```
 <front> <div type="abstract">
-                                <div>   <head> BACKGROUND:</head>   <p>Food insecurity can put children at greater risk of obesity because       of altered food choices and nonuniform consumption patterns.</p>  </div>  <div>   <head> OBJECTIVE:</head>   <p>We examined the association between obesity and both child-level       food insecurity and personal food insecurity in US children.</p>  </div>  <div>   <head> DESIGN:</head>   <p>Data from 9,701 participants in the National Health and Nutrition       Examination Survey, 2001-2010, aged 2 to 11 years were analyzed.       Child-level food insecurity was assessed with the US Department of       Agriculture's Food Security Survey Module based on eight       child-specific questions. Personal food insecurity was assessed with       five additional questions. Obesity was defined, using physical       measurements, as body mass index (calculated as kg/m2) greater than       or equal to the age- and sex-specific 95th percentile of the Centers       for Disease Control and Prevention growth charts. Logistic       regressions adjusted for sex, race/ethnic group, poverty level, and       survey year were conducted to describe associations between obesity       and food insecurity.</p>  </div>  <div>   <head> RESULTS:</head>   <p>Obesity was significantly associated with personal food insecurity       for children aged 6 to 11 years (odds ratio=1.81; 95% CI 1.33 to       2.48), but not in children aged 2 to 5 years (odds ratio=0.88; 95%       CI 0.51 to 1.51). Child-level food insecurity was not associated       with obesity among 2- to 5-year-olds or 6- to 11-year-olds.</p>  </div>  <div>   <head> CONCLUSIONS:</head>   <p>Personal food insecurity is associated with an increased risk of       obesity only in children aged 6 to 11 years. Personal       food-insecurity measures may give different results than aggregate       food-insecurity measures in children.</p>  </div> </div></front>```
+                                <div>   <head> BACKGROUND:</head>   <p>Food insecurity can put children at greater risk of obesity because       of altered food choices and nonuniform consumption patterns.</p>  </div>  <div>   <head> OBJECTIVE:</head>   <p>We examined the association between obesity and both child-level       food insecurity and personal food insecurity in US children.</p>  </div>  <div>   <head> DESIGN:</head>   <p>Data from 9,701 participants in the National Health and Nutrition       Examination Survey, 2001-2010, aged 2 to 11 years were analyzed.       Child-level food insecurity was assessed with the US Department of       Agriculture's Food Security Survey Module based on eight       child-specific questions. Personal food insecurity was assessed with       five additional questions. Obesity was defined, using physical       measurements, as body mass index (calculated as kg/m2) greater than       or equal to the age- and sex-specific 95th percentile of the Centers       for Disease Control and Prevention growth charts. Logistic       regressions adjusted for sex, race/ethnic group, poverty level, and       survey year were conducted to describe associations between obesity       and food insecurity.</p>  </div>  <div>   <head> RESULTS:</head>   <p>Obesity was significantly associated with personal food insecurity       for children aged 6 to 11 years (odds ratio=1.81; 95% CI 1.33 to       2.48), but not in children aged 2 to 5 years (odds ratio=0.88; 95%       CI 0.51 to 1.51). Child-level food insecurity was not associated       with obesity among 2- to 5-year-olds or 6- to 11-year-olds.</p>  </div>  <div>   <head> CONCLUSIONS:</head>   <p>Personal food insecurity is associated with an increased risk of       obesity only in children aged 6 to 11 years. Personal       food-insecurity measures may give different results than aggregate       food-insecurity measures in children.</p>  </div> </div></front>
+```
 ### gap
  
 |**gap**indicates a point where material has been omitted in a transcription, whether for
@@ -649,10 +703,14 @@ The [gap](#gap) tag simply signals the editors decision to omit or inability to 
                            erased or covered, should be indicated using the relevant tags, such as del in the case of deliberate deletion.
                         
 |**Example**||```
-<gap quantity="4" unit="chars" reason="illegible"/>```|**Example**||```
-<gap quantity="1" unit="essay" reason="sampling"/>```|**Example**||```
-<del> <gap atLeast="4" atMost="8" unit="chars"  reason="illegible"/></del>```|**Example**||```
-<gap extent="several lines" reason="lost"/>```
+<gap quantity="4" unit="chars" reason="illegible"/>
+```|**Example**||```
+<gap quantity="1" unit="essay" reason="sampling"/>
+```|**Example**||```
+<del> <gap atLeast="4" atMost="8" unit="chars"  reason="illegible"/></del>
+```|**Example**||```
+<gap extent="several lines" reason="lost"/>
+```
 ### gi
  
 |**gi**(element name) contains the name (generic identifier) of an element. 
@@ -667,7 +725,8 @@ The [gap](#gap) tag simply signals the editors decision to omit or inability to 
  
 |**Contained by**||**core: **[author](#author)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)|**May contain**||Empty element|**Example**||```
 <p>The <gi>xhtml:li</gi> element is roughly analogous to the <gi>item</gi> element, as is the<gi scheme="DBK">
-                              listItem</gi> element.</p>```
+                              listItem</gi> element.</p>
+```
 This example shows the use of both a namespace prefix and the scheme attribute as alternative ways of indicating that the [gi](#gi) in question is not a TEI element name: in practice only one method should be adopted.
                         
  
@@ -692,7 +751,8 @@ The most common use for the [head](#head) element is to mark the headings of sec
 ```
 <div1 n="I" type="book">
                                <head>In the name of Christ here begins the first book of the ecclesiastical history of   Georgius Florentinus, known as Gregory, Bishop of Tours.</head> <div2 type="section">
-                                <head>In the name of Christ here begins Book I of the history.</head>  <p>Proposing as I do ...</p>  <p>From the Passion of our Lord until the death of Saint Martin four hundred and twelve     years passed.</p>  <trailer>Here ends the first Book, which covers five thousand, five hundred and ninety-six     years from the beginning of the world down to the death of Saint Martin.</trailer> </div2></div1>```|**Example**||
+                                <head>In the name of Christ here begins Book I of the history.</head>  <p>Proposing as I do ...</p>  <p>From the Passion of our Lord until the death of Saint Martin four hundred and twelve     years passed.</p>  <trailer>Here ends the first Book, which covers five thousand, five hundred and ninety-six     years from the beginning of the world down to the death of Saint Martin.</trailer> </div2></div1>
+```|**Example**||
 When headings are not inline with the running text (see e.g. [the heading "Secunda conclusio"](http://diglib.hab.de/show_image.php?dir=drucke/ed000364&pointer=34)) they might however be encoded as if. The actual placement in the source document
                            can be captured with the place attribute.
                         
@@ -700,12 +760,14 @@ When headings are not inline with the running text (see e.g. [the heading "Secun
 <div type="subsection">
                                <head place="margin">
                               Secunda conclusio</head> <p>  <lb n="1251"/>  <hi rend="large">
-                              Potencia: habitus: et actus: recipiunt speciem ab obiectis<supplied>.</supplied>  </hi>  <lb n="1252"/>Probatur sic. Omne importans necessariam habitudinem ad proprium   [...] </p></div>```|**Example**||
+                              Potencia: habitus: et actus: recipiunt speciem ab obiectis<supplied>.</supplied>  </hi>  <lb n="1252"/>Probatur sic. Omne importans necessariam habitudinem ad proprium   [...] </p></div>
+```|**Example**||
 The [head](#head) element is also used to mark headings of other units, such as lists:
                         
 ```
 With a few exceptions, connectives are equally useful in all kinds of discourse: description, narration, exposition, argument. <list rend="bulleted">
-                               <head>Connectives</head> <item>above</item> <item>accordingly</item> <item>across from</item> <item>adjacent to</item> <item>again</item> <item><!-- ... --> </item></list>```
+                               <head>Connectives</head> <item>above</item> <item>accordingly</item> <item>across from</item> <item>adjacent to</item> <item>again</item> <item><!-- ... --> </item></list>
+```
 ### hi
  
 |**hi**(highlighted) marks a word or phrase as graphically distinct from the surrounding
@@ -718,7 +780,8 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
 <hi rend="gothic">
                               And this Indenture further witnesseth</hi> that the said <hi rend="italic">
                               Walter Shandy</hi>, merchant, in consideration of the said intended marriage ...
-                        ```
+                        
+```
 ### hyphenation
  
 |**hyphenation**summarizes the way in which hyphenation in a source text has been treated in an encoded
@@ -741,7 +804,8 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
  
 |**Contained by**||**header: **[editorialDecl](#editorialDecl)|**May contain**||**core: **[p](#p)|**Example**||```
 <hyphenation eol="some">
-                               <p>End-of-line hyphenation silently removed where appropriate</p></hyphenation>```
+                               <p>End-of-line hyphenation silently removed where appropriate</p></hyphenation>
+```
 ### idno
  
 |**idno**(identifier) supplies any form of identifier used to identify some object, such as
@@ -785,7 +849,8 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
                               http://authority.nzetc.org/463/</idno><idno type="LT">
                               Thomason Tract E.537(17)</idno><idno type="Wing">
                               C695</idno><idno type="oldCat">
-                               <g ref="#sym"/>345</idno>```
+                               <g ref="#sym"/>345</idno>
+```
 In the last case, the identifier includes a non-Unicode character which is defined
                            elsewhere by means of a glyph or char element referenced here as #sym.
                         
@@ -813,7 +878,8 @@ Whatever string of characters is used to label a list item in the copy text may 
                               The wives and children of Lothar.</item> <item n="4.4">
                               The Counts of the Bretons.</item> <item n="4.5">
                               Saint Gall the Bishop.</item> <item n="4.6">
-                              The priest Cato.</item> <item> ...</item></list>```
+                              The priest Cato.</item> <item> ...</item></list>
+```
 ### keywords
  
 |**keywords**contains a list of keywords or phrases identifying the topic or nature of a text.
@@ -838,8 +904,10 @@ If no control list exists for the keywords used, then no value should be supplie
                         
 |**Example**||```
 <keywords scheme="http://classificationweb.net">
-                               <term>Babbage, Charles</term> <term>Mathematicians - Great Britain - Biography</term></keywords>```|**Example**||```
-<keywords> <term>Fermented beverages</term> <term>Central Andes</term> <term>Schinus molle</term> <term>Molle beer</term> <term>Indigenous peoples</term> <term>Ethnography</term> <term>Archaeology</term></keywords>```
+                               <term>Babbage, Charles</term> <term>Mathematicians - Great Britain - Biography</term></keywords>
+```|**Example**||```
+<keywords> <term>Fermented beverages</term> <term>Central Andes</term> <term>Schinus molle</term> <term>Molle beer</term> <term>Indigenous peoples</term> <term>Ethnography</term> <term>Archaeology</term></keywords>
+```
 ### l
  
 |**l**(verse line) contains a single, possibly incomplete, line of verse. 
@@ -849,7 +917,8 @@ If no control list exists for the keywords used, then no value should be supplie
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.fragmentable](#att.fragmentable) (@part) 
                      |**Contained by**||**core: **[corr](#corr)[emph](#emph)[head](#head)[hi](#hi)[item](#item)[lg](#lg)[note](#note)[orig](#orig)[p](#p)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[title](#title)**header: **[change](#change)[licence](#licence)**textstructure: **[body](#body)[div](#div)[epigraph](#epigraph)[titlePart](#titlePart)[trailer](#trailer)|**May contain**||**analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
 <l met="x/x/x/x/x/" real="/xx/x/x/x/">
-                              Shall I compare thee to a summer's day?</l>```
+                              Shall I compare thee to a summer's day?</l>
+```
 ### language
  
 |**language**characterizes a single language or sublanguage used within a text. 
@@ -874,7 +943,8 @@ Particularly for sublanguages, an informal prose characterization should be supp
 <langUsage> <language ident="en-US" usage="75">
                               modern American English</language> <language ident="i-az-Arab" usage="20">
                               Azerbaijani in Arabic script</language> <language ident="x-lap" usage="05">
-                              Pig Latin</language></langUsage>```
+                              Pig Latin</language></langUsage>
+```
 ### langUsage
  
 |**langUsage**(language usage) describes the languages, sublanguages, registers, dialects, etc.
@@ -887,7 +957,8 @@ Particularly for sublanguages, an informal prose characterization should be supp
 <langUsage> <language ident="fr-CA" usage="60">
                               Québecois</language> <language ident="en-CA" usage="20">
                               Canadian business English</language> <language ident="en-GB" usage="20">
-                              British English</language></langUsage>```
+                              British English</language></langUsage>
+```
 ### lb
  
 |**lb**(line beginning) marks the beginning of a new (typographic) line in some edition or
@@ -914,13 +985,15 @@ This example shows typographical line breaks within metrical lines, where they o
                            at different places in different editions:
                         
 ```
-<l>Of Mans First Disobedience,<lb ed="1674"/> and<lb ed="1667"/> the Fruit</l><l>Of that Forbidden Tree, whose<lb ed="1667 1674"/> mortal tast</l><l>Brought Death into the World,<lb ed="1667"/> and all<lb ed="1674"/> our woe,</l>```|**Example**||
+<l>Of Mans First Disobedience,<lb ed="1674"/> and<lb ed="1667"/> the Fruit</l><l>Of that Forbidden Tree, whose<lb ed="1667 1674"/> mortal tast</l><l>Brought Death into the World,<lb ed="1667"/> and all<lb ed="1674"/> our woe,</l>
+```|**Example**||
 This example encodes typographical line breaks as a means of preserving the visual
                            appearance of a title page. The break attribute is used to show that the line break does not (as elsewhere) mark the start
                            of a new word.
                         
 ```
-<titlePart> <lb/>With Additions, ne-<lb break="no"/>ver before Printed.</titlePart>```
+<titlePart> <lb/>With Additions, ne-<lb break="no"/>ver before Printed.</titlePart>
+```
 ### lg
  
 |**lg**(line group) contains one or more verse lines functioning as a formal unit, e.g. a
@@ -935,7 +1008,8 @@ contains verse lines or nested line groups only, possibly prefixed by a heading.
 <lg type="free">
                                <l>Let me be my own fool</l> <l>of my own making, the sum of it</l></lg><lg type="free">
                                <l>is equivocal.</l> <l>One says of the drunken farmer:</l></lg><lg type="free">
-                               <l>leave him lay off it. And this is</l> <l>the explanation.</l></lg>```
+                               <l>leave him lay off it. And this is</l> <l>the explanation.</l></lg>
+```
 ### licence
  
 |**licence**contains information about a licence or other legal agreement applicable to the text.
@@ -951,9 +1025,11 @@ A [licence](#licence) element should be supplied for each licence agreement appl
                         
 |**Example**||```
 <licence target="http://www.nzetc.org/tm/scholarly/tei-NZETC-Help.html#licensing">
-                               Licence: Creative Commons Attribution-Share Alike 3.0 New Zealand Licence</licence>```|**Example**||```
+                               Licence: Creative Commons Attribution-Share Alike 3.0 New Zealand Licence</licence>
+```|**Example**||```
 <availability> <licence target="http://creativecommons.org/licenses/by/3.0/"  notBefore="2013-01-01">
-                                <p>The Creative Commons Attribution 3.0 Unported (CC BY 3.0) Licence     applies to this document.</p>  <p>The licence was added on January 1, 2013.</p> </licence></availability>```
+                                <p>The Creative Commons Attribution 3.0 Unported (CC BY 3.0) Licence     applies to this document.</p>  <p>The licence was added on January 1, 2013.</p> </licence></availability>
+```
 ### list
  
 |**list**contains any sequence of items organized as a list. 
@@ -987,11 +1063,14 @@ May contain an optional heading followed by a series of items, or a series of la
 |**Example**||```
 <list rend="numbered">
                                <item>a butcher</item> <item>a baker</item> <item>a candlestick maker, with <list rend="bulleted">
-                                 <item>rings on his fingers</item>   <item>bells on his toes</item>  </list> </item></list>```|**Example**||```
+                                 <item>rings on his fingers</item>   <item>bells on his toes</item>  </list> </item></list>
+```|**Example**||```
 <list type="syllogism" rend="bulleted">
-                               <item>All Cretans are liars.</item> <item>Epimenides is a Cretan.</item> <item>ERGO Epimenides is a liar.</item></list>```|**Example**||```
+                               <item>All Cretans are liars.</item> <item>Epimenides is a Cretan.</item> <item>ERGO Epimenides is a liar.</item></list>
+```|**Example**||```
 <list type="litany" rend="simple">
-                               <item>God save us from drought.</item> <item>God save us from pestilence.</item> <item>God save us from wickedness in high places.</item> <item>Praise be to God.</item></list>```|**Example**||
+                               <item>God save us from drought.</item> <item>God save us from pestilence.</item> <item>God save us from wickedness in high places.</item> <item>Praise be to God.</item></list>
+```|**Example**||
 The following example treats the short numbered clauses of Anglo-Saxon legal codes
                            as lists of items. The text is from an ordinance of King Athelstan (924–939):
                         
@@ -1026,7 +1105,8 @@ The following example treats the short numbered clauses of Anglo-Saxon legal cod
                            owns.</item>    <item n="3.2">
                               And likewise any of the king's treasurers or of our reeves, who has been         an accessory of thieves who have committed theft, is to liable to the same.</item>   </list>  </item>  <item n="4">
                               Concerning treachery to a lord. And we have pronounced concerning treachery to     a lord, that he [who is accused] is to forfeit his life if he cannot deny it
-                           or is     afterwards convicted at the three-fold ordeal.</item> </list></div1>```
+                           or is     afterwards convicted at the three-fold ordeal.</item> </list></div1>
+```
 Note that nested lists have been used so the tagging mirrors the structure indicated
                            by the two-level numbering of the clauses. The clauses could have been treated as
                            a one-level list with irregular numbering, if desired.
@@ -1036,7 +1116,8 @@ Note that nested lists have been used so the tagging mirrors the structure indic
                            and they confirmed them in our hand in your stead with the sign of the Holy Cross, and afterwards inscribed with a careful pen on the paper of this page, affixing thus the sign of
                            the Holy Cross.<list rend="simple">
                                 <item>I, Eanbald, by the grace of God archbishop of the holy church of York, have     subscribed to the pious and catholic validity of this document with the sign
-                           of the Holy     Cross.</item>  <item>I, Ælfwold, king of the people across the Humber, consenting have subscribed with     the sign of the Holy Cross.</item>  <item>I, Tilberht, prelate of the church of Hexham, rejoicing have subscribed with the     sign of the Holy Cross.</item>  <item>I, Higbald, bishop of the church of Lindisfarne, obeying have subscribed with the     sign of the Holy Cross.</item>  <item>I, Ethelbert, bishop of Candida Casa, suppliant, have subscribed with thef sign of     the Holy Cross.</item>  <item>I, Ealdwulf, bishop of the church of Mayo, have subscribed with devout will.</item>  <item>I, Æthelwine, bishop, have subscribed through delegates.</item>  <item>I, Sicga, patrician, have subscribed with serene mind with the sign of the Holy     Cross.</item> </list></p>```
+                           of the Holy     Cross.</item>  <item>I, Ælfwold, king of the people across the Humber, consenting have subscribed with     the sign of the Holy Cross.</item>  <item>I, Tilberht, prelate of the church of Hexham, rejoicing have subscribed with the     sign of the Holy Cross.</item>  <item>I, Higbald, bishop of the church of Lindisfarne, obeying have subscribed with the     sign of the Holy Cross.</item>  <item>I, Ethelbert, bishop of Candida Casa, suppliant, have subscribed with thef sign of     the Holy Cross.</item>  <item>I, Ealdwulf, bishop of the church of Mayo, have subscribed with devout will.</item>  <item>I, Æthelwine, bishop, have subscribed through delegates.</item>  <item>I, Sicga, patrician, have subscribed with serene mind with the sign of the Holy     Cross.</item> </list></p>
+```
 ### listBibl
  
 |**listBibl**(citation list) contains a list of bibliographic citations of any kind. 
@@ -1045,7 +1126,8 @@ Note that nested lists have been used so the tagging mirrors the structure indic
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.sortable](#att.sortable) (@sortKey) [att.declarable](#att.declarable) (@default) [att.typed](#att.typed) (@type, @subtype) 
                      |**Contained by**||**core: **[corr](#corr)[emph](#emph)[head](#head)[hi](#hi)[item](#item)[l](#l)[listBibl](#listBibl)[note](#note)[orig](#orig)[p](#p)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[relatedItem](#relatedItem)[sic](#sic)[title](#title)**header: **[change](#change)[licence](#licence)[rendition](#rendition)[sourceDesc](#sourceDesc)**textstructure: **[back](#back)[body](#body)[div](#div)[epigraph](#epigraph)[front](#front)[titlePart](#titlePart)[trailer](#trailer)|**May contain**||**core: **[bibl](#bibl)[head](#head)[lb](#lb)[listBibl](#listBibl)[milestone](#milestone)[pb](#pb)**header: **[biblFull](#biblFull)|**Example**||```
-<listBibl> <head>Works consulted</head> <bibl>Blain, Clements and Grundy: Feminist Companion to   Literature in English (Yale, 1990) </bibl> <biblStruct>  <analytic>   <title>The Interesting story of the Children in the Wood</title>  </analytic>  <monogr>   <title>The Penny Histories</title>   <author>Victor E Neuberg</author>   <imprint>    <publisher>OUP</publisher>    <date>1968</date>   </imprint>  </monogr> </biblStruct></listBibl>```
+<listBibl> <head>Works consulted</head> <bibl>Blain, Clements and Grundy: Feminist Companion to   Literature in English (Yale, 1990) </bibl> <biblStruct>  <analytic>   <title>The Interesting story of the Children in the Wood</title>  </analytic>  <monogr>   <title>The Penny Histories</title>   <author>Victor E Neuberg</author>   <imprint>    <publisher>OUP</publisher>    <date>1968</date>   </imprint>  </monogr> </biblStruct></listBibl>
+```
 ### listChange
  
 |**listChange**groups a number of change descriptions associated with either the creation of a source
@@ -1067,13 +1149,15 @@ When this element appears within the [creation](#creation) element it documents 
 |**Example**||```
 <revisionDesc> <listChange>  <change when="1991-11-11" who="#LB">
                                deleted chapter 10 </change>  <change when="1991-11-02" who="#MSM">
-                               completed first draft </change> </listChange></revisionDesc>```|**Example**||```
+                               completed first draft </change> </listChange></revisionDesc>
+```|**Example**||```
 <profileDesc> <creation>  <listChange ordered="true">
                                  <change xml:id="CHG-1">
                               First stage, written in ink by a writer</change>   <change xml:id="CHG-2">
                               Second stage, written in Goethe's hand using pencil</change>   <change xml:id="CHG-3">
                               Fixation of the revised passages and further revisions by       Goethe using ink</change>   <change xml:id="CHG-4">
-                              Addition of another stanza in a different hand,       probably at a later stage</change>  </listChange> </creation></profileDesc>```
+                              Addition of another stanza in a different hand,       probably at a later stage</change>  </listChange> </creation></profileDesc>
+```
 ### listPrefixDef
  
 |**listPrefixDef**(list of prefix definitions) contains a list of definitions of prefixing schemes used
@@ -1091,7 +1175,8 @@ In this example, two private URI scheme prefixes are defined and patterns are pr
 ```
 <listPrefixDef> <prefixDef ident="psn"  matchPattern="([A-Z]+)"  replacementPattern="personography.xml#$1">
                                 <p> Private URIs using the <code>psn</code>     prefix are pointers to <gi>person</gi>     elements in the personography.xml file.     For example, <code>psn:MDH</code>     dereferences to <code>personography.xml#MDH</code>.  </p> </prefixDef> <prefixDef ident="bibl"  matchPattern="([a-z]+[a-z0-9]*)"  replacementPattern="http://www.example.com/getBibl.xql?id=$1">
-                                <p> Private URIs using the <code>bibl</code> prefix can be     expanded to form URIs which retrieve the relevant     bibliographical reference from www.example.com.  </p> </prefixDef></listPrefixDef>```
+                                <p> Private URIs using the <code>bibl</code> prefix can be     expanded to form URIs which retrieve the relevant     bibliographical reference from www.example.com.  </p> </prefixDef></listPrefixDef>
+```
 ### milestone
  
 |**milestone**marks a boundary point separating any kind of section of a text, typically but not
@@ -1111,7 +1196,8 @@ The order in which [milestone](#milestone) elements are given at a given point i
                         
 |**Example**||```
 <milestone n="23" ed="La" unit="Dreissiger"/> ... <milestone n="24" ed="AV" unit="verse"/> ...
-                        ```
+                        
+```
 ### name
  
 |**name**(name, proper noun) contains a proper noun or noun phrase. 
@@ -1128,7 +1214,8 @@ Proper nouns referring to people, places, and organizations may be tagged instea
                               Thomas Hoccleve</name><name type="place">
                               Villingaholt</name><name type="org">
                               Vetus Latina Institut</name><name type="person" ref="#HOC001">
-                              Occleve</name>```
+                              Occleve</name>
+```
 ### note
  
 |**note**contains a note or annotation. 
@@ -1167,7 +1254,8 @@ In the following example, the translator has supplied a footnote containing an e
 And yet it is not only in the great line of Italian renaissance art, but even in the painterly <note place="bottom" type="gloss" resp="#MDMH">
                                <term xml:lang="de">
                               Malerisch</term>. This word has, in the German, two distinct meanings, one objective, a quality residing in the object, the other subjective, a mode of apprehension and creation. To avoid confusion, they have been distinguished in English as<mentioned>picturesque</mentioned> and<mentioned>painterly</mentioned> respectively.</note> style of the Dutch genre painters of the seventeenth century that drapery has this psychological significance.<!-- elsewhere in the document --><respStmt xml:id="MDMH">
-                               <resp>translation from German to English</resp> <name>Hottinger, Marie Donald Mackie</name></respStmt>```
+                               <resp>translation from German to English</resp> <name>Hottinger, Marie Donald Mackie</name></respStmt>
+```
 For this example to be valid, the code MDMH must be defined elsewhere, for example by means of a responsibility statement in
                            the associated TEI header.
                         
@@ -1179,7 +1267,8 @@ The global n attribute may be used to supply the symbol or number used to mark t
 Mevorakh b. Saadya's mother, the matriarch of the family during the second half of the eleventh century, <note n="126" anchored="true">
                                The alleged mention of Judah Nagid's mother in a letter from 1071 is, in fact, a reference
                            to Judah's children; cf. above, nn. 111 and 54. </note> is well known from Geniza documents published by Jacob Mann.
-                        ```
+                        
+```
 However, if notes are numbered in sequence and their numbering can be reconstructed
                            automatically by processing software, it may well be considered unnecessary to record
                            the note numbers.
@@ -1196,7 +1285,8 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
                      |**Contained by**||**header: **[biblFull](#biblFull)[fileDesc](#fileDesc)|**May contain**||**core: **[note](#note)[relatedItem](#relatedItem)|**Note**||
 Information of different kinds should not be grouped together into the same note.
 |**Example**||```
-<notesStmt> <note>Historical commentary provided by Mark Cohen</note> <note>OCR scanning done at University of Toronto</note></notesStmt>```
+<notesStmt> <note>Historical commentary provided by Mark Cohen</note> <note>OCR scanning done at University of Toronto</note></notesStmt>
+```
 ### num
  
 |**num**(number) contains a number, written in any form. 
@@ -1225,7 +1315,8 @@ Detailed analyses of quantities and units of measure in historical documents may
                               twenty-one</num> on my <num type="ordinal" value="21">
                               twenty-first</num> birthday</p><p>Light travels at <num value="3E10">
                               3×10<hi rend="sup">
-                              10</hi> </num> cm per second.</p>```
+                              10</hi> </num> cm per second.</p>
+```
 ### orig
  
 |**orig**(original form) contains a reading which is marked as following the original, rather
@@ -1239,11 +1330,13 @@ If all that is desired is to call attention to the original version in the copy 
                            [orig](#orig) may be used alone:
                         
 ```
-<l>But this will be a <orig>meere</orig> confusion</l><l>And hardly shall we all be <orig>vnderstoode</orig></l>```|**Example**||
+<l>But this will be a <orig>meere</orig> confusion</l><l>And hardly shall we all be <orig>vnderstoode</orig></l>
+```|**Example**||
 More usually, an [orig](#orig) will be combined with a regularized form within a [choice](#choice) element:
                         
 ```
-<l>But this will be a <choice>  <orig>meere</orig>  <reg>mere</reg> </choice> confusion</l><l>And hardly shall we all be <choice>  <orig>vnderstoode</orig>  <reg>understood</reg> </choice></l>```
+<l>But this will be a <choice>  <orig>meere</orig>  <reg>mere</reg> </choice> confusion</l><l>And hardly shall we all be <choice>  <orig>vnderstoode</orig>  <reg>understood</reg> </choice></l>
+```
 ### p
  
 |**p**(paragraph) marks paragraphs in prose. 
@@ -1252,7 +1345,8 @@ More usually, an [orig](#orig) will be combined with a regularized form within a
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.declaring](#att.declaring) (@decls) [att.fragmentable](#att.fragmentable) (@part) [att.written](#att.written) (@hand) 
                      |**Contained by**||**core: **[item](#item)[note](#note)[q](#q)[quote](#quote)**header: **[abstract](#abstract)[availability](#availability)[change](#change)[editionStmt](#editionStmt)[editorialDecl](#editorialDecl)[encodingDesc](#encodingDesc)[hyphenation](#hyphenation)[langUsage](#langUsage)[licence](#licence)[prefixDef](#prefixDef)[projectDesc](#projectDesc)[publicationStmt](#publicationStmt)[seriesStmt](#seriesStmt)[sourceDesc](#sourceDesc)**textstructure: **[back](#back)[body](#body)[div](#div)[epigraph](#epigraph)[front](#front)|**May contain**||**analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
-<p>Hallgerd was outside. <q>There is blood on your axe,</q> she said. <q>What have you   done?</q></p><p> <q>I have now arranged that you can be married a second time,</q> replied Thjostolf.</p><p> <q>Then you must mean that Thorvald is dead,</q> she said.</p><p> <q>Yes,</q> said Thjostolf. <q>And now you must think up some plan for me.</q></p>```
+<p>Hallgerd was outside. <q>There is blood on your axe,</q> she said. <q>What have you   done?</q></p><p> <q>I have now arranged that you can be married a second time,</q> replied Thjostolf.</p><p> <q>Then you must mean that Thorvald is dead,</q> she said.</p><p> <q>Yes,</q> said Thjostolf. <q>And now you must think up some plan for me.</q></p>
+```
 ### pb
  
 |**pb**(page beginning) marks the beginning of a new page in a paginated document. 
@@ -1273,13 +1367,15 @@ The type attribute may be used to characterize the page break in any respect. Th
 |**Example**||
 Page numbers may vary in different editions of a text.
 ```
-<p> ... <pb n="145" ed="ed2"/><!-- Page 145 in edition "ed2" starts here --> ... <pb n="283" ed="ed1"/><!-- Page 283 in edition "ed1" starts here--> ... </p>```|**Example**||
+<p> ... <pb n="145" ed="ed2"/><!-- Page 145 in edition "ed2" starts here --> ... <pb n="283" ed="ed1"/><!-- Page 283 in edition "ed1" starts here--> ... </p>
+```|**Example**||
 A page break may be associated with a facsimile image of the page it introduces by
                            means of the facs attribute
                         
 ```
 <body> <pb n="1" facs="page1.png"/><!-- page1.png contains an image of the page;
-                              the text it contains is encoded here --> <p><!-- ... --> </p> <pb n="2" facs="page2.png"/><!-- similarly, for page 2 --> <p><!-- ... --> </p></body>```
+                              the text it contains is encoded here --> <p><!-- ... --> </p> <pb n="2" facs="page2.png"/><!-- similarly, for page 2 --> <p><!-- ... --> </p></body>
+```
 ### pc
  
 |**pc**(punctuation character) contains a character or string of characters regarded as constituting
@@ -1302,7 +1398,8 @@ A page break may be associated with a facsimile image of the page it introduces 
  
 |**Contained by**||**core: **[author](#author)[bibl](#bibl)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[change](#change)[distributor](#distributor)[edition](#edition)[licence](#licence)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)|**May contain**||**core: **[choice](#choice)[corr](#corr)[orig](#orig)[reg](#reg)[sic](#sic)character data|**Example**||```
 <phr> <w>do</w> <w>you</w> <w>understand</w> <pc type="interrogative">
-                              ?</pc></phr>```|**Example**||
+                              ?</pc></phr>
+```|**Example**||
 Example encoding of the German sentence Wir fahren in den Urlaub., encoded with attributes from [att.linguistic](#att.linguistic) discussed in section [ID AILALW in TEI Guidelines].
                         
 ```
@@ -1312,7 +1409,8 @@ Example encoding of the German sentence Wir fahren in den Urlaub., encoded with 
                               in</w> <w pos="ART" msd="Def.Masc.Akk.Sg.">
                               den</w> <w pos="NN" msd="Masc.Akk.Sg.">
                               Urlaub</w> <pc pos="$." msd="--" join="left">
-                              .</pc></s>```
+                              .</pc></s>
+```
 ### prefixDef
  
 |**prefixDef**(prefix definition) defines a prefixing scheme used in data.pointer values, showing how abbreviated URIs using the scheme may be expanded into full URIs.
@@ -1337,7 +1435,8 @@ The abbreviated pointer may be dereferenced to produce either an absolute or a r
                         
 |**Example**||```
 <prefixDef ident="ref" matchPattern="([a-z]+)" replacementPattern="../../references/references.xml#$1">
-                               <p> In the context of this project, private URIs with   the prefix "ref" point to <gi>div</gi> elements in   the project's global references.xml file. </p></prefixDef>```
+                               <p> In the context of this project, private URIs with   the prefix "ref" point to <gi>div</gi> elements in   the project's global references.xml file. </p></prefixDef>
+```
 ### profileDesc
  
 |**profileDesc**(text-profile description) provides a detailed description of non-bibliographic aspects
@@ -1355,7 +1454,8 @@ Although the content model permits it, it is rarely meaningful to supply multipl
 <profileDesc> <langUsage>  <language ident="fr">
                               French</language> </langUsage> <textDesc n="novel">
                                 <channel mode="w">
-                              print; part issues</channel>  <constitution type="single"/>  <derivation type="original"/>  <domain type="art"/>  <factuality type="fiction"/>  <interaction type="none"/>  <preparedness type="prepared"/>  <purpose type="entertain" degree="high"/>  <purpose type="inform" degree="medium"/> </textDesc> <settingDesc>  <setting>   <name>Paris, France</name>   <time>Late 19th century</time>  </setting> </settingDesc></profileDesc>```
+                              print; part issues</channel>  <constitution type="single"/>  <derivation type="original"/>  <domain type="art"/>  <factuality type="fiction"/>  <interaction type="none"/>  <preparedness type="prepared"/>  <purpose type="entertain" degree="high"/>  <purpose type="inform" degree="medium"/> </textDesc> <settingDesc>  <setting>   <name>Paris, France</name>   <time>Late 19th century</time>  </setting> </settingDesc></profileDesc>
+```
 ### projectDesc
  
 |**projectDesc**(project description) describes in detail the aim or purpose for which an electronic
@@ -1366,7 +1466,8 @@ Although the content model permits it, it is rarely meaningful to supply multipl
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) 
                      |**Contained by**||**header: **[encodingDesc](#encodingDesc)|**May contain**||**core: **[p](#p)|**Example**||```
-<projectDesc> <p>Texts collected for use in the Claremont Shakespeare Clinic, June 1990</p></projectDesc>```
+<projectDesc> <p>Texts collected for use in the Claremont Shakespeare Clinic, June 1990</p></projectDesc>
+```
 ### publicationStmt
  
 |**publicationStmt**(publication statement) groups information concerning the publication or distribution
@@ -1383,11 +1484,14 @@ Where a publication statement contains several members of the model.publicationS
                            distributor, or authority concerned, and preferably in that order.
                         
 |**Example**||```
-<publicationStmt> <publisher>C. Muquardt </publisher> <pubPlace>Bruxelles &amp; Leipzig</pubPlace> <date when="1846"/></publicationStmt>```|**Example**||```
+<publicationStmt> <publisher>C. Muquardt </publisher> <pubPlace>Bruxelles &amp; Leipzig</pubPlace> <date when="1846"/></publicationStmt>
+```|**Example**||```
 <publicationStmt> <publisher>Chadwyck Healey</publisher> <pubPlace>Cambridge</pubPlace> <availability>  <p>Available under licence only</p> </availability> <date when="1992">
-                              1992</date></publicationStmt>```|**Example**||```
+                              1992</date></publicationStmt>
+```|**Example**||```
 <publicationStmt> <publisher>Zea Books</publisher> <pubPlace>Lincoln, NE</pubPlace> <date>2017</date> <availability>  <p>This is an open access work licensed under a Creative Commons Attribution 4.0 International
-                           license.</p> </availability> <ptr target="http://digitalcommons.unl.edu/zeabook/55"/></publicationStmt>```
+                           license.</p> </availability> <ptr target="http://digitalcommons.unl.edu/zeabook/55"/></publicationStmt>
+```
 ### publisher
  
 |**publisher**provides the name of the organization responsible for the publication or distribution
@@ -1401,7 +1505,8 @@ Use the full form of the name by which a company is usually referred to, rather 
                            any abbreviation of it which may appear on a title page
                         
 |**Example**||```
-<imprint> <pubPlace>Oxford</pubPlace> <publisher>Clarendon Press</publisher> <date>1987</date></imprint>```
+<imprint> <pubPlace>Oxford</pubPlace> <publisher>Clarendon Press</publisher> <date>1987</date></imprint>
+```
 ### pubPlace
  
 |**pubPlace**(publication place) contains the name of the place where a bibliographic item was
@@ -1411,7 +1516,8 @@ Use the full form of the name by which a company is usually referred to, rather 
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.naming](#att.naming) (@role, @nymRef)  ([att.canonical](#att.canonical) (@key, @ref)) 
                      |**Contained by**||**core: **[bibl](#bibl)**header: **[publicationStmt](#publicationStmt)|**May contain**||**analysis: **[pc](#pc)**core: **[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[lb](#lb)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
-<publicationStmt> <publisher>Oxford University Press</publisher> <pubPlace>Oxford</pubPlace> <date>1989</date></publicationStmt>```
+<publicationStmt> <publisher>Oxford University Press</publisher> <pubPlace>Oxford</pubPlace> <date>1989</date></publicationStmt>
+```
 ### q
  
 |**q**(quoted) contains material which is distinguished from the surrounding text using
@@ -1434,7 +1540,8 @@ May be used to indicate that a passage is distinguished from the surrounding tex
                            for reasons concerning which no claim is made. When used in this manner, [q](#q) may be thought of as syntactic sugar for [hi](#hi) with a value of rend that indicates the use of such mechanisms as quotation marks.
                         
 |**Example**||```
-It is spelled <q>Tübingen</q> — to enter the letter <q>u</q> with an umlaut hold down the <q>option</q> key and press <q>0 0 f c</q>```
+It is spelled <q>Tübingen</q> — to enter the letter <q>u</q> with an umlaut hold down the <q>option</q> key and press <q>0 0 f c</q>
+```
 ### quote
  
 |**quote**(quotation) contains a phrase or passage attributed by the narrator or author to some
@@ -1448,7 +1555,8 @@ If a bibliographic citation is supplied for the source of a quotation, the two m
                            be grouped using the cit element.
                         
 |**Example**||```
-Lexicography has shown little sign of being affected by the work of followers of J.R. Firth, probably best summarized in his slogan, <quote>You shall know a word by the company it keeps</quote><ref>(Firth, 1957)</ref>```
+Lexicography has shown little sign of being affected by the work of followers of J.R. Firth, probably best summarized in his slogan, <quote>You shall know a word by the company it keeps</quote><ref>(Firth, 1957)</ref>
+```
 ### ref
  
 |**ref**(reference) defines a reference to another location, possibly modified by additional
@@ -1462,10 +1570,12 @@ The target and cRef attributes are mutually exclusive.
                         
 |**Example**||```
 See especially <ref target="http://www.natcorp.ox.ac.uk/Texts/A02.xml#s2">
-                              the second sentence</ref>```|**Example**||```
+                              the second sentence</ref>
+```|**Example**||```
 See also <ref target="#locution">
                               s.v. <term>locution</term></ref>.
-                        ```
+                        
+```
 ### reg
  
 |**reg**(regularization) contains a reading which has been regularized or normalized in some
@@ -1479,13 +1589,15 @@ If all that is desired is to call attention to the fact that the copy text has b
                            regularized, [reg](#reg) may be used alone:
                         
 ```
-<q>Please <reg>knock</reg> if an <reg>answer</reg> is <reg>required</reg></q>```|**Example**||
+<q>Please <reg>knock</reg> if an <reg>answer</reg> is <reg>required</reg></q>
+```|**Example**||
 It is also possible to identify the individual responsible for the regularization,
                            and, using the [choice](#choice) and [orig](#orig) elements, to provide both the original and regularized readings:
                         
 ```
 <q>Please <choice>  <reg resp="#LB">
-                              knock</reg>  <orig>cnk</orig> </choice> if an <choice>  <reg>answer</reg>  <orig>nsr</orig> </choice> is <choice>  <reg>required</reg>  <orig>reqd</orig> </choice></q>```
+                              knock</reg>  <orig>cnk</orig> </choice> if an <choice>  <reg>answer</reg>  <orig>nsr</orig> </choice> is <choice>  <reg>required</reg>  <orig>reqd</orig> </choice></q>
+```
 ### relatedItem
  
 |**relatedItem**contains or references some other bibliographic item which is related to the present
@@ -1510,7 +1622,8 @@ If the target attribute is used to reference the related bibliographic item, the
                               The gentlemen of Venice</title>  <imprint>   <pubPlace>New York</pubPlace>   <publisher>Readex Microprint</publisher>   <date>1953</date>  </imprint>  <extent>1 microprint card, 23 x 15 cm.</extent> </monogr> <series>  <title>Three centuries of drama: English, 1642–1700</title> </series> <relatedItem type="otherForm">
                                 <biblStruct>   <monogr>    <author>Shirley, James</author>    <title type="main">
                               The gentlemen of Venice</title>    <title type="sub">
-                              a tragi-comedie presented at the private house in Salisbury         Court by Her Majesties servants</title>    <imprint>     <pubPlace>London</pubPlace>     <publisher>H. Moseley</publisher>     <date>1655</date>    </imprint>    <extent>78 p.</extent>   </monogr>  </biblStruct> </relatedItem></biblStruct>```
+                              a tragi-comedie presented at the private house in Salisbury         Court by Her Majesties servants</title>    <imprint>     <pubPlace>London</pubPlace>     <publisher>H. Moseley</publisher>     <date>1655</date>    </imprint>    <extent>78 p.</extent>   </monogr>  </biblStruct> </relatedItem></biblStruct>
+```
 ### rendition
  
 |**rendition**supplies information about the rendition or appearance of one or more elements in
@@ -1529,12 +1642,14 @@ If the target attribute is used to reference the related bibliographic item, the
                                  
 |**Status**||Optional|**Datatype**||teidata.text|```
 <rendition scheme="css" selector="text, front, back, body, div, p, ab">
-                                                 display: block;</rendition>```
+                                                 display: block;</rendition>
+```
                                           [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html)]
                                           
                                        ||```
 <rendition scheme="css" selector="*[rend*=italic]">
-                                                 font-style: italic;</rendition>```
+                                                 font-style: italic;</rendition>
+```
                                           [[TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html)]
                                           
                                        ||**Note**||
@@ -1553,7 +1668,8 @@ While rendition is used to point from an element in the transcribed source to a 
                               text-align: center;</rendition> <rendition xml:id="r-small" scheme="css">
                               font-size: small;</rendition> <rendition xml:id="r-large" scheme="css">
                               font-size: large;</rendition> <rendition xml:id="initcaps"  scope="first-letter" scheme="css">
-                              font-size: xx-large</rendition></tagsDecl>```
+                              font-size: xx-large</rendition></tagsDecl>
+```
 ### resp
  
 |**resp**(responsibility) contains a phrase describing the nature of a person's intellectual
@@ -1570,7 +1686,8 @@ The attribute ref, inherited from the class [att.canonical](#att.canonical) may 
                         
 |**Example**||```
 <respStmt> <resp ref="http://id.loc.gov/vocabulary/relators/com.html">
-                              compiler</resp> <name>Edward Child</name></respStmt>```
+                              compiler</resp> <name>Edward Child</name></respStmt>
+```
 ### respStmt
  
 |**respStmt**(statement of responsibility) supplies a statement of responsibility for the intellectual
@@ -1583,8 +1700,10 @@ The attribute ref, inherited from the class [att.canonical](#att.canonical) may 
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.canonical](#att.canonical) (@key, @ref) 
                      |**Contained by**||**core: **[bibl](#bibl)**header: **[editionStmt](#editionStmt)[seriesStmt](#seriesStmt)[titleStmt](#titleStmt)|**May contain**||**core: **[name](#name)[note](#note)[resp](#resp)|**Example**||```
-<respStmt> <resp>transcribed from original ms</resp> <persName>Claus Huitfeldt</persName></respStmt>```|**Example**||```
-<respStmt> <resp>converted to XML encoding</resp> <name>Alan Morrison</name></respStmt>```
+<respStmt> <resp>transcribed from original ms</resp> <persName>Claus Huitfeldt</persName></respStmt>
+```|**Example**||```
+<respStmt> <resp>converted to XML encoding</resp> <name>Alan Morrison</name></respStmt>
+```
 ### revisionDesc
  
 |**revisionDesc**(revision description) summarizes the revision history for a file. 
@@ -1600,7 +1719,8 @@ If present on this element, the status attribute should indicate the current sta
 |**Example**||```
 <revisionDesc status="embargoed">
                                <change when="1991-11-11" who="#LB">
-                               deleted chapter 10 </change></revisionDesc>```
+                               deleted chapter 10 </change></revisionDesc>
+```
 ### seriesStmt
  
 |**seriesStmt**(series statement) groups information about the series, if any, to which a publication
@@ -1612,7 +1732,8 @@ If present on this element, the status attribute should indicate the current sta
                      |**Contained by**||**header: **[biblFull](#biblFull)[fileDesc](#fileDesc)|**May contain**||**core: **[editor](#editor)[p](#p)[respStmt](#respStmt)[title](#title)**header: **[idno](#idno)|**Example**||```
 <seriesStmt> <title>Machine-Readable Texts for the Study of Indian Literature</title> <respStmt>  <resp>ed. by</resp>  <name>Jan Gonda</name> </respStmt> <biblScope unit="volume">
                               1.2</biblScope> <idno type="ISSN">
-                              0 345 6789</idno></seriesStmt>```
+                              0 345 6789</idno></seriesStmt>
+```
 ### sic
  
 |**sic**(Latin for thus or so) contains text reproduced although apparently incorrect or inaccurate.
@@ -1623,20 +1744,24 @@ If present on this element, the status attribute should indicate the current sta
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) 
                      |**Contained by**||**analysis: **[pc](#pc)**core: **[author](#author)[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[change](#change)[distributor](#distributor)[edition](#edition)[licence](#licence)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)|**May contain**||**analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
 for his nose was as sharp as a pen, and <sic>a Table</sic> of green fields.
-                        ```|**Example**||
+                        
+```|**Example**||
 If all that is desired is to call attention to the apparent problem in the copy text,
                            [sic](#sic) may be used alone:
                         
 ```
 I don't know, Juan. It's so far in the past now — how <sic>we can</sic> prove or disprove anyone's theories?
-                        ```|**Example**||
+                        
+```|**Example**||
 It is also possible, using the [choice](#choice) and [corr](#corr) elements, to provide a corrected reading:
                         
 ```
 I don't know, Juan. It's so far in the past now — how <choice> <sic>we can</sic> <corr>can we</corr></choice> prove or disprove anyone's theories?
-                        ```|**Example**||```
+                        
+```|**Example**||```
 for his nose was as sharp as a pen, and <choice> <sic>a Table</sic> <corr>a' babbld</corr></choice> of green fields.
-                        ```
+                        
+```
 ### sourceDesc
  
 |**sourceDesc**(source description) describes the source from which an electronic text was derived
@@ -1648,8 +1773,10 @@ for his nose was as sharp as a pen, and <choice> <sic>a Table</sic> <corr>a' b
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.declarable](#att.declarable) (@default) 
                      |**Contained by**||**header: **[biblFull](#biblFull)[fileDesc](#fileDesc)|**May contain**||**core: **[bibl](#bibl)[list](#list)[listBibl](#listBibl)[p](#p)**header: **[biblFull](#biblFull)|**Example**||```
 <sourceDesc> <bibl>  <title level="a">
-                              The Interesting story of the Children in the Wood</title>. In <author>Victor E Neuberg</author>, <title>The Penny Histories</title>. <publisher>OUP</publisher>  <date>1968</date>. </bibl></sourceDesc>```|**Example**||```
-<sourceDesc> <p>Born digital: no previous source exists.</p></sourceDesc>```
+                              The Interesting story of the Children in the Wood</title>. In <author>Victor E Neuberg</author>, <title>The Penny Histories</title>. <publisher>OUP</publisher>  <date>1968</date>. </bibl></sourceDesc>
+```|**Example**||```
+<sourceDesc> <p>Born digital: no previous source exists.</p></sourceDesc>
+```
 ### TEI
  
 |**TEI**(TEI document) contains a single TEI-conformant document, combining a single TEI header
@@ -1675,8 +1802,10 @@ Major editions of the Guidelines have long been informally referred to by a name
 This element is required. It is customary to specify the TEI namespace http://www.tei-c.org/ns/1.0 on it, using the xmlns attribute.
                         
 |**Example**||```
-<TEI version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0"> <teiHeader>  <fileDesc>   <titleStmt>    <title>The shortest TEI Document Imaginable</title>   </titleStmt>   <publicationStmt>    <p>First published as part of TEI P2, this is the P5         version using a name space.</p>   </publicationStmt>   <sourceDesc>    <p>No source: this is an original work.</p>   </sourceDesc>  </fileDesc> </teiHeader> <text>  <body>   <p>This is about the shortest TEI document imaginable.</p>  </body> </text></TEI>```|**Example**||```
-<TEI version="2.9.1" xmlns="http://www.tei-c.org/ns/1.0"> <teiHeader>  <fileDesc>   <titleStmt>    <title>A TEI Document containing four page images </title>   </titleStmt>   <publicationStmt>    <p>Unpublished demonstration file.</p>   </publicationStmt>   <sourceDesc>    <p>No source: this is an original work.</p>   </sourceDesc>  </fileDesc> </teiHeader> <facsimile>  <graphic url="page1.png"/>  <graphic url="page2.png"/>  <graphic url="page3.png"/>  <graphic url="page4.png"/> </facsimile></TEI>```
+<TEI version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0"> <teiHeader>  <fileDesc>   <titleStmt>    <title>The shortest TEI Document Imaginable</title>   </titleStmt>   <publicationStmt>    <p>First published as part of TEI P2, this is the P5         version using a name space.</p>   </publicationStmt>   <sourceDesc>    <p>No source: this is an original work.</p>   </sourceDesc>  </fileDesc> </teiHeader> <text>  <body>   <p>This is about the shortest TEI document imaginable.</p>  </body> </text></TEI>
+```|**Example**||```
+<TEI version="2.9.1" xmlns="http://www.tei-c.org/ns/1.0"> <teiHeader>  <fileDesc>   <titleStmt>    <title>A TEI Document containing four page images </title>   </titleStmt>   <publicationStmt>    <p>Unpublished demonstration file.</p>   </publicationStmt>   <sourceDesc>    <p>No source: this is an original work.</p>   </sourceDesc>  </fileDesc> </teiHeader> <facsimile>  <graphic url="page1.png"/>  <graphic url="page2.png"/>  <graphic url="page3.png"/>  <graphic url="page4.png"/> </facsimile></TEI>
+```
 ### teiHeader
  
 |**teiHeader**(TEI header) supplies descriptive and declarative metadata associated with a digital
@@ -1695,7 +1824,8 @@ One of the few elements unconditionally required in any TEI document.
                                  <cRefPattern matchPattern="(\S+) ([^.]+)\.(.*)"    replacementPattern="#xpath(//div1[@n='$1']/div2/[@n='$2']//lb[@n='$3'])">
                                   <p>A reference is created by assembling the following, in the reverse order as that         listed here: <list>      <item>the <att>n</att> value of the preceding <gi>lb</gi>      </item>      <item>a period</item>      <item>the <att>n</att> value of the ancestor <gi>div2</gi>      </item>      <item>a space</item>      <item>the <att>n</att> value of the parent <gi>div1</gi>      </item>     </list>    </p>   </cRefPattern>  </refsDecl> </encodingDesc> <revisionDesc>  <list>   <item>    <date when="1989-04-12">
                               12 Apr 89</date> Last checked by CAC</item>   <item>    <date when="1989-03-01">
-                              1 Mar 89</date> LB made new file</item>  </list> </revisionDesc></teiHeader>```
+                              1 Mar 89</date> LB made new file</item>  </list> </revisionDesc></teiHeader>
+```
 ### term
  
 |**term**contains a single-word, multi-word, or symbolic designation which is regarded as a
@@ -1722,18 +1852,22 @@ As with other members of the [att.canonical](#att.canonical) class, instances of
                         
 |**Example**||```
 A computational device that infers structure from grammatical strings of words is known as a <term>parser</term>, and much of the history of NLP over the last 20 years has been occupied with the design of parsers.
-                        ```|**Example**||```
+                        
+```|**Example**||```
 We may define <term xml:id="TDPV1" rend="sc">
                               discoursal point of view</term> as <gloss target="#TDPV1">
                               the relationship, expressed through discourse structure, between the implied author or some other addresser,
-                           and the fiction.</gloss>```|**Example**||```
+                           and the fiction.</gloss>
+```|**Example**||```
 We may define <term ref="#TDPV2" rend="sc">
                               discoursal point of view</term> as <gloss xml:id="TDPV2">
                               the relationship, expressed through discourse structure, between the implied author or some other addresser,
-                           and the fiction.</gloss>```|**Example**||```
+                           and the fiction.</gloss>
+```|**Example**||```
 We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
                               discoursal point of view</term> below. 
-                        ```
+                        
+```
 ### text
  
 |**text**contains a single text of any kind, whether unitary or composite, for example a poem
@@ -1748,12 +1882,14 @@ This element should not be used to represent a text which is inserted at an arbi
                            the floatingText is provided for this purpose.
                         
 |**Example**||```
-<text> <front>  <docTitle>   <titlePart>Autumn Haze</titlePart>  </docTitle> </front> <body>  <l>Is it a dragonfly or a maple leaf</l>  <l>That settles softly down upon the water?</l> </body></text>```|**Example**||
+<text> <front>  <docTitle>   <titlePart>Autumn Haze</titlePart>  </docTitle> </front> <body>  <l>Is it a dragonfly or a maple leaf</l>  <l>That settles softly down upon the water?</l> </body></text>
+```|**Example**||
 The body of a text may be replaced by a group of nested texts, as in the following
                            schematic:
                         
 ```
-<text> <front><!-- front matter for the whole group --> </front> <group>  <text><!-- first text -->  </text>  <text><!-- second text -->  </text> </group></text>```
+<text> <front><!-- front matter for the whole group --> </front> <group>  <text><!-- first text -->  </text>  <text><!-- second text -->  </text> </group></text>
+```
 ### textClass
  
 |**textClass**(text classification) groups information which describes the nature or topic of a
@@ -1766,7 +1902,8 @@ The body of a text may be replaced by a group of nested texts, as in the followi
 <taxonomy> <category xml:id="acprose">
                                 <catDesc>Academic prose</catDesc> </category><!-- other categories here --></taxonomy><!-- ... --><textClass> <catRef target="#acprose"/> <classCode scheme="http://www.udcc.org">
                               001.9</classCode> <keywords scheme="http://authorities.loc.gov">
-                                <list>   <item>End of the world</item>   <item>History - philosophy</item>  </list> </keywords></textClass>```
+                                <list>   <item>End of the world</item>   <item>History - philosophy</item>  </list> </keywords></textClass>
+```
 ### title
  
 |**title**contains a title for any kind of work. 
@@ -1813,12 +1950,15 @@ The attributes key and ref, inherited from the class [att.canonical](#att.canoni
                            by pointing to an XML element somewhere containing the canonical form of the title.
                         
 |**Example**||```
-<title>Information Technology and the Research Process: Proceedings of a conference held at Cranfield Institute of Technology, UK, 18–21 July 1989</title>```|**Example**||```
-<title>Hardy's Tess of the D'Urbervilles: a machine readable edition</title>```|**Example**||```
+<title>Information Technology and the Research Process: Proceedings of a conference held at Cranfield Institute of Technology, UK, 18–21 July 1989</title>
+```|**Example**||```
+<title>Hardy's Tess of the D'Urbervilles: a machine readable edition</title>
+```|**Example**||```
 <title type="full">
                                <title type="main">
                               Synthèse</title> <title type="sub">
-                              an international journal for   epistemology, methodology and history of   science</title></title>```
+                              an international journal for   epistemology, methodology and history of   science</title></title>
+```
 ### titlePage
  
 |**titlePage**(title page) contains the title page of a text, appearing within the front or back
@@ -1840,7 +1980,8 @@ This attribute allows the same element to be used for volume title pages, series
 <titlePage> <docTitle>  <titlePart type="main">
                               THOMAS OF Reading.</titlePart>  <titlePart type="alt">
                               OR, The sixe worthy yeomen of the West.</titlePart> </docTitle> <docEdition>Now the fourth time corrected and enlarged</docEdition> <byline>By T.D.</byline> <figure>  <head>TP</head>  <p>Thou shalt labor till thou returne to duste</p>  <figDesc>Printers Ornament used by TP</figDesc> </figure> <docImprint>Printed at <name type="place">
-                              London</name> for <name>T.P.</name>  <date>1612.</date> </docImprint></titlePage>```
+                              London</name> for <name>T.P.</name>  <date>1612.</date> </docImprint></titlePage>
+```
 ### titlePart
  
 |**titlePart**contains a subsection or division of the title of a work, as indicated on a title
@@ -1857,7 +1998,8 @@ This attribute allows the same element to be used for volume title pages, series
 |**Contained by**||**textstructure: **[back](#back)[docTitle](#docTitle)[front](#front)[titlePage](#titlePage)|**May contain**||**analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
 <docTitle> <titlePart type="main">
                               THE FORTUNES   AND MISFORTUNES Of the FAMOUS   Moll Flanders, &amp;c. </titlePart> <titlePart type="desc">
-                              Who was BORN in NEWGATE,   And during a Life of continu'd Variety for   Threescore Years, besides her Childhood, was   Twelve Year a <hi>Whore</hi>, five times a <hi>Wife</hi> (wherof   once to her own Brother) Twelve Year a <hi>Thief,</hi>   Eight Year a Transported <hi>Felon</hi> in <hi>Virginia</hi>,   at last grew <hi>Rich</hi>, liv'd <hi>Honest</hi>, and died a <hi>Penitent</hi>.</titlePart></docTitle>```
+                              Who was BORN in NEWGATE,   And during a Life of continu'd Variety for   Threescore Years, besides her Childhood, was   Twelve Year a <hi>Whore</hi>, five times a <hi>Wife</hi> (wherof   once to her own Brother) Twelve Year a <hi>Thief,</hi>   Eight Year a Transported <hi>Felon</hi> in <hi>Virginia</hi>,   at last grew <hi>Rich</hi>, liv'd <hi>Honest</hi>, and died a <hi>Penitent</hi>.</titlePart></docTitle>
+```
 ### titleStmt
  
 |**titleStmt**(title statement) groups information about the title of a work and those responsible
@@ -1867,7 +2009,8 @@ This attribute allows the same element to be used for volume title pages, series
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) 
                      |**Contained by**||**header: **[biblFull](#biblFull)[fileDesc](#fileDesc)|**May contain**||**core: **[author](#author)[editor](#editor)[respStmt](#respStmt)[title](#title)|**Example**||```
-<titleStmt> <title>Capgrave's Life of St. John Norbert: a machine-readable transcription</title> <respStmt>  <resp>compiled by</resp>  <name>P.J. Lucas</name> </respStmt></titleStmt>```
+<titleStmt> <title>Capgrave's Life of St. John Norbert: a machine-readable transcription</title> <respStmt>  <resp>compiled by</resp>  <name>P.J. Lucas</name> </respStmt></titleStmt>
+```
 ### trailer
  
 |**trailer**contains a closing title or footer appearing at the end of a division of a text. 
@@ -1876,8 +2019,10 @@ This attribute allows the same element to be used for volume title pages, series
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) [att.typed](#att.typed) (@type, @subtype) 
                      |**Contained by**||**core: **[lg](#lg)[list](#list)**textstructure: **[back](#back)[body](#body)[div](#div)[front](#front)|**May contain**||**analysis: **[pc](#pc)**core: **[bibl](#bibl)[choice](#choice)[corr](#corr)[date](#date)[emph](#emph)[foreign](#foreign)[gap](#gap)[hi](#hi)[l](#l)[lb](#lb)[lg](#lg)[list](#list)[listBibl](#listBibl)[milestone](#milestone)[name](#name)[note](#note)[num](#num)[orig](#orig)[pb](#pb)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[sic](#sic)[term](#term)[title](#title)**header: **[biblFull](#biblFull)[idno](#idno)**tagdocs: **[att](#att)[code](#code)[gi](#gi)[val](#val)character data|**Example**||```
-<trailer>Explicit pars tertia</trailer>```|**Example**||```
-<trailer> <l>In stead of FINIS this advice <hi>I</hi> send,</l> <l>Let Rogues and Thieves beware of <lb/>  <hi>Hamans</hi> END.</l></trailer>```
+<trailer>Explicit pars tertia</trailer>
+```|**Example**||```
+<trailer> <l>In stead of FINIS this advice <hi>I</hi> send,</l> <l>Let Rogues and Thieves beware of <lb/>  <hi>Hamans</hi> END.</l></trailer>
+```
 From EEBO A87070
  
 ### val
@@ -1888,7 +2033,8 @@ From EEBO A87070
                      |
 |**Attributes**||Attributes [att.global](#att.global) (@xml:id, @n, @xml:lang, @xml:base, @xml:space)  ([att.global.rendition](#att.global.rendition) (@rend, @style, @rendition))  ([att.global.analytic](#att.global.analytic) (@ana))  ([att.global.responsibility](#att.global.responsibility) (@cert, @resp))  ([att.global.source](#att.global.source) (@source)) 
                      |**Contained by**||**core: **[author](#author)[corr](#corr)[date](#date)[editor](#editor)[emph](#emph)[foreign](#foreign)[head](#head)[hi](#hi)[item](#item)[l](#l)[name](#name)[note](#note)[num](#num)[orig](#orig)[p](#p)[pubPlace](#pubPlace)[publisher](#publisher)[q](#q)[quote](#quote)[ref](#ref)[reg](#reg)[resp](#resp)[sic](#sic)[term](#term)[title](#title)**header: **[authority](#authority)[change](#change)[creation](#creation)[distributor](#distributor)[edition](#edition)[language](#language)[licence](#licence)[rendition](#rendition)**textstructure: **[byline](#byline)[closer](#closer)[dateline](#dateline)[docAuthor](#docAuthor)[docDate](#docDate)[titlePart](#titlePart)[trailer](#trailer)|**May contain**||Character data only|**Example**||```
-<val>unknown</val>```
+<val>unknown</val>
+```
 ## Schema wea: Attribute classes### att.ascribed
  
 |**att.ascribed** provides attributes for elements representing speech or action that can be ascribed
@@ -1910,7 +2056,8 @@ In the following example from Hamlet, speeches (sp) in the body of the play are 
                                                  <speaker>Bernardo</speaker> <l n="1">
                                                 Who's there?</l></sp><sp who="#Francisco">
                                                  <speaker>Francisco</speaker> <l n="2">
-                                                Nay, answer me: stand, and unfold yourself.</l></sp>```||**Note**||
+                                                Nay, answer me: stand, and unfold yourself.</l></sp>
+```||**Note**||
 For transcribed speech, this will typically identify a participant or participant
                                              group; in other contexts, it will point to any identified person element.
                                           
@@ -1942,7 +2089,8 @@ In the following example from Mary Pix's The False Friend, speeches (sp) in the 
                                                 My love!</l></sp><sp who="#lov" toWhom="#emil">
                                                  <speaker>Lov.</speaker> <l n="2">
                                                 I have no Witness of my Noble Birth</l> <stage who="emil" toWhom="#serv">
-                                                Pointing to her Woman.</stage> <l>But that poor helpless wretch——</l></sp>```||**Note**||
+                                                Pointing to her Woman.</stage> <l>But that poor helpless wretch——</l></sp>
+```||**Note**||
 To indicate the recipient of written correspondence, use the elements used in section
                                              [2.4.6. Correspondence Description](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD44CD), rather than a toWhom attribute.
                                           
@@ -1967,7 +2115,8 @@ To indicate the recipient of written correspondence, use the elements used in se
 In the following lines from the Dream of the Rood, linebreaks occur in the middle of the words lāðost and reord-berendum.
                                           
 ```
-<ab> ...eƿesa tome iu icƿæs ȝeƿorden ƿita heardoſt . leodum la<lb break="no"/> ðost ærþan ichim lifes ƿeȝ rihtne ȝerymde reord be<lb break="no"/> rendum hƿæt me þaȝeƿeorðode ƿuldres ealdor ofer...</ab>```|
+<ab> ...eƿesa tome iu icƿæs ȝeƿorden ƿita heardoſt . leodum la<lb break="no"/> ðost ærþan ichim lifes ƿeȝ rihtne ȝerymde reord be<lb break="no"/> rendum hƿæt me þaȝeƿeorðode ƿuldres ealdor ofer...</ab>
+```|
  
  
 ### att.canonical
@@ -1982,9 +2131,11 @@ In the following lines from the Dream of the Rood, linebreaks occur in the middl
                                  
 |**Status**||Optional|**Datatype**||teidata.text|```
 <author> <name key="name 427308"  type="organisation">
-                                                [New Zealand Parliament, Legislative Council]</name></author>```||```
+                                                [New Zealand Parliament, Legislative Council]</name></author>
+```||```
 <author> <name key="Hugo, Victor (1802-1885)"  ref="http://www.idref.fr/026927608">
-                                                Victor Hugo</name></author>```||**Note**||
+                                                Victor Hugo</name></author>
+```||**Note**||
 The value may be a unique identifier from a database, or any other externally-defined
                                              string identifying the referent. 
                                           
@@ -2001,7 +2152,8 @@ No particular syntax is proposed for the values of the key attribute, since its 
                                  
 |**Status**||Optional|**Datatype**|| 1–∞ occurrences of teidata.pointer separated by whitespace|```
 <name ref="http://viaf.org/viaf/109557338" type="person">
-                                                Seamus Heaney</name>```||**Note**||
+                                                Seamus Heaney</name>
+```||**Note**||
 The value must point directly to one or more XML elements or other resources by means
                                              of one or more URIs, separated by whitespace. If more than one is supplied the implication
                                              is that the name identifies several distinct entities.
@@ -2046,7 +2198,8 @@ Currently these Guidelines only provide for a single canonical reference to be e
 He was born on <date calendar="#gregorian">
                                                 Feb. 22, 1732</date> (<date calendar="#julian" when="1732-02-22">
                                                  Feb. 11, 1731/32, O.S.</date>).
-                                          ```||**Note**||
+                                          
+```||**Note**||
 Note that the calendar attribute (unlike datingMethod defined in att.datable.custom) defines the calendar system of the date in the original material defined by the
                                              parent element, not the calendar to which the date is normalized.
                                           
@@ -2088,13 +2241,16 @@ Examples of W3C date, time, and date & time formats.
                                                 August</date> <date when="2006">
                                                 MMVI</date> <date when="0056">
                                                 AD 56</date> <date when="-0056">
-                                                56 BC</date></p>```||```
+                                                56 BC</date></p>
+```||```
 This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Sunday after Pentecost, in that year the<date calendar="#julian" when="1632-06-06">
                                                 27th of May (old style)</date>.
-                                          ```||```
+                                          
+```||```
 <opener> <dateline>  <placeName>Dorchester, Village,</placeName>  <date when="1828-03-02">
                                                 March 2d. 1828.</date> </dateline> <salute>To   Mrs. Cornell,</salute> Sunday <time when="12:00:00">
-                                                noon.</time></opener>```|
+                                                noon.</time></opener>
+```|
 |@notBefore||specifies the earliest possible date for the event in standard form, e.g. yyyy-mm-dd.
                                  
 |**Status**||Optional|**Datatype**||teidata.temporal.w3c
@@ -2110,7 +2266,8 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
  
 |**Example**||```
 <date from="1863-05-28" to="1863-06-01">
-                              28 May through 1 June 1863</date>```|**Note**||
+                              28 May through 1 June 1863</date>
+```|**Note**||
 The value of these attributes should be a normalized representation of the date, time,
                            or combined date & time intended, in any of the standard formats specified by XML Schema Part 2: Datatypes Second Edition, using the Gregorian calendar.
                         
@@ -2146,7 +2303,8 @@ In this example dcr:datcat relates the feature name to the data category "partOf
                            MPI for Psycholinguistics in Nijmegen.
                         
 ```
-<fs> <f name="POS"  dcr:datcat="http://www.isocat.org/datcat/DC-1345" fVal="#commonNoun"  dcr:valueDatcat="http://www.isocat.org/datcat/DC-1256"/></fs>```|**Note**||
+<fs> <f name="POS"  dcr:datcat="http://www.isocat.org/datcat/DC-1345" fVal="#commonNoun"  dcr:valueDatcat="http://www.isocat.org/datcat/DC-1256"/></fs>
+```|**Note**||
 ISO 12620:2009 is a standard describing the data model and procedures for a Data Category
                            Registry (DCR). Data categories are defined as elementary descriptors in a linguistic
                            structure. In the DCR data model each data category gets assigned a unique Peristent
@@ -2207,8 +2365,10 @@ The rules governing the association of declarable elements with individual parts
                                  quantity and units in a single string of words.
                                  
 |**Status**||Optional|**Datatype**||teidata.text|```
-<gap extent="5 words"/>```||```
-<height extent="half the page"/>```|
+<gap extent="5 words"/>
+```||```
+<height extent="half the page"/>
+```|
 |@precision||characterizes the precision of the values specified by the other attributes.
                                  
 |**Status**||Optional|**Datatype**||teidata.certainty
@@ -2250,7 +2410,8 @@ The rules governing the association of declarable elements with individual parts
  
 |**Example**||```
 <revisionDesc status="published">
-                               <change when="2010-10-21"  status="published"/> <change when="2010-10-02" status="cleared"/> <change when="2010-08-02"  status="embargoed"/> <change when="2010-05-01" status="frozen"  who="#MSM"/> <change when="2010-03-01" status="draft"  who="#LB"/></revisionDesc>```
+                               <change when="2010-10-21"  status="published"/> <change when="2010-10-02" status="cleared"/> <change when="2010-08-02"  status="embargoed"/> <change when="2010-05-01" status="frozen"  who="#MSM"/> <change when="2010-03-01" status="draft"  who="#LB"/></revisionDesc>
+```
 ### att.edition
  
 |**att.edition** provides attributes identifying the source edition from which some encoded feature
@@ -2269,10 +2430,12 @@ The rules governing the association of declarable elements with individual parts
 |**Status**||Optional|**Datatype**|| 1–∞ occurrences of teidata.pointer separated by whitespace
  
 |**Example**||```
-<l>Of Mans First Disobedience,<lb ed="1674"/> and<lb ed="1667"/> the Fruit</l><l>Of that Forbidden Tree, whose<lb ed="1667 1674"/> mortal tast</l><l>Brought Death into the World,<lb ed="1667"/> and all<lb ed="1674"/> our woe,</l>```|**Example**||```
+<l>Of Mans First Disobedience,<lb ed="1674"/> and<lb ed="1667"/> the Fruit</l><l>Of that Forbidden Tree, whose<lb ed="1667 1674"/> mortal tast</l><l>Brought Death into the World,<lb ed="1667"/> and all<lb ed="1674"/> our woe,</l>
+```|**Example**||```
 <listBibl> <bibl xml:id="stapledon1937">
                                 <author>Olaf Stapledon</author>, <title>Starmaker</title>, <publisher>Methuen</publisher>, <date>1937</date> </bibl> <bibl xml:id="stapledon1968">
-                                <author>Olaf Stapledon</author>, <title>Starmaker</title>, <publisher>Dover</publisher>, <date>1968</date> </bibl></listBibl><!-- ... --><p>Looking into the future aeons from the supreme moment of the cosmos, I saw the populations still with all their strength maintaining the<pb n="411" edRef="#stapledon1968"/>essentials of their ancient culture, still living their personal lives in zest and endless novelty of action, … I saw myself still preserving, though with increasing difficulty, my lucid con-<pb n="291" edRef="#stapledon1937"/>sciousness;</p>```
+                                <author>Olaf Stapledon</author>, <title>Starmaker</title>, <publisher>Dover</publisher>, <date>1968</date> </bibl></listBibl><!-- ... --><p>Looking into the future aeons from the supreme moment of the cosmos, I saw the populations still with all their strength maintaining the<pb n="411" edRef="#stapledon1968"/>essentials of their ancient culture, still living their personal lives in zest and endless novelty of action, … I saw myself still preserving, though with increasing difficulty, my lucid con-<pb n="291" edRef="#stapledon1937"/>sciousness;</p>
+```
 ### att.editLike
  
 |**att.editLike** provides attributes describing the nature of an encoded scholarly intervention or
@@ -2347,7 +2510,8 @@ The value of this attribute is always understood to be a single token, even if i
                                  
 |**Status**||Optional|**Datatype**||teidata.language|```
 <p> … The consequences of this rapid depopulation were the loss of the last<foreign xml:lang="rap">
-                                                ariki</foreign> or chief (Routledge 1920:205,210) and their connections to ancestral territorial organization.</p>```||**Note**||
+                                                ariki</foreign> or chief (Routledge 1920:205,210) and their connections to ancestral territorial organization.</p>
+```||**Note**||
 The xml:lang value will be inherited from the immediately enclosing element, or from
                                              its parent, and so on up the document hierarchy. It is generally good practice to
                                              specify xml:lang at the highest appropriate level, noticing that a different default
@@ -2374,7 +2538,8 @@ The value used must conform with BCP 47. If the value is a private use code (i.e
                                                   <bibl>   <author>    <name>Landon, Letitia Elizabeth</name>   </author>   <ref target="LandLVowOf.sgm">
                                                     <title>The Vow of the Peacock</title>   </ref>  </bibl>  <bibl>   <author>    <name>Compton, Margaret Clephane</name>   </author>   <ref target="NortMIrene.sgm">
                                                     <title>Irene, a Poem in Six Cantos</title>   </ref>  </bibl>  <bibl>   <author>    <name>Taylor, Jane</name>   </author>   <ref target="TaylJEssay.sgm">
-                                                    <title>Essays in Rhyme on Morals and Manners</title>   </ref>  </bibl> </listBibl></div>```|
+                                                    <title>Essays in Rhyme on Morals and Manners</title>   </ref>  </bibl> </listBibl></div>
+```|
 |@xml:space||signals an intention about how white space should be managed by applications.
                                  
 |**Status**||Optional|**Datatype**||teidata.enumerated|**Legal values are:**||defaultsignals that the application's default white-space processing modes are acceptablepreserveindicates the intent that applications preserve all white space|**Note**||
@@ -2415,7 +2580,8 @@ When multiple values are given, they may reflect either multiple divergent inter
 |**Status**||Optional|**Datatype**|| 1–∞ occurrences of teidata.word separated by whitespace|```
 <head rend="align(center) case(allcaps)">
                                                  <lb/>To The <lb/>Duchesse <lb/>of <lb/>Newcastle,<lb/>On Her <lb/> <hi rend="case(mixed)">
-                                                New Blazing-World</hi>. </head>```||**Note**||
+                                                New Blazing-World</hi>. </head>
+```||**Note**||
 These Guidelines make no binding recommendations for the values of the rend attribute; the characteristics of visual presentation vary too much from text to
                                              text and the decision to record or ignore individual characteristics varies too much
                                              from project to project. Some potentially useful conventions are noted from time to
@@ -2428,7 +2594,8 @@ These Guidelines make no binding recommendations for the values of the rend attr
 |**Status**||Optional|**Datatype**||teidata.text|```
 <head style="text-align: center; font-variant: small-caps">
                                                  <lb/>To The <lb/>Duchesse <lb/>of <lb/>Newcastle, <lb/>On Her<lb/> <hi style="font-variant: normal">
-                                                New Blazing-World</hi>. </head>```||**Note**||
+                                                New Blazing-World</hi>. </head>
+```||**Note**||
 Unlike the attribute values of rend, which uses whitespace as a separator, the style attribute may contain whitespace. This attribute is intended for recording inline
                                              stylistic information concerning the source, not any particular output.
                                           
@@ -2449,7 +2616,8 @@ If style and rendition are both present on an element, then style overrides or c
                                                 New Blazing-World</hi>. </head><!-- elsewhere... --><rendition xml:id="sc" scheme="css">
                                                 font-variant: small-caps</rendition><rendition xml:id="normal" scheme="css">
                                                 font-variant: normal</rendition><rendition xml:id="ac" scheme="css">
-                                                text-align: center</rendition>```||**Note**||
+                                                text-align: center</rendition>
+```||**Note**||
 The rendition attribute is used in a very similar way to the class attribute defined for XHTML but with the important distinction that its function
                                              is to describe the appearance of the source text, not necessarily to determine how
                                              that text should be presented on screen or paper.
@@ -2490,11 +2658,13 @@ To reduce the ambiguity of a resp pointing directly to a person or organization,
 |**Example**||```
 Blessed are the<choice> <sic>cheesemakers</sic> <corr resp="#editor" cert="high">
                               peacemakers</corr></choice>: for they shall be called the children of God.
-                        ```|**Example**||```
+                        
+```|**Example**||```
 <!-- in the <text> ... --><lg><!-- ... --> <l>Punkes, Panders, baſe extortionizing   sla<choice>   <sic>n</sic>   <corr resp="#JENS1_transcriber">
                               u</corr>  </choice>es,</l><!-- ... --></lg><!-- in the <teiHeader> ... --><!-- ... --><respStmt xml:id="JENS1_transcriber">
                                <resp when="2014">
-                              Transcriber</resp> <name>Janelle Jenstad</name></respStmt>```
+                              Transcriber</resp> <name>Janelle Jenstad</name></respStmt>
+```
 ### att.global.source
  
 |**att.global.source** provides an attribute used by elements to point to an external source. 
@@ -2526,18 +2696,22 @@ If more than one location is specified, the default assumption is that the requi
 |**Example**||```
 <p><!-- ... --> As Willard McCarty (<bibl xml:id="mcc_2012">
                               2012, p.2</bibl>) tells us, <quote source="#mcc_2012">
-                              ‘Collaboration’ is a problematic and should be a contested   term.</quote><!-- ... --></p>```|**Example**||```
+                              ‘Collaboration’ is a problematic and should be a contested   term.</quote><!-- ... --></p>
+```|**Example**||```
 <p><!-- ... --> <quote source="#chicago_15_ed">
                               Grammatical theories are in flux, and the more we learn, the   less we seem to know.</quote><!-- ... --></p><!-- ... --><bibl xml:id="chicago_15_ed">
                                <title level="m">
                               The Chicago Manual of Style</title>,<edition>15th edition</edition>. <pubPlace>Chicago</pubPlace>: <publisher>University of   Chicago Press</publisher> (<date>2003</date>), <biblScope unit="page">
-                              p.147</biblScope>.</bibl>```|**Example**||```
-<elementRef key="p" source="tei:2.0.1"/>```
+                              p.147</biblScope>.</bibl>
+```|**Example**||```
+<elementRef key="p" source="tei:2.0.1"/>
+```
 Include in the schema an element named [p](#p) available from the TEI P5 2.0.1 release.
                         
 |**Example**||```
 <schemaSpec ident="myODD" source="mycompiledODD.xml">
-                              <!-- further declarations specifying the components required --></schemaSpec>```
+                              <!-- further declarations specifying the components required --></schemaSpec>
+```
 Create a schema using components taken from the file mycompiledODD.xml.
                         
  
@@ -2557,7 +2731,8 @@ Create a schema using components taken from the file mycompiledODD.xml.
 In this example mimeType is used to indicate that the URL points to a TEI XML file encoded in UTF-8.
                         
 ```
-<ref mimeType="application/tei+xml; charset=UTF-8" target="http://sourceforge.net/p/tei/code/HEAD/tree/trunk/P5/Source/guidelines-en.xml"/>```|**Note**||
+<ref mimeType="application/tei+xml; charset=UTF-8" target="http://sourceforge.net/p/tei/code/HEAD/tree/trunk/P5/Source/guidelines-en.xml"/>
+```|**Note**||
 This attribute class provides an attribute for describing a computer resource, typically
                            available over the internet, using a value taken from a standard taxonomy. At present
                            only a single taxonomy is supported, the Multipurpose Internet Mail Extensions (MIME)
@@ -2578,16 +2753,19 @@ This attribute class provides an attribute for describing a computer resource, t
                                  
 |**Status**||Optional|**Datatype**||teidata.text|```
 <w lemma="wife">
-                                                wives</w>```||```
+                                                wives</w>
+```||```
 <w lemma="Arznei">
-                                                Artzeneyen</w>```|
+                                                Artzeneyen</w>
+```|
 |@lemmaRef||provides a pointer to a definition of the lemma for the word, for example in an online
                                  lexicon.
                                  
 |**Status**||Optional|**Datatype**||teidata.pointer|```
 <w type="verb" lemma="hit" lemmaRef="http://www.example.com/lexicon/hitvb.xml">
                                                 hitt<m type="suffix">
-                                                ing</m></w>```|
+                                                ing</m></w>
+```|
 |@pos||(part of speech) indicates the part of speech assigned to a token (i.e. information
                                  on whether it is a noun, adjective, or verb), usually according to some official reference
                                  vocabulary (e.g. for German: STTS, for English: CLAWS, for Polish: NKJP, etc.).
@@ -2602,7 +2780,8 @@ The German sentence ‘Wir fahren in den Urlaub.’ tagged with the Stuttgart-Tu
                                                 in</w> <w pos="ART">
                                                 den</w> <w pos="NN">
                                                 Urlaub</w> <w pos="$.">
-                                                .</w></s>```||
+                                                .</w></s>
+```||
 The English sentence ‘We're going to Brazil.’ tagged with the [CLAWS-5](http://ucrel.lancs.ac.uk/claws5tags.html) tagset, arranged inline (with significant whitespace).
                                           
 ```
@@ -2614,7 +2793,8 @@ The English sentence ‘We're going to Brazil.’ tagged with the [CLAWS-5](http
                                                 Brazil</w><pc pos="PUN">
                                                 .</pc></p>
                                                      
-                                          ```||
+                                          
+```||
 The English sentence ‘We're going on vacation to Brazil for a month!’ tagged with the [CLAWS-7](http://ucrel.lancs.ac.uk/claws7tags.html) tagset and arranged sequentially.
                                           
 ```
@@ -2629,7 +2809,8 @@ The English sentence ‘We're going on vacation to Brazil for a month!’ tagged
                                                 for</w> <w pos="AT1">
                                                 a</w> <w pos="NNT1">
                                                 month</w> <pc pos="!">
-                                                !</pc></p>```|
+                                                !</pc></p>
+```|
 |@msd||(morphosyntactic description) supplies morphosyntactic information for a token, usually
                                  according to some official reference vocabulary (e.g. for German: [STTS-large tagset](http://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/TagSets/stts-1999.pdf); for a feature description system designed as (pragmatically) universal, see [Universal Features](http://universaldependencies.org/u/feat/index.html)).
                                  
@@ -2640,7 +2821,8 @@ The English sentence ‘We're going on vacation to Brazil for a month!’ tagged
                                                 in</w> <w pos="ART" msd="Def.Masc.Akk.Sg">
                                                 den</w> <w pos="NN" msd="Masc.Akk.Sg">
                                                 Urlaub</w> <pc pos="$." msd="--">
-                                                .</pc></ab>```|
+                                                .</pc></ab>
+```|
 |@join||when present, it provides information on whether the token in question is adjacent
                                  to another, and if so, on which side. The definition of this attribute is adapted
                                  from ISO MAF (Morpho-syntactic Annotation Framework), ISO 24611:2012.
@@ -2658,7 +2840,8 @@ The example below assumes that the lack of whitespace is marked redundantly, by 
                                                 Friends</w> <w>will</w> <w>be</w> <w join="right">
                                                 friends</w> <pc join="both">
                                                 .</pc> <pc join="left">
-                                                "</pc></s>```
+                                                "</pc></s>
+```
 Note that a project may make a decision to only indicate lack of whitespace in one
                                              direction, or do that non-redundantly. The existing proposal is the broadest possible,
                                              on the assumption that we adopt the "streamable view", where all the information on
@@ -2675,7 +2858,8 @@ The English sentence ‘We're going on vacation.’ tagged with the CLAWS-5 tags
                                                 going</w> <w pos="PRP">
                                                 on</w> <w pos="NN1">
                                                 vacation</w> <pc pos="PUN" join="left">
-                                                .</pc></p>```|
+                                                .</pc></p>
+```|
  
 |**Note**||
 These attributes make it possible to encode simple language corpora and to add a layer
@@ -2695,7 +2879,8 @@ These attributes make it possible to encode simple language corpora and to add a
                                              columncolumn breaks.lineline breaks (synonymous with the [lb](#lb) element).
                                              bookany units termed book, liber, etc.poemindividual poems in a collection.cantocantos or other major sections of a poem.speakerchanges of speaker or narrator.stanzastanzas within a poem, book, or canto.actacts within a play.scenescenes within a play or act.sectionsections of any kind.absentpassages not present in the reference edition.unnumberedpassages present in the text, but not to be included as part of the reference.|```
 <milestone n="23" ed="La" unit="Dreissiger"/> ... <milestone n="24" ed="AV" unit="verse"/> ...
-                                          ```||**Note**||
+                                          
+```||**Note**||
 If the milestone marks the beginning of a piece of text not present in the reference
                                              edition, the special value absent may be used as the value of unit. The normal interpretation is that the reference edition does not contain the text
                                              which follows, until the next [milestone](#milestone) tag for the edition in question is encountered.
@@ -2799,9 +2984,11 @@ If a digit preceded by a dollar sign is needed in the actual replacement pattern
 |**Status**||Recommended|**Datatype**|| 1–∞ occurrences of teidata.enumerated separated by whitespace|**Suggested values include:**||belowbelow the linebottomat the foot of the pagemarginin the margin (left, right, or both)topat the top of the pageoppositeon the opposite, i.e. facing, pageoverleafon the other side of the leafaboveabove the lineendat the end of e.g. chapter or volume.inlinewithin the body of the text.inspacein a predefined space, for example left by an earlier scribe.|```
 <add place="margin">
                                                 [An addition written in the margin]</add><add place="bottom opposite">
-                                                [An addition written at the foot of the current page and also on the facing page]</add>```||```
+                                                [An addition written at the foot of the current page and also on the facing page]</add>
+```||```
 <note place="bottom">
-                                                Ibid, p.7</note>```|
+                                                Ibid, p.7</note>
+```|
  
  
 ### att.pointing
@@ -2816,7 +3003,8 @@ If a digit preceded by a dollar sign is needed in the actual replacement pattern
                                  
 |**Status**||Optional|**Datatype**||teidata.language|```
 <linkGrp xml:id="pol-swh_aln_2.1-linkGrp">
-                                                 <ptr xml:id="pol-swh_aln_2.1.1-ptr"  target="pol/UDHR/text.xml#pol_txt_1-head" type="tuv" targetLang="pl"/> <ptr xml:id="pol-swh_aln_2.1.2-ptr"  target="swh/UDHR/text.xml#swh_txt_1-head" type="tuv" targetLang="sw"/></linkGrp>```
+                                                 <ptr xml:id="pol-swh_aln_2.1.1-ptr"  target="pol/UDHR/text.xml#pol_txt_1-head" type="tuv" targetLang="pl"/> <ptr xml:id="pol-swh_aln_2.1.2-ptr"  target="swh/UDHR/text.xml#swh_txt_1-head" type="tuv" targetLang="sw"/></linkGrp>
+```
 In the example above, the linkGrp combines pointers at parallel fragments of the Universal Declaration of Human Rights: one of them is in Polish, the other in Swahili.
                                           
 ||**Note**||
@@ -2877,7 +3065,8 @@ If no value is given, the application program is responsible for deciding (possi
  
 |**Example**||```
 The MS. was lost in transmission by mail from <del rend="overstrike">
-                               <gap reason="illegible"  extent="one or two letters" atLeast="1" atMost="2" unit="chars"/></del> Philadelphia to the Graphic office, New York.```
+                               <gap reason="illegible"  extent="one or two letters" atLeast="1" atMost="2" unit="chars"/></del> Philadelphia to the Graphic office, New York.
+```
 ### att.segLike
  
 |**att.segLike** provides attributes for elements used for arbitrary segmentation. 
@@ -2907,7 +3096,8 @@ Attribute values will often vary depending on the type of element to which they 
 David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
                                                  <term sortKey="Azarya_Josiah_Kohen">
                                                 Josiah ha-Kohen b. Azarya</term></index> b. Azarya, son of one of the last gaons of Sura was David's own first cousin.
-                                          ```||**Note**||
+                                          
+```||**Note**||
 The sort key is used to determine the sequence and grouping of entries in an index.
                                              It provides a sequence of characters which, when sorted with the other values, will
                                              produced the desired order; specifics of sort key construction are application-dependent
@@ -2996,7 +3186,8 @@ If no value is supplied, the element is assumed to precede the immediately follo
 <div type="verse">
                                                  <head>Night in Tarras</head> <lg type="stanza">
                                                   <l>At evening tramping on the hot white road</l>  <l>…</l> </lg> <lg type="stanza">
-                                                  <l>A wind sprang up from nowhere as the sky</l>  <l>…</l> </lg></div>```||**Note**||
+                                                  <l>A wind sprang up from nowhere as the sky</l>  <l>…</l> </lg></div>
+```||**Note**||
 The type attribute is present on a number of elements, not all of which are members of [att.typed](#att.typed), usually because these elements restrict the possible values for the attribute in
                                              a specific way.
                                           
