@@ -42,7 +42,7 @@ The following are the Guidelines and schema specification for the Winnifred Eato
 ## Schema wea: Elements
  
  
-### abstract<span id="abstract"/>
+### `abstract`<span id="abstract"/>
  
  
 **abstract** contains a summary or formal abstract prefixed to an existing source document by the encoder. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-abstract.html) ] 
@@ -50,7 +50,7 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -107,7 +107,7 @@ This element is intended only for cases where no abstract is available in the or
  
  
  
-### att<span id="att"/>
+### `att`<span id="att"/>
  
  
 **att** (attribute) contains the name of an attribute appearing within running text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.html) ] 
@@ -115,26 +115,19 @@ This element is intended only for cases where no abstract is available in the or
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
-@scheme
- 
-supplies an identifier for the scheme in which this name is defined. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Sample values include:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
+`@scheme` supplies an identifier for the scheme in which this name is defined. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Sample values include:**   |    
  
 TEI (Text Encoding Initiative) this attribute is part of the TEI scheme. [Default] (Text Encoding Initiative) this attribute is part of the TEI scheme. [Default] DBK (Docbook) this attribute is part of the Docbook scheme.(Docbook) this attribute is part of the Docbook scheme.XX (unknown) this attribute is part of an unknown scheme.(unknown) this attribute is part of an unknown scheme.imaginary the attribute is from a non-existent scheme, for illustrative purposes onlythe attribute is from a non-existent scheme, for illustrative purposes onlyXHTML the attribute is part of the XHTML languagethe attribute is part of the XHTML languageXML the attribute is part of the XML languagethe attribute is part of the XML languageXI the attribute is defined in the xInclude schemathe attribute is defined in the xInclude schema
  
- 
- 
+     |     
  
  
  
@@ -196,7 +189,7 @@ As an alternative to using the scheme attribute a namespace prefix may be used. 
  
  
  
-### author<span id="author"/>
+### `author`<span id="author"/>
  
  
 **author** in a bibliographic reference, contains the name(s) of an author, personal or corporate, of a work; for example in the same form as that provided by a recognized bibliographic name authority. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-author.html) ] 
@@ -204,7 +197,7 @@ As an alternative to using the scheme attribute a namespace prefix may be used. 
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.canonical)  (@key, @ref)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.naming](#att.naming)  (`@role`, `@nymRef`) ( [att.canonical](#att.canonical)  (`@key`, `@ref`)) 
  
  
  
@@ -271,7 +264,7 @@ Particularly where cataloguing is likely to be based on the content of the heade
  
  
  
-### authority<span id="authority"/>
+### `authority`<span id="authority"/>
  
  
 **authority** (release authority) supplies the name of a person or other agency responsible for making a work available, other than a publisher or distributor. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-authority.html) ] 
@@ -279,7 +272,7 @@ Particularly where cataloguing is likely to be based on the content of the heade
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.canonical](#att.canonical)  (`@key`, `@ref`) 
  
  
  
@@ -333,7 +326,7 @@ character data
  
  
  
-### availability<span id="availability"/>
+### `availability`<span id="availability"/>
  
  
 **availability** supplies information about the availability of a text, for example any restrictions on its use or distribution, its copyright status, any licence applying to it, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-availability.html) ] 
@@ -341,26 +334,19 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
-@status
- 
-supplies a code identifying the current availability of the text. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declarable](#att.declarable)  (`@default`) 
  
  
+`@status` supplies a code identifying the current availability of the text. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 free the text is freely available.the text is freely available.unknown the status of the text is unknown.the status of the text is unknown.restricted the text is not freely available.the text is not freely available.
  
- 
- 
+     |     
  
  
  
@@ -443,7 +429,7 @@ A consistent format should be adopted
  
  
  
-### back<span id="back"/>
+### `back`<span id="back"/>
  
  
 **back** (back matter) contains any appendixes, etc. following the main part of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-back.html) ] 
@@ -451,7 +437,7 @@ A consistent format should be adopted
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declaring](#att.declaring)  (`@decls`) 
  
  
  
@@ -520,7 +506,7 @@ Because cultural conventions differ as to which elements are grouped as back mat
  
  
  
-### bibl<span id="bibl"/>
+### `bibl`<span id="bibl"/>
  
  
 **bibl** (bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-bibl.html) ] 
@@ -528,7 +514,7 @@ Because cultural conventions differ as to which elements are grouped as back mat
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default)  [att.typed](#att.typed)  (@type, @subtype)  [att.sortable](#att.sortable)  (@sortKey)  [att.docStatus](#att.docStatus)  (@status) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declarable](#att.declarable)  (`@default`)  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.sortable](#att.sortable)  (`@sortKey`)  [att.docStatus](#att.docStatus)  (`@status`) 
  
  
  
@@ -630,7 +616,7 @@ Contains phrase-level elements, together with any combination of elements from t
  
  
  
-### biblFull<span id="biblFull"/>
+### `biblFull`<span id="biblFull"/>
  
  
 **biblFull** (fully-structured bibliographic citation) contains a fully-structured bibliographic citation, in which all components of the TEI file description are present. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-biblFull.html) ] 
@@ -638,7 +624,7 @@ Contains phrase-level elements, together with any combination of elements from t
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default)  [att.sortable](#att.sortable)  (@sortKey)  [att.docStatus](#att.docStatus)  (@status) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declarable](#att.declarable)  (`@default`)  [att.sortable](#att.sortable)  (`@sortKey`)  [att.docStatus](#att.docStatus)  (`@status`) 
  
  
  
@@ -690,7 +676,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### body<span id="body"/>
+### `body`<span id="body"/>
  
  
 **body** (text body) contains the whole body of a single unitary text, excluding any front or back matter. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-body.html) ] 
@@ -698,7 +684,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declaring](#att.declaring)  (`@decls`) 
  
  
  
@@ -750,7 +736,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### byline<span id="byline"/>
+### `byline`<span id="byline"/>
  
  
 **byline** contains the primary statement of responsibility given for a work on its title page or at the head or end of the work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-byline.html) ] 
@@ -758,7 +744,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -868,7 +854,7 @@ The byline on a title page may include either the name or a description for the 
  
  
  
-### category<span id="category"/>
+### `category`<span id="category"/>
  
  
 **category** contains an individual descriptive category, possibly nested within a superordinate category, within a user-defined taxonomy. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-category.html) ] 
@@ -876,7 +862,7 @@ The byline on a title page may include either the name or a description for the 
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -968,7 +954,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### catRef<span id="catRef"/>
+### `catRef`<span id="catRef"/>
  
  
 **catRef** (category reference) specifies one or more defined categories within some taxonomy or text typology. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-catRef.html) ] 
@@ -976,18 +962,14 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.pointing](#att.pointing)  (@targetLang, @target, @evaluate) 
-@scheme
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.pointing](#att.pointing)  (`@targetLang`, `@target`, `@evaluate`) 
  
-identifies the classification scheme within which the set of categories concerned is defined, for example by a taxonomy element, or by some other resource. 
-**Status**
  
-Optional
+`@scheme` identifies the classification scheme within which the set of categories concerned is defined, for example by a `taxonomy` element, or by some other resource. 
  
-**Datatype**
  
-teidata.pointer
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
  
  
  
@@ -1048,7 +1030,7 @@ The scheme attribute needs to be supplied only if more than one taxonomy has bee
  
  
  
-### change<span id="change"/>
+### `change`<span id="change"/>
  
  
 **change** documents a change or set of changes made during the production of a source document, or during the revision of an electronic file. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-change.html) ] 
@@ -1056,18 +1038,14 @@ The scheme attribute needs to be supplied only if more than one taxonomy has bee
  
 #### **Attributes**
  
-Attributes  [att.ascribed](#att.ascribed)  (@who)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to))  [att.docStatus](#att.docStatus)  (@status)  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype) 
-@target
+Attributes  [att.ascribed](#att.ascribed)  (`@who`)  [att.datable](#att.datable)  (`@calendar`, `@period`) ( [att.datable.w3c](#att.datable.w3c)  (`@when`, `@notBefore`, `@notAfter`, `@from`, `@to`))  [att.docStatus](#att.docStatus)  (`@status`)  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.typed](#att.typed)  (`@type`, `@subtype`) 
  
-points to one or more elements that belong to this change. 
-**Status**
  
-Optional
+`@target` points to one or more elements that belong to this change. 
  
-**Datatype**
  
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
  
  
  
@@ -1114,7 +1092,7 @@ character data
  
 #### **Note**
  
-The who attribute may be used to point to any other element, but will typically specify a  [respStmt](#respStmt)  or person element elsewhere in the header, identifying the person responsible for the change and their role in making it. It is recommended that changes be recorded with the most recent first. The status attribute may be used to indicate the status of a document following the change documented. 
+The who attribute may be used to point to any other element, but will typically specify a  [respStmt](#respStmt)  or `person` element elsewhere in the header, identifying the person responsible for the change and their role in making it. It is recommended that changes be recorded with the most recent first. The status attribute may be used to indicate the status of a document following the change documented. 
  
  
  
@@ -1160,7 +1138,7 @@ The who attribute may be used to point to any other element, but will typically 
  
  
  
-### choice<span id="choice"/>
+### `choice`<span id="choice"/>
  
  
 **choice** groups a number of alternative encodings for the same point in a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html) ] 
@@ -1168,7 +1146,7 @@ The who attribute may be used to point to any other element, but will typically 
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -1208,7 +1186,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Note**
  
-Because the children of a  [choice](#choice)  element all represent alternative ways of encoding the same sequence, it is natural to think of them as mutually exclusive. However, there may be cases where a full representation of a text requires the alternative encodings to be considered as parallel. Note also that  [choice](#choice)  elements may self-nest. Where the purpose of an encoding is to record multiple witnesses of a single work, rather than to identify multiple possible encoding decisions at a given point, the app element and associated elements discussed in section  [12.1. The Apparatus Entry, Readings, and Witnesses](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TC.html#TCAPLL)  should be preferred. 
+Because the children of a  [choice](#choice)  element all represent alternative ways of encoding the same sequence, it is natural to think of them as mutually exclusive. However, there may be cases where a full representation of a text requires the alternative encodings to be considered as parallel. Note also that  [choice](#choice)  elements may self-nest. Where the purpose of an encoding is to record multiple witnesses of a single work, rather than to identify multiple possible encoding decisions at a given point, the `app` element and associated elements discussed in section  [12.1. The Apparatus Entry, Readings, and Witnesses](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TC.html#TCAPLL)  should be preferred. 
  
  
  
@@ -1230,7 +1208,7 @@ An American encoding of Gulliver's Travels which retains the British spelling bu
  
  
  
-### closer<span id="closer"/>
+### `closer`<span id="closer"/>
  
  
 **closer** groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html) ] 
@@ -1238,7 +1216,7 @@ An American encoding of Gulliver's Travels which retains the British spelling bu
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.written](#att.written)  (@hand) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.written](#att.written)  (`@hand`) 
  
  
  
@@ -1315,7 +1293,7 @@ character data
  
  
  
-### code<span id="code"/>
+### `code`<span id="code"/>
  
  
 **code** contains literal code from some formal language such as a programming language. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-code.html) ] 
@@ -1323,18 +1301,14 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
-@lang
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
-(formal language) a name identifying the formal language in which the code is expressed 
-**Status**
  
-Optional
+`@lang` (formal language) a name identifying the formal language in which the code is expressed 
  
-**Datatype**
  
-teidata.word
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.word     |     
  
  
  
@@ -1388,7 +1362,7 @@ Character data only
  
  
  
-### corr<span id="corr"/>
+### `corr`<span id="corr"/>
  
  
 **corr** (correction) contains the correct form of a passage apparently erroneous in the copy text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-corr.html) ] 
@@ -1396,7 +1370,7 @@ Character data only
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.editLike](#att.editLike)  (@evidence, @instant)  [att.typed](#att.typed)  (@type, @subtype) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.editLike](#att.editLike)  (`@evidence`, `@instant`)  [att.typed](#att.typed)  (`@type`, `@subtype`) 
  
  
  
@@ -1474,7 +1448,7 @@ I don't know, Juan. It's so far in the past now — how <choice> <sic>we can</s
  
  
  
-### creation<span id="creation"/>
+### `creation`<span id="creation"/>
  
  
 **creation** contains information about the creation of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-creation.html) ] 
@@ -1482,7 +1456,7 @@ I don't know, Juan. It's so far in the past now — how <choice> <sic>we can</s
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.datable](#att.datable)  (`@calendar`, `@period`) ( [att.datable.w3c](#att.datable.w3c)  (`@when`, `@notBefore`, `@notAfter`, `@from`, `@to`)) 
  
  
  
@@ -1559,7 +1533,7 @@ The  [creation](#creation)  element may be used to record details of a text's cr
  
  
  
-### date<span id="date"/>
+### `date`<span id="date"/>
  
  
 **date** contains a date in any format. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html) ] 
@@ -1567,7 +1541,7 @@ The  [creation](#creation)  element may be used to record details of a text's cr
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to))  [att.editLike](#att.editLike)  (@evidence, @instant)  [att.dimensions](#att.dimensions)  (@unit, @quantity, @extent, @precision, @scope) ( [att.ranging](#att.ranging)  (@atLeast, @atMost, @min, @max, @confidence))  [att.typed](#att.typed)  (@type, @subtype) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.canonical](#att.canonical)  (`@key`, `@ref`)  [att.datable](#att.datable)  (`@calendar`, `@period`) ( [att.datable.w3c](#att.datable.w3c)  (`@when`, `@notBefore`, `@notAfter`, `@from`, `@to`))  [att.editLike](#att.editLike)  (`@evidence`, `@instant`)  [att.dimensions](#att.dimensions)  (`@unit`, `@quantity`, `@extent`, `@precision`, `@scope`) ( [att.ranging](#att.ranging)  (`@atLeast`, `@atMost`, `@min`, `@max`, `@confidence`))  [att.typed](#att.typed)  (`@type`, `@subtype`) 
  
  
  
@@ -1659,7 +1633,7 @@ Given on the <date when="1977-06-12">
  
  
  
-### dateline<span id="dateline"/>
+### `dateline`<span id="dateline"/>
  
  
 **dateline** contains a brief description of the place, date, time, etc. of production of a letter, newspaper story, or other work, prefixed or suffixed to it as a kind of heading or trailer. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-dateline.html) ] 
@@ -1667,7 +1641,7 @@ Given on the <date when="1977-06-12">
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -1743,7 +1717,7 @@ character data
  
  
  
-### distributor<span id="distributor"/>
+### `distributor`<span id="distributor"/>
  
  
 **distributor** supplies the name of a person or other agency responsible for the distribution of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-distributor.html) ] 
@@ -1751,7 +1725,7 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.canonical](#att.canonical)  (`@key`, `@ref`) 
  
  
  
@@ -1809,7 +1783,7 @@ character data
  
  
  
-### div<span id="div"/>
+### `div`<span id="div"/>
  
  
 **div** (text division) contains a subdivision of the front, body, or back of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-div.html) ] 
@@ -1817,7 +1791,7 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.divLike](#att.divLike)  (@org, @sample) ( [att.fragmentable](#att.fragmentable)  (@part))  [att.typed](#att.typed)  (@type, @subtype)  [att.declaring](#att.declaring)  (@decls)  [att.written](#att.written)  (@hand) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.divLike](#att.divLike)  (`@org`, `@sample`) ( [att.fragmentable](#att.fragmentable)  (`@part`))  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.declaring](#att.declaring)  (`@decls`)  [att.written](#att.written)  (`@hand`) 
  
  
  
@@ -1873,7 +1847,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### docAuthor<span id="docAuthor"/>
+### `docAuthor`<span id="docAuthor"/>
  
  
 **docAuthor** (document author) contains the name of the author of the document, as given on the title page (often but not always contained in a byline). [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docAuthor.html) ] 
@@ -1881,7 +1855,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.canonical](#att.canonical)  (`@key`, `@ref`) 
  
  
  
@@ -1947,7 +1921,7 @@ The document author's name often occurs within a byline, but the  [docAuthor](#d
  
  
  
-### docDate<span id="docDate"/>
+### `docDate`<span id="docDate"/>
  
  
 **docDate** (document date) contains the date of a document, as given on a title page or in a dateline. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docDate.html) ] 
@@ -1955,22 +1929,15 @@ The document author's name often occurs within a byline, but the  [docAuthor](#d
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
-@when
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
-gives the value of the date in standard form, i.e. YYYY-MM-DD. 
-**Status**
  
-Optional
+`@when` gives the value of the date in standard form, i.e. YYYY-MM-DD. 
  
-**Datatype**
  
-teidata.temporal.w3c
- 
-**Note**
- 
-For simple dates, the when attribute should give the Gregorian or proleptic Gregorian date in one of the formats specified in XML Schema Part 2: Datatypes Second Edition. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.temporal.w3c     |     
+   |    **Note**   |    For simple dates, the when attribute should give the Gregorian or proleptic Gregorian date in one of the formats specified in XML Schema Part 2: Datatypes Second Edition.      |     
  
  
  
@@ -2041,7 +2008,7 @@ Cf. the general  [date](#date)  element in the core tag set. This specialized el
  
  
  
-### docTitle<span id="docTitle"/>
+### `docTitle`<span id="docTitle"/>
  
  
 **docTitle** (document title) contains the title of a document, including all its constituents, as given on a title page. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-docTitle.html) ] 
@@ -2049,7 +2016,7 @@ Cf. the general  [date](#date)  element in the core tag set. This specialized el
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.canonical](#att.canonical)  (`@key`, `@ref`) 
  
  
  
@@ -2101,7 +2068,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### edition<span id="edition"/>
+### `edition`<span id="edition"/>
  
  
 **edition** describes the particularities of one edition of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-edition.html) ] 
@@ -2109,7 +2076,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -2168,7 +2135,7 @@ character data
  
  
  
-### editionStmt<span id="editionStmt"/>
+### `editionStmt`<span id="editionStmt"/>
  
  
 **editionStmt** (edition statement) groups information relating to one edition of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editionStmt.html) ] 
@@ -2176,7 +2143,7 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -2241,7 +2208,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### editor<span id="editor"/>
+### `editor`<span id="editor"/>
  
  
 **editor** contains a secondary statement of responsibility for a bibliographic item, for example the name of an individual, institution or organization, (or of several such) acting as editor, compiler, translator, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editor.html) ] 
@@ -2249,7 +2216,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.canonical)  (@key, @ref)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.naming](#att.naming)  (`@role`, `@nymRef`) ( [att.canonical](#att.canonical)  (`@key`, `@ref`)) 
  
  
  
@@ -2318,7 +2285,7 @@ A consistent format should be adopted.Particularly where cataloguing is likely t
  
  
  
-### editorialDecl<span id="editorialDecl"/>
+### `editorialDecl`<span id="editorialDecl"/>
  
  
 **editorialDecl** (editorial practice declaration) provides details of editorial principles and practices applied during the encoding of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editorialDecl.html) ] 
@@ -2326,7 +2293,7 @@ A consistent format should be adopted.Particularly where cataloguing is likely t
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declarable](#att.declarable)  (`@default`) 
  
  
  
@@ -2377,7 +2344,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### emph<span id="emph"/>
+### `emph`<span id="emph"/>
  
  
 **emph** (emphasized) marks words or phrases which are stressed or emphasized for linguistic or rhetorical effect. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-emph.html) ] 
@@ -2385,7 +2352,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -2460,7 +2427,7 @@ You took the car and did <emph>what</emph>?!!
  
  
  
-### encodingDesc<span id="encodingDesc"/>
+### `encodingDesc`<span id="encodingDesc"/>
  
  
 **encodingDesc** (encoding description) documents the relationship between an electronic text and the source or sources from which it was derived. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-encodingDesc.html) ] 
@@ -2468,7 +2435,7 @@ You took the car and did <emph>what</emph>?!!
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -2518,7 +2485,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### epigraph<span id="epigraph"/>
+### `epigraph`<span id="epigraph"/>
  
  
 **epigraph** contains a quotation, anonymous or attributed, appearing at the start or end of a section or on a title page. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-epigraph.html) ] 
@@ -2526,7 +2493,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -2580,7 +2547,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### fileDesc<span id="fileDesc"/>
+### `fileDesc`<span id="fileDesc"/>
  
  
 **fileDesc** (file description) contains a full bibliographic description of an electronic file. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html) ] 
@@ -2588,7 +2555,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -2644,7 +2611,7 @@ The major source of information for those seeking to create a catalogue entry or
  
  
  
-### foreign<span id="foreign"/>
+### `foreign`<span id="foreign"/>
  
  
 **foreign** identifies a word or phrase as belonging to some language other than that of the surrounding text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-foreign.html) ] 
@@ -2652,7 +2619,7 @@ The major source of information for those seeking to create a catalogue entry or
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -2698,7 +2665,7 @@ character data
  
 #### **Note**
  
-The global xml:lang attribute should be supplied for this element to identify the language of the word or phrase marked. As elsewhere, its value should be a language tag as defined in  [6.1. Language Identification](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CH.html#CHSH) . This element is intended for use only where no other element is available to mark the phrase or words concerned. The global xml:lang attribute should be used in preference to this element where it is intended to mark the language of the whole of some text element. The distinct element may be used to identify phrases belonging to sublanguages or registers not generally regarded as true languages. 
+The global xml:lang attribute should be supplied for this element to identify the language of the word or phrase marked. As elsewhere, its value should be a language tag as defined in  [6.1. Language Identification](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CH.html#CHSH) . This element is intended for use only where no other element is available to mark the phrase or words concerned. The global xml:lang attribute should be used in preference to this element where it is intended to mark the language of the whole of some text element. The `distinct` element may be used to identify phrases belonging to sublanguages or registers not generally regarded as true languages. 
  
  
  
@@ -2722,7 +2689,7 @@ This is heathen Greek to you still? Your <foreign xml:lang="la">
  
  
  
-### front<span id="front"/>
+### `front`<span id="front"/>
  
  
 **front** (front matter) contains any prefatory matter (headers, abstracts, title page, prefaces, dedications, etc.) found at the start of a document, before the main body. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-front.html) ] 
@@ -2730,7 +2697,7 @@ This is heathen Greek to you still? Your <foreign xml:lang="la">
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declaring](#att.declaring)  (`@decls`) 
  
  
  
@@ -2823,7 +2790,7 @@ Because cultural conventions differ as to which elements are grouped as front ma
  
  
  
-### gap<span id="gap"/>
+### `gap`<span id="gap"/>
  
  
 **gap** indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-gap.html) ] 
@@ -2831,48 +2798,32 @@ Because cultural conventions differ as to which elements are grouped as front ma
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.timed](#att.timed)  (@start, @end)  [att.editLike](#att.editLike)  (@evidence, @instant)  [att.dimensions](#att.dimensions)  (@unit, @quantity, @extent, @precision, @scope) ( [att.ranging](#att.ranging)  (@atLeast, @atMost, @min, @max, @confidence)) 
-@reason
- 
-gives the reason for omission 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.enumerated separated by whitespace
- 
-**Suggested values include:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.timed](#att.timed)  (`@start`, `@end`)  [att.editLike](#att.editLike)  (`@evidence`, `@instant`)  [att.dimensions](#att.dimensions)  (`@unit`, `@quantity`, `@extent`, `@precision`, `@scope`) ( [att.ranging](#att.ranging)  (`@atLeast`, `@atMost`, `@min`, `@max`, `@confidence`)) 
  
  
+`@reason` gives the reason for omission 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
+   |    **Suggested values include:**   |    
  
 cancelled [No description available][No description available]deleted [No description available][No description available]editorial for features omitted from transcription due to editorial policyfor features omitted from transcription due to editorial policyillegible [No description available][No description available]inaudible [No description available][No description available]irrelevant [No description available][No description available]sampling [No description available][No description available]
  
+     |     
  
  
  
+`@agent` in the case of text omitted because of damage, categorizes the cause of the damage, if it can be identified. 
  
  
-@agent
- 
-in the case of text omitted because of damage, categorizes the cause of the damage, if it can be identified. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Sample values include:**
- 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Sample values include:**   |    
  
 rubbing damage results from rubbing of the leaf edgesdamage results from rubbing of the leaf edgesmildew damage results from mildew on the leaf surfacedamage results from mildew on the leaf surfacesmoke damage results from smokedamage results from smoke
  
- 
- 
+     |     
  
  
  
@@ -2911,7 +2862,7 @@ Empty element
  
 #### **Note**
  
-The  [gap](#gap) , unclear, and del core tag elements may be closely allied in use with the damage and supplied elements, available when using the additional tagset for transcription of primary sources. See section  [11.3.3.2. Use of the gap, del, damage, unclear, and supplied Elements in Combination](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCOMB)  for discussion of which element is appropriate for which circumstance. The  [gap](#gap)  tag simply signals the editors decision to omit or inability to transcribe a span of text. Other information, such as the interpretation that text was deliberately erased or covered, should be indicated using the relevant tags, such as del in the case of deliberate deletion. 
+The  [gap](#gap) , `unclear`, and `del` core tag elements may be closely allied in use with the `damage` and `supplied` elements, available when using the additional tagset for transcription of primary sources. See section  [11.3.3.2. Use of the gap, del, damage, unclear, and supplied Elements in Combination](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCOMB)  for discussion of which element is appropriate for which circumstance. The  [gap](#gap)  tag simply signals the editors decision to omit or inability to transcribe a span of text. Other information, such as the interpretation that text was deliberately erased or covered, should be indicated using the relevant tags, such as `del` in the case of deliberate deletion. 
  
  
  
@@ -2975,7 +2926,7 @@ The  [gap](#gap) , unclear, and del core tag elements may be closely allied in u
  
  
  
-### gi<span id="gi"/>
+### `gi`<span id="gi"/>
  
  
 **gi** (element name) contains the name (generic identifier) of an element. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-gi.html) ] 
@@ -2983,26 +2934,19 @@ The  [gap](#gap) , unclear, and del core tag elements may be closely allied in u
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
-@scheme
- 
-supplies the name of the scheme in which this name is defined. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Sample values include:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
+`@scheme` supplies the name of the scheme in which this name is defined. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Sample values include:**   |    
  
 TEI this element is part of the TEI scheme. [Default] this element is part of the TEI scheme. [Default] DBK (docbook) this element is part of the Docbook scheme.(docbook) this element is part of the Docbook scheme.XX (unknown) this element is part of an unknown scheme.(unknown) this element is part of an unknown scheme.Schematron this element is from Schematron.this element is from Schematron.HTML this element is from the HTML scheme.this element is from the HTML scheme.
  
- 
- 
+     |     
  
  
  
@@ -3056,7 +3000,7 @@ This example shows the use of both a namespace prefix and the scheme attribute a
  
  
  
-### head<span id="head"/>
+### `head`<span id="head"/>
  
  
 **head** (heading) contains any type of heading, for example the title of a section, or the heading of a list, glossary, manuscript description, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-head.html) ] 
@@ -3064,7 +3008,7 @@ This example shows the use of both a namespace prefix and the scheme attribute a
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype)  [att.placement](#att.placement)  (@place)  [att.written](#att.written)  (@hand) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.placement](#att.placement)  (`@place`)  [att.written](#att.written)  (`@hand`) 
  
  
  
@@ -3108,7 +3052,7 @@ character data
  
 #### **Note**
  
-The  [head](#head)  element is used for headings at all levels; software which treats (e.g.) chapter headings, section headings, and list titles differently must determine the proper processing of a  [head](#head)  element based on its structural position. A  [head](#head)  occurring as the first element of a list is the title of that list; one occurring as the first element of a div1 is the title of that chapter or section. 
+The  [head](#head)  element is used for headings at all levels; software which treats (e.g.) chapter headings, section headings, and list titles differently must determine the proper processing of a  [head](#head)  element based on its structural position. A  [head](#head)  occurring as the first element of a list is the title of that list; one occurring as the first element of a `div1` is the title of that chapter or section. 
  
  
  
@@ -3164,7 +3108,7 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
  
  
  
-### hi<span id="hi"/>
+### `hi`<span id="hi"/>
  
  
 **hi** (highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hi.html) ] 
@@ -3172,7 +3116,7 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.written](#att.written)  (@hand) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.written](#att.written)  (`@hand`) 
  
  
  
@@ -3235,7 +3179,7 @@ character data
  
  
  
-### hyphenation<span id="hyphenation"/>
+### `hyphenation`<span id="hyphenation"/>
  
  
 **hyphenation** summarizes the way in which hyphenation in a source text has been treated in an encoded version of it. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hyphenation.html) ] 
@@ -3243,26 +3187,19 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
-@eol
- 
-(end-of-line) indicates whether or not end-of-line hyphenation has been retained in a text. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declarable](#att.declarable)  (`@default`) 
  
  
+`@eol` (end-of-line) indicates whether or not end-of-line hyphenation has been retained in a text. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 all all end-of-line hyphenation has been retained, even though the lineation of the original may not have been. all end-of-line hyphenation has been retained, even though the lineation of the original may not have been. some end-of-line hyphenation has been retained in some cases. [Default] end-of-line hyphenation has been retained in some cases. [Default] hard all soft end-of-line hyphenation has been removed: any remaining end-of-line hyphenation should be retained. all soft end-of-line hyphenation has been removed: any remaining end-of-line hyphenation should be retained. none all end-of-line hyphenation has been removed: any remaining hyphenation occurred within the line. all end-of-line hyphenation has been removed: any remaining hyphenation occurred within the line. 
  
- 
- 
+     |     
  
  
  
@@ -3316,7 +3253,7 @@ all all end-of-line hyphenation has been retained, even though the lineation of 
  
  
  
-### idno<span id="idno"/>
+### `idno`<span id="idno"/>
  
  
 **idno** (identifier) supplies any form of identifier used to identify some object, such as a bibliographic item, a person, a title, an organization, etc. in a standardized way. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-idno.html) ] 
@@ -3324,30 +3261,20 @@ all all end-of-line hyphenation has been retained, even though the lineation of 
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.sortable](#att.sortable)  (@sortKey)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to))  [att.typed](#att.typed)  (type, @subtype) 
-@type
- 
-categorizes the identifier, for example as an ISBN, Social Security number, etc. 
-**Derived from**
- 
- [att.typed](#att.typed) 
- 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Suggested values include:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.sortable](#att.sortable)  (`@sortKey`)  [att.datable](#att.datable)  (`@calendar`, `@period`) ( [att.datable.w3c](#att.datable.w3c)  (`@when`, `@notBefore`, `@notAfter`, `@from`, `@to`))  [att.typed](#att.typed)  (type, @subtype) 
  
  
+`@type` categorizes the identifier, for example as an ISBN, Social Security number, etc. 
+ 
+ 
+   |    **Derived from**   |     [att.typed](#att.typed)      |     
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Suggested values include:**   |    
  
 ISBN International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit identifying number assigned by the publishing industry to a published book or similar item, registered with the [International ISBN Agency.](https://www.isbn-international.org)International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit identifying number assigned by the publishing industry to a published book or similar item, registered with the  [International ISBN Agency.](https://www.isbn-international.org) ISSN International Standard Serial Number: an eight-digit number to uniquely identify a serial publication. International Standard Serial Number: an eight-digit number to uniquely identify a serial publication. DOI Digital Object Identifier: a unique string of letters and numbers assigned to an electronic document. Digital Object Identifier: a unique string of letters and numbers assigned to an electronic document. URI Uniform Resource Identifier: a string of characters to uniquely identify a resource which usually contains indication of the means of accessing that resource, the name of its host, and its filepath. Uniform Resource Identifier: a string of characters to uniquely identify a resource which usually contains indication of the means of accessing that resource, the name of its host, and its filepath. VIAF A data number in the Virtual Internet Authority File assigned to link different names in catalogs around the world for the same entity. A data number in the Virtual Internet Authority File assigned to link different names in catalogs around the world for the same entity. ESTC English Short-Title Catalogue number: an identifying number assigned to a document in English printed in the British Isles or North America before 1801. English Short-Title Catalogue number: an identifying number assigned to a document in English printed in the British Isles or North America before 1801. OCLC OCLC control number (record number) for the union catalog record in WorldCat, a union catalog for member libraries in the Online Computer Library Center global cooperative. OCLC control number (record number) for the union catalog record in WorldCat, a union catalog for member libraries in the Online Computer Library Center global cooperative. 
  
- 
- 
+     |     
  
  
  
@@ -3414,7 +3341,7 @@ character data
                                <g ref="#sym"/>345</idno>
  
 ```
-In the last case, the identifier includes a non-Unicode character which is defined elsewhere by means of a glyph or char element referenced here as #sym. 
+In the last case, the identifier includes a non-Unicode character which is defined elsewhere by means of a `glyph` or `char` element referenced here as #sym. 
  
  
  
@@ -3422,7 +3349,7 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
-### item<span id="item"/>
+### `item`<span id="item"/>
  
  
 **item** contains one component of a list. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-item.html) ] 
@@ -3430,7 +3357,7 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.sortable](#att.sortable)  (@sortKey) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.sortable](#att.sortable)  (`@sortKey`) 
  
  
  
@@ -3472,7 +3399,7 @@ character data
  
 #### **Note**
  
-May contain simple prose or a sequence of chunks.Whatever string of characters is used to label a list item in the copy text may be used as the value of the global n attribute, but it is not required that numbering be recorded explicitly. In ordered lists, the n attribute on the  [item](#item)  element is by definition synonymous with the use of the label element to record the enumerator of the list item. In glossary lists, however, the term being defined should be given with the label element, not n. 
+May contain simple prose or a sequence of chunks.Whatever string of characters is used to label a list item in the copy text may be used as the value of the global n attribute, but it is not required that numbering be recorded explicitly. In ordered lists, the n attribute on the  [item](#item)  element is by definition synonymous with the use of the `label` element to record the enumerator of the list item. In glossary lists, however, the term being defined should be given with the `label` element, not n. 
  
  
  
@@ -3501,7 +3428,7 @@ May contain simple prose or a sequence of chunks.Whatever string of characters i
  
  
  
-### keywords<span id="keywords"/>
+### `keywords`<span id="keywords"/>
  
  
 **keywords** contains a list of keywords or phrases identifying the topic or nature of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-keywords.html) ] 
@@ -3509,18 +3436,14 @@ May contain simple prose or a sequence of chunks.Whatever string of characters i
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
-@scheme
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
-identifies the controlled vocabulary within which the set of keywords concerned is defined, for example by a taxonomy element, or by some other resource. 
-**Status**
  
-Optional
+`@scheme` identifies the controlled vocabulary within which the set of keywords concerned is defined, for example by a `taxonomy` element, or by some other resource. 
  
-**Datatype**
  
-teidata.pointer
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
  
  
  
@@ -3596,7 +3519,7 @@ Each individual keyword (including compound subject headings) should be supplied
  
  
  
-### l<span id="l"/>
+### `l`<span id="l"/>
  
  
 **l** (verse line) contains a single, possibly incomplete, line of verse. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-l.html) ] 
@@ -3604,7 +3527,7 @@ Each individual keyword (including compound subject headings) should be supplied
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.fragmentable](#att.fragmentable)  (@part) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.fragmentable](#att.fragmentable)  (`@part`) 
  
  
  
@@ -3665,7 +3588,7 @@ character data
  
  
  
-### language<span id="language"/>
+### `language`<span id="language"/>
  
  
 **language** characterizes a single language or sublanguage used within a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-language.html) ] 
@@ -3673,32 +3596,22 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
-@ident
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
-(identifier) Supplies a language code constructed as defined in  [BCP 47](https://tools.ietf.org/html/bcp47)  which is used to identify the language documented by this element, and which is referenced by the global xml:lang attribute. 
-**Status**
  
-Required
+`@ident` (identifier) Supplies a language code constructed as defined in  [BCP 47](https://tools.ietf.org/html/bcp47)  which is used to identify the language documented by this element, and which is referenced by the global xml:lang attribute. 
  
-**Datatype**
  
-teidata.language
+   |    **Status**   |    Required     |     
+   |    **Datatype**   |    teidata.language     |     
  
  
  
+`@usage` specifies the approximate percentage (by volume) of the text which uses this language. 
  
-@usage
  
-specifies the approximate percentage (by volume) of the text which uses this language. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-nonNegativeInteger
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    nonNegativeInteger     |     
  
  
  
@@ -3768,7 +3681,7 @@ Particularly for sublanguages, an informal prose characterization should be supp
  
  
  
-### langUsage<span id="langUsage"/>
+### `langUsage`<span id="langUsage"/>
  
  
 **langUsage** (language usage) describes the languages, sublanguages, registers, dialects, etc. represented within a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-langUsage.html) ] 
@@ -3776,7 +3689,7 @@ Particularly for sublanguages, an informal prose characterization should be supp
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declarable](#att.declarable)  (`@default`) 
  
  
  
@@ -3829,7 +3742,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### lb<span id="lb"/>
+### `lb`<span id="lb"/>
  
  
 **lb** (line beginning) marks the beginning of a new (typographic) line in some edition or version of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html) ] 
@@ -3837,7 +3750,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype)  [att.edition](#att.edition)  (@ed, @edRef)  [att.spanning](#att.spanning)  (@spanTo)  [att.breaking](#att.breaking)  (@break) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.edition](#att.edition)  (`@ed`, `@edRef`)  [att.spanning](#att.spanning)  (`@spanTo`)  [att.breaking](#att.breaking)  (`@break`) 
  
  
  
@@ -3907,7 +3820,7 @@ This example encodes typographical line breaks as a means of preserving the visu
  
  
  
-### lg<span id="lg"/>
+### `lg`<span id="lg"/>
  
  
 **lg** (line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lg.html) ] 
@@ -3915,7 +3828,7 @@ This example encodes typographical line breaks as a means of preserving the visu
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.divLike](#att.divLike)  (@org, @sample) ( [att.fragmentable](#att.fragmentable)  (@part))  [att.typed](#att.typed)  (@type, @subtype)  [att.declaring](#att.declaring)  (@decls) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.divLike](#att.divLike)  (`@org`, `@sample`) ( [att.fragmentable](#att.fragmentable)  (`@part`))  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.declaring](#att.declaring)  (`@decls`) 
  
  
  
@@ -3980,7 +3893,7 @@ contains verse lines or nested line groups only, possibly prefixed by a heading.
  
  
  
-### licence<span id="licence"/>
+### `licence`<span id="licence"/>
  
  
 **licence** contains information about a licence or other legal agreement applicable to the text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-licence.html) ] 
@@ -3988,7 +3901,7 @@ contains verse lines or nested line groups only, possibly prefixed by a heading.
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.pointing](#att.pointing)  (@targetLang, @target, @evaluate)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.pointing](#att.pointing)  (`@targetLang`, `@target`, `@evaluate`)  [att.datable](#att.datable)  (`@calendar`, `@period`) ( [att.datable.w3c](#att.datable.w3c)  (`@when`, `@notBefore`, `@notAfter`, `@from`, `@to`)) 
  
  
  
@@ -4068,7 +3981,7 @@ A  [licence](#licence)  element should be supplied for each licence agreement ap
  
  
  
-### list<span id="list"/>
+### `list`<span id="list"/>
  
  
 **list** contains any sequence of items organized as a list. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-list.html) ] 
@@ -4076,38 +3989,22 @@ A  [licence](#licence)  element should be supplied for each licence agreement ap
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.sortable](#att.sortable)  (@sortKey)  [att.typed](#att.typed)  (type, @subtype) 
-@type
- 
-describes the nature of the items in the list. 
-**Derived from**
- 
- [att.typed](#att.typed) 
- 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Suggested values include:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.sortable](#att.sortable)  (`@sortKey`)  [att.typed](#att.typed)  (type, @subtype) 
  
  
- 
-gloss each list item glosses some term or concept, which is given by a label element preceding the list item. each list item glosses some term or concept, which is given by a label element preceding the list item. index each list item is an entry in an index such as the alphabetical topical index at the back of a print volume. each list item is an entry in an index such as the alphabetical topical index at the back of a print volume. instructions each list item is a step in a sequence of instructions, as in a recipe.each list item is a step in a sequence of instructions, as in a recipe.litany each list item is one of a sequence of petitions, supplications or invocations, typically in a religious ritual. each list item is one of a sequence of petitions, supplications or invocations, typically in a religious ritual. syllogism each list item is part of an argument consisting of two or more propositions and a final conclusion derived from them. each list item is part of an argument consisting of two or more propositions and a final conclusion derived from them. 
- 
+`@type` describes the nature of the items in the list. 
  
  
-**Note**
+   |    **Derived from**   |     [att.typed](#att.typed)      |     
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Suggested values include:**   |    
  
-Previous versions of these Guidelines recommended the use of type on  [list](#list)  to encode the rendering or appearance of a list (whether it was bulleted, numbered, etc.). The current recommendation is to use the rend or style attributes for these aspects of a list, while using type for the more appropriate task of characterizing the nature of the content of a list. 
+gloss each list item glosses some term or concept, which is given by a `label` element preceding the list item. each list item glosses some term or concept, which is given by a `label` element preceding the list item. index each list item is an entry in an index such as the alphabetical topical index at the back of a print volume. each list item is an entry in an index such as the alphabetical topical index at the back of a print volume. instructions each list item is a step in a sequence of instructions, as in a recipe.each list item is a step in a sequence of instructions, as in a recipe.litany each list item is one of a sequence of petitions, supplications or invocations, typically in a religious ritual. each list item is one of a sequence of petitions, supplications or invocations, typically in a religious ritual. syllogism each list item is part of an argument consisting of two or more propositions and a final conclusion derived from them. each list item is part of an argument consisting of two or more propositions and a final conclusion derived from them. 
  
-**Note**
- 
-The formal syntax of the element declarations allows label tags to be omitted from lists tagged &lt;list type="gloss"&gt;; this is however a semantic error. 
- 
+     |     
+   |    **Note**   |    Previous versions of these Guidelines recommended the use of type on  [list](#list)  to encode the rendering or appearance of a list (whether it was bulleted, numbered, etc.). The current recommendation is to use the rend or style attributes for these aspects of a list, while using type for the more appropriate task of characterizing the nature of the content of a list.      |     
+   |    **Note**   |    The formal syntax of the element declarations allows `label` tags to be omitted from lists tagged &lt;list type="gloss"&gt;; this is however a semantic error.      |     
  
  
  
@@ -4268,7 +4165,7 @@ Note that nested lists have been used so the tagging mirrors the structure indic
  
  
  
-### listBibl<span id="listBibl"/>
+### `listBibl`<span id="listBibl"/>
  
  
 **listBibl** (citation list) contains a list of bibliographic citations of any kind. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listBibl.html) ] 
@@ -4276,7 +4173,7 @@ Note that nested lists have been used so the tagging mirrors the structure indic
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.sortable](#att.sortable)  (@sortKey)  [att.declarable](#att.declarable)  (@default)  [att.typed](#att.typed)  (@type, @subtype) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.sortable](#att.sortable)  (`@sortKey`)  [att.declarable](#att.declarable)  (`@default`)  [att.typed](#att.typed)  (`@type`, `@subtype`) 
  
  
  
@@ -4330,7 +4227,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### listChange<span id="listChange"/>
+### `listChange`<span id="listChange"/>
  
  
 **listChange** groups a number of change descriptions associated with either the creation of a source text or the revision of an encoded text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listChange.html) ] 
@@ -4338,22 +4235,15 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.sortable](#att.sortable)  (@sortKey)  [att.typed](#att.typed)  (@type, @subtype) 
-@ordered
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.sortable](#att.sortable)  (`@sortKey`)  [att.typed](#att.typed)  (`@type`, `@subtype`) 
  
-indicates whether the ordering of its child  [change](#change)  elements is to be considered significant or not 
-**Status**
  
-Optional
+`@ordered` indicates whether the ordering of its child  [change](#change)  elements is to be considered significant or not 
  
-**Datatype**
  
-teidata.truthValue
- 
-**Default**
- 
-true
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.truthValue     |     
+   |    **Default**   |    true     |     
  
  
  
@@ -4435,7 +4325,7 @@ When this element appears within the  [creation](#creation)  element it document
  
  
  
-### listPrefixDef<span id="listPrefixDef"/>
+### `listPrefixDef`<span id="listPrefixDef"/>
  
  
 **listPrefixDef** (list of prefix definitions) contains a list of definitions of prefixing schemes used in data.pointer values, showing how abbreviated URIs using each scheme may be expanded into full URIs. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-listPrefixDef.html) ] 
@@ -4443,7 +4333,7 @@ When this element appears within the  [creation](#creation)  element it document
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -4493,7 +4383,7 @@ In this example, two private URI scheme prefixes are defined and patterns are pr
  
  
  
-### milestone<span id="milestone"/>
+### `milestone`<span id="milestone"/>
  
  
 **milestone** marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-milestone.html) ] 
@@ -4501,7 +4391,7 @@ In this example, two private URI scheme prefixes are defined and patterns are pr
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.milestoneUnit](#att.milestoneUnit)  (@unit)  [att.typed](#att.typed)  (@type, @subtype)  [att.edition](#att.edition)  (@ed, @edRef)  [att.spanning](#att.spanning)  (@spanTo)  [att.breaking](#att.breaking)  (@break) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.milestoneUnit](#att.milestoneUnit)  (`@unit`)  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.edition](#att.edition)  (`@ed`, `@edRef`)  [att.spanning](#att.spanning)  (`@spanTo`)  [att.breaking](#att.breaking)  (`@break`) 
  
  
  
@@ -4558,7 +4448,7 @@ For this element, the global n attribute indicates the new number or other value
  
  
  
-### name<span id="name"/>
+### `name`<span id="name"/>
  
  
 **name** (name, proper noun) contains a proper noun or noun phrase. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-name.html) ] 
@@ -4566,7 +4456,7 @@ For this element, the global n attribute indicates the new number or other value
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.personal](#att.personal)  (@full, @sort) ( [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.canonical)  (@key, @ref)) )  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to))  [att.editLike](#att.editLike)  (@evidence, @instant)  [att.typed](#att.typed)  (@type, @subtype) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.personal](#att.personal)  (`@full`, `@sort`) ( [att.naming](#att.naming)  (`@role`, `@nymRef`) ( [att.canonical](#att.canonical)  (`@key`, `@ref`)) )  [att.datable](#att.datable)  (`@calendar`, `@period`) ( [att.datable.w3c](#att.datable.w3c)  (`@when`, `@notBefore`, `@notAfter`, `@from`, `@to`))  [att.editLike](#att.editLike)  (`@evidence`, `@instant`)  [att.typed](#att.typed)  (`@type`, `@subtype`) 
  
  
  
@@ -4612,7 +4502,7 @@ character data
  
 #### **Note**
  
-Proper nouns referring to people, places, and organizations may be tagged instead with persName, placeName, or orgName, when the TEI module for names and dates is included. 
+Proper nouns referring to people, places, and organizations may be tagged instead with `persName`, `placeName`, or `orgName`, when the TEI module for names and dates is included. 
  
  
  
@@ -4638,7 +4528,7 @@ Proper nouns referring to people, places, and organizations may be tagged instea
  
  
  
-### note<span id="note"/>
+### `note`<span id="note"/>
  
  
 **note** contains a note or annotation. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-note.html) ] 
@@ -4646,44 +4536,25 @@ Proper nouns referring to people, places, and organizations may be tagged instea
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.placement](#att.placement)  (@place)  [att.pointing](#att.pointing)  (@targetLang, @target, @evaluate)  [att.typed](#att.typed)  (@type, @subtype)  [att.written](#att.written)  (@hand) 
-@anchored
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.placement](#att.placement)  (`@place`)  [att.pointing](#att.pointing)  (`@targetLang`, `@target`, `@evaluate`)  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.written](#att.written)  (`@hand`) 
  
-indicates whether the copy text shows the exact place of reference for the note. 
-**Status**
  
-Optional
+`@anchored` indicates whether the copy text shows the exact place of reference for the note. 
  
-**Datatype**
  
-teidata.truthValue
- 
-**Default**
- 
-true
- 
-**Note**
- 
-In modern texts, notes are usually anchored by means of explicit footnote or endnote symbols. An explicit indication of the phrase or line annotated may however be used instead (e.g. ‘page 218, lines 3–4’). The anchored attribute indicates whether any explicit location is given, whether by symbol or by prose cross-reference. The value true indicates that such an explicit location is indicated in the copy text; the value false indicates that the copy text does not indicate a specific place of attachment for the note. If the specific symbols used in the copy text at the location the note is anchored are to be recorded, use the n attribute. 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.truthValue     |     
+   |    **Default**   |    true     |     
+   |    **Note**   |    In modern texts, notes are usually anchored by means of explicit footnote or endnote symbols. An explicit indication of the phrase or line annotated may however be used instead (e.g. ‘page 218, lines 3–4’). The anchored attribute indicates whether any explicit location is given, whether by symbol or by prose cross-reference. The value true indicates that such an explicit location is indicated in the copy text; the value false indicates that the copy text does not indicate a specific place of attachment for the note. If the specific symbols used in the copy text at the location the note is anchored are to be recorded, use the n attribute.      |     
  
  
  
+`@targetEnd` points to the end of the span to which the note is attached, if the note is not embedded in the text at that point. 
  
-@targetEnd
  
-points to the end of the span to which the note is attached, if the note is not embedded in the text at that point. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
-**Note**
- 
-This attribute is retained for backwards compatibility; it may be removed at a subsequent release of the Guidelines. The recommended way of pointing to a span of elements is by means of the range function of XPointer, as further described in  [16.2.4.6. range()](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATSRN) . 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+   |    **Note**   |    This attribute is retained for backwards compatibility; it may be removed at a subsequent release of the Guidelines. The recommended way of pointing to a span of elements is by means of the range function of XPointer, as further described in  [16.2.4.6. range()](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATSRN) .      |     
  
  
  
@@ -4768,7 +4639,7 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
-### notesStmt<span id="notesStmt"/>
+### `notesStmt`<span id="notesStmt"/>
  
  
 **notesStmt** (notes statement) collects together any notes providing information about a text additional to that recorded in other parts of the bibliographic description. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-notesStmt.html) ] 
@@ -4776,7 +4647,7 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -4832,7 +4703,7 @@ Information of different kinds should not be grouped together into the same note
  
  
  
-### num<span id="num"/>
+### `num`<span id="num"/>
  
  
 **num** (number) contains a number, written in any form. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-num.html) ] 
@@ -4840,52 +4711,30 @@ Information of different kinds should not be grouped together into the same note
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.ranging](#att.ranging)  (@atLeast, @atMost, @min, @max, @confidence) 
-@type
- 
-indicates the type of numeric value. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Suggested values include:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.ranging](#att.ranging)  (`@atLeast`, `@atMost`, `@min`, `@max`, `@confidence`) 
  
  
+`@type` indicates the type of numeric value. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Suggested values include:**   |    
  
 cardinal absolute number, e.g. 21, 21.5absolute number, e.g. 21, 21.5ordinal ordinal number, e.g. 21stordinal number, e.g. 21stfraction fraction, e.g. one half or three-quartersfraction, e.g. one half or three-quarterspercentage a percentagea percentage
  
- 
- 
-**Note**
- 
-If a different typology is desired, other values can be used for this attribute.
+     |     
+   |    **Note**   |    If a different typology is desired, other values can be used for this attribute.     |     
  
  
  
+`@value` supplies the value of the number in standard form. 
  
-@value
  
-supplies the value of the number in standard form. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.numeric
- 
-**Values**
- 
-a numeric value.
- 
-**Note**
- 
-The standard form used is defined by the TEI datatype data.numeric.
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.numeric     |     
+   |    **Values**   |    a numeric value.     |     
+   |    **Note**   |    The standard form used is defined by the TEI datatype data.numeric.     |     
  
  
  
@@ -4962,7 +4811,7 @@ Detailed analyses of quantities and units of measure in historical documents may
  
  
  
-### orig<span id="orig"/>
+### `orig`<span id="orig"/>
  
  
 **orig** (original form) contains a reading which is marked as following the original, rather than being normalized or corrected. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html) ] 
@@ -4970,7 +4819,7 @@ Detailed analyses of quantities and units of measure in historical documents may
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -5046,7 +4895,7 @@ More usually, an  [orig](#orig)  will be combined with a regularized form within
  
  
  
-### p<span id="p"/>
+### `p`<span id="p"/>
  
  
 **p** (paragraph) marks paragraphs in prose. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html) ] 
@@ -5054,7 +4903,7 @@ More usually, an  [orig](#orig)  will be combined with a regularized form within
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls)  [att.fragmentable](#att.fragmentable)  (@part)  [att.written](#att.written)  (@hand) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declaring](#att.declaring)  (`@decls`)  [att.fragmentable](#att.fragmentable)  (`@part`)  [att.written](#att.written)  (`@hand`) 
  
  
  
@@ -5114,7 +4963,7 @@ character data
  
  
  
-### pb<span id="pb"/>
+### `pb`<span id="pb"/>
  
  
 **pb** (page beginning) marks the beginning of a new page in a paginated document. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html) ] 
@@ -5122,7 +4971,7 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype)  [att.edition](#att.edition)  (@ed, @edRef)  [att.spanning](#att.spanning)  (@spanTo)  [att.breaking](#att.breaking)  (@break) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.edition](#att.edition)  (`@ed`, `@edRef`)  [att.spanning](#att.spanning)  (`@spanTo`)  [att.breaking](#att.breaking)  (`@break`) 
  
  
  
@@ -5193,7 +5042,7 @@ A page break may be associated with a facsimile image of the page it introduces 
  
  
  
-### pc<span id="pc"/>
+### `pc`<span id="pc"/>
  
  
 **pc** (punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pc.html) ] 
@@ -5201,54 +5050,35 @@ A page break may be associated with a facsimile image of the page it introduces 
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.segLike](#att.segLike)  (@function) ( [att.datcat](#att.datcat)  (@datcat, @valueDatcat)) ( [att.fragmentable](#att.fragmentable)  (@part))  [att.typed](#att.typed)  (@type, @subtype)  [att.linguistic](#att.linguistic)  (@lemma, @lemmaRef, @pos, @msd, @join) 
-@force
- 
-indicates the extent to which this punctuation mark conventionally separates words or phrases 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.segLike](#att.segLike)  (`@function`) ( [att.datcat](#att.datcat)  (`@datcat`, `@valueDatcat`)) ( [att.fragmentable](#att.fragmentable)  (`@part`))  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.linguistic](#att.linguistic)  (`@lemma`, `@lemmaRef`, `@pos`, `@msd`, `@join`) 
  
  
+`@force` indicates the extent to which this punctuation mark conventionally separates words or phrases 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 strong the punctuation mark is a word separatorthe punctuation mark is a word separatorweak the punctuation mark is not a word separatorthe punctuation mark is not a word separatorinter the punctuation mark may or may not be a word separatorthe punctuation mark may or may not be a word separator
  
+     |     
  
  
  
+`@unit` provides a name for the kind of unit delimited by this punctuation mark. 
  
  
-@unit
- 
-provides a name for the kind of unit delimited by this punctuation mark. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
  
  
  
+`@pre` indicates whether this punctuation mark precedes or follows the unit it delimits. 
  
-@pre
  
-indicates whether this punctuation mark precedes or follows the unit it delimits. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.truthValue
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.truthValue     |     
  
  
  
@@ -5328,7 +5158,7 @@ Example encoding of the German sentence Wir fahren in den Urlaub., encoded with 
  
  
  
-### prefixDef<span id="prefixDef"/>
+### `prefixDef`<span id="prefixDef"/>
  
  
 **prefixDef** (prefix definition) defines a prefixing scheme used in data.pointer values, showing how abbreviated URIs using the scheme may be expanded into full URIs. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-prefixDef.html) ] 
@@ -5336,22 +5166,15 @@ Example encoding of the German sentence Wir fahren in den Urlaub., encoded with 
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.patternReplacement](#att.patternReplacement)  (@matchPattern, @replacementPattern) 
-@ident
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.patternReplacement](#att.patternReplacement)  (`@matchPattern`, `@replacementPattern`) 
  
-supplies a name which functions as the prefix for an abbreviated pointing scheme such as a private URI scheme. The prefix constitutes the text preceding the first colon. 
-**Status**
  
-Required
+`@ident` supplies a name which functions as the prefix for an abbreviated pointing scheme such as a private URI scheme. The prefix constitutes the text preceding the first colon. 
  
-**Datatype**
  
-teidata.prefix
- 
-**Note**
- 
-The value is limited to teidata.prefix so that it may be mapped directly to a URI prefix. 
- 
+   |    **Status**   |    Required     |     
+   |    **Datatype**   |    teidata.prefix     |     
+   |    **Note**   |    The value is limited to teidata.prefix so that it may be mapped directly to a URI prefix.      |     
  
  
  
@@ -5413,7 +5236,7 @@ The abbreviated pointer may be dereferenced to produce either an absolute or a r
  
  
  
-### profileDesc<span id="profileDesc"/>
+### `profileDesc`<span id="profileDesc"/>
  
  
 **profileDesc** (text-profile description) provides a detailed description of non-bibliographic aspects of a text, specifically the languages and sublanguages used, the situation in which it was produced, the participants and their setting. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-profileDesc.html) ] 
@@ -5421,7 +5244,7 @@ The abbreviated pointer may be dereferenced to produce either an absolute or a r
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -5480,7 +5303,7 @@ Although the content model permits it, it is rarely meaningful to supply multipl
  
  
  
-### projectDesc<span id="projectDesc"/>
+### `projectDesc`<span id="projectDesc"/>
  
  
 **projectDesc** (project description) describes in detail the aim or purpose for which an electronic file was encoded, together with any other relevant information concerning the process by which it was assembled or collected. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-projectDesc.html) ] 
@@ -5488,7 +5311,7 @@ Although the content model permits it, it is rarely meaningful to supply multipl
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declarable](#att.declarable)  (`@default`) 
  
  
  
@@ -5536,7 +5359,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### publicationStmt<span id="publicationStmt"/>
+### `publicationStmt`<span id="publicationStmt"/>
  
  
 **publicationStmt** (publication statement) groups information concerning the publication or distribution of an electronic or other text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html) ] 
@@ -5544,7 +5367,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -5632,7 +5455,7 @@ Where a publication statement contains several members of the model.publicationS
  
  
  
-### publisher<span id="publisher"/>
+### `publisher`<span id="publisher"/>
  
  
 **publisher** provides the name of the organization responsible for the publication or distribution of a bibliographic item. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publisher.html) ] 
@@ -5640,7 +5463,7 @@ Where a publication statement contains several members of the model.publicationS
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.canonical](#att.canonical)  (`@key`, `@ref`) 
  
  
  
@@ -5706,7 +5529,7 @@ Use the full form of the name by which a company is usually referred to, rather 
  
  
  
-### pubPlace<span id="pubPlace"/>
+### `pubPlace`<span id="pubPlace"/>
  
  
 **pubPlace** (publication place) contains the name of the place where a bibliographic item was published. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pubPlace.html) ] 
@@ -5714,7 +5537,7 @@ Use the full form of the name by which a company is usually referred to, rather 
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.canonical)  (@key, @ref)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.naming](#att.naming)  (`@role`, `@nymRef`) ( [att.canonical](#att.canonical)  (`@key`, `@ref`)) 
  
  
  
@@ -5772,7 +5595,7 @@ character data
  
  
  
-### q<span id="q"/>
+### `q`<span id="q"/>
  
  
 **q** (quoted) contains material which is distinguished from the surrounding text using quotation marks or a similar method, for any one of a variety of reasons including, but not limited to: direct speech or thought, technical terms or jargon, authorial distance, quotations from elsewhere, and passages that are mentioned but not used. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-q.html) ] 
@@ -5780,26 +5603,19 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.ascribed.directed](#att.ascribed.directed)  (@toWhom) ( [att.ascribed](#att.ascribed)  (@who)) 
-@type
- 
-may be used to indicate whether the offset passage is spoken or thought, or to characterize it more finely. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Suggested values include:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.ascribed.directed](#att.ascribed.directed)  (`@toWhom`) ( [att.ascribed](#att.ascribed)  (`@who`)) 
  
  
+`@type` may be used to indicate whether the offset passage is spoken or thought, or to characterize it more finely. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Suggested values include:**   |    
  
 spoken representation of speechrepresentation of speechthought representation of thought, e.g. internal monologuerepresentation of thought, e.g. internal monologuewritten quotation from a written sourcequotation from a written sourcesoCalled authorial distanceauthorial distanceforeign [No description available][No description available]distinct linguistically distinctlinguistically distinctterm technical termtechnical termemph rhetorically emphasizedrhetorically emphasizedmentioned refering to itself, not its normal referentrefering to itself, not its normal referent
  
- 
- 
+     |     
  
  
  
@@ -5872,7 +5688,7 @@ It is spelled <q>Tübingen</q> — to enter the letter <q>u</q> with an umlaut h
  
  
  
-### quote<span id="quote"/>
+### `quote`<span id="quote"/>
  
  
 **quote** (quotation) contains a phrase or passage attributed by the narrator or author to some agency external to the text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-quote.html) ] 
@@ -5880,7 +5696,7 @@ It is spelled <q>Tübingen</q> — to enter the letter <q>u</q> with an umlaut h
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype)  [att.notated](#att.notated)  (@notation) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.notated](#att.notated)  (`@notation`) 
  
  
  
@@ -5926,7 +5742,7 @@ character data
  
 #### **Note**
  
-If a bibliographic citation is supplied for the source of a quotation, the two may be grouped using the cit element. 
+If a bibliographic citation is supplied for the source of a quotation, the two may be grouped using the `cit` element. 
  
  
  
@@ -5948,7 +5764,7 @@ Lexicography has shown little sign of being affected by the work of followers of
  
  
  
-### ref<span id="ref"/>
+### `ref`<span id="ref"/>
  
  
 **ref** (reference) defines a reference to another location, possibly modified by additional text or comment. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-ref.html) ] 
@@ -5956,7 +5772,7 @@ Lexicography has shown little sign of being affected by the work of followers of
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.pointing](#att.pointing)  (@targetLang, @target, @evaluate)  [att.internetMedia](#att.internetMedia)  (@mimeType)  [att.typed](#att.typed)  (@type, @subtype)  [att.declaring](#att.declaring)  (@decls)  [att.cReferencing](#att.cReferencing)  (@cRef) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.pointing](#att.pointing)  (`@targetLang`, `@target`, `@evaluate`)  [att.internetMedia](#att.internetMedia)  (`@mimeType`)  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.declaring](#att.declaring)  (`@decls`)  [att.cReferencing](#att.cReferencing)  (`@cRef`) 
  
  
  
@@ -6041,7 +5857,7 @@ See also <ref target="#locution">
  
  
  
-### reg<span id="reg"/>
+### `reg`<span id="reg"/>
  
  
 **reg** (regularization) contains a reading which has been regularized or normalized in some sense. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html) ] 
@@ -6049,7 +5865,7 @@ See also <ref target="#locution">
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.editLike](#att.editLike)  (@evidence, @instant)  [att.typed](#att.typed)  (@type, @subtype) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.editLike](#att.editLike)  (`@evidence`, `@instant`)  [att.typed](#att.typed)  (`@type`, `@subtype`) 
  
  
  
@@ -6126,7 +5942,7 @@ It is also possible to identify the individual responsible for the regularizatio
  
  
  
-### relatedItem<span id="relatedItem"/>
+### `relatedItem`<span id="relatedItem"/>
  
  
 **relatedItem** contains or references some other bibliographic item which is related to the present one in some specified manner, for example as a constituent or alternative version of it. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-relatedItem.html) ] 
@@ -6134,18 +5950,14 @@ It is also possible to identify the individual responsible for the regularizatio
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype) 
-@target
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.typed](#att.typed)  (`@type`, `@subtype`) 
  
-points to the related bibliographic element by means of an absolute or relative URI reference 
-**Status**
  
-Optional
+`@target` points to the related bibliographic element by means of an absolute or relative URI reference 
  
-**Datatype**
  
-teidata.pointer
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
  
  
  
@@ -6214,7 +6026,7 @@ If the target attribute is used to reference the related bibliographic item, the
  
  
  
-### rendition<span id="rendition"/>
+### `rendition`<span id="rendition"/>
  
  
 **rendition** supplies information about the rendition or appearance of one or more elements in the source text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ] 
@@ -6222,62 +6034,45 @@ If the target attribute is used to reference the related bibliographic item, the
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.styleDef](#att.styleDef)  (@scheme, @schemeVersion) 
-@scope
- 
-where CSS is used, provides a way of defining ‘pseudo-elements’, that is, styling rules applicable to specific sub-portions of an element. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Sample values include:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.styleDef](#att.styleDef)  (`@scheme`, `@schemeVersion`) 
  
  
+`@scope` where CSS is used, provides a way of defining ‘pseudo-elements’, that is, styling rules applicable to specific sub-portions of an element. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Sample values include:**   |    
  
 first-line styling applies to the first line of the target elementstyling applies to the first line of the target elementfirst-letter styling applies to the first letter of the target elementstyling applies to the first letter of the target elementbefore styling should be applied immediately before the content of the target elementstyling should be applied immediately before the content of the target elementafter styling should be applied immediately after the content of the target elementstyling should be applied immediately after the content of the target element
  
+     |     
  
  
  
+`@selector` contains a selector or series of selectors specifying the elements to which the contained style description applies, expressed in the language specified in the scheme attribute. 
  
  
-@selector
- 
-contains a selector or series of selectors specifying the elements to which the contained style description applies, expressed in the language specified in the scheme attribute. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.text
- 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.text     |     
+   |    
 ```
  
 <rendition scheme="css" selector="text, front, back, body, div, p, ab">
                                                  display: block;</rendition>
  
 ```
- [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ] 
+ [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ]      |     
+   |    
 ```
  
 <rendition scheme="css" selector="*[rend*=italic]">
                                                  font-style: italic;</rendition>
  
 ```
- [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ] **Note**
- 
-Since the default value of the scheme attribute is assumed to be CSS, the default expectation for this attribute, in the absence of scheme, is that CSS selector syntax will be used. 
- 
-**Note**
- 
-While rendition is used to point from an element in the transcribed source to a  [rendition](#rendition)  element in the header which describes how it appears, the selector attribute allows the encoder to point in the other direction: from a  [rendition](#rendition)  in the header to a collection of elements which all share the same renditional features. In both cases, the intention is to record the appearance of the source text, not to prescribe any particular output rendering. 
- 
+ [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html) ]      |     
+   |    **Note**   |    Since the default value of the scheme attribute is assumed to be CSS, the default expectation for this attribute, in the absence of scheme, is that CSS selector syntax will be used.      |     
+   |    **Note**   |    While rendition is used to point from an element in the transcribed source to a  [rendition](#rendition)  element in the header which describes how it appears, the selector attribute allows the encoder to point in the other direction: from a  [rendition](#rendition)  in the header to a collection of elements which all share the same renditional features. In both cases, the intention is to record the appearance of the source text, not to prescribe any particular output rendering.      |     
  
  
  
@@ -6336,7 +6131,7 @@ character data
  
  
  
-### resp<span id="resp"/>
+### `resp`<span id="resp"/>
  
  
 **resp** (responsibility) contains a phrase describing the nature of a person's intellectual responsibility, or an organization's role in the production or distribution of a work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-resp.html) ] 
@@ -6344,7 +6139,7 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.canonical](#att.canonical)  (`@key`, `@ref`)  [att.datable](#att.datable)  (`@calendar`, `@period`) ( [att.datable.w3c](#att.datable.w3c)  (`@when`, `@notBefore`, `@notAfter`, `@from`, `@to`)) 
  
  
  
@@ -6407,7 +6202,7 @@ The attribute ref, inherited from the class  [att.canonical](#att.canonical)  ma
  
  
  
-### respStmt<span id="respStmt"/>
+### `respStmt`<span id="respStmt"/>
  
  
 **respStmt** (statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or series, where the specialized elements for authors, editors, etc. do not suffice or do not apply. May also be used to encode information about individuals or organizations which have played a role in the production or distribution of a bibliographic work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-respStmt.html) ] 
@@ -6415,7 +6210,7 @@ The attribute ref, inherited from the class  [att.canonical](#att.canonical)  ma
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.canonical](#att.canonical)  (`@key`, `@ref`) 
  
  
  
@@ -6479,7 +6274,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### revisionDesc<span id="revisionDesc"/>
+### `revisionDesc`<span id="revisionDesc"/>
  
  
 **revisionDesc** (revision description) summarizes the revision history for a file. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-revisionDesc.html) ] 
@@ -6487,7 +6282,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.docStatus](#att.docStatus)  (@status) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.docStatus](#att.docStatus)  (`@status`) 
  
  
  
@@ -6547,7 +6342,7 @@ If present on this element, the status attribute should indicate the current sta
  
  
  
-### seriesStmt<span id="seriesStmt"/>
+### `seriesStmt`<span id="seriesStmt"/>
  
  
 **seriesStmt** (series statement) groups information about the series, if any, to which a publication belongs. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html) ] 
@@ -6555,7 +6350,7 @@ If present on this element, the status attribute should indicate the current sta
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -6607,7 +6402,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### sic<span id="sic"/>
+### `sic`<span id="sic"/>
  
  
 **sic** (Latin for thus or so) contains text reproduced although apparently incorrect or inaccurate. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sic.html) ] 
@@ -6615,7 +6410,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -6723,7 +6518,7 @@ for his nose was as sharp as a pen, and <choice> <sic>a Table</sic> <corr>a' b
  
  
  
-### sourceDesc<span id="sourceDesc"/>
+### `sourceDesc`<span id="sourceDesc"/>
  
  
 **sourceDesc** (source description) describes the source from which an electronic text was derived or generated, typically a bibliographic description in the case of a digitized text, or a phrase such as "born digital" for a text which has no previous existence. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html) ] 
@@ -6731,7 +6526,7 @@ for his nose was as sharp as a pen, and <choice> <sic>a Table</sic> <corr>a' b
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declarable](#att.declarable)  (`@default`) 
  
  
  
@@ -6796,30 +6591,23 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### TEI<span id="TEI"/>
+### `TEI`<span id="TEI"/>
  
  
-**TEI** (TEI document) contains a single TEI-conformant document, combining a single TEI header with one or more members of the model.resourceLike class. Multiple  [TEI](#TEI)  elements may be combined to form a teiCorpus element. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-TEI.html) ] 
+**TEI** (TEI document) contains a single TEI-conformant document, combining a single TEI header with one or more members of the model.resourceLike class. Multiple  [TEI](#TEI)  elements may be combined to form a `teiCorpus` element. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-TEI.html) ] 
  
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype) 
-@version
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.typed](#att.typed)  (`@type`, `@subtype`) 
  
-specifies the version number of the TEI Guidelines against which this document is valid. 
-**Status**
  
-Optional
+`@version` specifies the version number of the TEI Guidelines against which this document is valid. 
  
-**Datatype**
  
-teidata.version
- 
-**Note**
- 
-Major editions of the Guidelines have long been informally referred to by a name made up of the letter P (for Proposal) followed by a digit. The current release is one of the many releases of the fifth major edition of the Guidelines, known as P5. This attribute may be used to associate a TEI document with a specific release of the P5 Guidelines, in the absence of a more precise association provided by the source attribute on the associated schemaSpec. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.version     |     
+   |    **Note**   |    Major editions of the Guidelines have long been informally referred to by a name made up of the letter P (for Proposal) followed by a digit. The current release is one of the many releases of the fifth major edition of the Guidelines, known as P5. This attribute may be used to associate a TEI document with a specific release of the P5 Guidelines, in the absence of a more precise association provided by the source attribute on the associated `schemaSpec`.      |     
  
  
  
@@ -6892,7 +6680,7 @@ This element is required. It is customary to specify the TEI namespace http://ww
  
  
  
-### teiHeader<span id="teiHeader"/>
+### `teiHeader`<span id="teiHeader"/>
  
  
 **teiHeader** (TEI header) supplies descriptive and declarative metadata associated with a digital resource or set of resources. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html) ] 
@@ -6900,7 +6688,7 @@ This element is required. It is customary to specify the TEI namespace http://ww
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -6963,7 +6751,7 @@ One of the few elements unconditionally required in any TEI document.
  
  
  
-### term<span id="term"/>
+### `term`<span id="term"/>
  
  
 **term** contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-term.html) ] 
@@ -6971,7 +6759,7 @@ One of the few elements unconditionally required in any TEI document.
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls)  [att.pointing](#att.pointing)  (@targetLang, @target, @evaluate)  [att.typed](#att.typed)  (@type, @subtype)  [att.canonical](#att.canonical)  (@key, @ref)  [att.sortable](#att.sortable)  (@sortKey)  [att.cReferencing](#att.cReferencing)  (@cRef) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declaring](#att.declaring)  (`@decls`)  [att.pointing](#att.pointing)  (`@targetLang`, `@target`, `@evaluate`)  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.canonical](#att.canonical)  (`@key`, `@ref`)  [att.sortable](#att.sortable)  (`@sortKey`)  [att.cReferencing](#att.cReferencing)  (`@cRef`) 
  
  
  
@@ -7017,7 +6805,7 @@ character data
  
 #### **Note**
  
-When this element appears within an index element, it is understood to supply the form under which an index entry is to be made for that location. Elsewhere, it is understood simply to indicate that its content is to be regarded as a technical or specialised term. It may be associated with a gloss element by means of its ref attribute; alternatively a gloss element may point to a  [term](#term)  element by means of its target attribute. In formal terminological work, there is frequently discussion over whether terms must be atomic or may include multi-word lexical items, symbolic designations, or phraseological units. The  [term](#term)  element may be used to mark any of these. No position is taken on the philosophical issue of what a term can be; the looser definition simply allows the  [term](#term)  element to be used by practitioners of any persuasion. As with other members of the  [att.canonical](#att.canonical)  class, instances of this element occuring in a text may be associated with a canonical definition, either by means of a URI (using the ref attribute), or by means of some system-specific code value (using the key attribute). Because the mutually exclusive target and cRef attributes overlap with the function of the ref attribute, they are deprecated and may be removed at a subsequent release. 
+When this element appears within an `index` element, it is understood to supply the form under which an index entry is to be made for that location. Elsewhere, it is understood simply to indicate that its content is to be regarded as a technical or specialised term. It may be associated with a `gloss` element by means of its ref attribute; alternatively a `gloss` element may point to a  [term](#term)  element by means of its target attribute. In formal terminological work, there is frequently discussion over whether terms must be atomic or may include multi-word lexical items, symbolic designations, or phraseological units. The  [term](#term)  element may be used to mark any of these. No position is taken on the philosophical issue of what a term can be; the looser definition simply allows the  [term](#term)  element to be used by practitioners of any persuasion. As with other members of the  [att.canonical](#att.canonical)  class, instances of this element occuring in a text may be associated with a canonical definition, either by means of a URI (using the ref attribute), or by means of some system-specific code value (using the key attribute). Because the mutually exclusive target and cRef attributes overlap with the function of the ref attribute, they are deprecated and may be removed at a subsequent release. 
  
  
  
@@ -7090,7 +6878,7 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
  
  
-### text<span id="text"/>
+### `text`<span id="text"/>
  
  
 **text** contains a single text of any kind, whether unitary or composite, for example a poem or drama, a collection of essays, a novel, a dictionary, or a corpus sample. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-text.html) ] 
@@ -7098,7 +6886,7 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declaring](#att.declaring)  (@decls)  [att.typed](#att.typed)  (@type, @subtype)  [att.written](#att.written)  (@hand) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declaring](#att.declaring)  (`@decls`)  [att.typed](#att.typed)  (`@type`, `@subtype`)  [att.written](#att.written)  (`@hand`) 
  
  
  
@@ -7134,7 +6922,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Note**
  
-This element should not be used to represent a text which is inserted at an arbitrary point within the structure of another, for example as in an embedded or quoted narrative; the floatingText is provided for this purpose. 
+This element should not be used to represent a text which is inserted at an arbitrary point within the structure of another, for example as in an embedded or quoted narrative; the `floatingText` is provided for this purpose. 
  
  
  
@@ -7170,7 +6958,7 @@ The body of a text may be replaced by a group of nested texts, as in the followi
  
  
  
-### textClass<span id="textClass"/>
+### `textClass`<span id="textClass"/>
  
  
 **textClass** (text classification) groups information which describes the nature or topic of a text in terms of a standard classification scheme, thesaurus, etc. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-textClass.html) ] 
@@ -7178,7 +6966,7 @@ The body of a text may be replaced by a group of nested texts, as in the followi
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.declarable](#att.declarable)  (@default) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.declarable](#att.declarable)  (`@default`) 
  
  
  
@@ -7229,7 +7017,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### title<span id="title"/>
+### `title`<span id="title"/>
  
  
 **title** contains a title for any kind of work. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html) ] 
@@ -7237,60 +7025,35 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.canonical](#att.canonical)  (@key, @ref)  [att.datable](#att.datable)  (@calendar, @period) ( [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to))  [att.typed](#att.typed)  (type, @subtype) 
-@type
- 
-classifies the title according to some convenient typology. 
-**Derived from**
- 
- [att.typed](#att.typed) 
- 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Sample values include:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.canonical](#att.canonical)  (`@key`, `@ref`)  [att.datable](#att.datable)  (`@calendar`, `@period`) ( [att.datable.w3c](#att.datable.w3c)  (`@when`, `@notBefore`, `@notAfter`, `@from`, `@to`))  [att.typed](#att.typed)  (type, @subtype) 
  
  
+`@type` classifies the title according to some convenient typology. 
+ 
+ 
+   |    **Derived from**   |     [att.typed](#att.typed)      |     
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Sample values include:**   |    
  
 main main titlemain titlesub (subordinate) subtitle, title of part(subordinate) subtitle, title of partalt (alternate) alternate title, often in another language, by which the work is also known (alternate) alternate title, often in another language, by which the work is also known short abbreviated form of titleabbreviated form of titledesc (descriptive) descriptive paraphrase of the work functioning as a title(descriptive) descriptive paraphrase of the work functioning as a title
  
- 
- 
-**Note**
- 
-This attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single  [title](#title)  element. 
+     |     
+   |    **Note**   |    This attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single  [title](#title)  element.      |     
  
  
  
- 
-@level
- 
-indicates the bibliographic level for a title, that is, whether it identifies an article, book, journal, series, or unpublished material. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
+`@level` indicates the bibliographic level for a title, that is, whether it identifies an article, book, journal, series, or unpublished material. 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 a (analytic) the title applies to an analytic item, such as an article, poem, or other work published as part of a larger item. (analytic) the title applies to an analytic item, such as an article, poem, or other work published as part of a larger item. m (monographic) the title applies to a monograph such as a book or other item considered to be a distinct publication, including single volumes of multi-volume works (monographic) the title applies to a monograph such as a book or other item considered to be a distinct publication, including single volumes of multi-volume works j (journal) the title applies to any serial or periodical publication such as a journal, magazine, or newspaper (journal) the title applies to any serial or periodical publication such as a journal, magazine, or newspaper s (series) the title applies to a series of otherwise distinct publications such as a collection (series) the title applies to a series of otherwise distinct publications such as a collection u (unpublished) the title applies to any unpublished material (including theses and dissertations unless published by a commercial press) (unpublished) the title applies to any unpublished material (including theses and dissertations unless published by a commercial press) 
  
- 
- 
-**Note**
- 
-The level of a title is sometimes implied by its context: for example, a title appearing directly within an analytic element is ipso facto of level ‘a’, and one appearing within a series element of level ‘s’. For this reason, the level attribute is not required in contexts where its value can be unambiguously inferred. Where it is supplied in such contexts, its value should not contradict the value implied by its parent element. 
- 
+     |     
+   |    **Note**   |    The level of a title is sometimes implied by its context: for example, a title appearing directly within an `analytic` element is ipso facto of level ‘a’, and one appearing within a `series` element of level ‘s’. For this reason, the level attribute is not required in contexts where its value can be unambiguously inferred. Where it is supplied in such contexts, its value should not contradict the value implied by its parent element.      |     
  
  
  
@@ -7394,7 +7157,7 @@ The attributes key and ref, inherited from the class  [att.canonical](#att.canon
  
  
  
-### titlePage<span id="titlePage"/>
+### `titlePage`<span id="titlePage"/>
  
  
 **titlePage** (title page) contains the title page of a text, appearing within the front or back matter. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titlePage.html) ] 
@@ -7402,22 +7165,15 @@ The attributes key and ref, inherited from the class  [att.canonical](#att.canon
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
-@type
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
-classifies the title page according to any convenient typology. 
-**Status**
  
-Optional
+`@type` classifies the title page according to any convenient typology. 
  
-**Datatype**
  
-teidata.enumerated
- 
-**Note**
- 
-This attribute allows the same element to be used for volume title pages, series title pages, etc., as well as for the ‘main’ title page of a work. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Note**   |    This attribute allows the same element to be used for volume title pages, series title pages, etc., as well as for the ‘main’ title page of a work.      |     
  
  
  
@@ -7475,7 +7231,7 @@ This attribute allows the same element to be used for volume title pages, series
  
  
  
-### titlePart<span id="titlePart"/>
+### `titlePart`<span id="titlePart"/>
  
  
 **titlePart** contains a subsection or division of the title of a work, as indicated on a title page. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titlePart.html) ] 
@@ -7483,26 +7239,19 @@ This attribute allows the same element to be used for volume title pages, series
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
-@type
- 
-specifies the role of this subdivision of the title. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Suggested values include:**
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
+`@type` specifies the role of this subdivision of the title. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Suggested values include:**   |    
  
 main main title of the work [Default] main title of the work [Default] sub (subordinate) subtitle of the work(subordinate) subtitle of the workalt (alternate) alternative title of the work(alternate) alternative title of the workshort abbreviated form of titleabbreviated form of titledesc (descriptive) descriptive paraphrase of the work(descriptive) descriptive paraphrase of the work
  
- 
- 
+     |     
  
  
  
@@ -7565,7 +7314,7 @@ character data
  
  
  
-### titleStmt<span id="titleStmt"/>
+### `titleStmt`<span id="titleStmt"/>
  
  
 **titleStmt** (title statement) groups information about the title of a work and those responsible for its content. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html) ] 
@@ -7573,7 +7322,7 @@ character data
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -7621,7 +7370,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
  
  
-### trailer<span id="trailer"/>
+### `trailer`<span id="trailer"/>
  
  
 **trailer** contains a closing title or footer appearing at the end of a division of a text. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-trailer.html) ] 
@@ -7629,7 +7378,7 @@ Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source))  [att.typed](#att.typed)  (@type, @subtype) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`))  [att.typed](#att.typed)  (`@type`, `@subtype`) 
  
  
  
@@ -7701,7 +7450,7 @@ From EEBO A87070
  
  
  
-### val<span id="val"/>
+### `val`<span id="val"/>
  
  
 **val** (value) contains a single attribute value. [ [TEI Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-val.html) ] 
@@ -7709,7 +7458,7 @@ From EEBO A87070
  
 #### **Attributes**
  
-Attributes  [att.global](#att.global)  (@xml:id, @n, @xml:lang, @xml:base, @xml:space) ( [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)) ( [att.global.analytic](#att.global.analytic)  (@ana)) ( [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)) ( [att.global.source](#att.global.source)  (@source)) 
+Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:base`, `@xml:space`) ( [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)) ( [att.global.analytic](#att.global.analytic)  (`@ana`)) ( [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)) ( [att.global.source](#att.global.source)  (`@source`)) 
  
  
  
@@ -7776,18 +7525,14 @@ Character data only
 #### **Attributes**
  
 Attributes 
-@who
  
-indicates the person, or group of people, to whom the element content is ascribed. 
-**Status**
  
-Optional
+`@who` indicates the person, or group of people, to whom the element content is ascribed. 
  
-**Datatype**
  
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
-In the following example from Hamlet, speeches (sp) in the body of the play are linked to castItem elements in the castList using the who attribute. 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+   |    In the following example from Hamlet, speeches (`sp`) in the body of the play are linked to `castItem` elements in the `castList` using the who attribute. 
 ```
  
 <castItem type="role">
@@ -7801,10 +7546,8 @@ In the following example from Hamlet, speeches (sp) in the body of the play are 
                                                 Nay, answer me: stand, and unfold yourself.</l></sp>
  
 ```
-**Note**
- 
-For transcribed speech, this will typically identify a participant or participant group; in other contexts, it will point to any identified person element. 
- 
+     |     
+   |    **Note**   |    For transcribed speech, this will typically identify a participant or participant group; in other contexts, it will point to any identified `person` element.      |     
  
  
  
@@ -7833,19 +7576,15 @@ For transcribed speech, this will typically identify a participant or participan
  
 #### **Attributes**
  
-Attributes  [att.ascribed](#att.ascribed)  (@who) 
-@toWhom
+Attributes  [att.ascribed](#att.ascribed)  (`@who`) 
  
-indicates the person, or group of people, to whom a speech act or action is directed. 
-**Status**
  
-Optional
+`@toWhom` indicates the person, or group of people, to whom a speech act or action is directed. 
  
-**Datatype**
  
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
-In the following example from Mary Pix's The False Friend, speeches (sp) in the body of the play are linked to castItem elements in the castList using the toWhom attribute, which is used to specify who the speech is directed to. Additionally, the stage includes toWhom to indicate the directionality of the action. 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+   |    In the following example from Mary Pix's The False Friend, speeches (`sp`) in the body of the play are linked to `castItem` elements in the `castList` using the toWhom attribute, which is used to specify who the speech is directed to. Additionally, the `stage` includes toWhom to indicate the directionality of the action. 
 ```
  
 <castItem type="role">
@@ -7862,10 +7601,8 @@ In the following example from Mary Pix's The False Friend, speeches (sp) in the 
                                                 Pointing to her Woman.</stage> <l>But that poor helpless wretch——</l></sp>
  
 ```
-**Note**
- 
-To indicate the recipient of written correspondence, use the elements used in section  [2.4.6. Correspondence Description](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD44CD) , rather than a toWhom attribute. 
- 
+     |     
+   |    **Note**   |    To indicate the recipient of written correspondence, use the elements used in section  [2.4.6. Correspondence Description](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD44CD) , rather than a toWhom attribute.      |     
  
  
  
@@ -7895,31 +7632,25 @@ To indicate the recipient of written correspondence, use the elements used in se
 #### **Attributes**
  
 Attributes 
-@break
- 
-indicates whether or not the element bearing this attribute should be considered to mark the end of an orthographic token in the same way as whitespace. 
-**Status**
- 
-Recommended
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Sample values include**
  
  
+`@break` indicates whether or not the element bearing this attribute should be considered to mark the end of an orthographic token in the same way as whitespace. 
+ 
+ 
+   |    **Status**   |    Recommended     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Sample values include**   |    
  
 yes the element bearing this attribute is considered to mark the end of any adjacent orthographic token irrespective of the presence of any adjacent whitespace the element bearing this attribute is considered to mark the end of any adjacent orthographic token irrespective of the presence of any adjacent whitespace no the element bearing this attribute is considered not to mark the end of any adjacent orthographic token irrespective of the presence of any adjacent whitespace the element bearing this attribute is considered not to mark the end of any adjacent orthographic token irrespective of the presence of any adjacent whitespace maybe the encoding does not take any position on this issue.the encoding does not take any position on this issue.
  
- 
- 
-In the following lines from the Dream of the Rood, linebreaks occur in the middle of the words lāðost and reord-berendum. 
+     |     
+   |    In the following lines from the Dream of the Rood, linebreaks occur in the middle of the words lāðost and reord-berendum. 
 ```
  
 <ab> ...eƿesa tome iu icƿæs ȝeƿorden ƿita heardoſt . leodum la<lb break="no"/> ðost ærþan ichim lifes ƿeȝ rihtne ȝerymde reord be<lb break="no"/> rendum hƿæt me þaȝeƿeorðode ƿuldres ealdor ofer...</ab>
  
 ```
+     |     
  
  
  
@@ -7949,60 +7680,47 @@ In the following lines from the Dream of the Rood, linebreaks occur in the middl
 #### **Attributes**
  
 Attributes 
-@key
- 
-provides an externally-defined means of identifying the entity (or entities) being named, using a coded value of some kind. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.text
  
  
+`@key` provides an externally-defined means of identifying the entity (or entities) being named, using a coded value of some kind. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.text     |     
+   |    
 ```
  
 <author> <name key="name 427308"  type="organisation">
                                                 [New Zealand Parliament, Legislative Council]</name></author>
  
 ```
- 
+     |     
+   |    
 ```
  
 <author> <name key="Hugo, Victor (1802-1885)"  ref="http://www.idref.fr/026927608">
                                                 Victor Hugo</name></author>
  
 ```
-**Note**
- 
-The value may be a unique identifier from a database, or any other externally-defined string identifying the referent. No particular syntax is proposed for the values of the key attribute, since its form will depend entirely on practice within a given project. For the same reason, this attribute is not recommended in data interchange, since there is no way of ensuring that the values used by one project are distinct from those used by another. In such a situation, a preferable approach for magic tokens which follows standard practice on the Web is to use a ref attribute whose value is a tag URI as defined in RFC 4151. 
- 
+     |     
+   |    **Note**   |    The value may be a unique identifier from a database, or any other externally-defined string identifying the referent. No particular syntax is proposed for the values of the key attribute, since its form will depend entirely on practice within a given project. For the same reason, this attribute is not recommended in data interchange, since there is no way of ensuring that the values used by one project are distinct from those used by another. In such a situation, a preferable approach for magic tokens which follows standard practice on the Web is to use a ref attribute whose value is a tag URI as defined in RFC 4151.      |     
  
  
  
-@ref
- 
-(reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.pointer separated by whitespace
+`@ref` (reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs. 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+   |    
 ```
  
 <name ref="http://viaf.org/viaf/109557338" type="person">
                                                 Seamus Heaney</name>
  
 ```
-**Note**
- 
-The value must point directly to one or more XML elements or other resources by means of one or more URIs, separated by whitespace. If more than one is supplied the implication is that the name identifies several distinct entities. 
- 
+     |     
+   |    **Note**   |    The value must point directly to one or more XML elements or other resources by means of one or more URIs, separated by whitespace. If more than one is supplied the implication is that the name identifies several distinct entities.      |     
  
  
  
@@ -8032,21 +7750,14 @@ The value must point directly to one or more XML elements or other resources by 
 #### **Attributes**
  
 Attributes 
-@cRef
  
-(canonical reference) specifies the destination of the pointer by supplying a canonical reference expressed using the scheme defined in a refsDecl element in the TEI header 
-**Status**
  
-Optional
+`@cRef` (canonical reference) specifies the destination of the pointer by supplying a canonical reference expressed using the scheme defined in a `refsDecl` element in the TEI header 
  
-**Datatype**
  
-teidata.text
- 
-**Note**
- 
-The value of cRef should be constructed so that when the algorithm for the resolution of canonical references (described in section  [16.2.5. Canonical References](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SACR) ) is applied to it the result is a valid URI reference to the intended target. The refsDecl to use may be indicated with the decls attribute. Currently these Guidelines only provide for a single canonical reference to be encoded on any given ptr element. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.text     |     
+   |    **Note**   |    The value of cRef should be constructed so that when the algorithm for the resolution of canonical references (described in section  [16.2.5. Canonical References](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SACR) ) is applied to it the result is a valid URI reference to the intended target. The `refsDecl` to use may be indicated with the decls attribute. Currently these Guidelines only provide for a single canonical reference to be encoded on any given `ptr` element.      |     
  
  
  
@@ -8075,19 +7786,15 @@ The value of cRef should be constructed so that when the algorithm for the resol
  
 #### **Attributes**
  
-Attributes  [att.datable.w3c](#att.datable.w3c)  (@when, @notBefore, @notAfter, @from, @to) 
-@calendar
- 
-indicates the system or calendar to which the date represented by the content of this element belongs. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.pointer
+Attributes  [att.datable.w3c](#att.datable.w3c)  (`@when`, `@notBefore`, `@notAfter`, `@from`, `@to`) 
  
  
+`@calendar` indicates the system or calendar to which the date represented by the content of this element belongs. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
+   |    
 ```
  
 He was born on <date calendar="#gregorian">
@@ -8096,24 +7803,16 @@ He was born on <date calendar="#gregorian">
                                           
  
 ```
-**Note**
- 
-Note that the calendar attribute (unlike datingMethod defined in att.datable.custom) defines the calendar system of the date in the original material defined by the parent element, not the calendar to which the date is normalized. 
- 
+     |     
+   |    **Note**   |    Note that the calendar attribute (unlike datingMethod defined in att.datable.custom) defines the calendar system of the date in the original material defined by the parent element, not the calendar to which the date is normalized.      |     
  
  
  
-@period
+`@period` supplies a pointer to some location defining a named period of time within which the datable item is understood to have occurred. 
  
-supplies a pointer to some location defining a named period of time within which the datable item is understood to have occurred. 
-**Status**
  
-Optional
- 
-**Datatype**
- 
-teidata.pointer
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
  
  
  
@@ -8151,18 +7850,14 @@ This ‘superclass’ provides attributes that can be used to provide normalized
 #### **Attributes**
  
 Attributes 
-@when
  
-supplies the value of the date or time in a standard form, e.g. yyyy-mm-dd. 
-**Status**
  
-Optional
+`@when` supplies the value of the date or time in a standard form, e.g. yyyy-mm-dd. 
  
-**Datatype**
  
-teidata.temporal.w3c
- 
-Examples of W3C date, time, and date &amp; time formats.
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.temporal.w3c     |     
+   |    Examples of W3C date, time, and date &amp; time formats.
 ```
  
 <p> <date when="1945-10-24">
@@ -8179,7 +7874,8 @@ Examples of W3C date, time, and date &amp; time formats.
                                                 56 BC</date></p>
  
 ```
- 
+     |     
+   |    
 ```
  
 This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Sunday after Pentecost, in that year the<date calendar="#julian" when="1632-06-06">
@@ -8187,7 +7883,8 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
                                           
  
 ```
- 
+     |     
+   |    
 ```
  
 <opener> <dateline>  <placeName>Dorchester, Village,</placeName>  <date when="1828-03-02">
@@ -8195,62 +7892,39 @@ This list begins in the year 1632, more precisely on Trinity Sunday, i.e. the Su
                                                 noon.</time></opener>
  
 ```
+     |     
  
  
  
-@notBefore
+`@notBefore` specifies the earliest possible date for the event in standard form, e.g. yyyy-mm-dd. 
  
-specifies the earliest possible date for the event in standard form, e.g. yyyy-mm-dd. 
-**Status**
  
-Optional
- 
-**Datatype**
- 
-teidata.temporal.w3c
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.temporal.w3c     |     
  
  
  
+`@notAfter` specifies the latest possible date for the event in standard form, e.g. yyyy-mm-dd. 
  
-@notAfter
  
-specifies the latest possible date for the event in standard form, e.g. yyyy-mm-dd. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.temporal.w3c
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.temporal.w3c     |     
  
  
  
+`@from` indicates the starting point of the period in standard form, e.g. yyyy-mm-dd. 
  
-@from
  
-indicates the starting point of the period in standard form, e.g. yyyy-mm-dd. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.temporal.w3c
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.temporal.w3c     |     
  
  
  
+`@to` indicates the ending point of the period in standard form, e.g. yyyy-mm-dd. 
  
-@to
  
-indicates the ending point of the period in standard form, e.g. yyyy-mm-dd. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.temporal.w3c
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.temporal.w3c     |     
  
  
  
@@ -8303,31 +7977,21 @@ The value of these attributes should be a normalized representation of the date,
 #### **Attributes**
  
 Attributes 
-@datcat
  
-contains a PID (persistent identifier) that aligns the given element with the appropriate Data Category (or categories) in ISOcat. 
-**Status**
  
-Optional
+`@datcat` contains a PID (persistent identifier) that aligns the given element with the appropriate Data Category (or categories) in ISOcat. 
  
-**Datatype**
  
- 1–∞ occurrences of teidata.pointer separated by whitespace
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
  
  
  
+`@valueDatcat` contains a PID (persistent identifier) that aligns the content of the given element or the value of the given attribute with the appropriate simple Data Category (or categories) in ISOcat. 
  
-@valueDatcat
  
-contains a PID (persistent identifier) that aligns the content of the given element or the value of the given attribute with the appropriate simple Data Category (or categories) in ISOcat. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
  
  
  
@@ -8379,25 +8043,18 @@ ISO 12620:2009 is a standard describing the data model and procedures for a Data
 #### **Attributes**
  
 Attributes 
-@default
- 
-indicates whether or not this element is selected by default when its parent is selected. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.truthValue
- 
-**Legal values are:**
  
  
+`@default` indicates whether or not this element is selected by default when its parent is selected. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.truthValue     |     
+   |    **Legal values are:**   |    
  
 true This element is selected if its parent is selectedThis element is selected if its parent is selectedfalse This element can only be selected explicitly, unless it is the only one of its kind, in which case it is selected if its parent is selected. [Default] This element can only be selected explicitly, unless it is the only one of its kind, in which case it is selected if its parent is selected. [Default] 
  
- 
- 
+     |     
  
  
  
@@ -8435,17 +8092,13 @@ The rules governing the association of declarable elements with individual parts
 #### **Attributes**
  
 Attributes 
-@decls
  
-identifies one or more declarable elements within the header, which are understood to apply to the element bearing this attribute and its content. 
-**Status**
  
-Optional
+`@decls` identifies one or more declarable elements within the header, which are understood to apply to the element bearing this attribute and its content. 
  
-**Datatype**
  
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
  
  
  
@@ -8482,102 +8135,70 @@ The rules governing the association of declarable elements with individual parts
  
 #### **Attributes**
  
-Attributes  [att.ranging](#att.ranging)  (@atLeast, @atMost, @min, @max, @confidence) 
-@unit
- 
-names the unit used for the measurement 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Suggested values include:**
+Attributes  [att.ranging](#att.ranging)  (`@atLeast`, `@atMost`, `@min`, `@max`, `@confidence`) 
  
  
+`@unit` names the unit used for the measurement 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Suggested values include:**   |    
  
 cm (centimetres) (centimetres) mm (millimetres) (millimetres) in (inches) (inches) lines lines of textlines of textchars (characters) characters of text(characters) characters of text
  
+     |     
  
  
  
+`@quantity` specifies the length in the units specified 
  
  
-@quantity
- 
-specifies the length in the units specified 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.numeric
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.numeric     |     
  
  
  
- 
-@extent
- 
-indicates the size of the object concerned using a project-specific vocabulary combining quantity and units in a single string of words. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.text
+`@extent` indicates the size of the object concerned using a project-specific vocabulary combining quantity and units in a single string of words. 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.text     |     
+   |    
 ```
  
 <gap extent="5 words"/>
  
 ```
- 
+     |     
+   |    
 ```
  
 <height extent="half the page"/>
  
 ```
+     |     
  
  
  
-@precision
+`@precision` characterizes the precision of the values specified by the other attributes. 
  
-characterizes the precision of the values specified by the other attributes. 
-**Status**
  
-Optional
- 
-**Datatype**
- 
-teidata.certainty
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.certainty     |     
  
  
  
- 
-@scope
- 
-where the measurement summarizes more than one observation, specifies the applicability of this measurement. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Sample values include:**
+`@scope` where the measurement summarizes more than one observation, specifies the applicability of this measurement. 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Sample values include:**   |    
  
 all measurement applies to all instances.measurement applies to all instances.most measurement applies to most of the instances inspected.measurement applies to most of the instances inspected.range measurement applies to only the specified range of instances.measurement applies to only the specified range of instances.
  
- 
- 
+     |     
  
  
  
@@ -8606,48 +8227,32 @@ all measurement applies to all instances.measurement applies to all instances.mo
  
 #### **Attributes**
  
-Attributes  [att.fragmentable](#att.fragmentable)  (@part) 
-@org
- 
-(organization) specifies how the content of the division is organized. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
+Attributes  [att.fragmentable](#att.fragmentable)  (`@part`) 
  
  
+`@org` (organization) specifies how the content of the division is organized. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 composite no claim is made about the sequence in which the immediate contents of this division are to be processed, or their inter-relationships. no claim is made about the sequence in which the immediate contents of this division are to be processed, or their inter-relationships. uniform the immediate contents of this element are regarded as forming a logical unit, to be processed in sequence. [Default] the immediate contents of this element are regarded as forming a logical unit, to be processed in sequence. [Default] 
  
+     |     
  
  
  
+`@sample` indicates whether this division is a sample of the original source and if so, from which part. 
  
  
-@sample
- 
-indicates whether this division is a sample of the original source and if so, from which part. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
- 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 initial division lacks material present at end in source.division lacks material present at end in source.medial division lacks material at start and end.division lacks material at start and end.final division lacks material at start.division lacks material at start.unknown position of sampled material within original unknown.position of sampled material within original unknown.complete division is not a sample. [Default] division is not a sample. [Default] 
  
- 
- 
+     |     
  
  
  
@@ -8677,25 +8282,18 @@ initial division lacks material present at end in source.division lacks material
 #### **Attributes**
  
 Attributes 
-@status
- 
-describes the status of a document either currently or, when associated with a dated element, at the time indicated. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Sample values include:**
  
  
+`@status` describes the status of a document either currently or, when associated with a dated element, at the time indicated. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Sample values include:**   |    
  
 approved [No description available][No description available]candidate [No description available][No description available]cleared [No description available][No description available]deprecated [No description available][No description available]draft  [Default]  [Default] embargoed [No description available][No description available]expired [No description available][No description available]frozen [No description available][No description available]galley [No description available][No description available]proposed [No description available][No description available]published [No description available][No description available]recommendation [No description available][No description available]submitted [No description available][No description available]unfinished [No description available][No description available]withdrawn [No description available][No description available]
  
- 
- 
+     |     
  
  
  
@@ -8740,31 +8338,21 @@ approved [No description available][No description available]candidate [No descr
 #### **Attributes**
  
 Attributes 
-@ed
  
-(edition) supplies a sigil or other arbitrary identifier for the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text. 
-**Status**
  
-Optional
+`@ed` (edition) supplies a sigil or other arbitrary identifier for the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text. 
  
-**Datatype**
  
- 1–∞ occurrences of teidata.word separated by whitespace
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.word separated by whitespace     |     
  
  
  
+`@edRef` (edition reference) provides a pointer to the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text. 
  
-@edRef
  
-(edition reference) provides a pointer to the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
  
  
  
@@ -8824,43 +8412,27 @@ Optional
 #### **Attributes**
  
 Attributes 
-@evidence
- 
-indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.enumerated separated by whitespace
- 
-**Suggested values include:**
  
  
+`@evidence` indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
+   |    **Suggested values include:**   |    
  
 internal there is internal evidence to support the intervention.there is internal evidence to support the intervention.external there is external evidence to support the intervention.there is external evidence to support the intervention.conjecture the intervention or interpretation has been made by the editor, cataloguer, or scholar on the basis of their expertise. the intervention or interpretation has been made by the editor, cataloguer, or scholar on the basis of their expertise. 
  
+     |     
  
  
  
+`@instant` indicates whether this is an instant revision or not. 
  
  
-@instant
- 
-indicates whether this is an instant revision or not. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.xTruthValue
- 
-**Default**
- 
-false
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.xTruthValue     |     
+   |    **Default**   |    false     |     
  
  
  
@@ -8881,7 +8453,7 @@ The members of this attribute class are typically used to represent any kind of 
  
 #### **Note**
  
-Each pointer on the source (if present) corresponding to a witness or witness group should reference a bibliographic citation such as a witness, msDesc, or  [bibl](#bibl)  element, or another external bibliographic citation, documenting the source concerned. 
+Each pointer on the source (if present) corresponding to a witness or witness group should reference a bibliographic citation such as a `witness`, `msDesc`, or  [bibl](#bibl)  element, or another external bibliographic citation, documenting the source concerned. 
  
  
  
@@ -8906,29 +8478,19 @@ Each pointer on the source (if present) corresponding to a witness or witness gr
 #### **Attributes**
  
 Attributes 
-@part
- 
-specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
  
  
+`@part` specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 Y (yes) the element is fragmented in some (unspecified) respect(yes) the element is fragmented in some (unspecified) respectN (no) the element is not fragmented, or no claim is made as to its completeness [Default] (no) the element is not fragmented, or no claim is made as to its completeness [Default] I (initial) this is the initial part of a fragmented element(initial) this is the initial part of a fragmented elementM (medial) this is a medial part of a fragmented element(medial) this is a medial part of a fragmented elementF (final) this is the final part of a fragmented element(final) this is the final part of a fragmented element
  
- 
- 
-**Note**
- 
-The values I, M, or F should be used only where it is clear how the element may be be reconstituted. 
- 
+     |     
+   |    **Note**   |    The values I, M, or F should be used only where it is clear how the element may be be reconstituted.      |     
  
  
  
@@ -8957,80 +8519,50 @@ The values I, M, or F should be used only where it is clear how the element may 
  
 #### **Attributes**
  
-Attributes  [att.global.rendition](#att.global.rendition)  (@rend, @style, @rendition)  [att.global.analytic](#att.global.analytic)  (@ana)  [att.global.responsibility](#att.global.responsibility)  (@cert, @resp)  [att.global.source](#att.global.source)  (@source) 
-@xml:id
+Attributes  [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, `@rendition`)  [att.global.analytic](#att.global.analytic)  (`@ana`)  [att.global.responsibility](#att.global.responsibility)  (`@cert`, `@resp`)  [att.global.source](#att.global.source)  (`@source`) 
  
-(identifier) provides a unique identifier for the element bearing the attribute. 
-**Status**
  
-Optional
+`@xml:id` (identifier) provides a unique identifier for the element bearing the attribute. 
  
-**Datatype**
  
-ID
- 
-**Note**
- 
-The xml:id attribute may be used to specify a canonical reference for an element; see section  [3.10. Reference Systems](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CORS) . 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    ID     |     
+   |    **Note**   |    The xml:id attribute may be used to specify a canonical reference for an element; see section  [3.10. Reference Systems](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CORS) .      |     
  
  
  
+`@n` (number) gives a number (or other label) for an element, which is not necessarily unique within the document. 
  
-@n
  
-(number) gives a number (or other label) for an element, which is not necessarily unique within the document. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.text
- 
-**Note**
- 
-The value of this attribute is always understood to be a single token, even if it contains space or other punctuation characters, and need not be composed of numbers only. It is typically used to specify the numbering of chapters, sections, list items, etc.; it may also be used in the specification of a standard reference system for the text. 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.text     |     
+   |    **Note**   |    The value of this attribute is always understood to be a single token, even if it contains space or other punctuation characters, and need not be composed of numbers only. It is typically used to specify the numbering of chapters, sections, list items, etc.; it may also be used in the specification of a standard reference system for the text.      |     
  
  
  
- 
-@xml:lang
- 
-(language) indicates the language of the element content using a ‘tag’ generated according to  [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt) . 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.language
+`@xml:lang` (language) indicates the language of the element content using a ‘tag’ generated according to  [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt) . 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.language     |     
+   |    
 ```
  
 <p> … The consequences of this rapid depopulation were the loss of the last<foreign xml:lang="rap">
                                                 ariki</foreign> or chief (Routledge 1920:205,210) and their connections to ancestral territorial organization.</p>
  
 ```
-**Note**
- 
-The xml:lang value will be inherited from the immediately enclosing element, or from its parent, and so on up the document hierarchy. It is generally good practice to specify xml:lang at the highest appropriate level, noticing that a different default may be needed for the teiHeader from that needed for the associated resource element or elements, and that a single TEI document may contain texts in many languages. The authoritative list of registered language subtags is maintained by IANA and is available at  [http://www.iana.org/assignments/language-subtag-registry](http://www.iana.org/assignments/language-subtag-registry) . For a good general overview of the construction of language tags, see  [http://www.w3.org/International/articles/language-tags/](http://www.w3.org/International/articles/language-tags/) , and for a practical step-by-step guide, see  [https://www.w3.org/International/questions/qa-choosing-language-tags.en.php](https://www.w3.org/International/questions/qa-choosing-language-tags.en.php) . The value used must conform with BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a  [language](#language)  element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions. 
- 
+     |     
+   |    **Note**   |    The xml:lang value will be inherited from the immediately enclosing element, or from its parent, and so on up the document hierarchy. It is generally good practice to specify xml:lang at the highest appropriate level, noticing that a different default may be needed for the teiHeader from that needed for the associated resource element or elements, and that a single TEI document may contain texts in many languages. The authoritative list of registered language subtags is maintained by IANA and is available at  [http://www.iana.org/assignments/language-subtag-registry](http://www.iana.org/assignments/language-subtag-registry) . For a good general overview of the construction of language tags, see  [http://www.w3.org/International/articles/language-tags/](http://www.w3.org/International/articles/language-tags/) , and for a practical step-by-step guide, see  [https://www.w3.org/International/questions/qa-choosing-language-tags.en.php](https://www.w3.org/International/questions/qa-choosing-language-tags.en.php) . The value used must conform with BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a  [language](#language)  element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions.      |     
  
  
  
-@xml:base
- 
-provides a base URI reference with which applications can resolve relative URI references into absolute URI references. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.pointer
+`@xml:base` provides a base URI reference with which applications can resolve relative URI references into absolute URI references. 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
+   |    
 ```
  
 <div type="bibl">
@@ -9041,32 +8573,21 @@ teidata.pointer
                                                     <title>Essays in Rhyme on Morals and Manners</title>   </ref>  </bibl> </listBibl></div>
  
 ```
+     |     
  
  
  
-@xml:space
- 
-signals an intention about how white space should be managed by applications. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
+`@xml:space` signals an intention about how white space should be managed by applications. 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 default signals that the application's default white-space processing modes are acceptablesignals that the application's default white-space processing modes are acceptablepreserve indicates the intent that applications preserve all white spaceindicates the intent that applications preserve all white space
  
- 
- 
-**Note**
- 
-The  [XML specification](http://www.w3.org/TR/REC-xml/#sec-white-space)  provides further guidance on the use of this attribute. Note that many parsers may not handle xml:space correctly. 
- 
+     |     
+   |    **Note**   |    The  [XML specification](http://www.w3.org/TR/REC-xml/#sec-white-space)  provides further guidance on the use of this attribute. Note that many parsers may not handle xml:space correctly.      |     
  
  
  
@@ -9096,21 +8617,14 @@ The  [XML specification](http://www.w3.org/TR/REC-xml/#sec-white-space)  provide
 #### **Attributes**
  
 Attributes 
-@ana
  
-(analysis) indicates one or more elements containing interpretations of the element on which the ana attribute appears. 
-**Status**
  
-Optional
+`@ana` (analysis) indicates one or more elements containing interpretations of the element on which the ana attribute appears. 
  
-**Datatype**
  
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
-**Note**
- 
-When multiple values are given, they may reflect either multiple divergent interpretations of an ambiguous text, or multiple mutually consistent interpretations of the same passage in different contexts. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+   |    **Note**   |    When multiple values are given, they may reflect either multiple divergent interpretations of an ambiguous text, or multiple mutually consistent interpretations of the same passage in different contexts.      |     
  
  
  
@@ -9140,18 +8654,14 @@ When multiple values are given, they may reflect either multiple divergent inter
 #### **Attributes**
  
 Attributes 
-@rend
- 
-(rendition) indicates how the element in question was rendered or presented in the source text. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.word separated by whitespace
  
  
+`@rend` (rendition) indicates how the element in question was rendered or presented in the source text. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.word separated by whitespace     |     
+   |    
 ```
  
 <head rend="align(center) case(allcaps)">
@@ -9159,25 +8669,17 @@ Optional
                                                 New Blazing-World</hi>. </head>
  
 ```
-**Note**
- 
-These Guidelines make no binding recommendations for the values of the rend attribute; the characteristics of visual presentation vary too much from text to text and the decision to record or ignore individual characteristics varies too much from project to project. Some potentially useful conventions are noted from time to time at appropriate points in the Guidelines. The values of the rend attribute are a set of sequence-indeterminate individual tokens separated by whitespace. 
- 
+     |     
+   |    **Note**   |    These Guidelines make no binding recommendations for the values of the rend attribute; the characteristics of visual presentation vary too much from text to text and the decision to record or ignore individual characteristics varies too much from project to project. Some potentially useful conventions are noted from time to time at appropriate points in the Guidelines. The values of the rend attribute are a set of sequence-indeterminate individual tokens separated by whitespace.      |     
  
  
  
-@style
- 
-contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.text
+`@style` contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.text     |     
+   |    
 ```
  
 <head style="text-align: center; font-variant: small-caps">
@@ -9185,25 +8687,17 @@ teidata.text
                                                 New Blazing-World</hi>. </head>
  
 ```
-**Note**
- 
-Unlike the attribute values of rend, which uses whitespace as a separator, the style attribute may contain whitespace. This attribute is intended for recording inline stylistic information concerning the source, not any particular output. The formal language in which values for this attribute are expressed may be specified using the styleDefDecl element in the TEI header. If style and rendition are both present on an element, then style overrides or complements rendition. style should not be used in conjunction with rend, because the latter does not employ a formal style definition language. 
- 
+     |     
+   |    **Note**   |    Unlike the attribute values of rend, which uses whitespace as a separator, the style attribute may contain whitespace. This attribute is intended for recording inline stylistic information concerning the source, not any particular output. The formal language in which values for this attribute are expressed may be specified using the `styleDefDecl` element in the TEI header. If style and rendition are both present on an element, then style overrides or complements rendition. style should not be used in conjunction with rend, because the latter does not employ a formal style definition language.      |     
  
  
  
-@rendition
- 
-points to a description of the rendering or presentation used for this element in the source text. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.pointer separated by whitespace
+`@rendition` points to a description of the rendering or presentation used for this element in the source text. 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+   |    
 ```
  
 <head rendition="#ac #sc">
@@ -9214,10 +8708,8 @@ Optional
                                                 text-align: center</rendition>
  
 ```
-**Note**
- 
-The rendition attribute is used in a very similar way to the class attribute defined for XHTML but with the important distinction that its function is to describe the appearance of the source text, not necessarily to determine how that text should be presented on screen or paper. If rendition is used to refer to a style definition in a formal language like CSS, it is recommended that it not be used in conjunction with rend. Where both rendition and rend are supplied, the latter is understood to override or complement the former. Each URI provided should indicate a  [rendition](#rendition)  element defining the intended rendition in terms of some appropriate style language, as indicated by the scheme attribute. 
- 
+     |     
+   |    **Note**   |    The rendition attribute is used in a very similar way to the class attribute defined for XHTML but with the important distinction that its function is to describe the appearance of the source text, not necessarily to determine how that text should be presented on screen or paper. If rendition is used to refer to a style definition in a formal language like CSS, it is recommended that it not be used in conjunction with rend. Where both rendition and rend are supplied, the latter is understood to override or complement the former. Each URI provided should indicate a  [rendition](#rendition)  element defining the intended rendition in terms of some appropriate style language, as indicated by the scheme attribute.      |     
  
  
  
@@ -9247,35 +8739,22 @@ The rendition attribute is used in a very similar way to the class attribute def
 #### **Attributes**
  
 Attributes 
-@cert
  
-(certainty) signifies the degree of certainty associated with the intervention or interpretation. 
-**Status**
  
-Optional
+`@cert` (certainty) signifies the degree of certainty associated with the intervention or interpretation. 
  
-**Datatype**
  
-teidata.probCert
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.probCert     |     
  
  
  
+`@resp` (responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber. 
  
-@resp
  
-(responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
-**Note**
- 
-To reduce the ambiguity of a resp pointing directly to a person or organization, we recommend that resp be used to point not to an agent (person or org) but to a  [respStmt](#respStmt) ,  [author](#author) ,  [editor](#editor)  or similar element which clarifies the exact role played by the agent. Pointing to multiple  [respStmt](#respStmt) s allows the encoder to specify clearly each of the roles played in part of a TEI file (creating, transcribing, encoding, editing, proofing etc.). 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+   |    **Note**   |    To reduce the ambiguity of a resp pointing directly to a person or organization, we recommend that resp be used to point not to an agent (`person` or `org`) but to a  [respStmt](#respStmt) ,  [author](#author) ,  [editor](#editor)  or similar element which clarifies the exact role played by the agent. Pointing to multiple  [respStmt](#respStmt) s allows the encoder to specify clearly each of the roles played in part of a TEI file (creating, transcribing, encoding, editing, proofing etc.).      |     
  
  
  
@@ -9338,21 +8817,14 @@ Blessed are the<choice> <sic>cheesemakers</sic> <corr resp="#editor" cert="h
 #### **Attributes**
  
 Attributes 
-@source
  
-specifies the source from which some aspect of this element is drawn. 
-**Status**
  
-Optional
+`@source` specifies the source from which some aspect of this element is drawn. 
  
-**Datatype**
  
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
-**Note**
- 
-The source attribute points to an external source. When used on elements describing schema components such as schemaSpec or moduleRef it identifies the source from which declarations for the components of the object being defined may be obtained. On other elements it provides a pointer to the bibliographical source from which a quotation or citation is drawn. In either case, the location may be provided using any form of URI, for example an absolute URI, a relative URI, or private scheme URI that is expanded to an absolute URI as documented in a  [prefixDef](#prefixDef) . If more than one location is specified, the default assumption is that the required source should be obtained by combining the resources indicated. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+   |    **Note**   |    The source attribute points to an external source. When used on elements describing schema components such as `schemaSpec` or `moduleRef` it identifies the source from which declarations for the components of the object being defined may be obtained. On other elements it provides a pointer to the bibliographical source from which a quotation or citation is drawn. In either case, the location may be provided using any form of URI, for example an absolute URI, a relative URI, or private scheme URI that is expanded to an absolute URI as documented in a  [prefixDef](#prefixDef) . If more than one location is specified, the default assumption is that the required source should be obtained by combining the resources indicated.      |     
  
  
  
@@ -9445,17 +8917,13 @@ Create a schema using components taken from the file mycompiledODD.xml.
 #### **Attributes**
  
 Attributes 
-@mimeType
  
-(MIME media type) specifies the applicable multimedia internet mail extension (MIME) media type 
-**Status**
  
-Optional
+`@mimeType` (MIME media type) specifies the applicable multimedia internet mail extension (MIME) media type 
  
-**Datatype**
  
- 1–∞ occurrences of teidata.word separated by whitespace
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.word separated by whitespace     |     
  
  
  
@@ -9493,7 +8961,7 @@ This attribute class provides an attribute for describing a computer resource, t
 ### att.linguistic<span id="att.linguistic"/>
  
  
-**att.linguistic** provides a set of attributes concerning linguistic features of tokens, for usage within token-level elements, specifically w and  [pc](#pc)  in the analysis module. 
+**att.linguistic** provides a set of attributes concerning linguistic features of tokens, for usage within token-level elements, specifically `w` and  [pc](#pc)  in the analysis module. 
  
  
 #### **Members**
@@ -9507,46 +8975,38 @@ This attribute class provides an attribute for describing a computer resource, t
 #### **Attributes**
  
 Attributes 
-@lemma
- 
-provides a lemma (base form) for the word, typically uninflected and serving both as an identifier (e.g. in dictionary contexts, as a headword), and as a basis for potential inflections. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.text
  
  
+`@lemma` provides a lemma (base form) for the word, typically uninflected and serving both as an identifier (e.g. in dictionary contexts, as a headword), and as a basis for potential inflections. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.text     |     
+   |    
 ```
  
 <w lemma="wife">
                                                 wives</w>
  
 ```
- 
+     |     
+   |    
 ```
  
 <w lemma="Arznei">
                                                 Artzeneyen</w>
  
 ```
+     |     
  
  
  
-@lemmaRef
- 
-provides a pointer to a definition of the lemma for the word, for example in an online lexicon. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.pointer
+`@lemmaRef` provides a pointer to a definition of the lemma for the word, for example in an online lexicon. 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
+   |    
 ```
  
 <w type="verb" lemma="hit" lemmaRef="http://www.example.com/lexicon/hitvb.xml">
@@ -9554,21 +9014,16 @@ teidata.pointer
                                                 ing</m></w>
  
 ```
+     |     
  
  
  
-@pos
+`@pos` (part of speech) indicates the part of speech assigned to a token (i.e. information on whether it is a noun, adjective, or verb), usually according to some official reference vocabulary (e.g. for German: STTS, for English: CLAWS, for Polish: NKJP, etc.). 
  
-(part of speech) indicates the part of speech assigned to a token (i.e. information on whether it is a noun, adjective, or verb), usually according to some official reference vocabulary (e.g. for German: STTS, for English: CLAWS, for Polish: NKJP, etc.). 
-**Status**
  
-Optional
- 
-**Datatype**
- 
-teidata.text
- 
-The German sentence ‘Wir fahren in den Urlaub.’ tagged with the Stuttgart-Tuebingen-Tagset (STTS). 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.text     |     
+   |    The German sentence ‘Wir fahren in den Urlaub.’ tagged with the Stuttgart-Tuebingen-Tagset (STTS). 
 ```
  
 <s> <w pos="PPER">
@@ -9580,7 +9035,8 @@ The German sentence ‘Wir fahren in den Urlaub.’ tagged with the Stuttgart-Tu
                                                 .</w></s>
  
 ```
-The English sentence ‘We're going to Brazil.’ tagged with the  [CLAWS-5](http://ucrel.lancs.ac.uk/claws5tags.html)  tagset, arranged inline (with significant whitespace). 
+     |     
+   |    The English sentence ‘We're going to Brazil.’ tagged with the  [CLAWS-5](http://ucrel.lancs.ac.uk/claws5tags.html)  tagset, arranged inline (with significant whitespace). 
 ```
  
 <p><w pos="PNP">
@@ -9594,7 +9050,8 @@ The English sentence ‘We're going to Brazil.’ tagged with the  [CLAWS-5](htt
                                           
  
 ```
-The English sentence ‘We're going on vacation to Brazil for a month!’ tagged with the  [CLAWS-7](http://ucrel.lancs.ac.uk/claws7tags.html)  tagset and arranged sequentially. 
+     |     
+   |    The English sentence ‘We're going on vacation to Brazil for a month!’ tagged with the  [CLAWS-7](http://ucrel.lancs.ac.uk/claws7tags.html)  tagset and arranged sequentially. 
 ```
  
 <p> <w pos="PPIS2">
@@ -9611,21 +9068,16 @@ The English sentence ‘We're going on vacation to Brazil for a month!’ tagged
                                                 !</pc></p>
  
 ```
+     |     
  
  
  
-@msd
- 
-(morphosyntactic description) supplies morphosyntactic information for a token, usually according to some official reference vocabulary (e.g. for German:  [STTS-large tagset](http://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/TagSets/stts-1999.pdf) ; for a feature description system designed as (pragmatically) universal, see  [Universal Features](http://universaldependencies.org/u/feat/index.html) ). 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.text
+`@msd` (morphosyntactic description) supplies morphosyntactic information for a token, usually according to some official reference vocabulary (e.g. for German:  [STTS-large tagset](http://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/TagSets/stts-1999.pdf) ; for a feature description system designed as (pragmatically) universal, see  [Universal Features](http://universaldependencies.org/u/feat/index.html) ). 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.text     |     
+   |    
 ```
  
 <ab> <w pos="PPER" msd="1.Pl.*.Nom">
@@ -9637,29 +9089,21 @@ teidata.text
                                                 .</pc></ab>
  
 ```
+     |     
  
  
  
-@join
- 
-when present, it provides information on whether the token in question is adjacent to another, and if so, on which side. The definition of this attribute is adapted from ISO MAF (Morpho-syntactic Annotation Framework), ISO 24611:2012. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.text
- 
-**Legal values are:**
+`@join` when present, it provides information on whether the token in question is adjacent to another, and if so, on which side. The definition of this attribute is adapted from ISO MAF (Morpho-syntactic Annotation Framework), ISO 24611:2012. 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.text     |     
+   |    **Legal values are:**   |    
  
 no (the token is not adjacent to another) (the token is not adjacent to another) left (there is no whitespace on the left side of the token) (there is no whitespace on the left side of the token) right (there is no whitespace on the right side of the token) (there is no whitespace on the right side of the token) both (there is no whitespace on either side of the token) (there is no whitespace on either side of the token) overlap (the token overlaps with another; other devices (specifying the extent and the area of overlap) are needed to more precisely locate this token in the character stream) (the token overlaps with another; other devices (specifying the extent and the area of overlap) are needed to more precisely locate this token in the character stream) 
  
- 
- 
-The example below assumes that the lack of whitespace is marked redundantly, by using the appropriate values of join. 
+     |     
+   |    The example below assumes that the lack of whitespace is marked redundantly, by using the appropriate values of join. 
 ```
  
 <s> <pc join="right">
@@ -9670,7 +9114,8 @@ The example below assumes that the lack of whitespace is marked redundantly, by 
                                                 "</pc></s>
  
 ```
-Note that a project may make a decision to only indicate lack of whitespace in one direction, or do that non-redundantly. The existing proposal is the broadest possible, on the assumption that we adopt the "streamable view", where all the information on the current element needs to be represented locally. The English sentence ‘We're going on vacation.’ tagged with the CLAWS-5 tagset, arranged sequentially, tagged on the assumption that only the lack of the preceding whitespace is indicated. 
+Note that a project may make a decision to only indicate lack of whitespace in one direction, or do that non-redundantly. The existing proposal is the broadest possible, on the assumption that we adopt the "streamable view", where all the information on the current element needs to be represented locally.      |     
+   |    The English sentence ‘We're going on vacation.’ tagged with the CLAWS-5 tagset, arranged sequentially, tagged on the assumption that only the lack of the preceding whitespace is indicated. 
 ```
  
 <p> <w pos="PNP">
@@ -9682,6 +9127,7 @@ Note that a project may make a decision to only indicate lack of whitespace in o
                                                 .</pc></p>
  
 ```
+     |     
  
  
  
@@ -9719,36 +9165,27 @@ These attributes make it possible to encode simple language corpora and to add a
 #### **Attributes**
  
 Attributes 
-@unit
- 
-provides a conventional name for the kind of section changing at this milestone. 
-**Status**
- 
-Required
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Suggested values include:**
  
  
+`@unit` provides a conventional name for the kind of section changing at this milestone. 
+ 
+ 
+   |    **Status**   |    Required     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Suggested values include:**   |    
  
 page physical page breaks (synonymous with the [pb](#pb) element). physical page breaks (synonymous with the  [pb](#pb)  element). column column breaks.column breaks.line line breaks (synonymous with the [lb](#lb) element). line breaks (synonymous with the  [lb](#lb)  element). book any units termed book, liber, etc.any units termed book, liber, etc.poem individual poems in a collection.individual poems in a collection.canto cantos or other major sections of a poem.cantos or other major sections of a poem.speaker changes of speaker or narrator.changes of speaker or narrator.stanza stanzas within a poem, book, or canto.stanzas within a poem, book, or canto.act acts within a play.acts within a play.scene scenes within a play or act.scenes within a play or act.section sections of any kind.sections of any kind.absent passages not present in the reference edition.passages not present in the reference edition.unnumbered passages present in the text, but not to be included as part of the reference.passages present in the text, but not to be included as part of the reference.
  
- 
- 
- 
+     |     
+   |    
 ```
  
 <milestone n="23" ed="La" unit="Dreissiger"/> ... <milestone n="24" ed="AV" unit="verse"/> ...
                                           
  
 ```
-**Note**
- 
-If the milestone marks the beginning of a piece of text not present in the reference edition, the special value absent may be used as the value of unit. The normal interpretation is that the reference edition does not contain the text which follows, until the next  [milestone](#milestone)  tag for the edition in question is encountered. In addition to the values suggested, other terms may be appropriate (e.g. Stephanus for the Stephanus numbers in Plato). 
- 
+     |     
+   |    **Note**   |    If the milestone marks the beginning of a piece of text not present in the reference edition, the special value absent may be used as the value of unit. The normal interpretation is that the reference edition does not contain the text which follows, until the next  [milestone](#milestone)  tag for the edition in question is encountered. In addition to the values suggested, other terms may be appropriate (e.g. Stephanus for the Stephanus numbers in Plato).      |     
  
  
  
@@ -9777,36 +9214,23 @@ If the milestone marks the beginning of a piece of text not present in the refer
  
 #### **Attributes**
  
-Attributes  [att.canonical](#att.canonical)  (@key, @ref) 
-@role
+Attributes  [att.canonical](#att.canonical)  (`@key`, `@ref`) 
  
-may be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place. 
-**Status**
  
-Optional
+`@role` may be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place. 
  
-**Datatype**
  
- 1–∞ occurrences of teidata.enumerated separated by whitespace
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
  
  
  
+`@nymRef` (reference to the canonical name) provides a means of locating the canonical form (nym) of the names associated with the object named by the element bearing it. 
  
-@nymRef
  
-(reference to the canonical name) provides a means of locating the canonical form (nym) of the names associated with the object named by the element bearing it. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
-**Note**
- 
-The value must point directly to one or more XML elements by means of one or more URIs, separated by whitespace. If more than one is supplied, the implication is that the name is associated with several distinct canonical names. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+   |    **Note**   |    The value must point directly to one or more XML elements by means of one or more URIs, separated by whitespace. If more than one is supplied, the implication is that the name is associated with several distinct canonical names.      |     
  
  
  
@@ -9836,17 +9260,13 @@ The value must point directly to one or more XML elements by means of one or mor
 #### **Attributes**
  
 Attributes 
-@notation
  
-names the notation used for the content of the element. 
-**Status**
  
-Optional
+`@notation` names the notation used for the content of the element. 
  
-**Datatype**
  
-teidata.enumerated
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
  
  
  
@@ -9876,39 +9296,23 @@ teidata.enumerated
 #### **Attributes**
  
 Attributes 
-@matchPattern
  
-specifies a regular expression against which the values of other attributes can be matched. 
-**Status**
  
-Required
+`@matchPattern` specifies a regular expression against which the values of other attributes can be matched. 
  
-**Datatype**
  
-teidata.pattern
- 
-**Note**
- 
-The syntax used should follow that defined by  [W3C XPath syntax](http://www.w3.org/TR/xpath-functions/#regex-syntax) . Note that parenthesized groups are used not only for establishing order of precedence and atoms for quantification, but also for creating subpatterns to be referenced by the replacementPattern attribute. 
+   |    **Status**   |    Required     |     
+   |    **Datatype**   |    teidata.pattern     |     
+   |    **Note**   |    The syntax used should follow that defined by  [W3C XPath syntax](http://www.w3.org/TR/xpath-functions/#regex-syntax) . Note that parenthesized groups are used not only for establishing order of precedence and atoms for quantification, but also for creating subpatterns to be referenced by the replacementPattern attribute.      |     
  
  
  
+`@replacementPattern` specifies a ‘replacement pattern’, that is, the skeleton of a relative or absolute URI containing references to groups in the matchPattern which, once subpattern substitution has been performed, complete the URI. 
  
-@replacementPattern
  
-specifies a ‘replacement pattern’, that is, the skeleton of a relative or absolute URI containing references to groups in the matchPattern which, once subpattern substitution has been performed, complete the URI. 
-**Status**
- 
-Required
- 
-**Datatype**
- 
-teidata.replacement
- 
-**Note**
- 
-The strings $1, $2 etc. are references to the corresponding group in the regular expression specified by matchPattern (counting open parenthesis, left to right). Processors are expected to replace them with whatever matched the corresponding group in the regular expression. If a digit preceded by a dollar sign is needed in the actual replacement pattern (as opposed to being used as a back reference), the dollar sign must be written as %24. 
- 
+   |    **Status**   |    Required     |     
+   |    **Datatype**   |    teidata.replacement     |     
+   |    **Note**   |    The strings $1, $2 etc. are references to the corresponding group in the regular expression specified by matchPattern (counting open parenthesis, left to right). Processors are expected to replace them with whatever matched the corresponding group in the regular expression. If a digit preceded by a dollar sign is needed in the actual replacement pattern (as opposed to being used as a back reference), the dollar sign must be written as %24.      |     
  
  
  
@@ -9937,40 +9341,27 @@ The strings $1, $2 etc. are references to the corresponding group in the regular
  
 #### **Attributes**
  
-Attributes  [att.naming](#att.naming)  (@role, @nymRef) ( [att.canonical](#att.canonical)  (@key, @ref)) 
-@full
- 
-indicates whether the name component is given in full, as an abbreviation or simply as an initial. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
+Attributes  [att.naming](#att.naming)  (`@role`, `@nymRef`) ( [att.canonical](#att.canonical)  (`@key`, `@ref`)) 
  
  
+`@full` indicates whether the name component is given in full, as an abbreviation or simply as an initial. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 yes the name component is spelled out in full. [Default] the name component is spelled out in full. [Default] abb (abbreviated) the name component is given in an abbreviated form.(abbreviated) the name component is given in an abbreviated form.init (initial letter) the name component is indicated only by one initial.(initial letter) the name component is indicated only by one initial.
  
+     |     
  
  
  
+`@sort` specifies the sort order of the name component in relation to others within the name. 
  
  
-@sort
- 
-specifies the sort order of the name component in relation to others within the name. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.count
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.count     |     
  
  
  
@@ -10000,26 +9391,19 @@ teidata.count
 #### **Attributes**
  
 Attributes 
-@place
- 
-specifies where this item is placed. 
-**Status**
- 
-Recommended
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.enumerated separated by whitespace
- 
-**Suggested values include:**
  
  
+`@place` specifies where this item is placed. 
+ 
+ 
+   |    **Status**   |    Recommended     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
+   |    **Suggested values include:**   |    
  
 below below the linebelow the linebottom at the foot of the pageat the foot of the pagemargin in the margin (left, right, or both)in the margin (left, right, or both)top at the top of the pageat the top of the pageopposite on the opposite, i.e. facing, pageon the opposite, i.e. facing, pageoverleaf on the other side of the leafon the other side of the leafabove above the lineabove the lineend at the end of e.g. chapter or volume.at the end of e.g. chapter or volume.inline within the body of the text.within the body of the text.inspace in a predefined space, for example left by an earlier scribe.in a predefined space, for example left by an earlier scribe.
  
- 
- 
- 
+     |     
+   |    
 ```
  
 <add place="margin">
@@ -10027,13 +9411,15 @@ below below the linebelow the linebottom at the foot of the pageat the foot of t
                                                 [An addition written at the foot of the current page and also on the facing page]</add>
  
 ```
- 
+     |     
+   |    
 ```
  
 <note place="bottom">
                                                 Ibid, p.7</note>
  
 ```
+     |     
  
  
  
@@ -10063,72 +9449,45 @@ below below the linebelow the linebottom at the foot of the pageat the foot of t
 #### **Attributes**
  
 Attributes 
-@targetLang
- 
-specifies the language of the content to be found at the destination referenced by target, using a ‘language tag’ generated according to  [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt) . 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.language
  
  
+`@targetLang` specifies the language of the content to be found at the destination referenced by target, using a ‘language tag’ generated according to  [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt) . 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.language     |     
+   |    
 ```
  
 <linkGrp xml:id="pol-swh_aln_2.1-linkGrp">
                                                  <ptr xml:id="pol-swh_aln_2.1.1-ptr"  target="pol/UDHR/text.xml#pol_txt_1-head" type="tuv" targetLang="pl"/> <ptr xml:id="pol-swh_aln_2.1.2-ptr"  target="swh/UDHR/text.xml#swh_txt_1-head" type="tuv" targetLang="sw"/></linkGrp>
  
 ```
-In the example above, the linkGrp combines pointers at parallel fragments of the Universal Declaration of Human Rights: one of them is in Polish, the other in Swahili. **Note**
- 
-The value must conform to BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a  [language](#language)  element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions. 
- 
+In the example above, the `linkGrp` combines pointers at parallel fragments of the Universal Declaration of Human Rights: one of them is in Polish, the other in Swahili.      |     
+   |    **Note**   |    The value must conform to BCP 47. If the value is a private use code (i.e., starts with x- or contains -x-), a  [language](#language)  element with a matching value for its ident attribute should be supplied in the TEI header to document this value. Such documentation may also optionally be supplied for non-private-use codes, though these must remain consistent with their  (IETF)Internet Engineering Task Force definitions.      |     
  
  
  
-@target
+`@target` specifies the destination of the reference by supplying one or more URI References 
  
-specifies the destination of the reference by supplying one or more URI References 
-**Status**
  
-Optional
- 
-**Datatype**
- 
- 1–∞ occurrences of teidata.pointer separated by whitespace
- 
-**Note**
- 
-One or more syntactically valid URI references, separated by whitespace. Because whitespace is used to separate URIs, no whitespace is permitted inside a single URI. If a whitespace character is required in a URI, it should be escaped with the normal mechanism, e.g. TEI%20Consortium. 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |     1–∞ occurrences of teidata.pointer separated by whitespace     |     
+   |    **Note**   |    One or more syntactically valid URI references, separated by whitespace. Because whitespace is used to separate URIs, no whitespace is permitted inside a single URI. If a whitespace character is required in a URI, it should be escaped with the normal mechanism, e.g. TEI%20Consortium.      |     
  
  
  
- 
-@evaluate
- 
-specifies the intended meaning when the target of a pointer is itself a pointer. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
+`@evaluate` specifies the intended meaning when the target of a pointer is itself a pointer. 
  
  
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 all if the element pointed to is itself a pointer, then the target of that pointer will be taken, and so on, until an element is found which is not a pointer. if the element pointed to is itself a pointer, then the target of that pointer will be taken, and so on, until an element is found which is not a pointer. one if the element pointed to is itself a pointer, then its target (whether a pointer or not) is taken as the target of this pointer. if the element pointed to is itself a pointer, then its target (whether a pointer or not) is taken as the target of this pointer. none no further evaluation of targets is carried out beyond that needed to find the element specified in the pointer's target. no further evaluation of targets is carried out beyond that needed to find the element specified in the pointer's target. 
  
- 
- 
-**Note**
- 
-If no value is given, the application program is responsible for deciding (possibly on the basis of user input) how far to trace a chain of pointers. 
- 
+     |     
+   |    **Note**   |    If no value is given, the application program is responsible for deciding (possibly on the basis of user input) how far to trace a chain of pointers.      |     
  
  
  
@@ -10158,73 +9517,45 @@ If no value is given, the application program is responsible for deciding (possi
 #### **Attributes**
  
 Attributes 
-@atLeast
  
-gives a minimum estimated value for the approximate measurement. 
-**Status**
  
-Optional
+`@atLeast` gives a minimum estimated value for the approximate measurement. 
  
-**Datatype**
  
-teidata.numeric
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.numeric     |     
  
  
  
+`@atMost` gives a maximum estimated value for the approximate measurement. 
  
-@atMost
  
-gives a maximum estimated value for the approximate measurement. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.numeric
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.numeric     |     
  
  
  
+`@min` where the measurement summarizes more than one observation or a range, supplies the minimum value observed. 
  
-@min
  
-where the measurement summarizes more than one observation or a range, supplies the minimum value observed. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.numeric
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.numeric     |     
  
  
  
+`@max` where the measurement summarizes more than one observation or a range, supplies the maximum value observed. 
  
-@max
  
-where the measurement summarizes more than one observation or a range, supplies the maximum value observed. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.numeric
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.numeric     |     
  
  
  
+`@confidence` specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range. 
  
-@confidence
  
-specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.probability
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.probability     |     
  
  
  
@@ -10268,22 +9599,15 @@ The MS. was lost in transmission by mail from <del rend="overstrike">
  
 #### **Attributes**
  
-Attributes  [att.datcat](#att.datcat)  (@datcat, @valueDatcat)  [att.fragmentable](#att.fragmentable)  (@part) 
-@function
+Attributes  [att.datcat](#att.datcat)  (`@datcat`, `@valueDatcat`)  [att.fragmentable](#att.fragmentable)  (`@part`) 
  
-characterizes the function of the segment. 
-**Status**
  
-Optional
+`@function` characterizes the function of the segment. 
  
-**Datatype**
  
-teidata.enumerated
- 
-**Note**
- 
-Attribute values will often vary depending on the type of element to which they are attached. For example, a cl, may take values such as coordinate, subject, adverbial etc. For a phr, such values as subject, predicate etc. may be more appropriate. Such constraints will typically be implemented by a project-defined customization. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Note**   |    Attribute values will often vary depending on the type of element to which they are attached. For example, a `cl`, may take values such as coordinate, subject, adverbial etc. For a `phr`, such values as subject, predicate etc. may be more appropriate. Such constraints will typically be implemented by a project-defined customization.      |     
  
  
  
@@ -10313,18 +9637,14 @@ Attribute values will often vary depending on the type of element to which they 
 #### **Attributes**
  
 Attributes 
-@sortKey
- 
-supplies the sort key for this element in an index, list or group which contains it. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.word
  
  
+`@sortKey` supplies the sort key for this element in an index, list or group which contains it. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.word     |     
+   |    
 ```
  
 David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
@@ -10333,10 +9653,8 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
                                           
  
 ```
-**Note**
- 
-The sort key is used to determine the sequence and grouping of entries in an index. It provides a sequence of characters which, when sorted with the other values, will produced the desired order; specifics of sort key construction are application-dependent Dictionary order often differs from the collation sequence of machine-readable character sets; in English-language dictionaries, an entry for 4-H will often appear alphabetized under ‘fourh’, and McCoy may be alphabetized under ‘maccoy’, while A1, A4, and A5 may all appear in numeric order ‘alphabetized’ between ‘a-’ and ‘AA’. The sort key is required if the orthography of the dictionary entry does not suffice to determine its location. 
- 
+     |     
+   |    **Note**   |    The sort key is used to determine the sequence and grouping of entries in an index. It provides a sequence of characters which, when sorted with the other values, will produced the desired order; specifics of sort key construction are application-dependent Dictionary order often differs from the collation sequence of machine-readable character sets; in English-language dictionaries, an entry for 4-H will often appear alphabetized under ‘fourh’, and McCoy may be alphabetized under ‘maccoy’, while A1, A4, and A5 may all appear in numeric order ‘alphabetized’ between ‘a-’ and ‘AA’. The sort key is required if the orthography of the dictionary entry does not suffice to determine its location.      |     
  
  
  
@@ -10366,17 +9684,13 @@ The sort key is used to determine the sequence and grouping of entries in an ind
 #### **Attributes**
  
 Attributes 
-@spanTo
  
-indicates the end of a span initiated by the element bearing this attribute. 
-**Status**
  
-Optional
+`@spanTo` indicates the end of a span initiated by the element bearing this attribute. 
  
-**Datatype**
  
-teidata.pointer
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
  
  
  
@@ -10414,47 +9728,28 @@ The span is defined as running in document order from the start of the content o
 #### **Attributes**
  
 Attributes 
-@scheme
- 
-identifies the language used to describe the rendition. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Legal values are:**
  
  
+`@scheme` identifies the language used to describe the rendition. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Legal values are:**   |    
  
 css Cascading Stylesheet LanguageCascading Stylesheet Languagexslfo Extensible Stylesheet Language Formatting ObjectsExtensible Stylesheet Language Formatting Objectsfree Informal free text descriptionInformal free text descriptionother A user-defined rendition description languageA user-defined rendition description language
  
- 
- 
-**Note**
- 
-If no value for the @scheme attribute is provided, then the default assumption should be that CSS is in use. 
+     |     
+   |    **Note**   |    If no value for the @scheme attribute is provided, then the default assumption should be that CSS is in use.      |     
  
  
  
+`@schemeVersion` supplies a version number for the style language provided in scheme. 
  
-@schemeVersion
  
-supplies a version number for the style language provided in scheme. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.versionNumber
- 
-**Note**
- 
-If schemeVersion is used, then scheme should also appear, with a value other than free. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.versionNumber     |     
+   |    **Note**   |    If schemeVersion is used, then scheme should also appear, with a value other than free.      |     
  
  
  
@@ -10484,39 +9779,23 @@ If schemeVersion is used, then scheme should also appear, with a value other tha
 #### **Attributes**
  
 Attributes 
-@start
  
-indicates the location within a temporal alignment at which this element begins. 
-**Status**
  
-Optional
+`@start` indicates the location within a temporal alignment at which this element begins. 
  
-**Datatype**
  
-teidata.pointer
- 
-**Note**
- 
-If no value is supplied, the element is assumed to follow the immediately preceding element at the same hierarchic level. 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
+   |    **Note**   |    If no value is supplied, the element is assumed to follow the immediately preceding element at the same hierarchic level.      |     
  
  
  
+`@end` indicates the location within a temporal alignment at which this element ends. 
  
-@end
  
-indicates the location within a temporal alignment at which this element ends. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.pointer
- 
-**Note**
- 
-If no value is supplied, the element is assumed to precede the immediately following element at the same hierarchic level. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
+   |    **Note**   |    If no value is supplied, the element is assumed to precede the immediately following element at the same hierarchic level.      |     
  
  
  
@@ -10540,18 +9819,14 @@ If no value is supplied, the element is assumed to precede the immediately follo
 #### **Attributes**
  
 Attributes 
-@type
- 
-characterizes the element in some sense, using any convenient classification scheme or typology. 
-**Status**
- 
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
  
  
+`@type` characterizes the element in some sense, using any convenient classification scheme or typology. 
+ 
+ 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    
 ```
  
 <div type="verse">
@@ -10560,28 +9835,17 @@ teidata.enumerated
                                                   <l>A wind sprang up from nowhere as the sky</l>  <l>…</l> </lg></div>
  
 ```
-**Note**
- 
-The type attribute is present on a number of elements, not all of which are members of  [att.typed](#att.typed) , usually because these elements restrict the possible values for the attribute in a specific way. 
- 
+     |     
+   |    **Note**   |    The type attribute is present on a number of elements, not all of which are members of  [att.typed](#att.typed) , usually because these elements restrict the possible values for the attribute in a specific way.      |     
  
  
  
-@subtype
+`@subtype` provides a sub-categorization of the element, if needed 
  
-provides a sub-categorization of the element, if needed 
-**Status**
  
-Optional
- 
-**Datatype**
- 
-teidata.enumerated
- 
-**Note**
- 
-The subtype attribute may be used to provide any sub-classification for the element additional to that provided by its type attribute. 
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.enumerated     |     
+   |    **Note**   |    The subtype attribute may be used to provide any sub-classification for the element additional to that provided by its type attribute.      |     
  
  
  
@@ -10594,7 +9858,7 @@ The subtype attribute may be used to provide any sub-classification for the elem
  
 #### **Note**
  
-When appropriate, values from an established typology should be used. Alternatively a typology may be defined in the associated TEI header. If values are to be taken from a project-specific list, this should be defined using the valList element in the project-specific schema description, as described in  [23.3.1.4. Modification of Attribute and Attribute Value Lists](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html#MDMDAL)  . 
+When appropriate, values from an established typology should be used. Alternatively a typology may be defined in the associated TEI header. If values are to be taken from a project-specific list, this should be defined using the `valList` element in the project-specific schema description, as described in  [23.3.1.4. Modification of Attribute and Attribute Value Lists](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html#MDMDAL)  . 
  
  
  
@@ -10619,17 +9883,13 @@ When appropriate, values from an established typology should be used. Alternativ
 #### **Attributes**
  
 Attributes 
-@hand
  
-points to a handNote element describing the hand considered responsible for the content of the element concerned. 
-**Status**
  
-Optional
+`@hand` points to a `handNote` element describing the hand considered responsible for the content of the element concerned. 
  
-**Datatype**
  
-teidata.pointer
- 
+   |    **Status**   |    Optional     |     
+   |    **Datatype**   |    teidata.pointer     |     
  
  
  
