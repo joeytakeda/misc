@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
- 
 ## Winnifred Eaton Archive Project Documentation
- 
- 
 Note that this is an abridged version of the documentation for editorial use within oXygen. See [docs/documentation_full.html](docs/documentation_full.html) for full documentation. 
- 
 ## Table of contents
  
  
@@ -20,11 +16,11 @@ Note that this is an abridged version of the documentation for editorial use wit
 *  4 [Editing the Texts](#index.xml-body.1_div.4)
  
  
- 
 ## 1 Introduction
  
 The following are the Guidelines and schema specification for the Winnifred Eaton Archive project (WEA). The project uses a highly constrained version of the TEI Guidelines; the texts are lightly encoded with very little linked data. Primarily, the texts are meant to be easily ported into an existing Omeka framework; the details of this framework are still in development. 
  
+ ----- 
  
 ### 1.1 History and Pre-amble
  
@@ -35,12 +31,11 @@ The following are the Guidelines and schema specification for the Winnifred Eato
  
 ## 4 Editing the Texts
  
- 
- 
 ## Appendix A 
  
 ## Schema wea: Elements
  
+ ----- 
  
 ### `abstract`<span id="abstract"/>
  
@@ -58,13 +53,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [profileDesc](#profileDesc) 
- 
- 
- 
  
  
  
@@ -72,11 +61,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **core:** [list](#list)  [p](#p) 
- 
- 
  
  
  
@@ -106,6 +91,7 @@ This element is intended only for cases where no abstract is available in the or
  
  
  
+ ----- 
  
 ### `att`<span id="att"/>
  
@@ -123,11 +109,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    
- 
-TEI (Text Encoding Initiative) this attribute is part of the TEI scheme. [Default] (Text Encoding Initiative) this attribute is part of the TEI scheme. [Default] DBK (Docbook) this attribute is part of the Docbook scheme.(Docbook) this attribute is part of the Docbook scheme.XX (unknown) this attribute is part of an unknown scheme.(unknown) this attribute is part of an unknown scheme.imaginary the attribute is from a non-existent scheme, for illustrative purposes onlythe attribute is from a non-existent scheme, for illustrative purposes onlyXHTML the attribute is part of the XHTML languagethe attribute is part of the XHTML languageXML the attribute is part of the XML languagethe attribute is part of the XML languageXI the attribute is defined in the xInclude schemathe attribute is defined in the xInclude schema
- 
-     |     
+   |    **Sample values include:**   |    **TEI**: (Text Encoding Initiative) this attribute is part of the TEI scheme. [Default]   ; **DBK**: (Docbook) this attribute is part of the Docbook scheme.  ; **XX**: (unknown) this attribute is part of an unknown scheme.  ; **imaginary**: the attribute is from a non-existent scheme, for illustrative purposes only  ; **XHTML**: the attribute is part of the XHTML language  ; **XML**: the attribute is part of the XML language  ; **XI**: the attribute is defined in the xInclude schema      |     
  
  
  
@@ -140,17 +122,7 @@ TEI (Text Encoding Initiative) this attribute is part of the TEI scheme. [Defaul
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -188,6 +160,7 @@ As an alternative to using the scheme attribute a namespace prefix may be used. 
  
  
  
+ ----- 
  
 ### `author`<span id="author"/>
  
@@ -205,15 +178,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [bibl](#bibl) 
- 
-**header:** [editionStmt](#editionStmt)  [titleStmt](#titleStmt) 
- 
- 
- 
+**core:** [bibl](#bibl) **header:** [editionStmt](#editionStmt)  [titleStmt](#titleStmt) 
  
  
  
@@ -221,19 +186,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -263,6 +216,7 @@ Particularly where cataloguing is likely to be based on the content of the heade
  
  
  
+ ----- 
  
 ### `authority`<span id="authority"/>
  
@@ -280,13 +234,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [publicationStmt](#publicationStmt) 
- 
- 
- 
  
  
  
@@ -294,17 +242,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -325,6 +263,7 @@ character data
  
  
  
+ ----- 
  
 ### `availability`<span id="availability"/>
  
@@ -342,11 +281,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-free the text is freely available.the text is freely available.unknown the status of the text is unknown.the status of the text is unknown.restricted the text is not freely available.the text is not freely available.
- 
-     |     
+   |    **Legal values are:**   |    **free**: the text is freely available.  ; **unknown**: the status of the text is unknown.  ; **restricted**: the text is not freely available.      |     
  
  
  
@@ -359,15 +294,7 @@ free the text is freely available.the text is freely available.unknown the statu
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [bibl](#bibl) 
- 
-**header:** [publicationStmt](#publicationStmt) 
- 
- 
- 
+**core:** [bibl](#bibl) **header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -375,13 +302,7 @@ free the text is freely available.the text is freely available.unknown the statu
  
 #### **May contain**
  
- 
- 
-**core:** [p](#p) 
- 
-**header:** [licence](#licence) 
- 
- 
+**core:** [p](#p) **header:** [licence](#licence) 
  
  
  
@@ -428,6 +349,7 @@ A consistent format should be adopted
  
  
  
+ ----- 
  
 ### `back`<span id="back"/>
  
@@ -445,13 +367,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **textstructure:** [text](#text) 
- 
- 
- 
  
  
  
@@ -459,13 +375,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [gap](#gap)  [head](#head)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
+**core:** [gap](#gap)  [head](#head)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) **textstructure:** [byline](#byline)  [closer](#closer)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -505,6 +415,7 @@ Because cultural conventions differ as to which elements are grouped as back mat
  
  
  
+ ----- 
  
 ### `bibl`<span id="bibl"/>
  
@@ -522,17 +433,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [bibl](#bibl)  [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
- 
-**header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
- 
-**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [bibl](#bibl)  [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) **header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) **textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -540,19 +441,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [availability](#availability)  [distributor](#distributor)  [edition](#edition)  [idno](#idno) 
- 
-**tagdocs:** [code](#code) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) **header:** [availability](#availability)  [distributor](#distributor)  [edition](#edition)  [idno](#idno) **tagdocs:** [code](#code) character data
  
  
  
@@ -615,6 +504,7 @@ Contains phrase-level elements, together with any combination of elements from t
  
  
  
+ ----- 
  
 ### `biblFull`<span id="biblFull"/>
  
@@ -632,17 +522,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
- 
-**header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
- 
-**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) **header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) **textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -650,11 +530,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **header:** [editionStmt](#editionStmt)  [fileDesc](#fileDesc)  [notesStmt](#notesStmt)  [profileDesc](#profileDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc)  [titleStmt](#titleStmt) 
- 
- 
  
  
  
@@ -675,6 +551,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `body`<span id="body"/>
  
@@ -692,13 +569,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **textstructure:** [text](#text) 
- 
- 
- 
  
  
  
@@ -706,15 +577,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
- 
-**header:** [biblFull](#biblFull) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
- 
- 
+**core:** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) **header:** [biblFull](#biblFull) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -735,6 +598,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `byline`<span id="byline"/>
  
@@ -752,15 +616,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [lg](#lg)  [list](#list) 
- 
-**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
- 
- 
- 
+**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -768,21 +624,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-**textstructure:** [docAuthor](#docAuthor) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) **textstructure:** [docAuthor](#docAuthor) character data
  
  
  
@@ -853,6 +695,7 @@ The byline on a title page may include either the name or a description for the 
  
  
  
+ ----- 
  
 ### `category`<span id="category"/>
  
@@ -870,13 +713,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [category](#category) 
- 
- 
- 
  
  
  
@@ -884,11 +721,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **header:** [category](#category) 
- 
- 
  
  
  
@@ -953,6 +786,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `catRef`<span id="catRef"/>
  
@@ -982,13 +816,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [textClass](#textClass) 
- 
- 
- 
  
  
  
@@ -1029,6 +857,7 @@ The scheme attribute needs to be supplied only if more than one taxonomy has bee
  
  
  
+ ----- 
  
 ### `change`<span id="change"/>
  
@@ -1058,13 +887,7 @@ Attributes  [att.ascribed](#att.ascribed)  (`@who`)  [att.datable](#att.datable
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [listChange](#listChange)  [revisionDesc](#revisionDesc) 
- 
- 
- 
  
  
  
@@ -1072,19 +895,7 @@ Attributes  [att.ascribed](#att.ascribed)  (`@who`)  [att.datable](#att.datable
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1137,6 +948,7 @@ The who attribute may be used to point to any other element, but will typically 
  
  
  
+ ----- 
  
 ### `choice`<span id="choice"/>
  
@@ -1154,19 +966,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1174,11 +974,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **core:** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) 
- 
- 
  
  
  
@@ -1207,6 +1003,7 @@ An American encoding of Gulliver's Travels which retains the British spelling bu
  
  
  
+ ----- 
  
 ### `closer`<span id="closer"/>
  
@@ -1224,15 +1021,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [lg](#lg)  [list](#list) 
- 
-**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
- 
- 
- 
+**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
  
@@ -1240,21 +1029,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-**textstructure:** [dateline](#dateline) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) **textstructure:** [dateline](#dateline) character data
  
  
  
@@ -1292,6 +1067,7 @@ character data
  
  
  
+ ----- 
  
 ### `code`<span id="code"/>
  
@@ -1321,17 +1097,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1361,6 +1127,7 @@ Character data only
  
  
  
+ ----- 
  
 ### `corr`<span id="corr"/>
  
@@ -1378,19 +1145,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1398,19 +1153,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1447,6 +1190,7 @@ I don't know, Juan. It's so far in the past now — how <choice> <sic>we can</s
  
  
  
+ ----- 
  
 ### `creation`<span id="creation"/>
  
@@ -1464,13 +1208,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [profileDesc](#profileDesc) 
- 
- 
- 
  
  
  
@@ -1478,17 +1216,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [name](#name)  [num](#num)  [ref](#ref)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno)  [listChange](#listChange) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [name](#name)  [num](#num)  [ref](#ref)  [term](#term)  [title](#title) **header:** [idno](#idno)  [listChange](#listChange) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1532,6 +1260,7 @@ The  [creation](#creation)  element may be used to record details of a text's cr
  
  
  
+ ----- 
  
 ### `date`<span id="date"/>
  
@@ -1549,17 +1278,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -1567,19 +1286,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1632,6 +1339,7 @@ Given on the <date when="1977-06-12">
  
  
  
+ ----- 
  
 ### `dateline`<span id="dateline"/>
  
@@ -1649,15 +1357,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [lg](#lg)  [list](#list) 
- 
-**textstructure:** [body](#body)  [closer](#closer)  [div](#div)  [front](#front) 
- 
- 
- 
+**core:** [lg](#lg)  [list](#list) **textstructure:** [body](#body)  [closer](#closer)  [div](#div)  [front](#front) 
  
  
  
@@ -1665,21 +1365,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-**textstructure:** [docDate](#docDate) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) **textstructure:** [docDate](#docDate) character data
  
  
  
@@ -1716,6 +1402,7 @@ character data
  
  
  
+ ----- 
  
 ### `distributor`<span id="distributor"/>
  
@@ -1733,15 +1420,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [bibl](#bibl) 
- 
-**header:** [publicationStmt](#publicationStmt) 
- 
- 
- 
+**core:** [bibl](#bibl) **header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -1749,19 +1428,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1782,6 +1449,7 @@ character data
  
  
  
+ ----- 
  
 ### `div`<span id="div"/>
  
@@ -1799,13 +1467,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
- 
- 
- 
  
  
  
@@ -1813,15 +1475,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
- 
-**header:** [biblFull](#biblFull) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
- 
- 
+**core:** [bibl](#bibl)  [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) **header:** [biblFull](#biblFull) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -1846,6 +1500,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `docAuthor`<span id="docAuthor"/>
  
@@ -1863,15 +1518,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [lg](#lg)  [list](#list) 
- 
-**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
- 
- 
- 
+**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -1879,19 +1526,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -1920,6 +1555,7 @@ The document author's name often occurs within a byline, but the  [docAuthor](#d
  
  
  
+ ----- 
  
 ### `docDate`<span id="docDate"/>
  
@@ -1950,15 +1586,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [lg](#lg)  [list](#list) 
- 
-**textstructure:** [back](#back)  [body](#body)  [dateline](#dateline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
- 
- 
- 
+**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [dateline](#dateline)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -1966,19 +1594,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -2007,6 +1623,7 @@ Cf. the general  [date](#date)  element in the core tag set. This specialized el
  
  
  
+ ----- 
  
 ### `docTitle`<span id="docTitle"/>
  
@@ -2024,13 +1641,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **textstructure:** [back](#back)  [front](#front)  [titlePage](#titlePage) 
- 
- 
- 
  
  
  
@@ -2038,13 +1649,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
- 
-**textstructure:** [titlePart](#titlePart) 
- 
- 
+**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) **textstructure:** [titlePart](#titlePart) 
  
  
  
@@ -2067,6 +1672,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `edition`<span id="edition"/>
  
@@ -2084,15 +1690,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [bibl](#bibl) 
- 
-**header:** [editionStmt](#editionStmt) 
- 
- 
- 
+**core:** [bibl](#bibl) **header:** [editionStmt](#editionStmt) 
  
  
  
@@ -2100,19 +1698,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -2134,6 +1720,7 @@ character data
  
  
  
+ ----- 
  
 ### `editionStmt`<span id="editionStmt"/>
  
@@ -2151,13 +1738,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
- 
- 
- 
  
  
  
@@ -2165,13 +1746,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [author](#author)  [editor](#editor)  [p](#p)  [respStmt](#respStmt) 
- 
-**header:** [edition](#edition) 
- 
- 
+**core:** [author](#author)  [editor](#editor)  [p](#p)  [respStmt](#respStmt) **header:** [edition](#edition) 
  
  
  
@@ -2207,6 +1782,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `editor`<span id="editor"/>
  
@@ -2224,15 +1800,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [bibl](#bibl) 
- 
-**header:** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
- 
- 
- 
+**core:** [bibl](#bibl) **header:** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
  
  
  
@@ -2240,19 +1808,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -2284,6 +1840,7 @@ A consistent format should be adopted.Particularly where cataloguing is likely t
  
  
  
+ ----- 
  
 ### `editorialDecl`<span id="editorialDecl"/>
  
@@ -2301,13 +1858,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [encodingDesc](#encodingDesc) 
- 
- 
- 
  
  
  
@@ -2315,13 +1866,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [p](#p) 
- 
-**header:** [hyphenation](#hyphenation) 
- 
- 
+**core:** [p](#p) **header:** [hyphenation](#hyphenation) 
  
  
  
@@ -2343,6 +1888,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `emph`<span id="emph"/>
  
@@ -2360,17 +1906,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2378,19 +1914,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -2426,6 +1950,7 @@ You took the car and did <emph>what</emph>?!!
  
  
  
+ ----- 
  
 ### `encodingDesc`<span id="encodingDesc"/>
  
@@ -2443,13 +1968,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [teiHeader](#teiHeader) 
- 
- 
- 
  
  
  
@@ -2457,13 +1976,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [p](#p) 
- 
-**header:** [editorialDecl](#editorialDecl)  [listPrefixDef](#listPrefixDef)  [projectDesc](#projectDesc) 
- 
- 
+**core:** [p](#p) **header:** [editorialDecl](#editorialDecl)  [listPrefixDef](#listPrefixDef)  [projectDesc](#projectDesc) 
  
  
  
@@ -2484,6 +1997,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `epigraph`<span id="epigraph"/>
  
@@ -2501,15 +2015,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [lg](#lg)  [list](#list) 
- 
-**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
- 
- 
- 
+**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front)  [titlePage](#titlePage) 
  
  
  
@@ -2517,13 +2023,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [bibl](#bibl)  [gap](#gap)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) 
- 
-**header:** [biblFull](#biblFull) 
- 
- 
+**core:** [bibl](#bibl)  [gap](#gap)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote) **header:** [biblFull](#biblFull) 
  
  
  
@@ -2546,6 +2046,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `fileDesc`<span id="fileDesc"/>
  
@@ -2563,13 +2064,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [biblFull](#biblFull)  [teiHeader](#teiHeader) 
- 
- 
- 
  
  
  
@@ -2577,11 +2072,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **header:** [editionStmt](#editionStmt)  [notesStmt](#notesStmt)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc)  [titleStmt](#titleStmt) 
- 
- 
  
  
  
@@ -2610,6 +2101,7 @@ The major source of information for those seeking to create a catalogue entry or
  
  
  
+ ----- 
  
 ### `foreign`<span id="foreign"/>
  
@@ -2627,17 +2119,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2645,19 +2127,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -2688,6 +2158,7 @@ This is heathen Greek to you still? Your <foreign xml:lang="la">
  
  
  
+ ----- 
  
 ### `front`<span id="front"/>
  
@@ -2705,13 +2176,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **textstructure:** [text](#text) 
- 
- 
- 
  
  
  
@@ -2719,13 +2184,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [gap](#gap)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
+**core:** [gap](#gap)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [note](#note)  [p](#p)  [pb](#pb) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2789,6 +2248,7 @@ Because cultural conventions differ as to which elements are grouped as front ma
  
  
  
+ ----- 
  
 ### `gap`<span id="gap"/>
  
@@ -2806,11 +2266,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
-   |    **Suggested values include:**   |    
- 
-cancelled [No description available][No description available]deleted [No description available][No description available]editorial for features omitted from transcription due to editorial policyfor features omitted from transcription due to editorial policyillegible [No description available][No description available]inaudible [No description available][No description available]irrelevant [No description available][No description available]sampling [No description available][No description available]
- 
-     |     
+   |    **Suggested values include:**   |    **cancelled**: [No description available]  ; **deleted**: [No description available]  ; **editorial**: for features omitted from transcription due to editorial policy  ; **illegible**: [No description available]  ; **inaudible**: [No description available]  ; **irrelevant**: [No description available]  ; **sampling**: [No description available]      |     
  
  
  
@@ -2819,11 +2275,7 @@ cancelled [No description available][No description available]deleted [No descri
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    
- 
-rubbing damage results from rubbing of the leaf edgesdamage results from rubbing of the leaf edgesmildew damage results from mildew on the leaf surfacedamage results from mildew on the leaf surfacesmoke damage results from smokedamage results from smoke
- 
-     |     
+   |    **Sample values include:**   |    **rubbing**: damage results from rubbing of the leaf edges  ; **mildew**: damage results from mildew on the leaf surface  ; **smoke**: damage results from smoke      |     
  
  
  
@@ -2836,17 +2288,7 @@ rubbing damage results from rubbing of the leaf edgesdamage results from rubbing
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
- 
-**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2925,6 +2367,7 @@ The  [gap](#gap) , `unclear`, and `del` core tag elements may be closely allied 
  
  
  
+ ----- 
  
 ### `gi`<span id="gi"/>
  
@@ -2942,11 +2385,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    
- 
-TEI this element is part of the TEI scheme. [Default] this element is part of the TEI scheme. [Default] DBK (docbook) this element is part of the Docbook scheme.(docbook) this element is part of the Docbook scheme.XX (unknown) this element is part of an unknown scheme.(unknown) this element is part of an unknown scheme.Schematron this element is from Schematron.this element is from Schematron.HTML this element is from the HTML scheme.this element is from the HTML scheme.
- 
-     |     
+   |    **Sample values include:**   |    **TEI**: this element is part of the TEI scheme. [Default]   ; **DBK**: (docbook) this element is part of the Docbook scheme.  ; **XX**: (unknown) this element is part of an unknown scheme.  ; **Schematron**: this element is from Schematron.  ; **HTML**: this element is from the HTML scheme.      |     
  
  
  
@@ -2959,17 +2398,7 @@ TEI this element is part of the TEI scheme. [Default] this element is part of th
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -2999,6 +2428,7 @@ This example shows the use of both a namespace prefix and the scheme attribute a
  
  
  
+ ----- 
  
 ### `head`<span id="head"/>
  
@@ -3016,15 +2446,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [lg](#lg)  [list](#list)  [listBibl](#listBibl) 
- 
-**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
- 
- 
- 
+**core:** [lg](#lg)  [list](#list)  [listBibl](#listBibl) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
  
@@ -3032,19 +2454,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3107,6 +2517,7 @@ With a few exceptions, connectives are equally useful in all kinds of discourse:
  
  
  
+ ----- 
  
 ### `hi`<span id="hi"/>
  
@@ -3124,17 +2535,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3142,19 +2543,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3178,6 +2567,7 @@ character data
  
  
  
+ ----- 
  
 ### `hyphenation`<span id="hyphenation"/>
  
@@ -3195,11 +2585,13 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-all all end-of-line hyphenation has been retained, even though the lineation of the original may not have been. all end-of-line hyphenation has been retained, even though the lineation of the original may not have been. some end-of-line hyphenation has been retained in some cases. [Default] end-of-line hyphenation has been retained in some cases. [Default] hard all soft end-of-line hyphenation has been removed: any remaining end-of-line hyphenation should be retained. all soft end-of-line hyphenation has been removed: any remaining end-of-line hyphenation should be retained. none all end-of-line hyphenation has been removed: any remaining hyphenation occurred within the line. all end-of-line hyphenation has been removed: any remaining hyphenation occurred within the line. 
- 
-     |     
+   |    **Legal values are:**   |    **all**: all end-of-line hyphenation has been retained, even though the lineation of the original
+                                                may not have been.
+                                               ; **some**: end-of-line hyphenation has been retained in some cases. [Default]   ; **hard**: all soft end-of-line hyphenation has been removed: any remaining end-of-line hyphenation
+                                                should be retained.
+                                               ; **none**: all end-of-line hyphenation has been removed: any remaining hyphenation occurred within
+                                                the line.
+                                                   |     
  
  
  
@@ -3212,13 +2604,7 @@ all all end-of-line hyphenation has been retained, even though the lineation of 
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [editorialDecl](#editorialDecl) 
- 
- 
- 
  
  
  
@@ -3226,11 +2612,7 @@ all all end-of-line hyphenation has been retained, even though the lineation of 
  
 #### **May contain**
  
- 
- 
 **core:** [p](#p) 
- 
- 
  
  
  
@@ -3252,6 +2634,7 @@ all all end-of-line hyphenation has been retained, even though the lineation of 
  
  
  
+ ----- 
  
 ### `idno`<span id="idno"/>
  
@@ -3270,11 +2653,22 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
    |    **Derived from**   |     [att.typed](#att.typed)      |     
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    
- 
-ISBN International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit identifying number assigned by the publishing industry to a published book or similar item, registered with the [International ISBN Agency.](https://www.isbn-international.org)International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit identifying number assigned by the publishing industry to a published book or similar item, registered with the  [International ISBN Agency.](https://www.isbn-international.org) ISSN International Standard Serial Number: an eight-digit number to uniquely identify a serial publication. International Standard Serial Number: an eight-digit number to uniquely identify a serial publication. DOI Digital Object Identifier: a unique string of letters and numbers assigned to an electronic document. Digital Object Identifier: a unique string of letters and numbers assigned to an electronic document. URI Uniform Resource Identifier: a string of characters to uniquely identify a resource which usually contains indication of the means of accessing that resource, the name of its host, and its filepath. Uniform Resource Identifier: a string of characters to uniquely identify a resource which usually contains indication of the means of accessing that resource, the name of its host, and its filepath. VIAF A data number in the Virtual Internet Authority File assigned to link different names in catalogs around the world for the same entity. A data number in the Virtual Internet Authority File assigned to link different names in catalogs around the world for the same entity. ESTC English Short-Title Catalogue number: an identifying number assigned to a document in English printed in the British Isles or North America before 1801. English Short-Title Catalogue number: an identifying number assigned to a document in English printed in the British Isles or North America before 1801. OCLC OCLC control number (record number) for the union catalog record in WorldCat, a union catalog for member libraries in the Online Computer Library Center global cooperative. OCLC control number (record number) for the union catalog record in WorldCat, a union catalog for member libraries in the Online Computer Library Center global cooperative. 
- 
-     |     
+   |    **Suggested values include:**   |    **ISBN**: International Standard Book Number: a 13- or (if assigned prior to 2007) 10-digit
+                                                identifying number assigned by the publishing industry to a published book or similar
+                                                item, registered with the International ISBN Agency.  ; **ISSN**: International Standard Serial Number: an eight-digit number to uniquely identify a
+                                                serial publication.
+                                               ; **DOI**: Digital Object Identifier: a unique string of letters and numbers assigned to an electronic
+                                                document.
+                                               ; **URI**: Uniform Resource Identifier: a string of characters to uniquely identify a resource
+                                                which usually contains indication of the means of accessing that resource, the name
+                                                of its host, and its filepath.
+                                               ; **VIAF**: A data number in the Virtual Internet Authority File assigned to link different names
+                                                in catalogs around the world for the same entity.
+                                               ; **ESTC**: English Short-Title Catalogue number: an identifying number assigned to a document
+                                                in English printed in the British Isles or North America before 1801.
+                                               ; **OCLC**: OCLC control number (record number) for the union catalog record in WorldCat, a union
+                                                catalog for member libraries in the Online Computer Library Center global cooperative.
+                                                   |     
  
  
  
@@ -3287,17 +2681,7 @@ ISBN International Standard Book Number: a 13- or (if assigned prior to 2007) 10
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [idno](#idno)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition)  [seriesStmt](#seriesStmt) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [idno](#idno)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition)  [seriesStmt](#seriesStmt) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3305,13 +2689,7 @@ ISBN International Standard Book Number: a 13- or (if assigned prior to 2007) 10
  
 #### **May contain**
  
- 
- 
-**header:** [idno](#idno) 
- 
-character data
- 
- 
+**header:** [idno](#idno) character data
  
  
  
@@ -3348,6 +2726,7 @@ In the last case, the identifier includes a non-Unicode character which is defin
  
  
  
+ ----- 
  
 ### `item`<span id="item"/>
  
@@ -3365,13 +2744,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **core:** [list](#list) 
- 
- 
- 
  
  
  
@@ -3379,19 +2752,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3427,6 +2788,7 @@ May contain simple prose or a sequence of chunks.Whatever string of characters i
  
  
  
+ ----- 
  
 ### `keywords`<span id="keywords"/>
  
@@ -3456,13 +2818,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [textClass](#textClass) 
- 
- 
- 
  
  
  
@@ -3470,11 +2826,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **core:** [list](#list)  [term](#term) 
- 
- 
  
  
  
@@ -3518,6 +2870,7 @@ Each individual keyword (including compound subject headings) should be supplied
  
  
  
+ ----- 
  
 ### `l`<span id="l"/>
  
@@ -3535,17 +2888,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
- 
-**header:** [change](#change)  [licence](#licence) 
- 
-**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) **header:** [change](#change)  [licence](#licence) **textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3553,19 +2896,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3587,6 +2918,7 @@ character data
  
  
  
+ ----- 
  
 ### `language`<span id="language"/>
  
@@ -3624,13 +2956,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [langUsage](#langUsage) 
- 
- 
- 
  
  
  
@@ -3638,17 +2964,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3680,6 +2996,7 @@ Particularly for sublanguages, an informal prose characterization should be supp
  
  
  
+ ----- 
  
 ### `langUsage`<span id="langUsage"/>
  
@@ -3697,13 +3014,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [profileDesc](#profileDesc) 
- 
- 
- 
  
  
  
@@ -3711,13 +3022,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [p](#p) 
- 
-**header:** [language](#language) 
- 
- 
+**core:** [p](#p) **header:** [language](#language) 
  
  
  
@@ -3741,6 +3046,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `lb`<span id="lb"/>
  
@@ -3758,17 +3064,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
- 
-**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3819,6 +3115,7 @@ This example encodes typographical line breaks as a means of preserving the visu
  
  
  
+ ----- 
  
 ### `lg`<span id="lg"/>
  
@@ -3836,17 +3133,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
- 
-**header:** [change](#change)  [licence](#licence) 
- 
-**textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [lg](#lg)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) **header:** [change](#change)  [licence](#licence) **textstructure:** [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -3854,13 +3141,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
- 
- 
+**core:** [gap](#gap)  [head](#head)  [l](#l)  [lb](#lb)  [lg](#lg)  [milestone](#milestone)  [note](#note)  [pb](#pb) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -3892,6 +3173,7 @@ contains verse lines or nested line groups only, possibly prefixed by a heading.
  
  
  
+ ----- 
  
 ### `licence`<span id="licence"/>
  
@@ -3909,13 +3191,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [availability](#availability) 
- 
- 
- 
  
  
  
@@ -3923,19 +3199,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -3980,6 +3244,7 @@ A  [licence](#licence)  element should be supplied for each licence agreement ap
  
  
  
+ ----- 
  
 ### `list`<span id="list"/>
  
@@ -3998,11 +3263,14 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
    |    **Derived from**   |     [att.typed](#att.typed)      |     
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    
- 
-gloss each list item glosses some term or concept, which is given by a `label` element preceding the list item. each list item glosses some term or concept, which is given by a `label` element preceding the list item. index each list item is an entry in an index such as the alphabetical topical index at the back of a print volume. each list item is an entry in an index such as the alphabetical topical index at the back of a print volume. instructions each list item is a step in a sequence of instructions, as in a recipe.each list item is a step in a sequence of instructions, as in a recipe.litany each list item is one of a sequence of petitions, supplications or invocations, typically in a religious ritual. each list item is one of a sequence of petitions, supplications or invocations, typically in a religious ritual. syllogism each list item is part of an argument consisting of two or more propositions and a final conclusion derived from them. each list item is part of an argument consisting of two or more propositions and a final conclusion derived from them. 
- 
-     |     
+   |    **Suggested values include:**   |    **gloss**: each list item glosses some term or concept, which is given by a label element preceding the list item.
+                                               ; **index**: each list item is an entry in an index such as the alphabetical topical index at the
+                                                back of a print volume.
+                                               ; **instructions**: each list item is a step in a sequence of instructions, as in a recipe.  ; **litany**: each list item is one of a sequence of petitions, supplications or invocations, typically
+                                                in a religious ritual.
+                                               ; **syllogism**: each list item is part of an argument consisting of two or more propositions and a
+                                                final conclusion derived from them.
+                                                   |     
    |    **Note**   |    Previous versions of these Guidelines recommended the use of type on  [list](#list)  to encode the rendering or appearance of a list (whether it was bulleted, numbered, etc.). The current recommendation is to use the rend or style attributes for these aspects of a list, while using type for the more appropriate task of characterizing the nature of the content of a list.      |     
    |    **Note**   |    The formal syntax of the element declarations allows `label` tags to be omitted from lists tagged &lt;list type="gloss"&gt;; this is however a semantic error.      |     
  
@@ -4017,17 +3285,7 @@ gloss each list item glosses some term or concept, which is given by a `label` e
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) 
- 
-**header:** [abstract](#abstract)  [change](#change)  [keywords](#keywords)  [licence](#licence)  [rendition](#rendition)  [revisionDesc](#revisionDesc)  [sourceDesc](#sourceDesc) 
- 
-**textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [title](#title) **header:** [abstract](#abstract)  [change](#change)  [keywords](#keywords)  [licence](#licence)  [rendition](#rendition)  [revisionDesc](#revisionDesc)  [sourceDesc](#sourceDesc) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4035,13 +3293,7 @@ gloss each list item glosses some term or concept, which is given by a `label` e
  
 #### **May contain**
  
- 
- 
-**core:** [gap](#gap)  [head](#head)  [item](#item)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
- 
- 
+**core:** [gap](#gap)  [head](#head)  [item](#item)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [trailer](#trailer) 
  
  
  
@@ -4164,6 +3416,7 @@ Note that nested lists have been used so the tagging mirrors the structure indic
  
  
  
+ ----- 
  
 ### `listBibl`<span id="listBibl"/>
  
@@ -4181,17 +3434,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) 
- 
-**header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) 
- 
-**textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [corr](#corr)  [emph](#emph)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [listBibl](#listBibl)  [note](#note)  [orig](#orig)  [p](#p)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [sic](#sic)  [title](#title) **header:** [change](#change)  [licence](#licence)  [rendition](#rendition)  [sourceDesc](#sourceDesc) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4199,13 +3442,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [bibl](#bibl)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [pb](#pb) 
- 
-**header:** [biblFull](#biblFull) 
- 
- 
+**core:** [bibl](#bibl)  [head](#head)  [lb](#lb)  [listBibl](#listBibl)  [milestone](#milestone)  [pb](#pb) **header:** [biblFull](#biblFull) 
  
  
  
@@ -4226,6 +3463,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `listChange`<span id="listChange"/>
  
@@ -4256,13 +3494,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [creation](#creation)  [listChange](#listChange)  [revisionDesc](#revisionDesc) 
- 
- 
- 
  
  
  
@@ -4270,11 +3502,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **header:** [change](#change)  [listChange](#listChange) 
- 
- 
  
  
  
@@ -4324,6 +3552,7 @@ When this element appears within the  [creation](#creation)  element it document
  
  
  
+ ----- 
  
 ### `listPrefixDef`<span id="listPrefixDef"/>
  
@@ -4341,13 +3570,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [encodingDesc](#encodingDesc)  [listPrefixDef](#listPrefixDef) 
- 
- 
- 
  
  
  
@@ -4355,11 +3578,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **header:** [listPrefixDef](#listPrefixDef)  [prefixDef](#prefixDef) 
- 
- 
  
  
  
@@ -4382,6 +3601,7 @@ In this example, two private URI scheme prefixes are defined and patterns are pr
  
  
  
+ ----- 
  
 ### `milestone`<span id="milestone"/>
  
@@ -4399,17 +3619,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
- 
-**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4447,6 +3657,7 @@ For this element, the global n attribute indicates the new number or other value
  
  
  
+ ----- 
  
 ### `name`<span id="name"/>
  
@@ -4464,17 +3675,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4482,19 +3683,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4527,6 +3716,7 @@ Proper nouns referring to people, places, and organizations may be tagged instea
  
  
  
+ ----- 
  
 ### `note`<span id="note"/>
  
@@ -4567,17 +3757,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [notesStmt](#notesStmt) 
- 
-**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [respStmt](#respStmt)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [notesStmt](#notesStmt) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4585,19 +3765,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4638,6 +3806,7 @@ However, if notes are numbered in sequence and their numbering can be reconstruc
  
  
  
+ ----- 
  
 ### `notesStmt`<span id="notesStmt"/>
  
@@ -4655,13 +3824,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
- 
- 
- 
  
  
  
@@ -4669,11 +3832,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **core:** [note](#note)  [relatedItem](#relatedItem) 
- 
- 
  
  
  
@@ -4702,6 +3861,7 @@ Information of different kinds should not be grouped together into the same note
  
  
  
+ ----- 
  
 ### `num`<span id="num"/>
  
@@ -4719,11 +3879,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    
- 
-cardinal absolute number, e.g. 21, 21.5absolute number, e.g. 21, 21.5ordinal ordinal number, e.g. 21stordinal number, e.g. 21stfraction fraction, e.g. one half or three-quartersfraction, e.g. one half or three-quarterspercentage a percentagea percentage
- 
-     |     
+   |    **Suggested values include:**   |    **cardinal**: absolute number, e.g. 21, 21.5  ; **ordinal**: ordinal number, e.g. 21st  ; **fraction**: fraction, e.g. one half or three-quarters  ; **percentage**: a percentage      |     
    |    **Note**   |    If a different typology is desired, other values can be used for this attribute.     |     
  
  
@@ -4747,17 +3903,7 @@ cardinal absolute number, e.g. 21, 21.5absolute number, e.g. 21, 21.5ordinal ord
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4765,19 +3911,7 @@ cardinal absolute number, e.g. 21, 21.5absolute number, e.g. 21, 21.5ordinal ord
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4810,6 +3944,7 @@ Detailed analyses of quantities and units of measure in historical documents may
  
  
  
+ ----- 
  
 ### `orig`<span id="orig"/>
  
@@ -4827,19 +3962,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -4847,19 +3970,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4894,6 +4005,7 @@ More usually, an  [orig](#orig)  will be combined with a regularized form within
  
  
  
+ ----- 
  
 ### `p`<span id="p"/>
  
@@ -4911,17 +4023,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [item](#item)  [note](#note)  [q](#q)  [quote](#quote) 
- 
-**header:** [abstract](#abstract)  [availability](#availability)  [change](#change)  [editionStmt](#editionStmt)  [editorialDecl](#editorialDecl)  [encodingDesc](#encodingDesc)  [hyphenation](#hyphenation)  [langUsage](#langUsage)  [licence](#licence)  [prefixDef](#prefixDef)  [projectDesc](#projectDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc) 
- 
-**textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front) 
- 
- 
- 
+**core:** [item](#item)  [note](#note)  [q](#q)  [quote](#quote) **header:** [abstract](#abstract)  [availability](#availability)  [change](#change)  [editionStmt](#editionStmt)  [editorialDecl](#editorialDecl)  [encodingDesc](#encodingDesc)  [hyphenation](#hyphenation)  [langUsage](#langUsage)  [licence](#licence)  [prefixDef](#prefixDef)  [projectDesc](#projectDesc)  [publicationStmt](#publicationStmt)  [seriesStmt](#seriesStmt)  [sourceDesc](#sourceDesc) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [epigraph](#epigraph)  [front](#front) 
  
  
  
@@ -4929,19 +4031,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -4962,6 +4052,7 @@ character data
  
  
  
+ ----- 
  
 ### `pb`<span id="pb"/>
  
@@ -4979,17 +4070,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) 
- 
-**textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence) **textstructure:** [back](#back)  [body](#body)  [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [front](#front)  [text](#text)  [titlePage](#titlePage)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5041,6 +4122,7 @@ A page break may be associated with a facsimile image of the page it introduces 
  
  
  
+ ----- 
  
 ### `pc`<span id="pc"/>
  
@@ -5058,11 +4140,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-strong the punctuation mark is a word separatorthe punctuation mark is a word separatorweak the punctuation mark is not a word separatorthe punctuation mark is not a word separatorinter the punctuation mark may or may not be a word separatorthe punctuation mark may or may not be a word separator
- 
-     |     
+   |    **Legal values are:**   |    **strong**: the punctuation mark is a word separator  ; **weak**: the punctuation mark is not a word separator  ; **inter**: the punctuation mark may or may not be a word separator      |     
  
  
  
@@ -5091,17 +4169,7 @@ strong the punctuation mark is a word separatorthe punctuation mark is a word se
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5109,13 +4177,7 @@ strong the punctuation mark is a word separatorthe punctuation mark is a word se
  
 #### **May contain**
  
- 
- 
-**core:** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) 
- 
-character data
- 
- 
+**core:** [choice](#choice)  [corr](#corr)  [orig](#orig)  [reg](#reg)  [sic](#sic) character data
  
  
  
@@ -5157,6 +4219,7 @@ Example encoding of the German sentence Wir fahren in den Urlaub., encoded with 
  
  
  
+ ----- 
  
 ### `prefixDef`<span id="prefixDef"/>
  
@@ -5187,13 +4250,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [listPrefixDef](#listPrefixDef) 
- 
- 
- 
  
  
  
@@ -5201,11 +4258,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **core:** [p](#p) 
- 
- 
  
  
  
@@ -5235,6 +4288,7 @@ The abbreviated pointer may be dereferenced to produce either an absolute or a r
  
  
  
+ ----- 
  
 ### `profileDesc`<span id="profileDesc"/>
  
@@ -5252,13 +4306,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [biblFull](#biblFull)  [teiHeader](#teiHeader) 
- 
- 
- 
  
  
  
@@ -5266,11 +4314,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **header:** [abstract](#abstract)  [creation](#creation)  [langUsage](#langUsage)  [textClass](#textClass) 
- 
- 
  
  
  
@@ -5302,6 +4346,7 @@ Although the content model permits it, it is rarely meaningful to supply multipl
  
  
  
+ ----- 
  
 ### `projectDesc`<span id="projectDesc"/>
  
@@ -5319,13 +4364,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [encodingDesc](#encodingDesc) 
- 
- 
- 
  
  
  
@@ -5333,11 +4372,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **core:** [p](#p) 
- 
- 
  
  
  
@@ -5358,6 +4393,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `publicationStmt`<span id="publicationStmt"/>
  
@@ -5375,13 +4411,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
- 
- 
- 
  
  
  
@@ -5389,13 +4419,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [date](#date)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref) 
- 
-**header:** [authority](#authority)  [availability](#availability)  [distributor](#distributor)  [idno](#idno) 
- 
- 
+**core:** [date](#date)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [ref](#ref) **header:** [authority](#authority)  [availability](#availability)  [distributor](#distributor)  [idno](#idno) 
  
  
  
@@ -5454,6 +4478,7 @@ Where a publication statement contains several members of the model.publicationS
  
  
  
+ ----- 
  
 ### `publisher`<span id="publisher"/>
  
@@ -5471,15 +4496,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [bibl](#bibl) 
- 
-**header:** [publicationStmt](#publicationStmt) 
- 
- 
- 
+**core:** [bibl](#bibl) **header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -5487,19 +4504,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5528,6 +4533,7 @@ Use the full form of the name by which a company is usually referred to, rather 
  
  
  
+ ----- 
  
 ### `pubPlace`<span id="pubPlace"/>
  
@@ -5545,15 +4551,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [bibl](#bibl) 
- 
-**header:** [publicationStmt](#publicationStmt) 
- 
- 
- 
+**core:** [bibl](#bibl) **header:** [publicationStmt](#publicationStmt) 
  
  
  
@@ -5561,19 +4559,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5594,6 +4580,7 @@ character data
  
  
  
+ ----- 
  
 ### `q`<span id="q"/>
  
@@ -5611,11 +4598,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    
- 
-spoken representation of speechrepresentation of speechthought representation of thought, e.g. internal monologuerepresentation of thought, e.g. internal monologuewritten quotation from a written sourcequotation from a written sourcesoCalled authorial distanceauthorial distanceforeign [No description available][No description available]distinct linguistically distinctlinguistically distinctterm technical termtechnical termemph rhetorically emphasizedrhetorically emphasizedmentioned refering to itself, not its normal referentrefering to itself, not its normal referent
- 
-     |     
+   |    **Suggested values include:**   |    **spoken**: representation of speech  ; **thought**: representation of thought, e.g. internal monologue  ; **written**: quotation from a written source  ; **soCalled**: authorial distance  ; **foreign**: [No description available]  ; **distinct**: linguistically distinct  ; **term**: technical term  ; **emph**: rhetorically emphasized  ; **mentioned**: refering to itself, not its normal referent      |     
  
  
  
@@ -5628,17 +4611,7 @@ spoken representation of speechrepresentation of speechthought representation of
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) **textstructure:** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5646,19 +4619,7 @@ spoken representation of speechrepresentation of speechthought representation of
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5687,6 +4648,7 @@ It is spelled <q>Tübingen</q> — to enter the letter <q>u</q> with an umlaut h
  
  
  
+ ----- 
  
 ### `quote`<span id="quote"/>
  
@@ -5704,17 +4666,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [corr](#corr)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence)  [rendition](#rendition) **textstructure:** [body](#body)  [div](#div)  [docAuthor](#docAuthor)  [docDate](#docDate)  [epigraph](#epigraph)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5722,19 +4674,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5763,6 +4703,7 @@ Lexicography has shown little sign of being affected by the work of followers of
  
  
  
+ ----- 
  
 ### `ref`<span id="ref"/>
  
@@ -5780,17 +4721,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [relatedItem](#relatedItem)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [publicationStmt](#publicationStmt)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5798,19 +4729,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5856,6 +4775,7 @@ See also <ref target="#locution">
  
  
  
+ ----- 
  
 ### `reg`<span id="reg"/>
  
@@ -5873,19 +4793,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -5893,19 +4801,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -5941,6 +4837,7 @@ It is also possible to identify the individual responsible for the regularizatio
  
  
  
+ ----- 
  
 ### `relatedItem`<span id="relatedItem"/>
  
@@ -5970,15 +4867,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [bibl](#bibl) 
- 
-**header:** [notesStmt](#notesStmt) 
- 
- 
- 
+**core:** [bibl](#bibl) **header:** [notesStmt](#notesStmt) 
  
  
  
@@ -5986,13 +4875,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [bibl](#bibl)  [listBibl](#listBibl)  [ref](#ref) 
- 
-**header:** [biblFull](#biblFull) 
- 
- 
+**core:** [bibl](#bibl)  [listBibl](#listBibl)  [ref](#ref) **header:** [biblFull](#biblFull) 
  
  
  
@@ -6025,6 +4908,7 @@ If the target attribute is used to reference the related bibliographic item, the
  
  
  
+ ----- 
  
 ### `rendition`<span id="rendition"/>
  
@@ -6042,11 +4926,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    
- 
-first-line styling applies to the first line of the target elementstyling applies to the first line of the target elementfirst-letter styling applies to the first letter of the target elementstyling applies to the first letter of the target elementbefore styling should be applied immediately before the content of the target elementstyling should be applied immediately before the content of the target elementafter styling should be applied immediately after the content of the target elementstyling should be applied immediately after the content of the target element
- 
-     |     
+   |    **Sample values include:**   |    **first-line**: styling applies to the first line of the target element  ; **first-letter**: styling applies to the first letter of the target element  ; **before**: styling should be applied immediately before the content of the target element  ; **after**: styling should be applied immediately after the content of the target element      |     
  
  
  
@@ -6085,9 +4965,7 @@ first-line styling applies to the first line of the target elementstyling applie
  
 #### **Contained by**
  
- 
 —
- 
  
  
  
@@ -6095,17 +4973,7 @@ first-line styling applies to the first line of the target elementstyling applie
  
 #### **May contain**
  
- 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [num](#num)  [q](#q)  [quote](#quote)  [ref](#ref)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**core:** [bibl](#bibl)  [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [hi](#hi)  [list](#list)  [listBibl](#listBibl)  [name](#name)  [num](#num)  [q](#q)  [quote](#quote)  [ref](#ref)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -6130,6 +4998,7 @@ character data
  
  
  
+ ----- 
  
 ### `resp`<span id="resp"/>
  
@@ -6147,13 +5016,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **core:** [respStmt](#respStmt) 
- 
- 
- 
  
  
  
@@ -6161,17 +5024,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**core:** [choice](#choice)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [pb](#pb)  [ref](#ref)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -6201,6 +5054,7 @@ The attribute ref, inherited from the class  [att.canonical](#att.canonical)  ma
  
  
  
+ ----- 
  
 ### `respStmt`<span id="respStmt"/>
  
@@ -6218,15 +5072,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [bibl](#bibl) 
- 
-**header:** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
- 
- 
- 
+**core:** [bibl](#bibl) **header:** [editionStmt](#editionStmt)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
  
  
  
@@ -6234,11 +5080,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **core:** [name](#name)  [note](#note)  [resp](#resp) 
- 
- 
  
  
  
@@ -6273,6 +5115,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `revisionDesc`<span id="revisionDesc"/>
  
@@ -6290,13 +5133,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [teiHeader](#teiHeader) 
- 
- 
- 
  
  
  
@@ -6304,13 +5141,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [list](#list) 
- 
-**header:** [change](#change)  [listChange](#listChange) 
- 
- 
+**core:** [list](#list) **header:** [change](#change)  [listChange](#listChange) 
  
  
  
@@ -6341,6 +5172,7 @@ If present on this element, the status attribute should indicate the current sta
  
  
  
+ ----- 
  
 ### `seriesStmt`<span id="seriesStmt"/>
  
@@ -6358,13 +5190,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
- 
- 
- 
  
  
  
@@ -6372,13 +5198,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [editor](#editor)  [p](#p)  [respStmt](#respStmt)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
- 
+**core:** [editor](#editor)  [p](#p)  [respStmt](#respStmt)  [title](#title) **header:** [idno](#idno) 
  
  
  
@@ -6401,6 +5221,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `sic`<span id="sic"/>
  
@@ -6418,19 +5239,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**analysis:** [pc](#pc) **core:** [author](#author)  [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [change](#change)  [distributor](#distributor)  [edition](#edition)  [licence](#licence) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -6438,19 +5247,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -6517,6 +5314,7 @@ for his nose was as sharp as a pen, and <choice> <sic>a Table</sic> <corr>a' b
  
  
  
+ ----- 
  
 ### `sourceDesc`<span id="sourceDesc"/>
  
@@ -6534,13 +5332,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
- 
- 
- 
  
  
  
@@ -6548,13 +5340,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [bibl](#bibl)  [list](#list)  [listBibl](#listBibl)  [p](#p) 
- 
-**header:** [biblFull](#biblFull) 
- 
- 
+**core:** [bibl](#bibl)  [list](#list)  [listBibl](#listBibl)  [p](#p) **header:** [biblFull](#biblFull) 
  
  
  
@@ -6590,6 +5376,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `TEI`<span id="TEI"/>
  
@@ -6620,9 +5407,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
 —
- 
  
  
  
@@ -6630,13 +5415,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**header:** [teiHeader](#teiHeader) 
- 
-**textstructure:** [text](#text) 
- 
- 
+**header:** [teiHeader](#teiHeader) **textstructure:** [text](#text) 
  
  
  
@@ -6679,6 +5458,7 @@ This element is required. It is customary to specify the TEI namespace http://ww
  
  
  
+ ----- 
  
 ### `teiHeader`<span id="teiHeader"/>
  
@@ -6696,13 +5476,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **textstructure:** [TEI](#TEI) 
- 
- 
- 
  
  
  
@@ -6710,11 +5484,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **header:** [encodingDesc](#encodingDesc)  [fileDesc](#fileDesc)  [profileDesc](#profileDesc)  [revisionDesc](#revisionDesc) 
- 
- 
  
  
  
@@ -6750,6 +5520,7 @@ One of the few elements unconditionally required in any TEI document.
  
  
  
+ ----- 
  
 ### `term`<span id="term"/>
  
@@ -6767,17 +5538,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [keywords](#keywords)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [keywords](#keywords)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -6785,19 +5546,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [lb](#lb)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -6877,6 +5626,7 @@ We discuss Leech's concept of <term ref="myGlossary.xml#TDPV2" rend="sc">
  
  
  
+ ----- 
  
 ### `text`<span id="text"/>
  
@@ -6894,13 +5644,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **textstructure:** [TEI](#TEI) 
- 
- 
- 
  
  
  
@@ -6908,13 +5652,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
- 
-**textstructure:** [back](#back)  [body](#body)  [front](#front) 
- 
- 
+**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) **textstructure:** [back](#back)  [body](#body)  [front](#front) 
  
  
  
@@ -6957,6 +5695,7 @@ The body of a text may be replaced by a group of nested texts, as in the followi
  
  
  
+ ----- 
  
 ### `textClass`<span id="textClass"/>
  
@@ -6974,13 +5713,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [profileDesc](#profileDesc) 
- 
- 
- 
  
  
  
@@ -6988,11 +5721,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **header:** [catRef](#catRef)  [keywords](#keywords) 
- 
- 
  
  
  
@@ -7016,6 +5745,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `title`<span id="title"/>
  
@@ -7034,11 +5764,9 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
    |    **Derived from**   |     [att.typed](#att.typed)      |     
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    
- 
-main main titlemain titlesub (subordinate) subtitle, title of part(subordinate) subtitle, title of partalt (alternate) alternate title, often in another language, by which the work is also known (alternate) alternate title, often in another language, by which the work is also known short abbreviated form of titleabbreviated form of titledesc (descriptive) descriptive paraphrase of the work functioning as a title(descriptive) descriptive paraphrase of the work functioning as a title
- 
-     |     
+   |    **Sample values include:**   |    **main**: main title  ; **sub**: (subordinate) subtitle, title of part  ; **alt**: (alternate) alternate title, often in another language, by which the work is also
+                                                known
+                                               ; **short**: abbreviated form of title  ; **desc**: (descriptive) descriptive paraphrase of the work functioning as a title      |     
    |    **Note**   |    This attribute is provided for convenience in analysing titles and processing them according to their type; where such specialized processing is not necessary, there is no need for such analysis, and the entire title, including subtitles and any parallel titles, may be enclosed within a single  [title](#title)  element.      |     
  
  
@@ -7048,11 +5776,17 @@ main main titlemain titlesub (subordinate) subtitle, title of part(subordinate) 
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-a (analytic) the title applies to an analytic item, such as an article, poem, or other work published as part of a larger item. (analytic) the title applies to an analytic item, such as an article, poem, or other work published as part of a larger item. m (monographic) the title applies to a monograph such as a book or other item considered to be a distinct publication, including single volumes of multi-volume works (monographic) the title applies to a monograph such as a book or other item considered to be a distinct publication, including single volumes of multi-volume works j (journal) the title applies to any serial or periodical publication such as a journal, magazine, or newspaper (journal) the title applies to any serial or periodical publication such as a journal, magazine, or newspaper s (series) the title applies to a series of otherwise distinct publications such as a collection (series) the title applies to a series of otherwise distinct publications such as a collection u (unpublished) the title applies to any unpublished material (including theses and dissertations unless published by a commercial press) (unpublished) the title applies to any unpublished material (including theses and dissertations unless published by a commercial press) 
- 
-     |     
+   |    **Legal values are:**   |    **a**: (analytic) the title applies to an analytic item, such as an article, poem, or other
+                                                work published as part of a larger item.
+                                               ; **m**: (monographic) the title applies to a monograph such as a book or other item considered
+                                                to be a distinct publication, including single volumes of multi-volume works
+                                               ; **j**: (journal) the title applies to any serial or periodical publication such as a journal,
+                                                magazine, or newspaper
+                                               ; **s**: (series) the title applies to a series of otherwise distinct publications such as
+                                                a collection
+                                               ; **u**: (unpublished) the title applies to any unpublished material (including theses and
+                                                dissertations unless published by a commercial press)
+                                                   |     
    |    **Note**   |    The level of a title is sometimes implied by its context: for example, a title appearing directly within an `analytic` element is ipso facto of level ‘a’, and one appearing within a `series` element of level ‘s’. For this reason, the level attribute is not required in contexts where its value can be unambiguously inferred. Where it is supplied in such contexts, its value should not contradict the value implied by its parent element.      |     
  
  
@@ -7066,17 +5800,7 @@ a (analytic) the title applies to an analytic item, such as an article, poem, or
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [bibl](#bibl)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition)  [seriesStmt](#seriesStmt)  [titleStmt](#titleStmt) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -7084,19 +5808,7 @@ a (analytic) the title applies to an analytic item, such as an article, poem, or
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -7156,6 +5868,7 @@ The attributes key and ref, inherited from the class  [att.canonical](#att.canon
  
  
  
+ ----- 
  
 ### `titlePage`<span id="titlePage"/>
  
@@ -7186,13 +5899,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **textstructure:** [back](#back)  [front](#front) 
- 
- 
- 
  
  
  
@@ -7200,13 +5907,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) 
- 
-**textstructure:** [byline](#byline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePart](#titlePart) 
- 
- 
+**core:** [gap](#gap)  [lb](#lb)  [milestone](#milestone)  [note](#note)  [pb](#pb) **textstructure:** [byline](#byline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [docTitle](#docTitle)  [epigraph](#epigraph)  [titlePart](#titlePart) 
  
  
  
@@ -7230,6 +5931,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `titlePart`<span id="titlePart"/>
  
@@ -7247,11 +5949,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    
- 
-main main title of the work [Default] main title of the work [Default] sub (subordinate) subtitle of the work(subordinate) subtitle of the workalt (alternate) alternative title of the work(alternate) alternative title of the workshort abbreviated form of titleabbreviated form of titledesc (descriptive) descriptive paraphrase of the work(descriptive) descriptive paraphrase of the work
- 
-     |     
+   |    **Suggested values include:**   |    **main**: main title of the work [Default]   ; **sub**: (subordinate) subtitle of the work  ; **alt**: (alternate) alternative title of the work  ; **short**: abbreviated form of title  ; **desc**: (descriptive) descriptive paraphrase of the work      |     
  
  
  
@@ -7264,13 +5962,7 @@ main main title of the work [Default] main title of the work [Default] sub (subo
  
 #### **Contained by**
  
- 
- 
- 
 **textstructure:** [back](#back)  [docTitle](#docTitle)  [front](#front)  [titlePage](#titlePage) 
- 
- 
- 
  
  
  
@@ -7278,19 +5970,7 @@ main main title of the work [Default] main title of the work [Default] sub (subo
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -7313,6 +5993,7 @@ character data
  
  
  
+ ----- 
  
 ### `titleStmt`<span id="titleStmt"/>
  
@@ -7330,13 +6011,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
 **header:** [biblFull](#biblFull)  [fileDesc](#fileDesc) 
- 
- 
- 
  
  
  
@@ -7344,11 +6019,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
 **core:** [author](#author)  [editor](#editor)  [respStmt](#respStmt)  [title](#title) 
- 
- 
  
  
  
@@ -7369,6 +6040,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
  
  
+ ----- 
  
 ### `trailer`<span id="trailer"/>
  
@@ -7386,15 +6058,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [lg](#lg)  [list](#list) 
- 
-**textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
- 
- 
- 
+**core:** [lg](#lg)  [list](#list) **textstructure:** [back](#back)  [body](#body)  [div](#div)  [front](#front) 
  
  
  
@@ -7402,19 +6066,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **May contain**
  
- 
- 
-**analysis:** [pc](#pc) 
- 
-**core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [biblFull](#biblFull)  [idno](#idno) 
- 
-**tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) 
- 
-character data
- 
- 
+**analysis:** [pc](#pc) **core:** [bibl](#bibl)  [choice](#choice)  [corr](#corr)  [date](#date)  [emph](#emph)  [foreign](#foreign)  [gap](#gap)  [hi](#hi)  [l](#l)  [lb](#lb)  [lg](#lg)  [list](#list)  [listBibl](#listBibl)  [milestone](#milestone)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [pb](#pb)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [sic](#sic)  [term](#term)  [title](#title) **header:** [biblFull](#biblFull)  [idno](#idno) **tagdocs:** [att](#att)  [code](#code)  [gi](#gi)  [val](#val) character data
  
  
  
@@ -7449,6 +6101,7 @@ From EEBO A87070
  
  
  
+ ----- 
  
 ### `val`<span id="val"/>
  
@@ -7466,17 +6119,7 @@ Attributes  [att.global](#att.global)  (`@xml:id`, `@n`, `@xml:lang`, `@xml:bas
  
 #### **Contained by**
  
- 
- 
- 
-**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) 
- 
-**header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) 
- 
-**textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
- 
- 
- 
+**core:** [author](#author)  [corr](#corr)  [date](#date)  [editor](#editor)  [emph](#emph)  [foreign](#foreign)  [head](#head)  [hi](#hi)  [item](#item)  [l](#l)  [name](#name)  [note](#note)  [num](#num)  [orig](#orig)  [p](#p)  [pubPlace](#pubPlace)  [publisher](#publisher)  [q](#q)  [quote](#quote)  [ref](#ref)  [reg](#reg)  [resp](#resp)  [sic](#sic)  [term](#term)  [title](#title) **header:** [authority](#authority)  [change](#change)  [creation](#creation)  [distributor](#distributor)  [edition](#edition)  [language](#language)  [licence](#licence)  [rendition](#rendition) **textstructure:** [byline](#byline)  [closer](#closer)  [dateline](#dateline)  [docAuthor](#docAuthor)  [docDate](#docDate)  [titlePart](#titlePart)  [trailer](#trailer) 
  
  
  
@@ -7507,6 +6150,7 @@ Character data only
  
 ## Schema wea: Attribute classes
  
+ ----- 
  
 ### att.ascribed<span id="att.ascribed"/>
  
@@ -7559,6 +6203,7 @@ Attributes
  
  
  
+ ----- 
  
 ### att.ascribed.directed<span id="att.ascribed.directed"/>
  
@@ -7614,6 +6259,7 @@ Attributes  [att.ascribed](#att.ascribed)  (`@who`)
  
  
  
+ ----- 
  
 ### att.breaking<span id="att.breaking"/>
  
@@ -7639,11 +6285,11 @@ Attributes
  
    |    **Status**   |    Recommended     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include**   |    
- 
-yes the element bearing this attribute is considered to mark the end of any adjacent orthographic token irrespective of the presence of any adjacent whitespace the element bearing this attribute is considered to mark the end of any adjacent orthographic token irrespective of the presence of any adjacent whitespace no the element bearing this attribute is considered not to mark the end of any adjacent orthographic token irrespective of the presence of any adjacent whitespace the element bearing this attribute is considered not to mark the end of any adjacent orthographic token irrespective of the presence of any adjacent whitespace maybe the encoding does not take any position on this issue.the encoding does not take any position on this issue.
- 
-     |     
+   |    **Sample values include**   |    **yes**: the element bearing this attribute is considered to mark the end of any adjacent orthographic
+                                                token irrespective of the presence of any adjacent whitespace
+                                               ; **no**: the element bearing this attribute is considered not to mark the end of any adjacent
+                                                orthographic token irrespective of the presence of any adjacent whitespace
+                                               ; **maybe**: the encoding does not take any position on this issue.      |     
    |    In the following lines from the Dream of the Rood, linebreaks occur in the middle of the words lāðost and reord-berendum. 
 ```
  
@@ -7662,6 +6308,7 @@ yes the element bearing this attribute is considered to mark the end of any adja
  
  
  
+ ----- 
  
 ### att.canonical<span id="att.canonical"/>
  
@@ -7732,6 +6379,7 @@ Attributes
  
  
  
+ ----- 
  
 ### att.cReferencing<span id="att.cReferencing"/>
  
@@ -7769,6 +6417,7 @@ Attributes
  
  
  
+ ----- 
  
 ### att.datable<span id="att.datable"/>
  
@@ -7832,6 +6481,7 @@ This ‘superclass’ provides attributes that can be used to provide normalized
  
  
  
+ ----- 
  
 ### att.datable.w3c<span id="att.datable.w3c"/>
  
@@ -7959,6 +6609,7 @@ The value of these attributes should be a normalized representation of the date,
  
  
  
+ ----- 
  
 ### att.datcat<span id="att.datcat"/>
  
@@ -8025,6 +6676,7 @@ ISO 12620:2009 is a standard describing the data model and procedures for a Data
  
  
  
+ ----- 
  
 ### att.declarable<span id="att.declarable"/>
  
@@ -8050,11 +6702,8 @@ Attributes
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.truthValue     |     
-   |    **Legal values are:**   |    
- 
-true This element is selected if its parent is selectedThis element is selected if its parent is selectedfalse This element can only be selected explicitly, unless it is the only one of its kind, in which case it is selected if its parent is selected. [Default] This element can only be selected explicitly, unless it is the only one of its kind, in which case it is selected if its parent is selected. [Default] 
- 
-     |     
+   |    **Legal values are:**   |    **true**: This element is selected if its parent is selected  ; **false**: This element can only be selected explicitly, unless it is the only one of its kind,
+                                                in which case it is selected if its parent is selected. [Default]       |     
  
  
  
@@ -8074,6 +6723,7 @@ The rules governing the association of declarable elements with individual parts
  
  
  
+ ----- 
  
 ### att.declaring<span id="att.declaring"/>
  
@@ -8118,6 +6768,7 @@ The rules governing the association of declarable elements with individual parts
  
  
  
+ ----- 
  
 ### att.dimensions<span id="att.dimensions"/>
  
@@ -8143,11 +6794,7 @@ Attributes  [att.ranging](#att.ranging)  (`@atLeast`, `@atMost`, `@min`, `@max`
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    
- 
-cm (centimetres) (centimetres) mm (millimetres) (millimetres) in (inches) (inches) lines lines of textlines of textchars (characters) characters of text(characters) characters of text
- 
-     |     
+   |    **Suggested values include:**   |    **cm**: (centimetres)   ; **mm**: (millimetres)   ; **in**: (inches)   ; **lines**: lines of text  ; **chars**: (characters) characters of text      |     
  
  
  
@@ -8194,11 +6841,7 @@ cm (centimetres) (centimetres) mm (millimetres) (millimetres) in (inches) (inche
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    
- 
-all measurement applies to all instances.measurement applies to all instances.most measurement applies to most of the instances inspected.measurement applies to most of the instances inspected.range measurement applies to only the specified range of instances.measurement applies to only the specified range of instances.
- 
-     |     
+   |    **Sample values include:**   |    **all**: measurement applies to all instances.  ; **most**: measurement applies to most of the instances inspected.  ; **range**: measurement applies to only the specified range of instances.      |     
  
  
  
@@ -8210,6 +6853,7 @@ all measurement applies to all instances.measurement applies to all instances.mo
  
  
  
+ ----- 
  
 ### att.divLike<span id="att.divLike"/>
  
@@ -8235,11 +6879,10 @@ Attributes  [att.fragmentable](#att.fragmentable)  (`@part`)
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-composite no claim is made about the sequence in which the immediate contents of this division are to be processed, or their inter-relationships. no claim is made about the sequence in which the immediate contents of this division are to be processed, or their inter-relationships. uniform the immediate contents of this element are regarded as forming a logical unit, to be processed in sequence. [Default] the immediate contents of this element are regarded as forming a logical unit, to be processed in sequence. [Default] 
- 
-     |     
+   |    **Legal values are:**   |    **composite**: no claim is made about the sequence in which the immediate contents of this division
+                                                are to be processed, or their inter-relationships.
+                                               ; **uniform**: the immediate contents of this element are regarded as forming a logical unit, to
+                                                be processed in sequence. [Default]       |     
  
  
  
@@ -8248,11 +6891,7 @@ composite no claim is made about the sequence in which the immediate contents of
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-initial division lacks material present at end in source.division lacks material present at end in source.medial division lacks material at start and end.division lacks material at start and end.final division lacks material at start.division lacks material at start.unknown position of sampled material within original unknown.position of sampled material within original unknown.complete division is not a sample. [Default] division is not a sample. [Default] 
- 
-     |     
+   |    **Legal values are:**   |    **initial**: division lacks material present at end in source.  ; **medial**: division lacks material at start and end.  ; **final**: division lacks material at start.  ; **unknown**: position of sampled material within original unknown.  ; **complete**: division is not a sample. [Default]       |     
  
  
  
@@ -8264,6 +6903,7 @@ initial division lacks material present at end in source.division lacks material
  
  
  
+ ----- 
  
 ### att.docStatus<span id="att.docStatus"/>
  
@@ -8289,11 +6929,7 @@ Attributes
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Sample values include:**   |    
- 
-approved [No description available][No description available]candidate [No description available][No description available]cleared [No description available][No description available]deprecated [No description available][No description available]draft  [Default]  [Default] embargoed [No description available][No description available]expired [No description available][No description available]frozen [No description available][No description available]galley [No description available][No description available]proposed [No description available][No description available]published [No description available][No description available]recommendation [No description available][No description available]submitted [No description available][No description available]unfinished [No description available][No description available]withdrawn [No description available][No description available]
- 
-     |     
+   |    **Sample values include:**   |    **approved**: [No description available]  ; **candidate**: [No description available]  ; **cleared**: [No description available]  ; **deprecated**: [No description available]  ; **draft**:  [Default]   ; **embargoed**: [No description available]  ; **expired**: [No description available]  ; **frozen**: [No description available]  ; **galley**: [No description available]  ; **proposed**: [No description available]  ; **published**: [No description available]  ; **recommendation**: [No description available]  ; **submitted**: [No description available]  ; **unfinished**: [No description available]  ; **withdrawn**: [No description available]      |     
  
  
  
@@ -8320,6 +6956,7 @@ approved [No description available][No description available]candidate [No descr
  
  
  
+ ----- 
  
 ### att.edition<span id="att.edition"/>
  
@@ -8394,6 +7031,7 @@ Attributes
  
  
  
+ ----- 
  
 ### att.editLike<span id="att.editLike"/>
  
@@ -8419,11 +7057,9 @@ Attributes
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
-   |    **Suggested values include:**   |    
- 
-internal there is internal evidence to support the intervention.there is internal evidence to support the intervention.external there is external evidence to support the intervention.there is external evidence to support the intervention.conjecture the intervention or interpretation has been made by the editor, cataloguer, or scholar on the basis of their expertise. the intervention or interpretation has been made by the editor, cataloguer, or scholar on the basis of their expertise. 
- 
-     |     
+   |    **Suggested values include:**   |    **internal**: there is internal evidence to support the intervention.  ; **external**: there is external evidence to support the intervention.  ; **conjecture**: the intervention or interpretation has been made by the editor, cataloguer, or scholar
+                                                on the basis of their expertise.
+                                                   |     
  
  
  
@@ -8460,6 +7096,7 @@ Each pointer on the source (if present) corresponding to a witness or witness gr
  
  
  
+ ----- 
  
 ### att.fragmentable<span id="att.fragmentable"/>
  
@@ -8485,11 +7122,7 @@ Attributes
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-Y (yes) the element is fragmented in some (unspecified) respect(yes) the element is fragmented in some (unspecified) respectN (no) the element is not fragmented, or no claim is made as to its completeness [Default] (no) the element is not fragmented, or no claim is made as to its completeness [Default] I (initial) this is the initial part of a fragmented element(initial) this is the initial part of a fragmented elementM (medial) this is a medial part of a fragmented element(medial) this is a medial part of a fragmented elementF (final) this is the final part of a fragmented element(final) this is the final part of a fragmented element
- 
-     |     
+   |    **Legal values are:**   |    **Y**: (yes) the element is fragmented in some (unspecified) respect  ; **N**: (no) the element is not fragmented, or no claim is made as to its completeness [Default]   ; **I**: (initial) this is the initial part of a fragmented element  ; **M**: (medial) this is a medial part of a fragmented element  ; **F**: (final) this is the final part of a fragmented element      |     
    |    **Note**   |    The values I, M, or F should be used only where it is clear how the element may be be reconstituted.      |     
  
  
@@ -8502,6 +7135,7 @@ Y (yes) the element is fragmented in some (unspecified) respect(yes) the element
  
  
  
+ ----- 
  
 ### att.global<span id="att.global"/>
  
@@ -8582,11 +7216,7 @@ Attributes  [att.global.rendition](#att.global.rendition)  (`@rend`, `@style`, 
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-default signals that the application's default white-space processing modes are acceptablesignals that the application's default white-space processing modes are acceptablepreserve indicates the intent that applications preserve all white spaceindicates the intent that applications preserve all white space
- 
-     |     
+   |    **Legal values are:**   |    **default**: signals that the application's default white-space processing modes are acceptable  ; **preserve**: indicates the intent that applications preserve all white space      |     
    |    **Note**   |    The  [XML specification](http://www.w3.org/TR/REC-xml/#sec-white-space)  provides further guidance on the use of this attribute. Note that many parsers may not handle xml:space correctly.      |     
  
  
@@ -8599,6 +7229,7 @@ default signals that the application's default white-space processing modes are 
  
  
  
+ ----- 
  
 ### att.global.analytic<span id="att.global.analytic"/>
  
@@ -8636,6 +7267,7 @@ Attributes
  
  
  
+ ----- 
  
 ### att.global.rendition<span id="att.global.rendition"/>
  
@@ -8721,6 +7353,7 @@ Attributes
  
  
  
+ ----- 
  
 ### att.global.responsibility<span id="att.global.responsibility"/>
  
@@ -8799,6 +7432,7 @@ Blessed are the<choice> <sic>cheesemakers</sic> <corr resp="#editor" cert="h
  
  
  
+ ----- 
  
 ### att.global.source<span id="att.global.source"/>
  
@@ -8899,6 +7533,7 @@ Create a schema using components taken from the file mycompiledODD.xml.
  
  
  
+ ----- 
  
 ### att.internetMedia<span id="att.internetMedia"/>
  
@@ -8957,6 +7592,7 @@ This attribute class provides an attribute for describing a computer resource, t
  
  
  
+ ----- 
  
 ### att.linguistic<span id="att.linguistic"/>
  
@@ -9098,11 +7734,10 @@ Attributes
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.text     |     
-   |    **Legal values are:**   |    
- 
-no (the token is not adjacent to another) (the token is not adjacent to another) left (there is no whitespace on the left side of the token) (there is no whitespace on the left side of the token) right (there is no whitespace on the right side of the token) (there is no whitespace on the right side of the token) both (there is no whitespace on either side of the token) (there is no whitespace on either side of the token) overlap (the token overlaps with another; other devices (specifying the extent and the area of overlap) are needed to more precisely locate this token in the character stream) (the token overlaps with another; other devices (specifying the extent and the area of overlap) are needed to more precisely locate this token in the character stream) 
- 
-     |     
+   |    **Legal values are:**   |    **no**: (the token is not adjacent to another)   ; **left**: (there is no whitespace on the left side of the token)   ; **right**: (there is no whitespace on the right side of the token)   ; **both**: (there is no whitespace on either side of the token)   ; **overlap**: (the token overlaps with another; other devices (specifying the extent and the area
+                                                of overlap) are needed to more precisely locate this token in the character stream)
+                                                
+                                                   |     
    |    The example below assumes that the lack of whitespace is marked redundantly, by using the appropriate values of join. 
 ```
  
@@ -9147,6 +7782,7 @@ These attributes make it possible to encode simple language corpora and to add a
  
  
  
+ ----- 
  
 ### att.milestoneUnit<span id="att.milestoneUnit"/>
  
@@ -9172,11 +7808,9 @@ Attributes
  
    |    **Status**   |    Required     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Suggested values include:**   |    
- 
-page physical page breaks (synonymous with the [pb](#pb) element). physical page breaks (synonymous with the  [pb](#pb)  element). column column breaks.column breaks.line line breaks (synonymous with the [lb](#lb) element). line breaks (synonymous with the  [lb](#lb)  element). book any units termed book, liber, etc.any units termed book, liber, etc.poem individual poems in a collection.individual poems in a collection.canto cantos or other major sections of a poem.cantos or other major sections of a poem.speaker changes of speaker or narrator.changes of speaker or narrator.stanza stanzas within a poem, book, or canto.stanzas within a poem, book, or canto.act acts within a play.acts within a play.scene scenes within a play or act.scenes within a play or act.section sections of any kind.sections of any kind.absent passages not present in the reference edition.passages not present in the reference edition.unnumbered passages present in the text, but not to be included as part of the reference.passages present in the text, but not to be included as part of the reference.
- 
-     |     
+   |    **Suggested values include:**   |    **page**: physical page breaks (synonymous with the pb element).
+                                               ; **column**: column breaks.  ; **line**: line breaks (synonymous with the lb element).
+                                               ; **book**: any units termed book, liber, etc.  ; **poem**: individual poems in a collection.  ; **canto**: cantos or other major sections of a poem.  ; **speaker**: changes of speaker or narrator.  ; **stanza**: stanzas within a poem, book, or canto.  ; **act**: acts within a play.  ; **scene**: scenes within a play or act.  ; **section**: sections of any kind.  ; **absent**: passages not present in the reference edition.  ; **unnumbered**: passages present in the text, but not to be included as part of the reference.      |     
    |    
 ```
  
@@ -9197,6 +7831,7 @@ page physical page breaks (synonymous with the [pb](#pb) element). physical page
  
  
  
+ ----- 
  
 ### att.naming<span id="att.naming"/>
  
@@ -9242,6 +7877,7 @@ Attributes  [att.canonical](#att.canonical)  (`@key`, `@ref`)
  
  
  
+ ----- 
  
 ### att.notated<span id="att.notated"/>
  
@@ -9278,6 +7914,7 @@ Attributes
  
  
  
+ ----- 
  
 ### att.patternReplacement<span id="att.patternReplacement"/>
  
@@ -9324,6 +7961,7 @@ Attributes
  
  
  
+ ----- 
  
 ### att.personal<span id="att.personal"/>
  
@@ -9349,11 +7987,7 @@ Attributes  [att.naming](#att.naming)  (`@role`, `@nymRef`) ( [att.canonical](#
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-yes the name component is spelled out in full. [Default] the name component is spelled out in full. [Default] abb (abbreviated) the name component is given in an abbreviated form.(abbreviated) the name component is given in an abbreviated form.init (initial letter) the name component is indicated only by one initial.(initial letter) the name component is indicated only by one initial.
- 
-     |     
+   |    **Legal values are:**   |    **yes**: the name component is spelled out in full. [Default]   ; **abb**: (abbreviated) the name component is given in an abbreviated form.  ; **init**: (initial letter) the name component is indicated only by one initial.      |     
  
  
  
@@ -9373,6 +8007,7 @@ yes the name component is spelled out in full. [Default] the name component is s
  
  
  
+ ----- 
  
 ### att.placement<span id="att.placement"/>
  
@@ -9398,11 +8033,7 @@ Attributes
  
    |    **Status**   |    Recommended     |     
    |    **Datatype**   |     1–∞ occurrences of teidata.enumerated separated by whitespace     |     
-   |    **Suggested values include:**   |    
- 
-below below the linebelow the linebottom at the foot of the pageat the foot of the pagemargin in the margin (left, right, or both)in the margin (left, right, or both)top at the top of the pageat the top of the pageopposite on the opposite, i.e. facing, pageon the opposite, i.e. facing, pageoverleaf on the other side of the leafon the other side of the leafabove above the lineabove the lineend at the end of e.g. chapter or volume.at the end of e.g. chapter or volume.inline within the body of the text.within the body of the text.inspace in a predefined space, for example left by an earlier scribe.in a predefined space, for example left by an earlier scribe.
- 
-     |     
+   |    **Suggested values include:**   |    **below**: below the line  ; **bottom**: at the foot of the page  ; **margin**: in the margin (left, right, or both)  ; **top**: at the top of the page  ; **opposite**: on the opposite, i.e. facing, page  ; **overleaf**: on the other side of the leaf  ; **above**: above the line  ; **end**: at the end of e.g. chapter or volume.  ; **inline**: within the body of the text.  ; **inspace**: in a predefined space, for example left by an earlier scribe.      |     
    |    
 ```
  
@@ -9431,6 +8062,7 @@ below below the linebelow the linebottom at the foot of the pageat the foot of t
  
  
  
+ ----- 
  
 ### att.pointing<span id="att.pointing"/>
  
@@ -9482,11 +8114,13 @@ In the example above, the `linkGrp` combines pointers at parallel fragments of t
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-all if the element pointed to is itself a pointer, then the target of that pointer will be taken, and so on, until an element is found which is not a pointer. if the element pointed to is itself a pointer, then the target of that pointer will be taken, and so on, until an element is found which is not a pointer. one if the element pointed to is itself a pointer, then its target (whether a pointer or not) is taken as the target of this pointer. if the element pointed to is itself a pointer, then its target (whether a pointer or not) is taken as the target of this pointer. none no further evaluation of targets is carried out beyond that needed to find the element specified in the pointer's target. no further evaluation of targets is carried out beyond that needed to find the element specified in the pointer's target. 
- 
-     |     
+   |    **Legal values are:**   |    **all**: if the element pointed to is itself a pointer, then the target of that pointer will
+                                                be taken, and so on, until an element is found which is not a pointer.
+                                               ; **one**: if the element pointed to is itself a pointer, then its target (whether a pointer
+                                                or not) is taken as the target of this pointer.
+                                               ; **none**: no further evaluation of targets is carried out beyond that needed to find the element
+                                                specified in the pointer's target.
+                                                   |     
    |    **Note**   |    If no value is given, the application program is responsible for deciding (possibly on the basis of user input) how far to trace a chain of pointers.      |     
  
  
@@ -9499,6 +8133,7 @@ all if the element pointed to is itself a pointer, then the target of that point
  
  
  
+ ----- 
  
 ### att.ranging<span id="att.ranging"/>
  
@@ -9582,6 +8217,7 @@ The MS. was lost in transmission by mail from <del rend="overstrike">
  
  
  
+ ----- 
  
 ### att.segLike<span id="att.segLike"/>
  
@@ -9619,6 +8255,7 @@ Attributes  [att.datcat](#att.datcat)  (`@datcat`, `@valueDatcat`)  [att.fragme
  
  
  
+ ----- 
  
 ### att.sortable<span id="att.sortable"/>
  
@@ -9666,6 +8303,7 @@ David's other principal backer, Josiah ha-Kohen <index indexName="NAMES">
  
  
  
+ ----- 
  
 ### att.spanning<span id="att.spanning"/>
  
@@ -9710,6 +8348,7 @@ The span is defined as running in document order from the start of the content o
  
  
  
+ ----- 
  
 ### att.styleDef<span id="att.styleDef"/>
  
@@ -9735,11 +8374,7 @@ Attributes
  
    |    **Status**   |    Optional     |     
    |    **Datatype**   |    teidata.enumerated     |     
-   |    **Legal values are:**   |    
- 
-css Cascading Stylesheet LanguageCascading Stylesheet Languagexslfo Extensible Stylesheet Language Formatting ObjectsExtensible Stylesheet Language Formatting Objectsfree Informal free text descriptionInformal free text descriptionother A user-defined rendition description languageA user-defined rendition description language
- 
-     |     
+   |    **Legal values are:**   |    **css**: Cascading Stylesheet Language  ; **xslfo**: Extensible Stylesheet Language Formatting Objects  ; **free**: Informal free text description  ; **other**: A user-defined rendition description language      |     
    |    **Note**   |    If no value for the @scheme attribute is provided, then the default assumption should be that CSS is in use.      |     
  
  
@@ -9761,6 +8396,7 @@ css Cascading Stylesheet LanguageCascading Stylesheet Languagexslfo Extensible S
  
  
  
+ ----- 
  
 ### att.timed<span id="att.timed"/>
  
@@ -9807,6 +8443,7 @@ Attributes
  
  
  
+ ----- 
  
 ### att.typed<span id="att.typed"/>
  
@@ -9865,6 +8502,7 @@ When appropriate, values from an established typology should be used. Alternativ
  
  
  
+ ----- 
  
 ### att.written<span id="att.written"/>
  
@@ -9900,8 +8538,4 @@ Attributes
  
  
  
- 
- 
- 
-[](http://www.example.com/) Home [Feedback](#)  
-Date: 2019-02-03
+[](http://www.example.com/) Home [Feedback](#)  Date: 2019-02-03
